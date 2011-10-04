@@ -1,8 +1,36 @@
-@import url("clearfix");
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
 
 $base-line-height-in-pixels: 22;
 $base-font-size-in-pixels: 18;
 $base-line-height: $base-line-height-in-pixels/$base-font-size-in-pixels;
+
+$color-watermelon: #F63E5F;
+$color-yellow: #FFEB27;
+$color-blue: #4C9AF5;
+$color-black: #323232;
+$color-light-grey: #f2f2f2;
+$color-mid-grey: #adadad;
+$color-divider-grey: #cacaca;
+$color-white: #FFF;
 
 @mixin set-lines($size, $top-margin) {
   font-size: ($size / $base-font-size-in-pixels) + em;
@@ -19,11 +47,11 @@ $base-line-height: $base-line-height-in-pixels/$base-font-size-in-pixels;
 
 @font-face {
   font-family: 'Signal';
-  src: url('../fonts/signal/Signal-No3-D.eot');
+  src: url('../fonts/signal/signal-no2-d-webfont.eot');
   src: local('☺'),
-       url('../fonts/signal/Signal-No3-D.woff') format('woff'), 
-       url('../fonts/signal/Signal-No3-D.ttf') format('truetype'),
-	     url("../fonts/signal/Signal-No3-D.svg#SignalNo3D") format("svg");
+       url('../fonts/signal/signal-no2-d-webfont.woff') format('woff'), 
+       url('../fonts/signal/signal-no2-d-webfont.ttf') format('truetype'),
+	     url("../fonts/signal/signal-no2-d-webfont.svg#SignalNo2DRegular") format("svg");
 }
 .signal { font-family: Signal; }
 
@@ -33,13 +61,9 @@ body {
 	margin: 0 0 0 0;
 	padding: 0;
 	border: 0;
-	color: #666;
+	color: $color-black;
 	background-color: #FFF;
   font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif";
-}
-
-html > body {
-  font-size: 18px;
 }
 
 html > body {
@@ -47,142 +71,164 @@ html > body {
 }
 
 p, li, td {
-  @include set-lines(18, false);
+  @include set-lines($base-font-size-in-pixels, false);
+}
+
+h1 {
+  text-align: center;
+  font-family: "Signal", Helvetica, Arial, "Serif";
+  font-size: 32px;
+  margin: 58px 0 10px 0;
+}
+h2 {
+  font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif";
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 0px;
+  margin-bottom: 13px;
+}
+p.visit {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 60px;
+  a {
+    text-decoration: underline;
+    display: inline-block;
+    padding: 4px 30px 7px;
+    color: $color-white;
+    background-color: $color-blue;
+  }
+}
+
+.left {
+  float: left;
+  width: 474px;
+}
+
+.right {
+  float: right;
+  width: 474px;
 }
 
 
-
 header {
-  background-color: #f13958;
-  height: 7.778em;
+	margin: 0 auto;
+  background-color: $color-watermelon;
+  width: 978px;
+  height: 170px;
+  padding: 46px 0 0 0;
+  a.logo {
+  	margin: 0 auto 40px;
+    background: transparent url("/images/cogent_logo.png") no-repeat top left;
+    display: block;
+    width: 111px;
+    height: 91px;
+    color: transparent;
+  }
   nav {
-  	margin: 0 auto;
-	  width: 93.75%;		/* 960px / 1024px */
+    width: 978px;
+    background-color: $color-black;
     position: relative;
-    padding: 2.67em 1.1em 0.83em 1.1em;
+    height: 40px;
     font-family: "Signal", Helvetica, Arial, "Serif";
-    color: #FFF;
-    text-align: right;
+    color: $color-mid-grey;
+    text-align: center;
     a {
       display: inline-block;
-      vertical-align: middle;
-      margin: 1.667em 0em 0.73em 6.667em;
-      color: #FBB1BE;
+      padding: 0 20px 0 0;
+      margin: 11px 12px 0 0;
+      height: 0.85em;
+      border-right: 1px $color-light-grey solid;
+      color: $color-mid-grey;
+      &:last-child {
+       border:none; 
+      }
       &:active, 
       &.selected {
-        color: #FFF;
-        border-bottom: 1px #FFF solid;
-      }
-      &.logo {
-        background: transparent url("/images/cogent_logo.png") no-repeat top left;
-        display: block;
-        position: absolute;
-        margin: 0em;
-        width: 110px;
-        height: 61px;
-        color: transparent;
+        color: $color-white;
       }
     }
   }
 }
 
 .toeser {
-  background-color: #f13958;
-  height: 5em;
+  width: 978px;
+	margin: 0 auto;
+  background-color: $color-watermelon;
+  text-align: center;
   .copy {
-  	margin: 0 auto;
-	  width: 93.75%;		/* 960px / 1024px */
-	  padding-top:2.778em;
-    color: #FBB1BE;
-    font-size: 0.85em;
+	  padding: 30px 0;
+    color: $color-white;
+    font-size: 16px;
   }
 }
 
 
 article[role="main"] {
 	margin: 0 auto;
-  width: 93.75%;		/* 960px / 1024px */
-  h1 {
-    font-family: "Signal", Helvetica, Arial, "Serif";
-    font-size: 3.667em;
-    margin-top: 1.667em;
-    color: #F13958;
-  }
-  h2 {
-    font-family: "Signal", Helvetica, Arial, "Serif";
-    font-size: 2.0em;
-    color: #333;
-  }
-
+  width: 978px;
+  color: $color-black;
 }
 
 article[role="main"] {
   aside {
     float: right;
-  	width: 28.125%;	/* 270px / 960px */
-    padding-top: 0.5em;
+  	width: 306px;
+    padding: 0 84px 0 30px;
+    
     h1 {
       font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif";
       font-size: 20px;
       font-weight: normal;
       color: #363636;
-      padding: 0 0.5em;
       margin: 0 0 1.0em;
-      text-decoration: underline;
+      text-align: left;  
     }
     p {
-      font-size: 0.875em;
+      font-size: 16px;
       line-height: 1.5em;
-      padding: 0 0.5em;
-    }
-    a.visit {
-      display: inline-block;
-      line-height: 1.5em;
-      margin: 0 0.5em 1.0em 0.5em;
-      padding: 0.125em 1.0em;
-      color: #363636;
-      background-color: #cacaca;
     }
   }
 }
 
 section[role='main'] {
-
-  font-family: "Signal", Helvetica, Arial, "Serif";
-  font-size: 18px;
-  color: #ebebeb;
-  margin-right: 	28.125%;	/* 270px / 960px */
+  font-size: 16px;
+  line-height: auto;
+  width: 558px;
+  margin-right: 	420px;	/* 270px / 960px */
+/*  margin-right:   28.125%;  /* 270px / 960px */
   border-right: 1px white solid;
+  color: #FFF;
   h1 {
-    color: #333;
-    font-size: 1.0em;
-    line-height: 1.333em;
+    font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif";
+    color: $color-yellow;
+    text-align: left;
+    font-size: 24px;
+    line-height: auto;
     font-weight: lighter;
     vertical-align: center;
     margin: 0;
-    padding: 0;
   }
   .time {
     display: inline-block;
     vertical-align: center;
-    float: left;
-    padding: 0 10px;
     font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif";
-    font-size: 14px;
   }
   .post {
+    position: relative;
     background-color: #FFF;
-    padding: 13px 10px 10px;
     margin: 0;
+    height: 350px;
+    overflow: hidden;
     &.status {
       background-color: #a81367;
       
     }
-    &.image {
-      color: #333;
-      height: 22em;
-    }
     &.quote {
+      height: auto;
+      width: 420px;
+      padding: 30px 84px 30px 54px;
       background-color: #333;
       p {  
         padding: 0 10px;
@@ -196,9 +242,26 @@ section[role='main'] {
           color: #adadad;
         }
       }
-      
     }
-    
+    .caption {
+      position: absolute;
+      bottom: 0;
+      height: 30px;
+      width: 100%;
+      p {
+        padding: 4px 30px 7px 54px;
+        color: #FFF;
+      }
+    }
+    .transparent-box {
+      position: absolute;
+      height: 30px;
+      bottom: 0;
+      width: 100%;
+      background-color: $color-black;
+      opacity: 0.9;
+      font-weight: normal;
+    }
   }
   
 }
@@ -212,16 +275,13 @@ article {
 }
 
 footer {
-  clear:both;
 	margin: 0 auto;
-  width: 93.75%;		/* 960px / 1024px */
-  h1 {
-    border-top: 1px #cacaca solid;
-    padding-top: 1.227em;
-    padding-right: 65%;
-    font-family: "Signal", Helvetica, Arial, "Serif";
-    font-size: 2.0em;
-    color: #333;
+  width: 978px;
+  section {
+    border-top: 1px $color-divider-grey solid;
+    &.grey {
+      background-color: $color-light-grey;
+    }
   }
 }
 

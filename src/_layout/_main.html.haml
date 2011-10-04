@@ -16,6 +16,19 @@
     %meta{ :name => "author", :content => "" }/
     %meta{ :name => "viewport", :content => "width=device-width; initial-scale=1.0" }/
 
+    %script{ :src=>"http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" }
+    %script{ :src=>"http://978.gs/resources/js/jquery.gs-overlay.min.js" }
+    :javascript
+
+      jQuery(function() {
+        jQuery('div#gs-overlay').gsoverlay({
+          trigger: jQuery('a#gs-overlay-badge'),
+          grid: 978,
+          color: '#aa1b4a',
+          opacity: 0.15
+        });
+      });
+
     %script{ :type => "text/javascript", :src => "http://use.typekit.com/xkf5xsa.js" }
     %script{ :type => "text/javascript" }
       try{Typekit.load();}catch(e){}
@@ -23,59 +36,72 @@
     %link{ :rel => "stylesheet", :href => "css/styles.css" }/
     
   %body
+    %a{ :href=>"http://978.gs", :id=> "gs-overlay-badge", :style=>"outline: 0;position:absolute;"}
+      %img{ :src=>"http://978.gs/resources/img/978-badge.png", :alt=>"This site is built with 978 grid system", :width=>"59", :height=>"25", :style=>"border: 0;"}
     %header
+      %a.logo{ :href => "http://www.cogentconsulting.com.au/" }
+        %img{ :src => "/images/cogent_logo.png" }
       %nav
-        %a.logo{:href => "http://www.cogentconsulting.com.au/" } Cogent
-        %a{:href => "/" } Home
-        %a{:href => "/projects", :class => "selected" } Projects
-        %a{:href => "/people" } People
-        %a{:href => "/join" } Join
+        %a{ :href => "/" } Home
+        %a{ :href => "/projects", :class => "selected" } Projects
+        %a{ :href => "/people" } People
+        %a{ :href => "/join" } Join
       %footer
   
     = yield
 
     %footer{ :class => "clearfix" }
       
-      %h1 We are smart and good at what we do
+      %section.grey{ :class => "clearfix" }
       
-      .left
+        %h1 We are bright and good at what we do
+      
+        %h2 That means we'll ask lost of questions.
+      
+        .left
 
-        %p That means we'll ask lots of questions We don't think about our skills as buzzwords like strategy, user experience, agile methods or ruby on rails development — we think about working as a team with your objective in mind.  
+          %p We don't think about our skills as buzzwords like strategy, user experience, agile methods or Ruby on Rails development — we think about working as a team with your objective in mind.  
       
-        %p We relish the challenge of creating something new, and to solve tough problems that haven't been solved before. We know that designing something that is efficient to run matters too, that's why we're also happy to be your ongoing support team.
+          %p We relish the challenge of creating something new, and to solve tough problems that haven't been solved before. We know that designing something that is efficient to run matters too, that's why we're also happy to be your ongoing support team.
       
-      .right
+        .right
 
-        %p 
-          We like to work together with smart people to make remarkable things we're proud of.
-        %p 
-          %a Melbourne Business School
-          %br
-          %a The Alfred Hospital
-          %br
-          %a Real Estate Group
-          %br
-          %a Tesselaar
-          %br
-          %a Rezeko
-          %br
-          %a Sensis Yellow Pages
-          %br
-          %a Swann Insurance
-          %br
-          %a Lonely Planet
-          %br
-          %a Jetstar
+          %p 
+            We've been fortunate to work with some great customers, like:
+          %p 
+            Melbourne Business School
+            %br
+            The Alfred Hospital
+            %br
+            Real Estate Group
+            %br
+            Tesselaar
+            %br
+            Rezeko
+            %br
+            Sensis Yellow Pages
+            %br
+            Swann Insurance
+            %br
+            Lonely Planet
+            %br
+            Jetstar
 
-      %h1 If you need some help with a project and this sounds good to you, then let's chat
+      %section
       
-      %p
-        Level 3
-        10 Queen Street
-        Melbourne, VIC 3000
-        Australia
+        %h1 If you need some help with a project and this sounds good to you, then let's chat
+
+        %h2 We choose to be honest and open, to collaborate, and to be respectful and fair.
+      
+        %p.visit
+          %a{:href => "mailto:info@cogent.co" }info@cogent.co
+
+        %p
+          Level 3
+          10 Queen Street
+          Melbourne, VIC 3000
+          Australia
         
-        %a{:href => "mailto:info@cogent.co" }info@cogent.co
         
         %span.name Rachel
         0419 373 075

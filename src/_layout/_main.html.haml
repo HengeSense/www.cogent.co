@@ -50,9 +50,22 @@
   
     = yield
 
-    %footer{ :class => "clearfix" }
+    %footer
+      %section.grey.clearfix
+        .project
+          %h2
+            %a Tesselaar
+          %p We helped Melbourne Business School to become leaders in digital learning.
+        .project
+          %h2
+            %a Eventer
+          %p Changing what it's like to watch an event you couldn't make it to.
+        .project
+          %h2
+            %a The Alfred Hospital
+          %p A product prototype that could improve quality of treatment.
       
-      %section.grey{ :class => "clearfix" }
+      %section.grey.clearfix
       
         %h1 We are bright and good at what we do
       
@@ -87,27 +100,36 @@
             %br
             Jetstar
 
-      %section
+      %section.clearfix
       
-        %h1 If you need some help with a project and this sounds good to you, then let's chat
+        %h1
+          If you need some help with a project
+          %br 
+          and this sounds good to you, then let's chat
 
         %h2 We choose to be honest and open, to collaborate, and to be respectful and fair.
       
         %p.visit
-          %a{:href => "mailto:info@cogent.co" }info@cogent.co
+          %a{ :href => "mailto:info@cogent.co" }info@cogent.co
 
-        %p
-          Level 3
-          10 Queen Street
-          Melbourne, VIC 3000
-          Australia
+        .left
+          %p.align-right<>
+            %span.name< Rachel
+            0419 373 075
+            %br<>
+            %span.name< Marty
+            0407 004 570
         
-        
-        %span.name Rachel
-        0419 373 075
-
-        %span.name Marty
-        0407 004 570
+        .right
+          %p
+            %a{ :href=> "something" }
+              Level 3
+              %br
+              10 Queen Street
+              %br
+              Melbourne, VIC 3000
+              %br
+              Australia
       
     .toeser
       .copy

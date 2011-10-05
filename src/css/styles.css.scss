@@ -1,22 +1,22 @@
 .clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
  
 .clearfix {
-	display: inline-block;
+  display: block;
 }
  
 html[xmlns] .clearfix {
-	display: block;
+  display: block;
 }
  
 * html .clearfix {
-	height: 1%;
+  height: 1%;
 }
 
 $base-line-height-in-pixels: 22;
@@ -74,6 +74,13 @@ p, li, td {
   @include set-lines($base-font-size-in-pixels, false);
 }
 
+a {
+  color: $color-blue;
+  &:hover {
+   text-decoration: underline;
+  }
+}
+
 h1 {
   text-align: center;
   font-family: "Signal", Helvetica, Arial, "Serif";
@@ -93,24 +100,30 @@ p.visit {
   font-size: 16px;
   margin-bottom: 60px;
   a {
-    text-decoration: underline;
     display: inline-block;
     padding: 4px 30px 7px;
     color: $color-white;
     background-color: $color-blue;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
+.left, .right {
+  width: 444px;
+  padding-left: 30px;
+}
 .left {
   float: left;
-  width: 474px;
 }
-
 .right {
   float: right;
-  width: 474px;
 }
 
+.align-right {
+  text-align: right;
+}
 
 header {
 	margin: 0 auto;
@@ -166,12 +179,9 @@ header {
 
 
 article[role="main"] {
-	margin: 0 auto;
+	margin: 0 auto 20px;
   width: 978px;
   color: $color-black;
-}
-
-article[role="main"] {
   aside {
     float: right;
   	width: 306px;
@@ -182,7 +192,7 @@ article[role="main"] {
       font-size: 20px;
       font-weight: normal;
       color: #363636;
-      margin: 0 0 1.0em;
+      margin: 0 0 6px;
       text-align: left;  
     }
     p {
@@ -281,6 +291,26 @@ footer {
     border-top: 1px $color-divider-grey solid;
     &.grey {
       background-color: $color-light-grey;
+      .left, .right {
+        margin-top: 24px;
+      }
+    }
+    .project {
+      &:first-child {
+        padding-left: 30px;
+      }
+      float:left;
+      width: 276px;
+      padding-left: 60px;
+      margin-top: 30px;
+      h2 {
+        text-align: left;
+      }
+    }
+    span.name {
+      display: inline-block;
+      text-align: left;
+      width: 60px;
     }
   }
 }

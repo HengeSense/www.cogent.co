@@ -238,11 +238,6 @@ article[role="main"] {
   }
 }
 
-section.about {
-  
-}
-
-
 .projects {
 	margin: 0 auto 30px;
   width: 978px;
@@ -271,6 +266,88 @@ section.about {
   }
 }
 
+div.people {
+	margin: 0 auto 30px;
+  width: 978px;
+  &:first-of-type {
+	  margin: 60px auto 30px;
+  }
+  .tweet, .person {
+    &:last-child {
+      margin-right: 0px;
+    }
+    min-height: 286px;
+    float: left;
+    width: 266px;
+    background-color: $color-light-grey;
+    border-bottom: 1px $color-mid-grey solid;
+    padding: 20px 20px 0 20px;
+    margin-right: 30px;
+  }
+  .tweet {
+    padding-top: 70px;
+    min-height: 236px;
+    background-color: $color-black;
+    h2 {
+      text-align: left;
+      color: $color-yellow;
+      font-weight: normal;
+      a {
+        color: $color-yellow;
+        text-decoration: underline;
+      }
+    }
+  }
+  .person {
+    img {
+      width: 306px;
+      height: 180px;
+      margin: -20px 0 10px -20px;
+    }
+    h2 {
+      text-align: left;
+      margin-bottom: 0;
+    }
+    a {
+      display: inline-block;
+      background-color: $color-mid-grey;
+      width: 46px;
+      height: 25px;
+      margin: 10px 3px 0 0;
+      text-indent: -1000em;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      &:hover {
+        background-color: $color-blue;
+      }
+      &.in {
+        background-image: url("/images/icon-linkedin.png");
+        &:hover {
+          background-image: url("/images/icon-linkedin-over.png");
+        }
+      }
+      &.twitter {
+        background-image: url("/images/icon-twitter.png");
+        &:hover {
+          background-image: url("/images/icon-twitter-over.png");
+        }
+      }
+      &.blog {
+        background-image: url("/images/icon-blog.png");
+        &:hover {
+          background-image: url("/images/icon-blog-over.png");
+        }
+      }
+    }
+  }
+}
+
+
+span.time {
+  display: inline-block;
+  vertical-align: center;
+  color: $color-mid-grey;
+}
 
 section[role='main'] {
   font-size: 16px;
@@ -288,12 +365,6 @@ section[role='main'] {
     font-weight: lighter;
     vertical-align: center;
     margin: 0;
-  }
-  .time {
-    display: inline-block;
-    vertical-align: center;
-    font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif";
-    color: $color-mid-grey;
   }
   .post {
     position: relative;

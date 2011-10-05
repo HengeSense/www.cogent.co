@@ -68,7 +68,7 @@ body {
 	padding: 0;
 	border: 0;
 	color: #2F2F2F;
-	background: #FFF url("/images/bg-hatch.png");
+	background: #FFF url("../images/bg-hatch.png");
 }
 
 html > body {

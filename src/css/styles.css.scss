@@ -142,7 +142,7 @@ header {
   padding: 46px 0 0 0;
   a.logo {
   	margin: 0 auto 40px;
-    background: transparent url("/images/cogent_logo.png") no-repeat top left;
+    background: transparent url("../images/cogent_logo.png") no-repeat top left;
     display: block;
     width: 111px;
     height: 91px;
@@ -200,16 +200,16 @@ header {
     background-repeat: no-repeat;
     line-height: 32px;
     &.people {
-      background-image: url("/images/icon-people.gif");
+      background-image: url("../images/icon-people.gif");
     }
     &.life {
-      background-image: url("/images/icon-life.gif");
+      background-image: url("../images/icon-life.gif");
     }
     &.real {
-      background-image: url("/images/icon-real.gif");
+      background-image: url("../images/icon-real.gif");
     }
     &.learning {
-      background-image: url("/images/icon-learning.gif");
+      background-image: url("../images/icon-learning.gif");
     }
   }
 }
@@ -321,21 +321,21 @@ div.people {
         background-color: $color-blue;
       }
       &.in {
-        background-image: url("/images/icon-linkedin.png");
+        background-image: url("../images/icon-linkedin.png");
         &:hover {
-          background-image: url("/images/icon-linkedin-over.png");
+          background-image: url("../images/icon-linkedin-over.png");
         }
       }
       &.twitter {
-        background-image: url("/images/icon-twitter.png");
+        background-image: url("../images/icon-twitter.png");
         &:hover {
-          background-image: url("/images/icon-twitter-over.png");
+          background-image: url("../images/icon-twitter-over.png");
         }
       }
       &.blog {
-        background-image: url("/images/icon-blog.png");
+        background-image: url("../images/icon-blog.png");
         &:hover {
-          background-image: url("/images/icon-blog-over.png");
+          background-image: url("../images/icon-blog-over.png");
         }
       }
     }

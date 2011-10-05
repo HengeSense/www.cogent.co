@@ -28,8 +28,8 @@ $color-yellow: #FFEB27;
 $color-blue: #4C9AF5;
 $color-black: #323232;
 $color-light-grey: #f2f2f2;
-$color-mid-grey: #adadad;
-$color-divider-grey: #cacaca;
+$color-mid-grey: #cacaca;
+$color-dark-grey: #848484;
 $color-white: #FFF;
 
 @mixin set-lines($size, $top-margin) {
@@ -66,7 +66,7 @@ body {
   font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif";
 }
 
-html > body {
+html > body, h3 {
   font-size: $base-font-size-in-pixels + px;
 }
 
@@ -95,10 +95,19 @@ h2 {
   margin-top: 0px;
   margin-bottom: 13px;
 }
+h3 {
+  color: $color-dark-grey;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.intro-end, p.visit {
+  margin-bottom: 60px;
+}
 p.visit {
   text-align: center;
   font-size: 16px;
-  margin-bottom: 60px;
   a {
     display: inline-block;
     padding: 4px 30px 7px;
@@ -253,7 +262,7 @@ section.about {
     float: left;
     width: 246px;
     background-color: $color-light-grey;
-    border-bottom: 1px $color-divider-grey solid;
+    border-bottom: 1px $color-mid-grey solid;
     padding: 30px 30px 0 30px;
     margin-right: 30px;
     h2 {
@@ -284,6 +293,7 @@ section[role='main'] {
     display: inline-block;
     vertical-align: center;
     font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif";
+    color: $color-mid-grey;
   }
   .post {
     position: relative;
@@ -291,6 +301,7 @@ section[role='main'] {
     margin: 0;
     height: 350px;
     overflow: hidden;
+    border-bottom: 1px $color-mid-grey solid;
     &.status {
       background-color: #a81367;
       
@@ -320,7 +331,7 @@ section[role='main'] {
       width: 100%;
       p {
         padding: 4px 30px 7px 54px;
-        color: #FFF;
+        color: $color-mid-grey;
       }
     }
     .transparent-box {
@@ -347,7 +358,7 @@ article {
 .lined {
 	margin: 0 auto;
   width: 978px;
-  border-top: 1px $color-divider-grey solid;
+  border-top: 1px $color-mid-grey solid;
   &.grey {
     background-color: $color-light-grey;
     .left, .right {

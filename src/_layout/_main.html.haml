@@ -16,7 +16,8 @@
     %meta{ :name => "author", :content => "" }/
     %meta{ :name => "viewport", :content => "width=device-width; initial-scale=1.0" }/
 
-    %script{ :src=>"http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" }
+    %script{ :src=>"http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" }
+    %script{ :src => href("/js/underscore-min.js") }
     %script{ :src=>"http://978.gs/resources/js/jquery.gs-overlay.min.js" }
     :javascript
 
@@ -33,19 +34,21 @@
     %script{ :type => "text/javascript" }
       try{Typekit.load();}catch(e){}
 
-    %link{ :rel => "stylesheet", :href => "css/styles.css" }/
+    %script{ :type => "text/javascript", :src => href("/js/application.js") }
+
+    %link{ :rel => "stylesheet", :href => href("/css/styles.css") }/
     
   %body
     %a{ :href=>"http://978.gs", :id=> "gs-overlay-badge", :style=>"outline: 0;position:absolute;"}
       %img{ :src=>"http://978.gs/resources/img/978-badge.png", :alt=>"This site is built with 978 grid system", :width=>"59", :height=>"25", :style=>"border: 0;"}
     %header
-      %a.logo{ :href => "http://www.cogentconsulting.com.au/" }
-        %img{ :src => "images/cogent_logo.png" }
+      %a.logo{ :href => href("/index.html") }
+        %img{ :src => href("/images/cogent_logo.png") }
       %nav
-        %a{ :href => "index.html" } Home
-        %a{ :href => "projects.html", :class => "selected" } Projects
-        %a{ :href => "about.html" } About
-        %a{ :href => "join.html" } Join
+        %a.index{ :href => href("/index.html") } Home
+        %a.projects{ :href => href("/projects/index.html") } Projects
+        %a.about{ :href => href("/about.html") } About
+        %a.join{ :href => href("/join.html") } Join
       %footer
   
     = yield
@@ -72,7 +75,7 @@
       
       .right
         %p
-          %a{ :href=> "something" }
+          %a{ :href=> "http://g.co/maps/55rrs" }
             Level 3
             %br
             10 Queen Street

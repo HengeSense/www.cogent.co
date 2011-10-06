@@ -119,6 +119,14 @@ p.visit {
   }
 }
 
+p.centered {
+  text-align: center;
+  width: 642px;
+  margin-left: 168px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
 .left, .right {
   width: 444px;
   padding-left: 30px;
@@ -199,11 +207,20 @@ header {
     background-position: 10px center;
     background-repeat: no-repeat;
     line-height: 32px;
+    &.focus {
+      background-image: url("../images/icon-focus.gif");
+      background-position: 5px center;
+    }
+    &.together {
+      background-image: url("../images/icon-together.gif");
+      background-position: 5px center;
+    }
     &.people {
       background-image: url("../images/icon-people.gif");
     }
     &.life {
       background-image: url("../images/icon-life.gif");
+      background-position: 5px center;
     }
     &.real {
       background-image: url("../images/icon-real.gif");
@@ -238,7 +255,7 @@ article[role="main"] {
   }
 }
 
-.projects {
+div.projects {
 	margin: 0 auto 30px;
   width: 978px;
   &:first-of-type {
@@ -269,7 +286,7 @@ article[role="main"] {
 div.people {
 	margin: 0 auto 30px;
   width: 978px;
-  &:first-of-type {
+  &.first {
 	  margin: 60px auto 30px;
   }
   .tweet, .person {

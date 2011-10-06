@@ -285,20 +285,25 @@ div.projects {
       text-align: left;
     }
   }
-/*  .project {
+}
+
+section#project_footer {
+  clear:both;
+  .project {
     &:first-child {
       padding-left: 30px;
+      width: 246px;
     }
     float:left;
     width: 276px;
-    padding-left: 60px;
+    padding: 0 30px 0 30px;
     margin-top: 30px;
     h2 {
       text-align: left;
     }
   }
-*/
 }
+
 
 div.people {
 	margin: 0 auto 30px;
@@ -387,6 +392,7 @@ section[role='main'] {
   line-height: auto;
   width: 558px;
   margin-right: 	420px;
+  margin-bottom: 30px;
   border-right: 1px white solid;
   color: #FFF;
   h1 {

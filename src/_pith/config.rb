@@ -13,6 +13,8 @@ project.helpers do
   def markup_links(tweet_text)
     tweet_text
   end
+  # %a{ :href => "http://bit.ly/rAnD0m" }http://bit.ly/rAnD0m
+  
   # function twitterCallback2(twitters) {
   #   var statusHTML = [];
   #   for (var i=0; i<twitters.length; i++){

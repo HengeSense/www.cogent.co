@@ -1,0 +1,21 @@
+---
+layout: "_layout/_main.html.haml"
+...
+%article.clearfix{ :role => "main" }
+  #gs-overlay
+    &nbsp;
+  
+  .people      
+    / - Twitter.user_timeline("cogent_thoughts", :count => 3).each do |tweet|  
+    /   .tweet
+    /     %h2= tweet.text 
+    /     %span.time= Time.parse(tweet.created_at).time_ago_in_words
+    - Twitter.user_timeline("cogent_thoughts", :count => 1, :page =>1).each do |tweet|  
+      .tweet
+        %h2= tweet.text 
+        %span.time= Time.parse(tweet.created_at).time_ago_in_words
+    - Twitter.user_timeline("cogent_thoughts", :count => 1, :page =>2).each do |tweet|  
+      .tweet
+        %h2= tweet.text 
+        %span.time= Time.parse(tweet.created_at).time_ago_in_words
+  

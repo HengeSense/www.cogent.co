@@ -80,6 +80,13 @@ p.visit {
     p.visit a:hover {
       text-decoration: underline; }
 
+p.centered {
+  text-align: center;
+  width: 642px;
+  margin-left: 168px;
+  font-size: 16px;
+  margin-bottom: 30px; }
+
 .left, .right {
   width: 444px;
   padding-left: 30px; }
@@ -148,10 +155,17 @@ header {
     background-position: 10px center;
     background-repeat: no-repeat;
     line-height: 32px; }
+    .principle h2.focus {
+      background-image: url("../images/icon-focus.gif");
+      background-position: 5px center; }
+    .principle h2.together {
+      background-image: url("../images/icon-together.gif");
+      background-position: 5px center; }
     .principle h2.people {
       background-image: url("../images/icon-people.gif"); }
     .principle h2.life {
-      background-image: url("../images/icon-life.gif"); }
+      background-image: url("../images/icon-life.gif");
+      background-position: 5px center; }
     .principle h2.real {
       background-image: url("../images/icon-real.gif"); }
     .principle h2.learning {
@@ -176,12 +190,12 @@ article[role="main"] {
       font-size: 16px;
       line-height: 1.5em; }
 
-.projects {
+div.projects {
   margin: 0 auto 30px;
   width: 978px; }
-  .projects:first-of-type {
+  div.projects:first-of-type {
     margin: 60px auto 30px; }
-  .projects .project {
+  div.projects .project {
     min-height: 315px;
     float: left;
     width: 246px;
@@ -189,19 +203,19 @@ article[role="main"] {
     border-bottom: 1px #cacaca solid;
     padding: 30px 30px 0 30px;
     margin-right: 30px; }
-    .projects .project img {
+    div.projects .project img {
       width: 306px;
       height: 180px;
       margin: -30px 0 30px -30px; }
-    .projects .project:last-child {
+    div.projects .project:last-child {
       margin-right: 0px; }
-    .projects .project h2 {
+    div.projects .project h2 {
       text-align: left; }
 
 div.people {
   margin: 0 auto 30px;
   width: 978px; }
-  div.people:first-of-type {
+  div.people.first {
     margin: 60px auto 30px; }
   div.people .tweet, div.people .person {
     min-height: 286px;

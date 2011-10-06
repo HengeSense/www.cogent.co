@@ -1,0 +1,3 @@
+.tweet
+  %h2= tweet.text 
+  %span.time= Time.parse(tweet.created_at).time_ago_in_words + ", @" + tweet['user']['screen_name']

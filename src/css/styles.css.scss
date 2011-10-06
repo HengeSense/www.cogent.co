@@ -8,11 +8,11 @@
 }
  
 .clearfix {
-  display: block;
+
 }
  
 html[xmlns] .clearfix {
-  display: block;
+
 }
  
 * html .clearfix {
@@ -142,22 +142,28 @@ p.centered {
   text-align: right;
 }
 
+#mobile {
+  display: none;
+}
+
+header, article[role="main"], footer, .toeser {
+  width: 978px;
+}
+
 header {
 	margin: 0 auto;
   background-color: $color-watermelon;
-  width: 978px;
   height: 170px;
   padding: 46px 0 0 0;
   a.logo {
   	margin: 0 auto 40px;
-    background: transparent url("../images/cogent_logo.png") no-repeat top left;
     display: block;
     width: 111px;
     height: 91px;
     color: transparent;
   }
   nav {
-    width: 978px;
+    width: 100%;
     background-color: $color-black;
     position: relative;
     height: 40px;
@@ -173,6 +179,7 @@ header {
       color: $color-mid-grey;
       &:last-child {
        border:none; 
+       padding: 0 0 0 0;
       }
       &:active, 
       &.selected {
@@ -183,7 +190,6 @@ header {
 }
 
 .toeser {
-  width: 978px;
 	margin: 0 auto;
   background-color: $color-watermelon;
   text-align: center;
@@ -233,7 +239,6 @@ header {
 
 article[role="main"] {
 	margin: 0 auto 20px;
-  width: 978px;
   color: $color-black;
   aside {
     float: right;
@@ -256,8 +261,7 @@ article[role="main"] {
 }
 
 div.projects {
-	margin: 0 auto 30px;
-  width: 978px;
+	margin-bottom: 30px;
   &:first-of-type {
 	  margin: 60px auto 30px;
   }
@@ -281,11 +285,23 @@ div.projects {
       text-align: left;
     }
   }
+/*  .project {
+    &:first-child {
+      padding-left: 30px;
+    }
+    float:left;
+    width: 276px;
+    padding-left: 60px;
+    margin-top: 30px;
+    h2 {
+      text-align: left;
+    }
+  }
+*/
 }
 
 div.people {
 	margin: 0 auto 30px;
-  width: 978px;
   &.first {
 	  margin: 60px auto 30px;
   }
@@ -445,24 +461,11 @@ article {
 
 .lined {
 	margin: 0 auto;
-  width: 978px;
   border-top: 1px $color-mid-grey solid;
   &.grey {
     background-color: $color-light-grey;
     .left, .right {
       margin-top: 24px;
-    }
-  }
-  .project {
-    &:first-child {
-      padding-left: 30px;
-    }
-    float:left;
-    width: 276px;
-    padding-left: 60px;
-    margin-top: 30px;
-    h2 {
-      text-align: left;
     }
   }
 }
@@ -492,30 +495,108 @@ ol, li {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 478px) {
 
-  p {}
-  section[role='banner'] {
+  header, article[role="main"], footer, .toeser {
+    width: 300px;
+  }
+  
+  h1 {
+    width: 100%;
+  }
+
+  header {
+    height: 95px;
+    padding-top: 20px;
+    a.logo {
+      margin: 0 auto 20px;
+      width: 73px;
+      height: 62px;
+      img {
+        width: 73px;
+        height: 62px;
+      }
+    }
+    nav {
+      a {
+        padding: 0 10px 0 0;
+        margin: 11px 2px 0 0;
+      }
+    }
+  }
+
+  footer {
+    display: none;
+  }
+
+  article#home {
+
+    #mobile {
+      display: block;
+      border-bottom: 1px $color-mid-grey solid;
+      h1 {
+        font-size: 35px;
+        margin-bottom: 0px;
+      }
+      p {
+        &:last-of-type{
+          font-size: 20px;
+        }
+        font-size: 30px;
+        border-top: 1px $color-mid-grey solid;
+        background-color: $color-light-grey;
+        margin-bottom: 0px;
+        padding: 20px 12px 25px 12px;
+      }
+    }
+
+
+    margin-bottom: 0px;
     h1 {
-      font-size: 36px;
-      line-height: 48px;
+      font-size: 20px;
+      &.goals {
+        display: none;
+      }
+      br {
+        display: none;
+      }
     }
-    h2 {
-      font-size: 24px;
-      line-height: 36px;
-      padding: 0 10px;
+    div.principle {
+      display: none;
     }
+    section#projects {
+      h2 {
+        display:none;
+      }
+      p.visit {
+        display: none;
+      }
+      div.projects {
+        margin-bottom: 0px;
+        .project {
+          h2 {
+            display: block;
+            margin-bottom: 4px;
+          }
+          min-height: 100px;
+          width: 276px;
+          padding: 30px 12px 0 12px;
+          border-bottom: 0px;
+          border-top: 1px $color-mid-grey solid;
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+    
+    section#people {
+      display: none;
+    }
+
   }
-  article[role="main"] {
-  }
-  aside {
-    float: none;
-    width: auto;
-  }
-  section[role='main'] {
-    margin-left: 0;
-    padding-left: 0;
-  }
+  
+  
 
 }
 

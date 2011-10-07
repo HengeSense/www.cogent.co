@@ -183,7 +183,7 @@ header {
     font-family: "Signal", Helvetica, Arial, "Serif";
     color: $color-mid-grey;
     text-align: center;
-    a {
+    a, a:link, a:visited {
       display: inline-block;
       padding: 0 20px 0 0;
       margin: 11px 12px 0 0;
@@ -275,13 +275,14 @@ article[role="main"] {
 }
 
 div.projects {
-	margin-bottom: 30px;
-  &:first-of-type {
-	  margin: 60px auto 30px;
-  }
+  margin: 60px -30px 30px 0;
   .project {
+    float: left;
     width: 306px;
     min-height: 335px;
+    background-color: $color-light-grey;
+    border-bottom: 1px $color-mid-grey solid;
+    margin: 0 30px 30px 0;
     img {
       width: 306px;
       height: 180px;
@@ -289,10 +290,6 @@ div.projects {
     &:last-child {
       margin-right: 0px;
     }
-    float: left;
-    background-color: $color-light-grey;
-    border-bottom: 1px $color-mid-grey solid;
-    margin-right: 30px;
     h2 {
       text-align: left;
       padding: 20px 30px 0 30px;
@@ -322,20 +319,14 @@ section#project_footer {
 
 
 div.people {
-	margin: 0 auto 30px;
-  &.first {
-	  margin: 60px auto 30px;
-  }
+  margin: 60px -30px 30px 0;
   .tweet, .person {
-    &:last-child {
-      margin-right: 0px;
-    }
     min-height: 286px;
     float: left;
     width: 306px;
     background-color: $color-light-grey;
     border-bottom: 1px $color-mid-grey solid;
-    margin-right: 30px;
+    margin: 0 30px 30px 0;
   }
   .tweet {
     padding-top: 70px;
@@ -573,7 +564,7 @@ ol li {
       }
     }
     nav {
-      a {
+      a, a:link, a:visited, a:active {
         padding: 0 10px 0 0;
         margin: 11px 2px 0 0;
       }
@@ -605,6 +596,7 @@ ol li {
     .tweet, .person {
       float: none;
       width: 300px;
+      margin: 0;
     }
     .tweet {
       min-height: initial;
@@ -722,9 +714,5 @@ ol li {
     }
 
   }
-  
-  
 
 }
-
-

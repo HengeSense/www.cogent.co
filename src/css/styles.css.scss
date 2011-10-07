@@ -222,10 +222,11 @@ header {
   }
   h2 {
     text-align: left;
-    padding-left: 55px;
+    padding: 11px 0 4px 55px;
     background-position: 10px center;
     background-repeat: no-repeat;
-    line-height: 32px;
+    min-height: 32px;
+    line-height: 21px;
     &.focus {
       background-image: url("../images/icon-focus.gif");
       background-position: 5px center;
@@ -329,35 +330,41 @@ div.people {
     }
     min-height: 286px;
     float: left;
-    width: 266px;
+    width: 306px;
     background-color: $color-light-grey;
     border-bottom: 1px $color-mid-grey solid;
-    padding: 20px 20px 0 20px;
     margin-right: 30px;
   }
   .tweet {
     padding-top: 70px;
-    min-height: 236px;
+    min-height: 222px;
     background-color: $color-black;
     h2 {
       text-align: left;
       color: $color-yellow;
       font-weight: normal;
+      padding: 0 20px;
       a {
         color: $color-yellow;
         text-decoration: underline;
       }
     }
+    span.time {
+      padding: 0 20px;
+    }
   }
   .person {
     img {
-      width: 306px;
-      height: 180px;
-      margin: -20px 0 10px -20px;
+      width: 100%;
+/*      height: 180px;*/
     }
     h2 {
       text-align: left;
       margin-bottom: 0;
+      padding: 0 20px;
+    }
+    p {
+      padding: 0 20px;
     }
     a {
       display: inline-block;
@@ -401,6 +408,12 @@ span.time {
 }
 
 section[role='main'] {
+  &.content {
+    color: $color-black;
+    h2 {
+      text-align: left;
+    }
+  }
   font-size: 16px;
   line-height: auto;
   width: 558px;
@@ -419,12 +432,13 @@ section[role='main'] {
     margin: 0;
   }
   .post {
+    img {
+      width: 100%;
+    }
     position: relative;
     background-color: #FFF;
-    margin: 0;
-    height: 350px;
-    overflow: hidden;
-    border-bottom: 1px $color-mid-grey solid;
+    margin: 0 0 -6px 0;
+    overflow: visible;
     &.status {
       background-color: #a81367;
       
@@ -449,7 +463,7 @@ section[role='main'] {
     }
     .caption {
       position: absolute;
-      bottom: 0;
+      bottom: 6px;
       height: 30px;
       width: 100%;
       p {
@@ -460,8 +474,8 @@ section[role='main'] {
     .transparent-box {
       position: absolute;
       height: 30px;
-      bottom: 0;
-      width: 100%;
+      bottom: 6px;
+       width: 100%;
       background-color: $color-black;
       opacity: 0.9;
       font-weight: normal;
@@ -503,12 +517,17 @@ a {
   text-decoration: none;
 }
 
-ul, li {
-  list-style: disc;
-  margin-left: 1.5em;
+ul, ol {
+  margin-left: 0;
+  padding-left: 30px;
 }
 
-ol, li {
+ul li {
+  list-style: disc;
+  margin-left: 0em;
+}
+
+ol li {
   list-style: normal;
   margin-left: 1.5em;
 }
@@ -518,6 +537,19 @@ ol, li {
 
   header, article[role="main"], footer, .toeser {
     width: 300px;
+  }
+  
+  h1 {
+    margin: 58px 12px 10px 12px;
+  }
+  
+  h2 {
+
+  }
+
+  p.centered {
+    width: auto;
+    margin-left: 0px;
   }
   
   header {
@@ -555,6 +587,66 @@ ol, li {
     text-align: left;
   }
 
+  .left, .right {
+    width: auto;
+    padding: 0 12px;
+  }
+  
+  .principle {
+    float: none;
+    width: auto;
+    margin: 30px 12px 0 12px;    
+  }
+  
+  div.people, div.people.first {
+    margin-bottom: 0px;
+    .tweet, .person {
+      float: none;
+      width: 300px;
+    }
+    .tweet {
+      min-height: initial;
+      padding: 30px 0;
+    }
+  }
+  
+  section#project_footer {
+    .project {
+      &:first-child {
+        padding-left: 30px;
+        width: 246px;
+      }
+      width: 276px;
+      padding: 0 12px 0 12px;
+    }   
+  }
+    
+  article[role="main"] {
+    aside {
+      float: none;
+      width: auto;
+      padding: 0 12px 0 0;
+    }
+    section[role="main"] {
+      width: auto;
+      margin-right: 0px;
+      .post {
+        img {
+          width: 100%;
+        }
+        &.quote {
+          height: auto;
+          width: auto;
+          padding: 30px 12px 30px 12px;
+          background-color: #333;
+        }
+        .caption p {
+          padding: 4px 12px 7px 12px;
+        }
+      }
+    }
+  }
+
   article#home {
     margin-bottom: 0px;
 
@@ -586,6 +678,7 @@ ol, li {
         display: none;
       }
     }
+
     div.principle {
       display: none;
     }
@@ -614,7 +707,7 @@ ol, li {
         }
       }
     }
-    
+
     section#people {
       display: none;
     }

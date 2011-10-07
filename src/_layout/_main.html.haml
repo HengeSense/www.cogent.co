@@ -11,7 +11,7 @@
       %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge;chrome=1" }
 
     %meta{ :name => "robots", :content => "" }
-    %meta{ :name => "name", :content => "Cogent" }
+    %meta{ :name => "keywords", :content => "Cogent, Projects, Solutions, User Experience, Design, Development, Ruby, Ruby on Rails, Java, Interaction, Melbourne, Australia, " }
     %meta{ :name => "description", :content => "Cogent creates useful software that gets results. We start with your business goals and work in an open and iterative way to craft the product." }
     %meta{ :name => "author", :content => "Cogent" }
     %meta{ :name => "viewport", :content => "width=device-width; initial-scale=1.0" }
@@ -50,7 +50,7 @@
       %img{ :src=>"http://978.gs/resources/img/978-badge.png", :alt=>"This site is built with 978 grid system", :width=>"59", :height=>"25", :style=>"border: 0;"}
     %header{ :class => ("home" if page.meta["home_page"]) }
       %a.logo{ :href => href("/index.html") }
-        %img{ :src => href("/images/cogent_logo.png") }
+        %img{ :src => href("/images/cogent_logo.png"), :alt => "Cogent" }
       %h1
         We create useful software
         %br
@@ -60,7 +60,6 @@
         %a.projects{ :href => href("/projects/index.html") } Projects
         %a.about{ :href => href("/about.html") } About
         %a.join{ :href => href("/join.html") } Join
-      %footer
   
     = yield
 

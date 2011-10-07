@@ -74,9 +74,9 @@ p, li, td {
   @include set-lines($base-font-size-in-pixels, false);
 }
 
-a {
+a, a:link, a:visited  {
   color: $color-blue;
-  &:hover {
+  &:hover, a:active {
    text-decoration: underline;
   }
 }
@@ -148,10 +148,10 @@ p.centered {
 
 header, article[role="main"], footer, .toeser {
   width: 978px;
+  margin: 0px auto;
 }
 
 header {
-	margin: 0 auto;
   background-color: $color-watermelon;
   height: 170px;
   padding: 46px 0 0 0;
@@ -203,7 +203,6 @@ header {
 }
 
 .toeser {
-	margin: 0 auto;
   background-color: $color-watermelon;
   text-align: center;
   .copy {
@@ -486,7 +485,7 @@ article {
 }
 
 .lined {
-	margin: 0 auto;
+  clear: both;
   border-top: 1px $color-mid-grey solid;
   &.grey {
     background-color: $color-light-grey;

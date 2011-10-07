@@ -35,9 +35,9 @@ p, li, td {
   margin-bottom: 1.222em;
   margin-top: 0; }
 
-a {
+a, a:link, a:visited {
   color: #4c9af5; }
-  a:hover {
+  a:hover, a a:active, a:link:hover, a:link a:active, a:visited:hover, a:visited a:active {
     text-decoration: underline; }
 
 h1 {
@@ -98,10 +98,10 @@ p.centered {
   display: none; }
 
 header, article[role="main"], footer, .toeser {
-  width: 978px; }
+  width: 978px;
+  margin: 0px auto; }
 
 header {
-  margin: 0 auto;
   background-color: #f63e5f;
   height: 170px;
   padding: 46px 0 0 0; }
@@ -129,21 +129,20 @@ header {
     font-family: "Signal", Helvetica, Arial, "Serif";
     color: #cacaca;
     text-align: center; }
-    header nav a {
+    header nav a, header nav a:link, header nav a:visited {
       display: inline-block;
       padding: 0 20px 0 0;
       margin: 11px 12px 0 0;
       height: 0.85em;
       border-right: 1px #f2f2f2 solid;
       color: #cacaca; }
-      header nav a:last-child {
+      header nav a:last-child, header nav a:link:last-child, header nav a:visited:last-child {
         border: none;
         padding: 0 0 0 0; }
-      header nav a:active, header nav a.selected {
+      header nav a:active, header nav a.selected, header nav a:link:active, header nav a:link.selected, header nav a:visited:active, header nav a:visited.selected {
         color: white; }
 
 .toeser {
-  margin: 0 auto;
   background-color: #f63e5f;
   text-align: center; }
   .toeser .copy {
@@ -199,16 +198,14 @@ article[role="main"] {
       line-height: 1.5em; }
 
 div.projects {
-  margin-bottom: 30px; }
-  div.projects:first-of-type {
-    margin: 60px auto 30px; }
+  margin: 60px -30px 30px 0; }
   div.projects .project {
+    float: left;
     width: 306px;
     min-height: 335px;
-    float: left;
     background-color: #f2f2f2;
     border-bottom: 1px #cacaca solid;
-    margin-right: 30px; }
+    margin: 0 30px 30px 0; }
     div.projects .project img {
       width: 306px;
       height: 180px; }
@@ -234,18 +231,14 @@ section#project_footer {
       text-align: left; }
 
 div.people {
-  margin: 0 auto 30px; }
-  div.people.first {
-    margin: 60px auto 30px; }
+  margin: 60px -30px 30px 0; }
   div.people .tweet, div.people .person {
     min-height: 286px;
     float: left;
     width: 306px;
     background-color: #f2f2f2;
     border-bottom: 1px #cacaca solid;
-    margin-right: 30px; }
-    div.people .tweet:last-child, div.people .person:last-child {
-      margin-right: 0px; }
+    margin: 0 30px 30px 0; }
   div.people .tweet {
     padding-top: 70px;
     min-height: 222px;
@@ -364,7 +357,7 @@ article.thread section[role='banner'] h1 {
   color: #A81367; }
 
 .lined {
-  margin: 0 auto;
+  clear: both;
   border-top: 1px #cacaca solid; }
   .lined.grey {
     background-color: #f2f2f2; }
@@ -416,7 +409,7 @@ ol li {
       header a.logo img {
         width: 73px;
         height: 62px; }
-    header nav a {
+    header nav a, header nav a:link, header nav a:visited, header nav a:active {
       padding: 0 10px 0 0;
       margin: 11px 2px 0 0; }
 
@@ -440,7 +433,8 @@ ol li {
     margin-bottom: 0px; }
     div.people .tweet, div.people .person, div.people.first .tweet, div.people.first .person {
       float: none;
-      width: 300px; }
+      width: 300px;
+      margin: 0; }
     div.people .tweet, div.people.first .tweet {
       min-height: initial;
       padding: 30px 0; }

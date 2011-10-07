@@ -280,23 +280,25 @@ div.projects {
 	  margin: 60px auto 30px;
   }
   .project {
+    width: 306px;
+    min-height: 335px;
     img {
       width: 306px;
       height: 180px;
-      margin: -30px 0 30px -30px;
     }
-    min-height: 315px;
     &:last-child {
       margin-right: 0px;
     }
     float: left;
-    width: 246px;
     background-color: $color-light-grey;
     border-bottom: 1px $color-mid-grey solid;
-    padding: 30px 30px 0 30px;
     margin-right: 30px;
     h2 {
       text-align: left;
+      padding: 20px 30px 0 30px;
+    }
+    p {
+      padding: 0 30px;
     }
   }
 }
@@ -592,7 +594,7 @@ ol li {
     padding: 0 12px;
   }
   
-  .principle {
+  .principle, .principle.alt {
     float: none;
     width: auto;
     margin: 30px 12px 0 12px;    
@@ -607,6 +609,13 @@ ol li {
     .tweet {
       min-height: initial;
       padding: 30px 0;
+    }
+  }
+  
+  div.projects .project {
+    width: 300px;
+    img {
+      width: 100%;
     }
   }
   

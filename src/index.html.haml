@@ -60,24 +60,7 @@ home_page: true
       %a{:href => href("/projects/index.html")} View Projects
 
     .projects.clearfix
-
-      .project
-        %img{ :src => href("/images/img-project.png"), :alt => "Project" }
-        %h2
-          %a{ :href => href("/projects/tesselaar.html") } Tesselaar
-        %p An efficient back-office was in order for Paul Tesselaar.
-
-      .project
-        %img{ :src => href("/images/img-project.png"), :alt => "Project" }
-        %h2
-          %a{ :href => href("/projects/eventer.html") } Eventer
-        %p Changing what it's like to watch an event you couldn't make it to.
-
-      .project
-        %img{ :src => href("/images/img-project.png"), :alt => "Project" }
-        %h2
-          %a The Alfred Hospital
-        %p A product prototype that could improve quality of treatment of many thousands of people.
+      = projects_html(3)
     
   %section#people.lined
   

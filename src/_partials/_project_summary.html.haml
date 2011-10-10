@@ -1,0 +1,6 @@
+.project
+  - if include_images
+    %img{ :src => href("/images/" + project['image']) }
+  %h2
+    %a{ :href => href("/projects/" + project['page']) }= project['name'] 
+  %p= project['strapline']

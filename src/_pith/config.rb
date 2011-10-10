@@ -1,9 +1,8 @@
 require 'twitter'
-require 'time-ago-in-words'
 
 project.helpers do
   def tweets
-    @tweets ||= Twitter.user_timeline("cogent_thoughts", :count => 10)
+    @tweets ||= Twitter.list_timeline("dan_tropp", "cogent-team", :count => 10)
   end
 
   def tweet(index=0)

@@ -24,7 +24,6 @@ project.helpers do
   def projects_html(count=nil, include_images=true)
     yaml = projects_yaml.values
     yaml = yaml.first(count) if count
-    p count
     yaml.map do |project|
       include('/_partials/_project_summary.html.haml', :project => project, :include_images => include_images)
     end.join

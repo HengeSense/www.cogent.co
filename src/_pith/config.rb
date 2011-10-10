@@ -4,16 +4,26 @@ require 'flickraw'
 project.helpers do
   FlickRaw.api_key="8a82b5a4074ce3cea539edf10405aa0a"
   FlickRaw.shared_secret="11e0c00eb37d684b"
+  
+  def project_quote_html(project, offset)
+    quote = projects_yaml[project]['quotes'][offset]
+    include('/_partials/_project_quote.html.haml', :quote => quote) if quote
+  end
+  
   def flickr_photo_in_set_url(owner, photo, set)
      "http://www.flickr.com/photos/#{owner}/#{photo}/in/set-#{set}/"
   end
   
   def project_photos(project, count=1)
-    photoset_id = projects_yaml[project]['photoset_id']
-    return [] unless photoset_id
-    photoset = flickr.photosets.getPhotos(:photoset_id => photoset_id, :extras => ['title'], :per_page => count)
-    photoset.photo.map do |p|
-      { :url => FlickRaw.url(p), :caption => p.title, :set_url => flickr_photo_in_set_url(photoset.owner, p.id, photoset_id) } 
+    begin
+      photoset_id = projects_yaml[project]['photoset_id']
+      return [] unless photoset_id
+      photoset = flickr.photosets.getPhotos(:photoset_id => photoset_id, :extras => ['title'], :per_page => count)
+      photoset.photo.map do |p|
+        { :url => FlickRaw.url(p), :caption => p.title, :set_url => flickr_photo_in_set_url(photoset.owner, p.id, photoset_id) } 
+      end
+    rescue
+      []
     end
   end
   

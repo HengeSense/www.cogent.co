@@ -1,5 +1,5 @@
-thread:
-  name: Thread
+- name: thread
+  display_name: Thread
   page: thread.html
   image: img-project.png
   strapline: We helped Melbourne Business School to become leaders in digital learning.
@@ -12,8 +12,8 @@ thread:
       attribution: Ben from Cogent said
       quote: Tough week trying to get the aggregator working in IE9, but we did it. Took a lot of elbow great and coffee though!
 
-eventer:
-  name: Eventer
+- name: eventer
+  display_name: Eventer
   page: eventer.html
   image: img-project.png
   strapline: Changing what it's like to watch an event you couldn't make it to.
@@ -26,8 +26,8 @@ eventer:
       attribution: Ben from Cogent said
       quote: This eventer thing rox!
 
-tesselaar:
-  name: Tesselaar
+- name: tesselaar
+  display_name: Tesselaar
   page: tesselaar.html
   image: img-project.png
   strapline: An efficient back-office was in order for Paul Tesselaar.
@@ -40,8 +40,8 @@ tesselaar:
       attribution: Ben from Cogent said
       quote: At least the bulb sales page is still up!
 
-the_alfred_hospital:
-  name: The Alfred Hospital
+- name: the_alfred_hospital
+  display_name: The Alfred Hospital
   page: the_alfred_hospital.html
   image: img-project.png
   strapline: A product prototype that could improve quality of treatment of many thousands of people.

@@ -39,19 +39,9 @@ layout: "../_layout/_main.html.haml"
     %p So far, Cogent has sketched and built a basic proof of concept. We’ve trialled one event - you can see it at ignitemelbourne.eventer.com. With plenty of positive feedback, the real work lies ahead to make a robust version to launch. 
 
   %section{ :role => "main" }
-  
-    .post
-      %img{ :src => href("/images/projects/photo-03.jpg") }
-      .transparent-box
-      .caption
-        %p Iteration 2 cards are up and ready to go
-
-    .post
-      %img{ :src => href("/images/projects/photo-04.jpg") }
-      .transparent-box
-      .caption
-        %p Greeny and Trav talk Cohorts
-
+    - photos = project_photos('eventer', 4)
+    = project_photo_html(photos[0])
+    = project_photo_html(photos[1])
     .post.quote
       %span.attribution
         %span.time> Fri Oct 7 14:20:28 +1100 2011
@@ -59,11 +49,7 @@ layout: "../_layout/_main.html.haml"
       %h1 
         It's a great day here in the Cogent Treehouse, lot's of exciting ideas being thrown around!
     
-    .post
-      %img{ :src => href("/images/projects/photo-03.jpg") }
-      .transparent-box
-      .caption
-        %p Product strategy sketchshop
+    = project_photo_html(photos[2])
 
     .post.quote
       %span.attribution
@@ -72,10 +58,6 @@ layout: "../_layout/_main.html.haml"
       %h1 
         Tough week trying to get the aggregator working in IE9, but we did it. Took a lot of elbow great and coffee though!
 
-    .post
-      %img{ :src => href("/images/projects/photo-04.jpg") }
-      .transparent-box
-      .caption
-        %p Retro for Iteration 1
+    = project_photo_html(photos[3])
   
   = include("../_layout/project_footer.html.haml")

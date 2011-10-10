@@ -1,20 +1,28 @@
-- name: Thread
+thread:
+  name: Thread
   page: thread.html
   image: img-project.png
   strapline: We helped Melbourne Business School to become leaders in digital learning.
+  photoset_id: 72157627733589935
 
-- name: Eventer
+eventer:
+  name: Eventer
   page: eventer.html
   image: img-project.png
   strapline: Changing what it's like to watch an event you couldn't make it to.
+  photoset_id: 72157627733593131
 
-- name: Tesselaar
+tesselaar:
+  name: Tesselaar
   page: tesselaar.html
   image: img-project.png
   strapline: An efficient back-office was in order for Paul Tesselaar.
+  photoset_id: 72157627733596203
 
-- name: The Alfred Hospital
+the_alfred_hospital:
+  name: The Alfred Hospital
   page: the_alfred_hospital.html
   image: img-project.png
   strapline: A product prototype that could improve quality of treatment of many thousands of people.
+  photoset_id: 
 

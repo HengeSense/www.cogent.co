@@ -46,6 +46,7 @@
           header.home { height: 372px; }
     
   %body
+    %a{ :name => "top" }
     %a{ :href=>"http://978.gs", :id=> "gs-overlay-badge", :style=>"outline: 0;position:absolute;"}
       %img{ :src=>"http://978.gs/resources/img/978-badge.png", :alt=>"This site is built with 978 grid system", :width=>"59", :height=>"25", :style=>"border: 0;"}
     %header{ :class => ("home" if page.meta["home_page"]) }
@@ -97,4 +98,5 @@
     .toeser
       .copy
         &copy; 2011 Cogent
-      
+        .top
+          %a{ :href => "#top" }Top

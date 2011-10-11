@@ -212,6 +212,9 @@ header {
     color: $color-white;
     font-size: 16px;
   }
+  .top {
+    display: none;
+  }
 }
 
 .principle {
@@ -408,6 +411,7 @@ span.attribution {
 
 section[role='main'] {
   &.content {
+    padding-top: 30px;
     color: $color-black;
     h2 {
       text-align: left;
@@ -516,8 +520,15 @@ ol li {
   
   h1 {
     margin: 58px 12px 10px 12px;
+    font-size: 24px;
+    &.goals {
+      display: none;
+    }
+    br {
+      display: none;
+    }
   }
-  
+
   h2 {
 
   }
@@ -528,6 +539,7 @@ ol li {
   }
   
   header {
+    width: 100%;
     height: 95px;
     padding-top: 20px;
     &.home {
@@ -557,9 +569,26 @@ ol li {
     display: none;
   }
 
-  .toeser .copy {
-    padding: 6px 12px 100px;
-    text-align: left;
+  .toeser {
+    width: 100%;
+    .copy {
+      width: 300px;
+      margin: 0 auto;
+      position: relative;
+      padding: 6px 12px 100px;
+      text-align: left;
+      .top {
+        position: absolute;
+        padding: 6px 12px;
+        top: 0;
+        right: 0;
+        display: block;
+        a {
+          color: $color-white;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   .left, .right {
@@ -588,19 +617,25 @@ ol li {
   
   div.projects .project {
     width: 300px;
+    min-height: initial;
+    margin-bottom: 0px;
     img {
+      display: none;
       width: 100%;
     }
   }
   
   section#project_footer {
     .project {
+      margin-top: 0px;
+      width: 276px;
+      padding: 20px 12px 0 12px;
+      border-top: 1px $color-mid-grey solid;
       &:first-child {
-        padding-left: 30px;
+        border-top: none;
+        padding: 20px 12px 0 12px;
         width: 246px;
       }
-      width: 276px;
-      padding: 0 12px 0 12px;
     }   
   }
     
@@ -620,14 +655,21 @@ ol li {
         &.quote {
           height: auto;
           width: auto;
-          padding: 30px 12px 30px 12px;
+          padding: 40px 12px 40px 12px;
           background-color: #333;
+          span.attribution {
+            margin-bottom: 1.0em;
+          }
         }
         .caption p {
           padding: 4px 12px 7px 12px;
         }
       }
     }
+  }
+  
+  article#join {
+    
   }
 
   article#home {

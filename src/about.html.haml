@@ -13,7 +13,7 @@ layout: "_layout/_main.html.haml"
     
   .principle.alt
     %h2.life Life outside work matters
-    %p We love what we do, and life outside work hours counts too. The standard work week is - just that. We plan our projects to set ourselves up for success, not for a frenzied error-prone sprint to the finish line. 
+    %p We love what we do, and life outside work hours counts too. The standard work week is - just that. We plan our projects to set ourselves up for success, not for a frenzied error-prone sprint to the finish line. 
 
   .principle
     %h2.real Be real
@@ -33,134 +33,19 @@ layout: "_layout/_main.html.haml"
     %h2 We like to work together with smart people to make things we're proud of.
   
     .people.first.clearfix
-  
-      .person
-        %img{ :src => href("images/img-person.png"), :alt => "Person"  }
-        %h2 Rachel Morely
-        %p
-          UX designer
-          %br
-          %a.in{ :href => "http://www.linkedin.com/" }<> View LinkedIn profile
-          %a.twitter{ :href => "http://www.twitter.com/" }<> View Twitter stream
-          %a.blog{ :href => "http://rnmile.tumblr.com/"}<> Blog
+      - people = people_yaml
+      - photos = people_photos
 
+      = person_html(people[0], photos.find {|p| p[:id].to_s == people[0]['photo_id'].to_s})
+      = person_html(people[1], photos.find {|p| p[:id].to_s == people[1]['photo_id'].to_s})
       = tweet(2)
 
-      .person
-        %img{ :src => href("images/img-person.png"), :alt => "Person"  }
-        %h2 Rachel Morely
-        %p
-          UX designer
-          %br
-          %a.in{ :href => "http://www.linkedin.com/" }<> View LinkedIn profile
-          %a.twitter{ :href => "http://www.twitter.com/" }<> View Twitter stream
-          %a.blog{ :href => "http://rnmile.tumblr.com/"}<> Blog
-
-      .person
-        %img{ :src => href("images/img-person.png"), :alt => "Person"  }
-        %h2 Rachel Morely
-        %p
-          UX designer
-          %br
-          %a.in{ :href => "http://www.linkedin.com/" }<> View LinkedIn profile
-          %a.twitter{ :href => "http://www.twitter.com/" }<> View Twitter stream
-          %a.blog{ :href => "http://rnmile.tumblr.com/"}<> Blog
-
-      .person
-        %img{ :src => href("images/img-person.png"), :alt => "Person"  }
-        %h2 Rachel Morely
-        %p
-          UX designer
-          %br
-          %a.in{ :href => "http://www.linkedin.com/" }<> View LinkedIn profile
-          %a.twitter{ :href => "http://www.twitter.com/" }<> View Twitter stream
-          %a.blog{ :href => "http://rnmile.tumblr.com/"}<> Blog
-
       = tweet(3)
+      = person_html(people[2], photos.find {|p| p[:id].to_s == people[2]['photo_id'].to_s})
+      = person_html(people[3], photos.find {|p| p[:id].to_s == people[3]['photo_id'].to_s})
 
+      = person_html(people[4], photos.find {|p| p[:id].to_s == people[4]['photo_id'].to_s})
+      = tweet(4)                               
+      = person_html(people[5], photos.find {|p| p[:id].to_s == people[5]['photo_id'].to_s})
 
-      = tweet(4)
-
-      .person
-        %img{ :src => href("images/img-person.png"), :alt => "Person"  }
-        %h2 Rachel Morely
-        %p
-          UX designer
-          %br
-          %a.in{ :href => "http://www.linkedin.com/" }<> View LinkedIn profile
-          %a.twitter{ :href => "http://www.twitter.com/" }<> View Twitter stream
-          %a.blog{ :href => "http://rnmile.tumblr.com/"}<> Blog
-
-      .person
-        %img{ :src => href("images/img-person.png"), :alt => "Person"  }
-        %h2 Rachel Morely
-        %p
-          UX designer
-          %br
-          %a.in{ :href => "http://www.linkedin.com/" }<> View LinkedIn profile
-          %a.twitter{ :href => "http://www.twitter.com/" }<> View Twitter stream
-          %a.blog{ :href => "http://rnmile.tumblr.com/"}<> Blog
-
-      .person
-        %img{ :src => href("images/img-person.png"), :alt => "Person"  }
-        %h2 Rachel Morely
-        %p
-          UX designer
-          %br
-          %a.in{ :href => "http://www.linkedin.com/" }<> View LinkedIn profile
-          %a.twitter{ :href => "http://www.twitter.com/" }<> View Twitter stream
-          %a.blog{ :href => "http://rnmile.tumblr.com/"}<> Blog
-
-      .person
-        %img{ :src => href("images/img-person.png"), :alt => "Person"  }
-        %h2 Rachel Morely
-        %p
-          UX designer
-          %br
-          %a.in{ :href => "http://www.linkedin.com/" }<> View LinkedIn profile
-          %a.twitter{ :href => "http://www.twitter.com/" }<> View Twitter stream
-          %a.blog{ :href => "http://rnmile.tumblr.com/"}<> Blog
-
-      .person
-        %img{ :src => href("images/img-person.png"), :alt => "Person"  }
-        %h2 Rachel Morely
-        %p
-          UX designer
-          %br
-          %a.in{ :href => "http://www.linkedin.com/" }<> View LinkedIn profile
-          %a.twitter{ :href => "http://www.twitter.com/" }<> View Twitter stream
-          %a.blog{ :href => "http://rnmile.tumblr.com/"}<> Blog
-
-        
-      .person
-        %img{ :src => href("images/img-person.png"), :alt => "Person"  }
-        %h2 Rachel Morely
-        %p
-          UX designer
-          %br
-          %a.in{ :href => "http://www.linkedin.com/" }<> View LinkedIn profile
-          %a.twitter{ :href => "http://www.twitter.com/" }<> View Twitter stream
-          %a.blog{ :href => "http://rnmile.tumblr.com/"}<> Blog
-
-      .person
-        %img{ :src => href("images/img-person.png"), :alt => "Person"  }
-        %h2 Rachel Morely
-        %p
-          UX designer
-          %br
-          %a.in{ :href => "http://www.linkedin.com/" }<> View LinkedIn profile
-          %a.twitter{ :href => "http://www.twitter.com/" }<> View Twitter stream
-          %a.blog{ :href => "http://rnmile.tumblr.com/"}<> Blog
-
-      .person
-        %img{ :src => href("images/img-person.png"), :alt => "Person"  }
-        %h2 Rachel Morely
-        %p
-          UX designer
-          %br
-          %a.in{ :href => "http://www.linkedin.com/" }<> View LinkedIn profile
-          %a.twitter{ :href => "http://www.twitter.com/" }<> View Twitter stream
-          %a.blog{ :href => "http://rnmile.tumblr.com/"}<> Blog
-
-        
-        
+      = (6..people.length).map {|i| person_html(people[i], photos.find {|p| people[i] && (p[:id].to_s == people[i]['photo_id'].to_s)})}.join

@@ -4,6 +4,14 @@ require 'flickraw'
 project.helpers do
   FlickRaw.api_key="8a82b5a4074ce3cea539edf10405aa0a"
   FlickRaw.shared_secret="11e0c00eb37d684b"
+    
+  def twitter_url(twitter_id)
+    "http://twitter.com/#!/#{twitter_id}"
+  end
+  
+  def flickr_photo_in_set_url(owner, photo, set)
+     "http://www.flickr.com/photos/#{owner}/#{photo}/in/set-#{set}/"
+  end
   
   def production?
     ENV['RUBY_ENV'] != 'development'
@@ -13,18 +21,14 @@ project.helpers do
     quote = project_yaml(project)['quotes'][offset]
     include('/_partials/_project_quote.html.haml', :quote => quote) if quote
   end
-  
-  def flickr_photo_in_set_url(owner, photo, set)
-     "http://www.flickr.com/photos/#{owner}/#{photo}/in/set-#{set}/"
-  end
-  
-  def project_photos(project, count=1)
+
+  def photos_in_set(photoset_id, count=nil)
     begin
-      photoset_id = project_yaml(project)['photoset_id']
-      return [] unless photoset_id
-      photoset = flickr.photosets.getPhotos(:photoset_id => photoset_id, :extras => ['title'], :per_page => count)
+      params = {:photoset_id => photoset_id, :extras => ['title']}
+      params[:per_page] = count if count
+      photoset = flickr.photosets.getPhotos(params)
       photoset.photo.map do |p|
-        { :url => FlickRaw.url(p), :caption => p.title, :set_url => flickr_photo_in_set_url(photoset.owner, p.id, photoset_id) } 
+        { :id => p.id, :url => FlickRaw.url(p), :caption => p.title, :set_url => flickr_photo_in_set_url(photoset.owner, p.id, photoset_id) } 
       end
     rescue Exception => ex
       if production?
@@ -33,6 +37,16 @@ project.helpers do
         []
       end
     end
+  end
+  
+  def people_photos
+    photos_in_set(72157627741365001)
+  end
+  
+  def project_photos(project, count=1)
+    photoset_id = project_yaml(project)['photoset_id']
+    return [] unless photoset_id
+    photos_in_set(photoset_id, count)
   end
   
   def project_photo_html(photo_info)
@@ -47,12 +61,24 @@ project.helpers do
     end.join
   end
   
+  def person_html(person, photo)
+    include('_partials/_people.html.haml', :person => person, :photo => photo) if person and photo
+  end
+  
   def project_yaml(project_name)
     projects_yaml.find {|p| p['name'] == project_name }
   end
   
+  def load_yaml(filename)
+    YAML.load(File.read(File.expand_path(File.dirname(__FILE__) + '/' + filename)))
+  end
+  
   def projects_yaml
-    @project_yaml ||= YAML.load(File.read(File.expand_path(File.dirname(__FILE__) + '/projects.yml')))
+    @project_yaml ||= load_yaml('projects.yml')
+  end
+  
+  def people_yaml
+    @people_yaml ||= load_yaml('people.yml')
   end
   
   def tweets

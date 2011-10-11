@@ -1,0 +1,10 @@
+.person<>
+  %a.image{ :href => photo[:set_url]}<>
+    %img{ :src => photo[:url], :alt => "Person"  }<>
+  %h2= person['display_name']
+  %p
+    = person['role']
+    %br
+    %a.button.in{ :href => "http://" + person['linkedin_url'] }<> View LinkedIn profile
+    %a.button.twitter{ :href => twitter_url(person['twitter_id']) }<> View Twitter stream
+    %a.button.blog{ :href => "http://" + person['blog_url']}<> Blog

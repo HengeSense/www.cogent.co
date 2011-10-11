@@ -1,3 +1,4 @@
+############################################################################################
 - name: thread
   display_name: Thread
   page: thread.html
@@ -12,6 +13,7 @@
       attribution: Ben from Cogent said
       quote: Tough week trying to get the aggregator working in IE9, but we did it. Took a lot of elbow great and coffee though!
 
+############################################################################################
 - name: eventer
   display_name: Eventer
   page: eventer.html
@@ -26,6 +28,7 @@
       attribution: Ben from Cogent said
       quote: This eventer thing rox!
 
+############################################################################################
 - name: tesselaar
   display_name: Tesselaar
   page: tesselaar.html
@@ -40,11 +43,12 @@
       attribution: Ben from Cogent said
       quote: At least the bulb sales page is still up!
 
-- name: the_alfred_hospital
-  display_name: The Alfred Hospital
-  page: the_alfred_hospital.html
-  image: img-project.png
-  strapline: A product prototype that could improve quality of treatment of many thousands of people.
-  photoset_id: 
-  quotes:
+############################################################################################
+# - name: the_alfred_hospital
+#   display_name: The Alfred Hospital
+#   page: the_alfred_hospital.html
+#   image: img-project.png
+#   strapline: A product prototype that could improve quality of treatment of many thousands of people.
+#   photoset_id: 
+#   quotes:
 

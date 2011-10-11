@@ -346,9 +346,13 @@ div.people {
     }
   }
   .person {
-    img {
+    a, img {
       width: 100%;
-/*      height: 180px;*/
+      /*      height: 180px;*/
+    }
+    a {
+      margin: 0 0;
+      display: inline;
     }
     h2 {
       text-align: left;
@@ -358,7 +362,7 @@ div.people {
     p {
       padding: 0 20px;
     }
-    a {
+    a.button {
       display: inline-block;
       background-color: $color-mid-grey;
       width: 46px;

@@ -32,42 +32,14 @@ layout: "../_layout/_main.html.haml"
 
   %section{ :role => "main" }
   
-    .post<>
-      %img{ :src => href("/images/projects/photo-03.jpg") }<>
-      .transparent-box
-      .caption
-        %p Iteration 2 cards are up and ready to go
+    - photos = project_photos('thread', 4)
+    = project_photo_html(photos[0])
+    = project_photo_html(photos[1])
 
-    .post<>
-      %img{ :src => href("/images/projects/photo-04.jpg") }
-      .transparent-box
-      .caption
-        %p Greeny and Trav talk Cohorts
+    = project_quote_html('thread',0)
+    = project_photo_html(photos[2])
 
-    .post.quote
-      %span.attribution
-        %span.time> Fri Oct 7 14:20:28 +1100 2011
-        , Matt from Melbourne Business School said
-      %h1 
-        It's a great day here in the Cogent Treehouse, lot's of exciting ideas being thrown around!
-    
-    .post
-      %img{ :src => href("/images/projects/photo-03.jpg") }
-      .transparent-box
-      .caption
-        %p Product strategy sketchshop
-
-    .post.quote
-      %span.attribution
-        %span.time> Fri Oct 7 14:20:28 +1100 2011
-        , Ben from Cogent said
-      %h1 
-        Tough week trying to get the aggregator working in IE9, but we did it. Took a lot of elbow great and coffee though!
-
-    .post
-      %img{ :src => href("/images/projects/photo-04.jpg") }
-      .transparent-box
-      .caption
-        %p Retro for Iteration 1
+    = project_quote_html('thread',1)
+    = project_photo_html(photos[3])
   
   = include("../_layout/project_footer.html.haml")

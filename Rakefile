@@ -31,12 +31,16 @@ namespace "github" do
   task "update" do
     tmpdir = "/tmp/www.cogent.co"
     sh <<-BASH
-      set -e
+      set -e -x
       rm -fr #{tmpdir}; pith -i src -o #{tmpdir} build
       git checkout gh-pages && git pull origin gh-pages
       rm -r * && cp -r #{tmpdir}/* .
-      git add -A .
-      git commit -m "Regenerate"
+      if git diff --exit-code > /dev/null; then
+        echo "No change"
+      else
+        git add -A .
+        git commit -m "Regenerate"
+      fi
       git checkout master
     BASH
   end

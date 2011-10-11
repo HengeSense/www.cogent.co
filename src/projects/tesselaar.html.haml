@@ -1,6 +1,7 @@
 ---
 layout: "../_layout/_main.html.haml"
 ...
+- @project_name = 'tesselaar'
 %article.clearfix{ :role => "main" }
   #gs-overlay
     &nbsp;
@@ -31,16 +32,5 @@ layout: "../_layout/_main.html.haml"
     %h1 Did it work?
     %p We're waiting to see. Paul is picking his moment between seasons to switch to his new application. We're bound to need to refine some of the rules that determine what stock to pack, or tweak how the packing production line operates to make it efficient for workers. Overall though, the early feedback of the trials by Paul's team are promising. We'll be sure to report back.
 
-  %section{ :role => "main" }
-  
-    - photos = project_photos('tesselaar', 4)
-    = project_photo_html(photos[0])
-    = project_photo_html(photos[1])
-
-    = project_quote_html('tesselaar',0)
-    = project_photo_html(photos[2])
-
-    = project_quote_html('tesselaar',1)
-    = project_photo_html(photos[3])
-  
+  = include("../_partials/project_main.html.haml") 
   = include("../_layout/project_footer.html.haml")

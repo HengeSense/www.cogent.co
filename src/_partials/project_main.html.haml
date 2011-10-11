@@ -1,0 +1,11 @@
+%section{ :role => "main" }
+
+  - photos = project_photos(project_yaml, 4)
+  = project_photo_html(photos[0])
+  = project_photo_html(photos[1])
+
+  = project_quote_html(0)
+  = project_photo_html(photos[2])
+
+  = project_quote_html(1)
+  = project_photo_html(photos[3])

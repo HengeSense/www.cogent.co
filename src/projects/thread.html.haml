@@ -1,6 +1,7 @@
 ---
 layout: "../_layout/_main.html.haml"
 ...
+- @project_name = 'thread'
 %article{ :role => "main" }
   #gs-overlay
     &nbsp;
@@ -30,16 +31,5 @@ layout: "../_layout/_main.html.haml"
     %h1 Where to?
     %p We’re now in support mode and looking ahead to the next release, which will enable Thread to be used by any of Melbourne Business School’s customers for any of their programs. We also have a few other objectives to meet, including to better enable classroom-based learning, and to lift the value for organisations in driving their learning and development goals to their people.  While the school gears up to sell Thread, we’d better get on with it!
 
-  %section{ :role => "main" }
-  
-    - photos = project_photos('thread', 4)
-    = project_photo_html(photos[0])
-    = project_photo_html(photos[1])
-
-    = project_quote_html('thread',0)
-    = project_photo_html(photos[2])
-
-    = project_quote_html('thread',1)
-    = project_photo_html(photos[3])
-  
+  = include("../_partials/project_main.html.haml") 
   = include("../_layout/project_footer.html.haml")

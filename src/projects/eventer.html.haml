@@ -1,6 +1,7 @@
 ---
 layout: "../_layout/_main.html.haml"
 ...
+- @project_name = 'eventer'
 %article{ :role => "main" }
   #gs-overlay
     &nbsp;
@@ -38,15 +39,5 @@ layout: "../_layout/_main.html.haml"
     %h1 What we’re up to.
     %p So far, Cogent has sketched and built a basic proof of concept. We’ve trialled one event - you can see it at ignitemelbourne.eventer.com. With plenty of positive feedback, the real work lies ahead to make a robust version to launch. 
 
-  %section{ :role => "main" }
-    - photos = project_photos('eventer', 4)
-    = project_photo_html(photos[0])
-    = project_photo_html(photos[1])
-
-    = project_quote_html('eventer',0)
-    = project_photo_html(photos[2])
-
-    = project_quote_html('eventer',1)
-    = project_photo_html(photos[3])
-  
+  = include("../_partials/project_main.html.haml") 
   = include("../_layout/project_footer.html.haml")

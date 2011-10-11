@@ -1,6 +1,6 @@
 .project
-  - if include_images
-    %img{ :src => href("/images/" + project['image']) }
+  - if project_photo
+    %img{ :src => project_photo[:url] }
   %h2
     %a{ :href => href("/projects/" + project['page']) }= project['display_name'] 
   %p= project['strapline']

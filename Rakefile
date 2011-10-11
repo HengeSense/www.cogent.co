@@ -35,6 +35,7 @@ namespace "github" do
       rm -fr #{tmpdir}; pith -i src -o #{tmpdir} build
       git checkout gh-pages && git pull origin gh-pages
       rm -r * && cp -r #{tmpdir}/* .
+      rm -fr .sass-cache
       if git diff --exit-code > /dev/null; then
         echo "No change"
       else

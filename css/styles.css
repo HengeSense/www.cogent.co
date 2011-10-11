@@ -253,16 +253,19 @@ div.people {
         text-decoration: underline; }
     div.people .tweet span.attribution {
       padding: 0 20px; }
-  div.people .person img {
+  div.people .person a, div.people .person img {
     width: 100%;
     /*      height: 180px;*/ }
+  div.people .person a {
+    margin: 0 0;
+    display: inline; }
   div.people .person h2 {
     text-align: left;
     margin-bottom: 0;
     padding: 0 20px; }
   div.people .person p {
     padding: 0 20px; }
-  div.people .person a {
+  div.people .person a.button {
     display: inline-block;
     background-color: #cacaca;
     width: 46px;
@@ -271,19 +274,19 @@ div.people {
     text-indent: -1000em;
     background-position: 50% 50%;
     background-repeat: no-repeat; }
-    div.people .person a:hover {
+    div.people .person a.button:hover {
       background-color: #4c9af5; }
-    div.people .person a.in {
+    div.people .person a.button.in {
       background-image: url("../images/icon-linkedin.png"); }
-      div.people .person a.in:hover {
+      div.people .person a.button.in:hover {
         background-image: url("../images/icon-linkedin-over.png"); }
-    div.people .person a.twitter {
+    div.people .person a.button.twitter {
       background-image: url("../images/icon-twitter.png"); }
-      div.people .person a.twitter:hover {
+      div.people .person a.button.twitter:hover {
         background-image: url("../images/icon-twitter-over.png"); }
-    div.people .person a.blog {
+    div.people .person a.button.blog {
       background-image: url("../images/icon-blog.png"); }
-      div.people .person a.blog:hover {
+      div.people .person a.button.blog:hover {
         background-image: url("../images/icon-blog-over.png"); }
 
 span.attribution {

@@ -19,7 +19,7 @@ html[xmlns] .clearfix {
   height: 1%;
 }
 
-$base-line-height-in-pixels: 22;
+$base-line-height-in-pixels: 23.4;
 $base-font-size-in-pixels: 18;
 $base-line-height: $base-line-height-in-pixels/$base-font-size-in-pixels;
 
@@ -31,6 +31,7 @@ $color-light-grey: #f2f2f2;
 $color-mid-grey: #cacaca;
 $color-dark-grey: #848484;
 $color-white: #FFF;
+$color-divider: #666666;
 
 @mixin set-lines($size, $top-margin) {
   font-size: ($size / $base-font-size-in-pixels) + em;
@@ -90,7 +91,7 @@ h1 {
 h2 {
   font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif";
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: normal;
   margin-top: 0px;
   margin-bottom: 13px;
@@ -103,11 +104,11 @@ h3 {
 }
 
 .intro-end, p.visit {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 p.visit {
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   a {
     display: inline-block;
     padding: 4px 30px 7px;
@@ -156,13 +157,13 @@ header {
   height: 170px;
   padding: 46px 0 0 0;
   &.home {
-    height: 378px;
+    height: 357px;
     h1 {
       color: $color-white;
       display:block;
       font-size: 60px;
-      margin-top: 21px;
-      margin-bottom: 63px;
+      margin-top: 66px;
+      margin-bottom: 16px;
     }
   }
   h1 {
@@ -188,7 +189,7 @@ header {
       padding: 0 20px 0 0;
       margin: 11px 12px 0 0;
       height: 0.85em;
-      border-right: 1px $color-light-grey solid;
+      border-right: 1px $color-divider solid;
       color: $color-mid-grey;
       &:last-child {
        border:none; 
@@ -292,6 +293,7 @@ div.projects {
     h2 {
       text-align: left;
       padding: 20px 30px 0 30px;
+      margin-bottom: 5px;
     }
     p {
       padding: 0 30px;

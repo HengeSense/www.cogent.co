@@ -10,8 +10,8 @@ project.helpers do
   include TwitterFeed
   include FlickrFeed
 
-  def production?
-    ENV['RUBY_ENV'] != 'development'
+  def ignore_feed_errors?
+    ENV['RUBY_ENV'] != 'tolerant'
   end
   
   def project_quote_html(offset)

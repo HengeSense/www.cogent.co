@@ -1,79 +1,72 @@
 ###########################################################
-- display_name: Rachel Morley
-  photo_id: 6233273355
-  role: UX Designer
-  twitter_id: rnmile
-  blog_url: rnmile.tumblr.com
-  linkedin_url: au.linkedin.com/in/dantropp
-###########################################################
-- display_name: Andrew Green
-  photo_id: 6233273355
-  role: UX Designer
-  twitter_id: rnmile
-  blog_url: rnmile.tumblr.com
-  linkedin_url: au.linkedin.com/in/dantropp
-###########################################################
 - display_name: Dan Tropp
-  photo_id: 6233273355
-  role: UX Designer
-  twitter_id: rnmile
-  blog_url: rnmile.tumblr.com
+  photo_id: 72157627749037619
+  role: Developer
+  twitter_id: dan_tropp
   linkedin_url: au.linkedin.com/in/dantropp
 ###########################################################
-- display_name: Warren Oliver
-  photo_id: 6233273355
-  role: UX Designer
-  twitter_id: rnmile
-  blog_url: rnmile.tumblr.com
-  linkedin_url: au.linkedin.com/in/dantropp
+- display_name: Keryn Mitchell
+  photo_id: 72157627749037619
+  role: Office Manager
+  twitter_id: eightydays 
+  blog_url: http://eightydaysdesign.blogspot.com/
+  linkedin_url: http://au.linkedin.com/pub/keryn-mitchell/20/652/406
+###########################################################
+- display_name: Travis Winters
+  photo_id: 72157627749037619
+  role: Developer & Responsive Layout Guy
+  twitter_id: travis_winters
+  blog_url: http://www.prozacblues.com/travo/blog/
+  linkedin_url: http://au.linkedin.com/in/traviswinters
 ###########################################################
 - display_name: Mike Williams
-  photo_id: 6233273355
+  photo_id: 72157627749037619
   role: Handyman
   twitter_id: woollyams
   blog_url: dogbiscuit.org/mdub/weblog
-  linkedin_url: au.linkedin.com/in/dantropp
+  linkedin_url: http://www.linkedin.com/profile/view?id=105674&locale=en_US&trk=tyah
+###########################################################
+- display_name: Rob Monie
+  photo_id: 72157627749037619
+  role: Developer
+  twitter_id: robmonie
+  linkedin_url: http://au.linkedin.com/in/robmonie
+###########################################################
+- display_name: Simon Harris
+  photo_id: 72157627749037619
+  role: Developer, Father, Aikido Teacher
+  twitter_id: @haruki_zaemon
+  blog_url: http://www.harukizaemon.com/
+###########################################################
+- display_name: Andrew Green
+  photo_id: 72157627749037619
+  role: UX designer, strategist
+  twitter_id: awgreen
+  linkedin_url: http://au.linkedin.com/in/awgreen
+###########################################################  
+- display_name: Rob Mitchell
+  photo_id: 72157627749037619
+  role: Developer, Cyclist
+  twitter_id: rob_mitch
+  linkedin_url: http://au.linkedin.com/in/robmitchelllinkedin
+###########################################################  
+- display_name: Daniel Vydra
+  photo_id: 72157627749037619
+  role: Developer
+  twitter_id: dvydra
+  linkedin_url: http://au.linkedin.com/pub/daniel-vydra/2/252/6a3
 ###########################################################
 - display_name: Rachel Morley
-  photo_id: 6233273355
-  role: UX Designer
+  photo_id: 72157627749037619
+  role: Product Strategist
   twitter_id: rnmile
   blog_url: rnmile.tumblr.com
-  linkedin_url: au.linkedin.com/in/dantropp
-###########################################################
-- display_name: Rachel Morley
-  photo_id: 6233273355
-  role: UX Designer
-  twitter_id: rnmile
-  blog_url: rnmile.tumblr.com
-  linkedin_url: au.linkedin.com/in/dantropp
+  linkedin_url: http://au.linkedin.com/in/rachelmorley
 ###########################################################  
-- display_name: Rachel Morley
-  photo_id: 6233273355
-  role: UX Designer
-  twitter_id: rnmile
-  blog_url: rnmile.tumblr.com
-  linkedin_url: au.linkedin.com/in/dantropp
-###########################################################  
-- display_name: Rachel Morley
-  photo_id: 6233273355
-  role: UX Designer
-  twitter_id: rnmile
-  blog_url: rnmile.tumblr.com
-  linkedin_url: au.linkedin.com/in/dantropp
-###########################################################
-- display_name: Rachel Morley
-  photo_id: 6233273355
-  role: UX Designer
-  twitter_id: rnmile
-  blog_url: rnmile.tumblr.com
-  linkedin_url: au.linkedin.com/in/dantropp
-###########################################################  
-- display_name: Rachel Morley
-  photo_id: 6233273355
-  role: UX Designer
-  twitter_id: rnmile
-  blog_url: rnmile.tumblr.com
-  linkedin_url: au.linkedin.com/in/dantropp
+- display_name: Warren Oliver
+  photo_id: 72157627749037619
+  role: Developer
+  twitter_id: muzcat007
+  linkedin_url: http://au.linkedin.com/pub/warren-oliver/2/4b5/b34
 ###########################################################  
  

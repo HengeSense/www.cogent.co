@@ -13,8 +13,6 @@ module YamlConfig
   
   def people_yaml
     @people_yaml ||= load_yaml('people.yml')
-    p @people_yaml
-    @people_yaml
   end
   
   def projects_html(count=nil, include_images=true, excluded=nil)

@@ -7,7 +7,7 @@ module TwitterFeed
     begin
       @tweets ||= Twitter.list_timeline("dan_tropp", "cogent-team", :count => 10)
     rescue Exception => ex
-      if production?
+      if ignore_feed_errors?
         raise ex
       else
         @tweets = []

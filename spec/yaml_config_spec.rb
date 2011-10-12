@@ -4,8 +4,6 @@ class TestYamlConfig
   include YamlConfig
 end
 
-describe YamlConfig
+describe YamlConfig do
   let(:subject) { TestYamlConfig.new }
-  
-  it "" 
 end

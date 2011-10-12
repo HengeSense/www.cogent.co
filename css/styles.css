@@ -27,12 +27,12 @@ body {
   font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif"; }
 
 html > body, h3 {
-  font-size: 18px; }
+  font-size: 16px; }
 
 p, li, td {
   font-size: 1em;
-  line-height: 1.3em;
-  margin-bottom: 1.3em;
+  line-height: 1.463em;
+  margin-bottom: 1.463em;
   margin-top: 0; }
 
 a, a:link, a:visited {
@@ -167,20 +167,26 @@ header {
     min-height: 32px;
     line-height: 21px; }
     .principle h2.focus {
-      background-image: url("../images/icon-focus.gif");
+      background-image: url("../images/icon-focus.png");
       background-position: 5px center; }
     .principle h2.together {
-      background-image: url("../images/icon-together.gif");
+      background-image: url("../images/icon-together.png");
       background-position: 5px center; }
     .principle h2.people {
-      background-image: url("../images/icon-people.gif"); }
+      background-image: url("../images/icon-people.png"); }
     .principle h2.life {
-      background-image: url("../images/icon-life.gif");
+      background-image: url("../images/icon-outside.png");
       background-position: 5px center; }
     .principle h2.real {
-      background-image: url("../images/icon-real.gif"); }
+      background-image: url("../images/icon-bereal.png"); }
+    .principle h2.tools {
+      background-image: url("../images/icon-tools.png"); }
     .principle h2.learning {
-      background-image: url("../images/icon-learning.gif"); }
+      background-image: url("../images/icon-learn.png");
+      background-position: 5px center; }
+    .principle h2.collaborate {
+      background-image: url("../images/icon-collaborate.png");
+      background-position: 5px center; }
 
 article[role="main"] {
   margin: 0 auto 20px;
@@ -322,7 +328,7 @@ section[role='main'] {
 .post {
   position: relative;
   line-height: 0;
-  border-bottom: 1px #f2f2f2 solid; }
+  border-bottom: 1px #848484 solid; }
   .post.quote {
     padding: 50px 84px 50px 54px;
     background-color: #333;
@@ -337,6 +343,10 @@ section[role='main'] {
     .post .caption p, .post .transparent-box p {
       padding: 4px 30px 7px 54px;
       color: #cacaca; }
+      .post .caption p a, .post .transparent-box p a {
+        color: #cacaca; }
+      .post .caption p a:hover, .post .transparent-box p a:hover {
+        color: #4c9af5; }
   .post .transparent-box {
     background-color: #323232;
     opacity: 0.9; }
@@ -416,7 +426,7 @@ ol li {
       width: 300px;
       margin: 0 auto;
       position: relative;
-      padding: 6px 12px 100px;
+      padding: 6px 0 100px;
       text-align: left; }
       .toeser .copy .top {
         position: absolute;
@@ -513,11 +523,14 @@ ol li {
     article#home section#projects p.visit {
       display: none; }
     article#home section#projects div.projects {
-      margin-bottom: 0px; }
+      margin-bottom: 0px;
+      width: 300px;
+      padding: 0 0 30px 0; }
       article#home section#projects div.projects .project {
+        margin: 0px;
         min-height: 100px;
         width: 276px;
-        padding: 30px 12px 0 12px;
+        padding: 0 12px 0 12px;
         border-bottom: 0px;
         border-top: 1px #cacaca solid; }
         article#home section#projects div.projects .project h2 {

@@ -79,18 +79,12 @@ home_page: true
       Cogent was created with a lot of care to be a company that not only did good work, but did it in an ethical and values-based way.  We’re proud to have maintained that tradition over years of operation, and to be on of the best place many of us have ever worked.
     
     .people.clearfix
+      - people = people_yaml
+      - photos = people_photos
   
       = tweet(0)
-
-      .person
-        %img{ :src => href("images/img-person.png"), :alt => "Person" }
-        %h2 Andrew Green
-        %p
-          UX designer
-          %br
-          %a.in{ :href => "http://www.linkedin.com/" }<> View LinkedIn profile
-          %a.twitter{ :href => "http://www.twitter.com/" }<> View Twitter stream
-          %a.blog{ :href => "http://rnmile.tumblr.com/"}<> Blog
+      
+      = person_html(people[0], photos.find {|p| p[:id].to_s == people[0]['photo_id'].to_s})
 
       = tweet(1)
 

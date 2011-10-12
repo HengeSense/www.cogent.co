@@ -27,7 +27,8 @@ project.helpers do
     include('/_partials/_project_summary.html.haml', :project => project, :project_photo => photo)
   end
   
-  def person_html(person)
+  def person_html(index)
+    person = people_yaml[index]
     if person
       photo = person_photo(person)
       include('_partials/_people.html.haml', :person => person, :photo => photo) if photo

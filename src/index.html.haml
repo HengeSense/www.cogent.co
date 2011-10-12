@@ -79,13 +79,8 @@ home_page: true
       Cogent was created with a lot of care to be a company that not only did good work, but did it in an ethical and values-based way.  We’re proud to have maintained that tradition over years of operation, and to be on of the best place many of us have ever worked.
     
     .people.clearfix
-      - people = people_yaml
-      - photos = people_photos
-  
       = tweet(0)
-      
-      = person_html(people[0], photos.find {|p| p[:id].to_s == people[0]['photo_id'].to_s})
-
+      = person_html(people_yaml[0])
       = tweet(1)
 
     

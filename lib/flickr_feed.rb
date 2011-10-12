@@ -23,8 +23,12 @@ module FlickrFeed
     end
   end
   
+  def person_photo(person)
+    people_photos.find {|p| p[:id].to_s == person['photo_id'].to_s}
+  end
+  
   def people_photos
-    photos_in_set(72157627749037619)
+    @people_photos ||= photos_in_set(72157627749037619)
   end
   
   def project_photos(project, count=1)

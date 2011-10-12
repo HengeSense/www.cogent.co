@@ -27,8 +27,11 @@ project.helpers do
     include('/_partials/_project_summary.html.haml', :project => project, :project_photo => photo)
   end
   
-  def person_html(person, photo)
-    include('_partials/_people.html.haml', :person => person, :photo => photo) if person and photo
+  def person_html(person)
+    if person
+      photo = person_photo(person)
+      include('_partials/_people.html.haml', :person => person, :photo => photo) if photo
+    end
   end
   
   def tweet_html(tweet)

@@ -35,18 +35,16 @@ layout: "_layout/_main.html.haml"
   
     .people.first.clearfix
       - people = people_yaml
-      - photos = people_photos
-
-      = person_html(people[0], photos.find {|p| p[:id].to_s == people[0]['photo_id'].to_s})
-      = person_html(people[1], photos.find {|p| p[:id].to_s == people[1]['photo_id'].to_s})
+      = person_html(people[0])
+      = person_html(people[1])
       = tweet(2)
 
       = tweet(3)
-      = person_html(people[2], photos.find {|p| p[:id].to_s == people[2]['photo_id'].to_s})
-      = person_html(people[3], photos.find {|p| p[:id].to_s == people[3]['photo_id'].to_s})
+      = person_html(people[2])
+      = person_html(people[3])
 
-      = person_html(people[4], photos.find {|p| p[:id].to_s == people[4]['photo_id'].to_s})
+      = person_html(people[4])
       = tweet(4)                               
-      = person_html(people[5], photos.find {|p| p[:id].to_s == people[5]['photo_id'].to_s})
+      = person_html(people[5])
 
-      = (6..people.length).map {|i| person_html(people[i], photos.find {|p| people[i] && (p[:id].to_s == people[i]['photo_id'].to_s)})}.join
+      = (6..people.length).map {|i| person_html(people[i]) }.join

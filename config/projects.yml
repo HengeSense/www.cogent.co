@@ -16,7 +16,7 @@
 
 ############################################################################################
 - name: eventer      
-  display_name: Eventer2
+  display_name: Eventer
   page: eventer.html
   strapline: Changing what it's like to watch an event you couldn't make it to.
   photoset_id: 72157627873365994
@@ -40,7 +40,7 @@
       quote: Rach would love to know what Paul says here!
     - at: Fri Oct 7 14:20:28 +1100 2011
       attribution: Andy from Cogent said
-      quote: Dotland and Stockland are bending my head.
+      quote: Dotland and Stockland are bending my brain.
 
 ############################################################################################
 # - name: the_alfred_hospital

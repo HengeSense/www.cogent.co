@@ -3,8 +3,7 @@ layout: "../_layout/_main.html.haml"
 ...
 - @project_name = 'tesselaar'
 %article.clearfix{ :role => "main" }
-  #gs-overlay
-    &nbsp;
+
 
   %h1 
     Tesselaar
@@ -15,8 +14,10 @@ layout: "../_layout/_main.html.haml"
 
     %h1 Who is the customer?
     %p 
-      %a{:href => "http://www.tesselaar.net.au/" }Tesselaar Nursery
-      is a long-standing mail order business who sells plants, bulbs, and perennials, and is also home to the popular annual Tulip Festival (link to: http://www.tulipfestival.com.au/). Their Managing Director is Paul Tesselaar - a guy who knows his plants and his business inside out.
+      %a{ :href => "http://www.tesselaar.net.au/" }Tesselaar Nursery
+      is a long-standing mail order business who sells plants, bulbs, and perennials, and is also home to the popular annual 
+      %a{ :href => "http://www.tulipfestival.com.au/" }Tulip Festival.
+      Their Managing Director is Paul Tesselaar - a guy who knows his plants and his business inside out.
 
     %h1 OnePoint: a back-office application.
     %p The job at hand was to create operational efficiency for the business. Currently, the company ran on a range of systems developed over ten or more years, coupled with some very complicated spreadsheets that were unwieldy to use and maintain. Paul wanted to make things simpler and more cost effective.
@@ -33,6 +34,9 @@ layout: "../_layout/_main.html.haml"
 
     %h1 Did it work?
     %p We're waiting to see. Paul is picking his moment between seasons to switch to his new application. We're bound to need to refine some of the rules that determine what stock to pack, or tweak how the packing production line operates to make it efficient for workers. Overall though, the early feedback of the trials by Paul's team are promising. We'll be sure to report back.
+
+    %p
+      %a.view_projects{ :href => href("/projects/index.html") }View all projects
 
   = include("../_partials/project_main.html.haml") 
   = include("../_layout/project_footer.html.haml")

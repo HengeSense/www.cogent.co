@@ -5,6 +5,9 @@
   %p
     = person['role']
     %br
-    %a.button.in{ :href => "http://" + person['linkedin_url'] }<> View LinkedIn profile
-    %a.button.twitter{ :href => twitter_url(person['twitter_id']) }<> View Twitter stream
-    %a.button.blog{ :href => "http://" + person['blog_url']}<> Blog
+    -if person['linkedin_url']
+      %a.button.in{ :href => "http://" + person['linkedin_url'] }<> View LinkedIn profile
+    -if person['twitter_id']
+      %a.button.twitter{ :href => twitter_url(person['twitter_id']) }<> View Twitter stream
+    -if person['blog_url']
+      %a.button.blog{ :href => "http://" + person['blog_url']}<> Blog

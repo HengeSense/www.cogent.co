@@ -199,6 +199,7 @@ header {
       &:last-child {
        border:none; 
        padding: 0 0 0 0;
+       margin-right: 0;
       }
       &:active, 
       &.selected {
@@ -559,7 +560,7 @@ ol li {
   }
 
   h2 {
-
+    font-size: 18px;
   }
 
   p.centered {
@@ -588,8 +589,8 @@ ol li {
     }
     nav {
       a, a:link, a:visited, a:active {
-        padding: 0 10px 0 0;
-        margin: 11px 2px 0 0;
+        padding: 0 15px 0 0;
+        margin: 11px 10px 0 0;
       }
     }
   }
@@ -625,22 +626,30 @@ ol li {
     padding: 0 12px;
   }
   
-  .principle, .principle.alt {
-    float: none;
-    width: auto;
-    margin: 30px 12px 0 12px;    
+  .principles {
+    padding: 0 0;
+    .principle, .principle.alt {
+      float: none;
+      width: auto;
+      margin: 30px 12px 0 12px;    
+    }
   }
   
   div.people, div.people.first {
-    margin-bottom: 0px;
+    margin: 60px 0 0 0;
     .tweet, .person {
       float: none;
       width: 300px;
-      margin: 0;
+      margin: 10px 0;
     }
     .tweet {
       min-height: initial;
       padding: 30px 0;
+    }
+    .person {
+      h2 {
+        padding: 10px 20px 0;
+      }
     }
   }
   
@@ -707,24 +716,28 @@ ol li {
     #mobile {
       display: block;
       border-bottom: 1px $color-mid-grey solid;
+      margin-top: 30px;
       h1 {
-        font-size: 35px;
+        font-size: 24px;
         margin-bottom: 0px;
       }
       p {
+        &:first-of-type {
+          margin-top: 30px;
+        }
         &:last-of-type {
           font-size: 20px;
         }
-        font-size: 30px;
+        font-size: 24px;
         border-top: 1px $color-mid-grey solid;
         background-color: $color-light-grey;
         margin-bottom: 0px;
-        padding: 20px 12px 25px 12px;
+        padding: 20px 12px 25px 30px;
       }
     }
 
     h1 {
-      font-size: 20px;
+      font-size: 24px;
       &.goals {
         display: none;
       }

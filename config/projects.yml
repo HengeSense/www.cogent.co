@@ -8,7 +8,7 @@
   quotes:
     - at: Wed Oct 5 14:20:28 +1100 2011
       attribution: Matt from Melbourne Business School said
-      quote: It's a great day here in the Cogent Treehouse, lot's of exciting ideas being thrown around!
+      quote: It's a great day here in the Cogent Treehouse lot's of exciting ideas being thrown around!
     - at: Fri Oct 7 14:20:28 +1100 2011
       attribution: Ben from Cogent said
       quote: Tough week trying to get the aggregator working in IE9, but we did it. Took a lot of elbow great and coffee though!
@@ -19,7 +19,7 @@
   page: eventer.html
   image: img-project.png
   strapline: Changing what it's like to watch an event you couldn't make it to.
-  photoset_id: 72157627733593131
+  photoset_id: 72157627873365994
   quotes:
     - at: Mon Oct 3 14:20:28 +1100 2011
       attribution: Rach from Cogent said
@@ -49,6 +49,6 @@
 #   page: the_alfred_hospital.html
 #   image: img-project.png
 #   strapline: A product prototype that could improve quality of treatment of many thousands of people.
-#   photoset_id: 
+#   photoset_id: 72157627749031953
 #   quotes:
 

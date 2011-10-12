@@ -35,7 +35,7 @@
 - display_name: Simon Harris
   photo_id: 72157627749037619
   role: Developer, Father, Aikido Teacher
-  twitter_id: @haruki_zaemon
+  twitter_id: haruki_zaemon
   blog_url: http://www.harukizaemon.com/
 ###########################################################
 - display_name: Andrew Green
@@ -55,6 +55,7 @@
   role: Developer
   twitter_id: dvydra
   linkedin_url: http://au.linkedin.com/pub/daniel-vydra/2/252/6a3
+  blog_url: http://daniel.ivydra.com
 ###########################################################
 - display_name: Rachel Morley
   photo_id: 72157627749037619

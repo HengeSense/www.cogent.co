@@ -39,7 +39,9 @@ namespace "github" do
     sh <<-BASH
       set -e -x
       rm -fr #{tmpdir}; pith -i src -o #{tmpdir} build
-      git checkout gh-pages && git pull origin gh-pages
+      git checkout gh-pages
+      git fetch origin
+      git reset --hard origin/gh-pages
       rm -r * && cp -r #{tmpdir}/* .
       rm -fr .sass-cache
       if git diff --exit-code > /dev/null; then

@@ -1,14 +1,14 @@
 ---
+project: 'thread'
 layout: "../_layout/_main.html.haml"
 ...
-- @project_name = 'thread'
+- @project_name = page.meta['project']
 %article{ :role => "main" }
 
 
-  %h1 
-    Thread
-  %h2
-    We helped Melbourne Business School become leaders in digital learning
+  %h1= project_display_name
+  %h2= project_strapline
+
 
   %p.visit
     %a{:href => "http://www.thread.edu.au/"} Visit Thread

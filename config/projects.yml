@@ -16,7 +16,7 @@
 
 ############################################################################################
 - name: eventer      
-  display_name: Eventer
+  display_name: Eventer2
   page: eventer.html
   strapline: Changing what it's like to watch an event you couldn't make it to.
   photoset_id: 72157627873365994

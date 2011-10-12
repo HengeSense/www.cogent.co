@@ -142,7 +142,8 @@ header {
       color: #cacaca; }
       header nav a:last-child, header nav a:link:last-child, header nav a:visited:last-child {
         border: none;
-        padding: 0 0 0 0; }
+        padding: 0 0 0 0;
+        margin-right: 0; }
       header nav a:active, header nav a.selected, header nav a:link:active, header nav a:link.selected, header nav a:visited:active, header nav a:visited.selected {
         color: white; }
       header nav a:hover, header nav a:link:hover, header nav a:visited:hover {
@@ -258,8 +259,8 @@ div.people {
     border-bottom: 1px #cacaca solid;
     margin: 0 30px 30px 0; }
   div.people .tweet {
-    padding-top: 70px;
-    min-height: 222px;
+    min-height: 270px;
+    padding-top: 30px;
     background-color: #323232; }
     div.people .tweet h2 {
       text-align: left;
@@ -405,6 +406,9 @@ ol li {
     h1 br {
       display: none; }
 
+  h2 {
+    font-size: 18px; }
+
   p.centered {
     width: auto;
     margin-left: 0px; }
@@ -425,8 +429,8 @@ ol li {
         width: 73px;
         height: 62px; }
     header nav a, header nav a:link, header nav a:visited, header nav a:active {
-      padding: 0 10px 0 0;
-      margin: 11px 2px 0 0; }
+      padding: 0 15px 0 0;
+      margin: 11px 10px 0 0; }
 
   footer {
     display: none; }
@@ -453,20 +457,24 @@ ol li {
     width: auto;
     padding: 0 12px; }
 
-  .principle, .principle.alt {
-    float: none;
-    width: auto;
-    margin: 30px 12px 0 12px; }
+  .principles {
+    padding: 0 0; }
+    .principles .principle, .principles .principle.alt {
+      float: none;
+      width: auto;
+      margin: 30px 12px 0 12px; }
 
   div.people, div.people.first {
-    margin-bottom: 0px; }
+    margin: 60px 0 0 0; }
     div.people .tweet, div.people .person, div.people.first .tweet, div.people.first .person {
       float: none;
       width: 300px;
-      margin: 0; }
+      margin: 10px 0; }
     div.people .tweet, div.people.first .tweet {
       min-height: initial;
       padding: 30px 0; }
+    div.people .person h2, div.people.first .person h2 {
+      padding: 10px 20px 0; }
 
   div.projects .project {
     width: 300px;
@@ -509,20 +517,23 @@ ol li {
     margin-bottom: 0px; }
     article#home #mobile {
       display: block;
-      border-bottom: 1px #cacaca solid; }
+      border-bottom: 1px #cacaca solid;
+      margin-top: 30px; }
       article#home #mobile h1 {
-        font-size: 35px;
+        font-size: 24px;
         margin-bottom: 0px; }
       article#home #mobile p {
-        font-size: 30px;
+        font-size: 24px;
         border-top: 1px #cacaca solid;
         background-color: #f2f2f2;
         margin-bottom: 0px;
-        padding: 20px 12px 25px 12px; }
+        padding: 20px 12px 25px 30px; }
+        article#home #mobile p:first-of-type {
+          margin-top: 30px; }
         article#home #mobile p:last-of-type {
           font-size: 20px; }
     article#home h1 {
-      font-size: 20px; }
+      font-size: 24px; }
       article#home h1.goals {
         display: none; }
       article#home h1 br {

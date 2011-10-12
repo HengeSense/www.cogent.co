@@ -267,8 +267,7 @@ div.people {
       font-weight: normal;
       padding: 0 20px; }
       div.people .tweet h2 a {
-        color: #ffeb27;
-        text-decoration: underline; }
+        color: #ffeb27; }
     div.people .tweet span.attribution {
       padding: 0 20px; }
   div.people .person a, div.people .person img {

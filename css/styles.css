@@ -39,6 +39,9 @@ a, a:link, a:visited {
   color: #4c9af5; }
   a:hover, a a:active, a:link:hover, a:link a:active, a:visited:hover, a:visited a:active {
     text-decoration: underline; }
+  a.view_projects, a:link.view_projects, a:visited.view_projects {
+    padding-left: 12px;
+    background: transparent url("../images/arrow.png") no-repeat left center; }
 
 h1 {
   text-align: center;
@@ -64,11 +67,10 @@ h3 {
   margin-bottom: 30px; }
 
 p.visit {
-  text-align: center;
-  font-size: 20px; }
+  text-align: center; }
   p.visit a {
     display: inline-block;
-    padding: 4px 30px 7px;
+    padding: 4px 30px 4px;
     color: white;
     background-color: #4c9af5; }
     p.visit a:hover {
@@ -127,14 +129,15 @@ header {
     background-color: #323232;
     position: relative;
     height: 40px;
-    font-family: "Signal", Helvetica, Arial, "Serif";
+    /*    font-family: "Signal", Helvetica, Arial, "Serif";*/
     color: #cacaca;
     text-align: center; }
     header nav a, header nav a:link, header nav a:visited {
+      font-size: 18px;
       display: inline-block;
       padding: 0 20px 0 0;
-      margin: 11px 12px 0 0;
-      height: 0.85em;
+      margin: 9px 12px 0 0;
+      /*      height: 0.85em;*/
       border-right: 1px #666666 solid;
       color: #cacaca; }
       header nav a:last-child, header nav a:link:last-child, header nav a:visited:last-child {
@@ -142,6 +145,8 @@ header {
         padding: 0 0 0 0; }
       header nav a:active, header nav a.selected, header nav a:link:active, header nav a:link.selected, header nav a:visited:active, header nav a:visited.selected {
         color: white; }
+      header nav a:hover, header nav a:link:hover, header nav a:visited:hover {
+        color: #4c9af5; }
 
 .toeser {
   background-color: #f63e5f;
@@ -153,40 +158,43 @@ header {
   .toeser .top {
     display: none; }
 
-.principle {
-  float: left;
-  width: 420px;
-  margin: 30px 84px 0 0; }
-  .principle.alt {
-    margin: 30px 54px 0 0; }
-  .principle h2 {
-    text-align: left;
-    padding: 11px 0 4px 55px;
-    background-position: 10px center;
-    background-repeat: no-repeat;
-    min-height: 32px;
-    line-height: 21px; }
-    .principle h2.focus {
-      background-image: url("../images/icon-focus.png");
-      background-position: 5px center; }
-    .principle h2.together {
-      background-image: url("../images/icon-together.png");
-      background-position: 5px center; }
-    .principle h2.people {
-      background-image: url("../images/icon-people.png"); }
-    .principle h2.life {
-      background-image: url("../images/icon-outside.png");
-      background-position: 5px center; }
-    .principle h2.real {
-      background-image: url("../images/icon-bereal.png"); }
-    .principle h2.tools {
-      background-image: url("../images/icon-tools.png"); }
-    .principle h2.learning {
-      background-image: url("../images/icon-learn.png");
-      background-position: 5px center; }
-    .principle h2.collaborate {
-      background-image: url("../images/icon-collaborate.png");
-      background-position: 5px center; }
+.principles {
+  padding: 30px 0; }
+  .principles .principle {
+    float: left;
+    width: 420px;
+    margin: 0 84px 0 0; }
+    .principles .principle.alt {
+      margin: 0 54px 0 0; }
+    .principles .principle h2 {
+      text-align: left;
+      padding: 11px 0 4px 55px;
+      background-position: 10px center;
+      background-repeat: no-repeat;
+      min-height: 32px;
+      line-height: 21px;
+      margin-bottom: 0px; }
+      .principles .principle h2.focus {
+        background-image: url("../images/icon-focus.png");
+        background-position: 5px center; }
+      .principles .principle h2.together {
+        background-image: url("../images/icon-together.png");
+        background-position: 5px center; }
+      .principles .principle h2.people {
+        background-image: url("../images/icon-people.png"); }
+      .principles .principle h2.life {
+        background-image: url("../images/icon-outside.png");
+        background-position: 5px center; }
+      .principles .principle h2.real {
+        background-image: url("../images/icon-bereal.png"); }
+      .principles .principle h2.tools {
+        background-image: url("../images/icon-tools.png"); }
+      .principles .principle h2.learning {
+        background-image: url("../images/icon-learn.png");
+        background-position: 5px center; }
+      .principles .principle h2.collaborate {
+        background-image: url("../images/icon-collaborate.png");
+        background-position: 5px center; }
 
 article[role="main"] {
   margin: 0 auto 20px;
@@ -341,12 +349,16 @@ section[role='main'] {
     height: 30px;
     width: 100%; }
     .post .caption p, .post .transparent-box p {
-      padding: 4px 30px 7px 54px;
       color: #cacaca; }
       .post .caption p a, .post .transparent-box p a {
-        color: #cacaca; }
+        background: transparent url("../images/icon-flickr.png") no-repeat 15px center;
+        color: #cacaca;
+        padding: 7px 30px 7px 54px;
+        display: inline-block;
+        line-height: 16px; }
       .post .caption p a:hover, .post .transparent-box p a:hover {
-        color: #4c9af5; }
+        color: #4c9af5;
+        background-image: url("../images/icon-flickr-over.png"); }
   .post .transparent-box {
     background-color: #323232;
     opacity: 0.9; }

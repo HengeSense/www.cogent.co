@@ -1,6 +1,14 @@
 module YamlConfig
-  def project_yaml
-    projects_yaml.find {|p| p['name'] == @project_name }
+  def project_display_name(name=nil)
+    project_yaml(name)['display_name']
+  end
+  
+  def project_strapline(name=nil)
+    project_yaml(name)['strapline']
+  end
+  
+  def project_yaml(name=nil)
+    projects_yaml.find {|p| p['name'] == (name || @project_name) }
   end
   
   def load_yaml(filename)

@@ -4,6 +4,9 @@
 
     %title
       Cogent
+      = " - #{page.meta['page_title']} " if page.meta['page_title']
+      = " - Projects - " + project_display_name(page.meta['project']) if page.meta['project']
+      = " - Join - " + page.meta['role'] if page.meta['role']
 
     %meta{ :charset => "utf-8" }/
     

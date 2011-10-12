@@ -20,18 +20,6 @@
 
     %script{ :src=>"http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" }
     %script{ :src => href("/js/underscore-min.js") }
-    %script{ :src=>"http://978.gs/resources/js/jquery.gs-overlay.min.js" }
-    
-    :javascript
-
-      jQuery(function() {
-        jQuery('div#gs-overlay').gsoverlay({
-          trigger: jQuery('a#gs-overlay-badge'),
-          grid: 978,
-          color: '#aa1b4a',
-          opacity: 0.15
-        });
-      });
 
     %script{ :type => "text/javascript", :src => "http://use.typekit.com/xkf5xsa.js" }
     %script{ :type => "text/javascript" }
@@ -47,8 +35,6 @@
     
   %body
     %a{ :name => "top" }
-    %a{ :href=>"http://978.gs", :id=> "gs-overlay-badge", :style=>"outline: 0;position:absolute;"}
-      %img{ :src=>"http://978.gs/resources/img/978-badge.png", :alt=>"This site is built with 978 grid system", :width=>"59", :height=>"25", :style=>"border: 0;"}
     %header{ :class => ("home" if page.meta["home_page"]) }
       %a.logo{ :href => href("/index.html") }
         %img{ :src => href("/images/cogent_logo.png"), :alt => "Cogent" }

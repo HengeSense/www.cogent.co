@@ -20,7 +20,7 @@ html[xmlns] .clearfix {
 }
 
 $base-line-height-in-pixels: 23.4;
-$base-font-size-in-pixels: 18;
+$base-font-size-in-pixels: 16;
 $base-line-height: $base-line-height-in-pixels/$base-font-size-in-pixels;
 
 $color-watermelon: #F63E5F;
@@ -232,25 +232,33 @@ header {
     min-height: 32px;
     line-height: 21px;
     &.focus {
-      background-image: url("../images/icon-focus.gif");
+      background-image: url("../images/icon-focus.png");
       background-position: 5px center;
     }
     &.together {
-      background-image: url("../images/icon-together.gif");
+      background-image: url("../images/icon-together.png");
       background-position: 5px center;
     }
     &.people {
-      background-image: url("../images/icon-people.gif");
+      background-image: url("../images/icon-people.png");
     }
     &.life {
-      background-image: url("../images/icon-life.gif");
+      background-image: url("../images/icon-outside.png");
       background-position: 5px center;
     }
     &.real {
-      background-image: url("../images/icon-real.gif");
+      background-image: url("../images/icon-bereal.png");
+    }
+    &.tools {
+      background-image: url("../images/icon-tools.png");
     }
     &.learning {
-      background-image: url("../images/icon-learning.gif");
+      background-image: url("../images/icon-learn.png");
+      background-position: 5px center;
+    }
+    &.collaborate {
+      background-image: url("../images/icon-collaborate.png");
+      background-position: 5px center;
     }
   }
 }
@@ -438,7 +446,7 @@ section[role='main'] {
 .post {
   position: relative;
   line-height: 0;
-  border-bottom: 1px $color-light-grey solid;
+  border-bottom: 1px $color-dark-grey solid;
   &.quote {
     padding: 50px 84px 50px 54px;
     background-color: #333;
@@ -455,6 +463,12 @@ section[role='main'] {
     p {
       padding: 4px 30px 7px 54px;
       color: $color-mid-grey;
+      a {
+        color: $color-mid-grey;
+      }
+      a:hover {
+        color: $color-blue;
+      }
     }
   }
   .transparent-box {
@@ -575,7 +589,7 @@ ol li {
       width: 300px;
       margin: 0 auto;
       position: relative;
-      padding: 6px 12px 100px;
+      padding: 6px 0 100px;
       text-align: left;
       .top {
         position: absolute;
@@ -716,14 +730,17 @@ ol li {
       }
       div.projects {
         margin-bottom: 0px;
+        width: 300px;
+        padding: 0 0 30px 0;
         .project {
           h2 {
             display: block;
             margin-bottom: 4px;
           }
+          margin: 0px;
           min-height: 100px;
           width: 276px;
-          padding: 30px 12px 0 12px;
+          padding: 0 12px 0 12px;
           border-bottom: 0px;
           border-top: 1px $color-mid-grey solid;
           img {

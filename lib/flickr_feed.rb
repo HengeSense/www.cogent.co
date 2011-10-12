@@ -24,7 +24,7 @@ module FlickrFeed
   end
   
   def people_photos
-    photos_in_set(72157627741365001)
+    photos_in_set(72157627749037619)
   end
   
   def project_photos(project, count=1)

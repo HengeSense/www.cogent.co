@@ -7,10 +7,12 @@
   quotes:
     - at: Wed Oct 5 14:20:28 +1100 2011
       attribution: Matt from Melbourne Business School said
-      quote: It's a great day here in the Cogent Treehouse lot's of exciting ideas being thrown around!
+      quote: >
+        Partnering with Cogent was made easy by their ability to truly listen, 
+        and have honest, real conversations (that were sometimes tough but meant we made a great product together!)
     - at: Fri Oct 7 14:20:28 +1100 2011
       attribution: Ben from Cogent said
-      quote: Tough week trying to get the aggregator working in IE9, but we did it. Took a lot of elbow great and coffee though!
+      quote: Tough week trying to get the aggregator working in IE9, but we did it. Took a lot of elbow grease and coffee though!
 
 ############################################################################################
 - name: eventer      
@@ -21,10 +23,10 @@
   quotes:
     - at: Mon Oct 3 14:20:28 +1100 2011
       attribution: Rach from Cogent said
-      quote: Swipe on!
+      quote: Can't wait to start getting this in front of customers.
     - at: Fri Oct 7 14:20:28 +1100 2011
-      attribution: Ben from Cogent said
-      quote: This eventer thing rox!
+      attribution: Warren from Cogent said
+      quote: Progress good this week!
 
 ############################################################################################
 - name: tesselaar

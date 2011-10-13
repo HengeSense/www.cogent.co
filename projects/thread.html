@@ -24,6 +24,27 @@
     <script type='text/javascript'>
       try{Typekit.load();}catch(e){}
     </script>
+    <script src='http://978.gs/resources/js/jquery.gs-overlay.min.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        jQuery(function() {
+          jQuery('div#gs-overlay').gsoverlay({
+            trigger: jQuery('a#gs-overlay-badge'),
+            grid: 748,
+            color: '#de7c14',
+            opacity: 0.22
+          }).css('margin', '0 auto')
+        });
+      //]]>
+    </script>
+    <style type='text/css'>
+      /*<![CDATA[*/
+        div#gs-overlay {
+          margin: 0 auto; 
+          width: 748px;
+        }
+      /*]]>*/
+    </style>
     <script src='../js/application.js' type='text/javascript'></script>
     <link href='../css/normalize.css' rel='stylesheet' />
     <link href='../css/styles.css' rel='stylesheet' />
@@ -37,6 +58,10 @@
   </head>
   <body>
     <a name='top'></a>
+    <div id='gs-overlay' style=''>&nbsp;</div>
+    <a href='http://978.gs' id='gs-overlay-badge' style='outline: 0;'>
+      <img src='http://978.gs/resources/img/748-badge.png' />
+    </a>
     <header>
       <a class='logo' href='../index.html'>
         <img alt='Cogent' src='../images/cogent_logo.png' />

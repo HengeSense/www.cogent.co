@@ -28,23 +28,23 @@
     %script{ :type => "text/javascript" }
       try{Typekit.load();}catch(e){}
 
-    %script{ :type => "text/javascript", :src => "http://978.gs/resources/js/jquery.gs-overlay.min.js" }
-
-    :javascript
-      jQuery(function() {
-        jQuery('div#gs-overlay').gsoverlay({
-          trigger: jQuery('a#gs-overlay-badge'),
-          grid: 748,
-          color: '#de7c14',
-          opacity: 0.22
-        }).css('margin', '0 auto')
-      });
-      
-    :css
-      div#gs-overlay {
-        margin: 0 auto; 
-        width: 748px;
-      }
+    -#%script{ :type => "text/javascript", :src => "http://978.gs/resources/js/jquery.gs-overlay.min.js" }
+    -#
+    -#:javascript
+    -#  jQuery(function() {
+    -#    jQuery('div#gs-overlay').gsoverlay({
+    -#      trigger: jQuery('a#gs-overlay-badge'),
+    -#      grid: 748,
+    -#      color: '#de7c14',
+    -#      opacity: 0.22
+    -#    }).css('margin', '0 auto')
+    -#  });
+    -#  
+    -#:css
+    -#  div#gs-overlay {
+    -#    margin: 0 auto; 
+    -#    width: 748px;
+    -#  }
 
     %script{ :type => "text/javascript", :src => href("/js/application.js") }
 
@@ -56,9 +56,9 @@
     
   %body
     %a{ :name => "top" }
-    #gs-overlay{ :style => ""} &nbsp;
-    %a{ :href => "http://978.gs", :id => "gs-overlay-badge", :style => "outline: 0;"}
-      %img{ :src => "http://978.gs/resources/img/748-badge.png" }
+    -##gs-overlay{ :style => ""} &nbsp;
+    -#%a{ :href => "http://978.gs", :id => "gs-overlay-badge", :style => "outline: 0;"}
+    -#  %img{ :src => "http://978.gs/resources/img/748-badge.png" }
     %header{ :class => ("home" if page.meta["home_page"]) }
       %a.logo{ :href => href("/index.html") }
         %img{ :src => href("/images/cogent_logo.png"), :alt => "Cogent" }

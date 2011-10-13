@@ -1,3 +1,4 @@
+require 'time'
 require 'twitter'
 require 'flickraw'
 require File.expand_path(File.dirname(__FILE__) + '/../../lib/yaml_config.rb')

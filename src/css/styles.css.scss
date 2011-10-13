@@ -622,6 +622,19 @@ footer {
     }
   }
   
+  article[role="main"] {
+    aside {
+      float: none;
+      width: 492px;
+      margin-left: 98px;
+    }
+    section[role="main"] {
+      width: 492px;
+      margin-right: 0;
+      margin-left: 128px;
+    }
+  }  
+
 }
 
 

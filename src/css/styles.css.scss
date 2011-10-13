@@ -92,6 +92,7 @@ h1 {
   font-size: 32px;
   margin: 58px 0 10px 0;
 }
+
 h2 {
   font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif";
   text-align: center;
@@ -100,6 +101,7 @@ h2 {
   margin-top: 0px;
   margin-bottom: 13px;
 }
+
 h3 {
   color: $color-dark-grey;
   font-weight: normal;
@@ -110,6 +112,7 @@ h3 {
 .intro-end, p.visit {
   margin-bottom: 30px;
 }
+
 p.visit {
   text-align: center;
   a {
@@ -136,15 +139,36 @@ p.centered {
   padding-left: 30px;
   padding-bottom: 20px;
 }
+
 .left {
   float: left;
 }
+
 .right {
   float: right;
 }
 
 .align-right {
   text-align: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  margin-left: 0;
+  padding-left: 30px;
+}
+
+ul li {
+  list-style: disc;
+  margin-left: 0em;
+}
+
+ol li {
+  list-style: normal;
+  margin-left: 1.5em;
 }
 
 #mobile {
@@ -185,7 +209,6 @@ header {
     background-color: $color-black;
     position: relative;
     height: 40px;
-/*    font-family: "Signal", Helvetica, Arial, "Serif";*/
     color: $color-mid-grey;
     text-align: center;
     a, a:link, a:visited {
@@ -193,7 +216,6 @@ header {
       display: inline-block;
       padding: 0 20px 0 0;
       margin: 9px 12px 0 0;
-/*      height: 0.85em;*/
       border-right: 1px $color-divider solid;
       color: $color-mid-grey;
       &:last-child {
@@ -521,23 +543,85 @@ footer {
 
 
 
-a {
-  text-decoration: none;
-}
 
-ul, ol {
-  margin-left: 0;
-  padding-left: 30px;
-}
 
-ul li {
-  list-style: disc;
-  margin-left: 0em;
-}
+@media (max-width: 978px) {
+  
+  header, article[role="main"], footer, .toeser {
+    width: 748px;
+  }
 
-ol li {
-  list-style: normal;
-  margin-left: 1.5em;
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p.centered {
+    width: 620px;
+    margin-left: 65px;
+  }
+  
+  .left, .right {
+    width: 334px;
+  }
+
+  header {
+    &.home {
+      h1 {
+        font-size: 48px;
+        margin-bottom: 44px;
+      }
+    }
+  }
+  
+  .principles {
+    .principle {
+      width: 300px;
+      margin: 0 84px 0 0;
+    }
+  }
+  
+  div.projects {
+    margin: 60px 0 30px 0;
+    .project {
+      float: none;
+      width: 492px;
+      margin: 0 auto 30px;
+      img {
+        width: 100%;
+        height: initial;
+      }
+      &:last-child {
+        margin: 0 auto 30px;
+      }
+    }
+  }
+  
+  div.people {
+    margin: 60px 0 30px 0;
+    .tweet {
+      min-height: 180px;
+      h2, span.attribution {
+        padding: 0 30px;
+      }
+    }
+    .person, .tweet {
+      float: none;
+      width: 492px;
+      margin: 0 auto 30px;
+      img {
+        width: 100%;
+        height: initial;
+      }
+      &:last-child {
+        margin: 0 auto 30px;
+      }
+    }
+  }
+  
 }
 
 

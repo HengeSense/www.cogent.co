@@ -782,8 +782,18 @@ footer {
             margin-bottom: 1.0em;
           }
         }
-        .caption p {
-          padding: 4px 12px 7px 12px;
+        .transparent-box {
+          display: none;
+        }
+        .caption {
+          background-color: $color-black;
+          opacity: 0.9;
+          height: initial;
+          p {
+            color: $color-white;
+            padding: 4px 12px 7px 12px;
+            margin-bottom: 0;
+          }
         }
       }
     }

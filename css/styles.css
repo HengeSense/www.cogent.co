@@ -190,7 +190,9 @@ footer span.name { display: inline-block; text-align: left; width: 60px; }
   article[role="main"] section[role="main"] .post img { width: 100%; }
   article[role="main"] section[role="main"] .post.quote { height: auto; width: auto; padding: 40px 12px 40px 12px; background-color: #333; }
   article[role="main"] section[role="main"] .post.quote span.attribution { margin-bottom: 1.0em; }
-  article[role="main"] section[role="main"] .post .caption p { padding: 4px 12px 7px 12px; }
+  article[role="main"] section[role="main"] .post .transparent-box { display: none; }
+  article[role="main"] section[role="main"] .post .caption { background-color: #323232; opacity: 0.9; height: initial; }
+  article[role="main"] section[role="main"] .post .caption p { color: white; padding: 4px 12px 7px 12px; margin-bottom: 0; }
   article#home { margin-bottom: 0px; }
   article#home #mobile { display: block; border-bottom: 1px #cacaca solid; margin-top: 30px; }
   article#home #mobile h1 { font-size: 24px; margin-bottom: 0px; }

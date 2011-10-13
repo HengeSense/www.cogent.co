@@ -155,7 +155,9 @@ footer span.name { display: inline-block; text-align: left; width: 60px; }
   div.people .tweet h2, div.people .tweet span.attribution { padding: 0 30px; }
   div.people .person, div.people .tweet { float: none; width: 492px; margin: 0 auto 30px; }
   div.people .person img, div.people .tweet img { width: 100%; height: initial; }
-  div.people .person:last-child, div.people .tweet:last-child { margin: 0 auto 30px; } }
+  div.people .person:last-child, div.people .tweet:last-child { margin: 0 auto 30px; }
+  article[role="main"] aside { float: none; width: 492px; margin-left: 98px; }
+  article[role="main"] section[role="main"] { width: 492px; margin-right: 0; margin-left: 128px; } }
 
 @media (max-width: 478px) { header, article[role="main"], footer, .toeser { width: 300px; }
   h1 { margin: 58px 12px 10px 12px; font-size: 24px; }

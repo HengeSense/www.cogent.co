@@ -1,4 +1,5 @@
 module YamlConfig
+  
   def project_display_name(name=nil)
     project_yaml(name)['display_name']
   end

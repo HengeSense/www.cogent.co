@@ -1,4 +1,5 @@
 module FlickrFeed
+  
   FlickRaw.api_key="8a82b5a4074ce3cea539edf10405aa0a"
   FlickRaw.shared_secret="11e0c00eb37d684b"
     

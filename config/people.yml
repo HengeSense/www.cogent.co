@@ -1,4 +1,11 @@
 ###########################################################
+- display_name: Marty Andrews
+  photo_id: 6242467739
+  role: Developer, Director, Pool Shark
+  twitter_id: martinjandrews
+  blog_url: blog.martyandrews.net
+  linkedin_url: au.linkedin.com/in/martyandrews
+###########################################################
 - display_name: Dan Tropp
   photo_id: 6236327084
   role: Developer
@@ -7,7 +14,7 @@
 ###########################################################
 - display_name: Keryn Mitchell
   photo_id: 6235802439
-  role: Office Manager
+  role: Office Manager, Scooter Rider
   twitter_id: eightydays
   blog_url: eightydaysdesign.blogspot.com/
   linkedin_url: au.linkedin.com/pub/keryn-mitchell/20/652/406

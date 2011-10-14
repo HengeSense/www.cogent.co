@@ -451,6 +451,7 @@ span.attribution {
 
 section[role='main'] {
   &.content {
+    position: relative;
     padding-top: 30px;
     color: $color-black;
     h2 {
@@ -513,6 +514,23 @@ section[role='main'] {
     opacity: 0.9;
   }
 }
+
+.hero {
+  position: absolute;
+  right: -420px;
+  top: 40px;
+  width: 306px;
+  background-color: $color-black;
+  img {
+    width: 100%;
+  }
+  h2 {
+    font-size: 20px;
+    padding: 30px;
+    color: $color-yellow;
+  }
+}
+
 
 article {
   &.thread {
@@ -634,6 +652,23 @@ footer {
       margin-left: 128px;
     }
   }  
+
+  .hero {
+    position: relative;
+    width: 492px;
+    right: initial;
+    top: initial;
+    background-color: $color-black;
+    img {
+      width: 100%;
+    }
+    h2 {
+      font-size: 20px;
+      padding: 30px;
+      color: $color-yellow;
+    }
+  }
+
 
 }
 
@@ -778,10 +813,12 @@ footer {
       float: none;
       width: auto;
       padding: 0 12px 0 0;
+      margin-left: 0px;
     }
     section[role="main"] {
       width: auto;
       margin-right: 0px;
+      margin-left: 0px;
       .post {
         img {
           width: 100%;
@@ -812,10 +849,22 @@ footer {
     }
   }
   
-  article#join {
-    
+  .hero {
+    position: relative;
+    width: 300px;
+    right: initial;
+    top: initial;
+    background-color: $color-black;
+    img {
+      width: 100%;
+    }
+    h2 {
+      font-size: 20px;
+      padding: 30px;
+      color: $color-yellow;
+    }
   }
-
+  
   article#home {
     margin-bottom: 0px;
 

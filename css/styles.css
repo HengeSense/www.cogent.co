@@ -118,7 +118,7 @@ div.people .person a.button.blog:hover { background-image: url("../images/icon-b
 span.attribution { display: inline-block; vertical-align: center; color: #cacaca; }
 
 section[role='main'] { font-size: 16px; line-height: normal; width: 558px; margin-right: 420px; margin-bottom: 30px; border-right: 1px white solid; color: #FFF; }
-section[role='main'].content { padding-top: 30px; color: #323232; }
+section[role='main'].content { position: relative; padding-top: 30px; color: #323232; }
 section[role='main'].content h2 { text-align: left; }
 section[role='main'] h1 { font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif"; color: #ffeb27; text-align: left; font-size: 24px; font-weight: lighter; margin: 0; }
 
@@ -130,6 +130,10 @@ section[role='main'] h1 { font-family: minion-pro, "Palatino", "Georgia", "Times
 .post .caption p a, .post .transparent-box p a { background: transparent url("../images/icon-flickr.png") no-repeat 15px center; color: #cacaca; padding: 7px 30px 7px 54px; display: inline-block; line-height: 16px; }
 .post .caption p a:hover, .post .transparent-box p a:hover { color: #4c9af5; background-image: url("../images/icon-flickr-over.png"); }
 .post .transparent-box { background-color: #323232; opacity: 0.9; }
+
+.hero { position: absolute; right: -420px; top: 40px; width: 306px; background-color: #323232; }
+.hero img { width: 100%; }
+.hero h2 { font-size: 20px; padding: 30px; color: #ffeb27; }
 
 article.thread section[role='banner'] h1 { color: #A81367; }
 
@@ -157,7 +161,10 @@ footer span.name { display: inline-block; text-align: left; width: 60px; }
   div.people .person img, div.people .tweet img { width: 100%; height: initial; }
   div.people .person:last-child, div.people .tweet:last-child { margin: 0 auto 30px; }
   article[role="main"] aside { float: none; width: 492px; margin-left: 98px; }
-  article[role="main"] section[role="main"] { width: 492px; margin-right: 0; margin-left: 128px; } }
+  article[role="main"] section[role="main"] { width: 492px; margin-right: 0; margin-left: 128px; }
+  .hero { position: relative; width: 492px; right: initial; top: initial; background-color: #323232; }
+  .hero img { width: 100%; }
+  .hero h2 { font-size: 20px; padding: 30px; color: #ffeb27; } }
 
 @media (max-width: 478px) { header, article[role="main"], footer, .toeser { width: 300px; }
   h1 { margin: 58px 12px 10px 12px; font-size: 24px; }
@@ -187,14 +194,17 @@ footer span.name { display: inline-block; text-align: left; width: 60px; }
   div.projects .project img { display: none; width: 100%; }
   section#project_footer .project { margin-top: 0px; width: 276px; padding: 20px 12px 0 12px; border-top: 1px #cacaca solid; }
   section#project_footer .project:first-child { border-top: none; padding: 20px 12px 0 12px; width: 246px; }
-  article[role="main"] aside { float: none; width: auto; padding: 0 12px 0 0; }
-  article[role="main"] section[role="main"] { width: auto; margin-right: 0px; }
+  article[role="main"] aside { float: none; width: auto; padding: 0 12px 0 0; margin-left: 0px; }
+  article[role="main"] section[role="main"] { width: auto; margin-right: 0px; margin-left: 0px; }
   article[role="main"] section[role="main"] .post img { width: 100%; }
   article[role="main"] section[role="main"] .post.quote { height: auto; width: auto; padding: 40px 12px 40px 12px; background-color: #333; }
   article[role="main"] section[role="main"] .post.quote span.attribution { margin-bottom: 1.0em; }
   article[role="main"] section[role="main"] .post .transparent-box { display: none; }
   article[role="main"] section[role="main"] .post .caption { background-color: #323232; opacity: 0.9; height: initial; }
   article[role="main"] section[role="main"] .post .caption p { color: white; padding: 4px 12px 7px 12px; margin-bottom: 0; }
+  .hero { position: relative; width: 300px; right: initial; top: initial; background-color: #323232; }
+  .hero img { width: 100%; }
+  .hero h2 { font-size: 20px; padding: 30px; color: #ffeb27; }
   article#home { margin-bottom: 0px; }
   article#home #mobile { display: block; border-bottom: 1px #cacaca solid; margin-top: 30px; }
   article#home #mobile h1 { font-size: 24px; margin-bottom: 0px; }

@@ -19,6 +19,10 @@ end
 
 Tilt.register CustomScssTemplate, 'scss'
 
+# Generate shorter URLs
+project.assume_content_negotiation = true
+project.assume_directory_index = true
+
 project.helpers do
   include YamlConfig
   include TwitterFeed

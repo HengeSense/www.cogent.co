@@ -67,10 +67,10 @@
         %br
         that gets results
       %nav
-        = nav_link "/", "Home"
-        = nav_link "/projects/", "Projects"
-        = nav_link "/about", "About"
-        = nav_link "/join/", "Join"
+        = nav_link "/index.html", "Home", :shallow => true
+        = nav_link "/projects/index.html", "Projects"
+        = nav_link "/about.html", "About"
+        = nav_link "/join/index.html", "Join"
 
     = yield
 

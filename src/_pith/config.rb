@@ -57,19 +57,18 @@ project.helpers do
     include("/_partials/_tweet.html.haml", :tweet => tweet)
   end
 
-  def absolute_current_path
-    path = page.output_path.to_s
-    path.sub!(/index\.html$/, "") if project.assume_directory_index
-    path.sub!(/\.html$/, "") if project.assume_content_negotiation
-    "/" + path
+  def abbreviate_path(path)
+    path.to_s.sub(/index\.html$/, "").sub(/\.html$/, "")
   end
 
-  def nav_link(path, label)
-    selected = (path == absolute_current_path)
-    unless path == "/"
-      selected ||= absolute_current_path.start_with?(path)
+  def nav_link(target_ref, label, options = {})
+    target_path = abbreviate_path(resolve_reference(target_ref))
+    current_path = abbreviate_path(page.output_path)
+    selected = (target_path == current_path)
+    unless options[:shallow]
+      selected ||= current_path.start_with?(target_path)
     end
-    %{<a href="#{path}" class="#{'selected' if selected}">#{label}</a>}
+    %{<a href="/#{target_path}" class="#{'selected' if selected}">#{label}</a>}
   end
 
 end

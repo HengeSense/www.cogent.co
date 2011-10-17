@@ -6,15 +6,15 @@
   line-height: 0;
   height: 0;
 }
- 
+
 .clearfix {
 
 }
- 
+
 html[xmlns] .clearfix {
 
 }
- 
+
 * html .clearfix {
   height: 1%;
 }
@@ -37,12 +37,12 @@ $color-divider: #666666;
   font-size: ($size / $base-font-size-in-pixels) + em;
   @if $size <= $base-font-size-in-pixels
     { line-height: ($base-line-height-in-pixels / $size) + em; }
-  @else 
+  @else
     { line-height: ($base-line-height-in-pixels * 2 / $size) + em; }
   margin-bottom: ($base-line-height-in-pixels / $size) + em;
-  @if $top-margin 
+  @if $top-margin
     { margin-top: (($base-line-height-in-pixels * 1.5) / $heading-two-in-pixels) + em; }
-  @else 
+  @else
     { margin-top:  0 };
 }
 
@@ -50,20 +50,20 @@ $color-divider: #666666;
   font-family: 'Signal';
   src: url('../fonts/signal/signal-no2-d-webfont.eot');
   src: local('☺'),
-       url('../fonts/signal/signal-no2-d-webfont.woff') format('woff'), 
+       url('../fonts/signal/signal-no2-d-webfont.woff') format('woff'),
        url('../fonts/signal/signal-no2-d-webfont.ttf') format('truetype'),
-	     url("../fonts/signal/signal-no2-d-webfont.svg#SignalNo2DRegular") format("svg");
+       url("../fonts/signal/signal-no2-d-webfont.svg#SignalNo2DRegular") format("svg");
 }
 .signal { font-family: Signal; }
 
 
 
 body {
-	margin: 0 0 0 0;
-	padding: 0;
-	border: 0;
-	color: $color-black;
-	background-color: #FFF;
+  margin: 0 0 0 0;
+  padding: 0;
+  border: 0;
+  color: $color-black;
+  background-color: #FFF;
   font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif";
 }
 
@@ -198,7 +198,7 @@ header {
     display:none;
   }
   a.logo {
-  	margin: 0 auto 40px;
+    margin: 0 auto 40px;
     display: block;
     width: 111px;
     height: 91px;
@@ -219,11 +219,11 @@ header {
       border-right: 1px $color-divider solid;
       color: $color-mid-grey;
       &:last-child {
-       border:none; 
+       border:none;
        padding: 0 0 0 0;
        margin-right: 0;
       }
-      &:active, 
+      &:active,
       &.selected {
         color: $color-white;
       }
@@ -238,7 +238,7 @@ header {
   background-color: $color-watermelon;
   text-align: center;
   .copy {
-	  padding: 30px 0;
+    padding: 30px 0;
     color: $color-white;
     font-size: 16px;
   }
@@ -297,20 +297,20 @@ header {
   }
 }
 article[role="main"] {
-	margin: 0 auto 20px;
+  margin: 0 auto 20px;
   color: $color-black;
   aside {
     float: right;
-  	width: 306px;
+    width: 306px;
     padding: 0 84px 0 30px;
-    
+
     h1 {
       font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif";
       font-size: 20px;
       font-weight: normal;
       color: #363636;
       margin: 0 0 6px;
-      text-align: left;  
+      text-align: left;
     }
     p {
       font-size: 16px;
@@ -375,7 +375,7 @@ div.people {
     margin: 0 30px 30px 0;
   }
   .tweet {
-    min-height:270px; 
+    min-height:270px;
     padding-top: 30px;
     background-color: $color-black;
     h2 {
@@ -473,7 +473,7 @@ section[role='main'] {
     font-weight: lighter;
     margin: 0;
   }
-  
+
 }
 
 .post {
@@ -496,7 +496,7 @@ section[role='main'] {
     p {
       color: $color-mid-grey;
       a {
-        
+
         background: transparent url("../images/icon-flickr.png") no-repeat 15px center;
         color: $color-mid-grey;
         padding: 7px 30px 7px 54px;
@@ -564,7 +564,7 @@ footer {
 
 
 @media (max-width: 978px) {
-  
+
   header, article[role="main"], footer, .toeser {
     width: 748px;
   }
@@ -581,7 +581,7 @@ footer {
     width: 620px;
     margin-left: 65px;
   }
-  
+
   .left, .right {
     width: 334px;
   }
@@ -594,14 +594,14 @@ footer {
       }
     }
   }
-  
+
   .principles {
     .principle {
       width: 300px;
       margin: 0 84px 0 0;
     }
   }
-  
+
   div.projects {
     margin: 60px 0 30px 0;
     .project {
@@ -617,7 +617,7 @@ footer {
       }
     }
   }
-  
+
   div.people {
     margin: 60px 0 30px 0;
     .tweet {
@@ -639,7 +639,7 @@ footer {
       }
     }
   }
-  
+
   article[role="main"] {
     aside {
       float: none;
@@ -651,7 +651,7 @@ footer {
       margin-right: 0;
       margin-left: 128px;
     }
-  }  
+  }
 
   .hero {
     position: relative;
@@ -678,7 +678,7 @@ footer {
   header, article[role="main"], footer, .toeser {
     width: 300px;
   }
-  
+
   h1 {
     margin: 58px 12px 10px 12px;
     font-size: 24px;
@@ -698,7 +698,7 @@ footer {
     width: auto;
     margin-left: 0px;
   }
-  
+
   header {
     width: 100%;
     height: 95px;
@@ -756,16 +756,16 @@ footer {
     width: auto;
     padding: 0 12px;
   }
-  
+
   .principles {
     padding: 0 0;
     .principle, .principle.alt {
       float: none;
       width: auto;
-      margin: 30px 12px 0 12px;    
+      margin: 30px 12px 0 12px;
     }
   }
-  
+
   div.people, div.people.first {
     margin: 60px 0 0 0;
     .tweet, .person {
@@ -783,7 +783,7 @@ footer {
       }
     }
   }
-  
+
   div.projects .project {
     width: 300px;
     min-height: initial;
@@ -793,7 +793,7 @@ footer {
       width: 100%;
     }
   }
-  
+
   section#project_footer {
     .project {
       margin-top: 0px;
@@ -805,9 +805,9 @@ footer {
         padding: 20px 12px 0 12px;
         width: 246px;
       }
-    }   
+    }
   }
-    
+
   article[role="main"] {
     aside {
       float: none;
@@ -848,7 +848,7 @@ footer {
       }
     }
   }
-  
+
   .hero {
     position: relative;
     width: 300px;
@@ -864,7 +864,7 @@ footer {
       color: $color-yellow;
     }
   }
-  
+
   article#home {
     margin-bottom: 0px;
 

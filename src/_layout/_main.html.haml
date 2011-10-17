@@ -67,10 +67,10 @@
         %br
         that gets results
       %nav
-        %a.index(href="/") Home
-        %a.projects(href="/projects/") Projects
-        %a.about(href="/about") About
-        %a.join(href="/join") Join
+        = nav_link "/", "Home"
+        = nav_link "/projects/", "Projects"
+        = nav_link "/about", "About"
+        = nav_link "/join", "Join"
 
     = yield
 

@@ -57,4 +57,20 @@ project.helpers do
     include("/_partials/_tweet.html.haml", :tweet => tweet)
   end
 
+  def absolute_current_path
+    path = page.output_path.to_s
+    path.sub!(/index\.html$/, "") if project.assume_directory_index
+    path.sub!(/\.html$/, "") if project.assume_content_negotiation
+    "/" + path
+  end
+
+  def nav_link(path, label)
+    puts "does #{path.inspect} == #{absolute_current_path.inspect}"
+    selected = (path == absolute_current_path)
+    unless path == "/"
+      selected ||= absolute_current_path.start_with?(path)
+    end
+    %{<a href="#{path}" class="#{'selected' if selected}">#{label}</a>}
+  end
+
 end

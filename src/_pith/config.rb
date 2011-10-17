@@ -65,7 +65,6 @@ project.helpers do
   end
 
   def nav_link(path, label)
-    puts "does #{path.inspect} == #{absolute_current_path.inspect}"
     selected = (path == absolute_current_path)
     unless path == "/"
       selected ||= absolute_current_path.start_with?(path)

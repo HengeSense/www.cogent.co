@@ -60,17 +60,17 @@
     -#%a{ :href => "http://978.gs", :id => "gs-overlay-badge", :style => "outline: 0;"}
     -#  %img{ :src => "http://978.gs/resources/img/748-badge.png" }
     %header{ :class => ("home" if page.meta["home_page"]) }
-      %a.logo{ :href => href("/index.html") }
-        %img{ :src => href("/images/cogent_logo.png"), :alt => "Cogent" }
+      %a.logo(href="/")
+        %img{ :src => "/images/cogent_logo.png", :alt => "Cogent" }
       %h1
         We create useful software
         %br
         that gets results
       %nav
-        %a.index{ :href => href("/index.html") } Home
-        %a.projects{ :href => href("/projects/index.html") } Projects
-        %a.about{ :href => href("/about.html") } About
-        %a.join{ :href => href("/join.html") } Join
+        %a.index(href="/") Home
+        %a.projects(href="/projects/") Projects
+        %a.about(href="/about") About
+        %a.join(href="/join") Join
 
     = yield
 

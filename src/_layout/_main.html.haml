@@ -53,6 +53,9 @@
     /[if IE]
       :css
           header.home { height: 350px; }
+    /[if IE 7]
+      %link{ :rel => "stylesheet", :href => "/css/ie7.css" }/
+
   %body
     %a{ :name => "top" }
     -##gs-overlay{ :style => ""} &nbsp;

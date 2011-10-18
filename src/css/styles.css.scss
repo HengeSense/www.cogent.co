@@ -367,7 +367,8 @@ section#project_footer {
 div.people {
   margin: 60px -30px 30px 0;
   .tweet, .person {
-    min-height: 286px;
+/*    min-height: 286px;*/
+    height: 300px;
     float: left;
     width: 306px;
     background-color: $color-light-grey;
@@ -375,7 +376,8 @@ div.people {
     margin: 0 30px 30px 0;
   }
   .tweet {
-    min-height:270px;
+/*    min-height:270px;*/
+    height: 270px;
     padding-top: 30px;
     background-color: $color-black;
     h2 {
@@ -491,6 +493,7 @@ section[role='main'] {
   .caption, .transparent-box {
     position: absolute;
     bottom: 0;
+    left: 0;
     height: 30px;
     width: 100%;
     p {

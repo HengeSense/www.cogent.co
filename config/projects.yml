@@ -18,12 +18,12 @@
 - name: eventer      
   display_name: Eventer
   page: eventer.html
-  strapline: Changing what it's like to watch an event you couldn't make it to.
+  strapline: Changing what it&rsquo;s like to watch an event you couldn&rsquo;t make it to.
   photoset_id: 72157627873365994
   quotes:
     - at: Mon Oct 3 14:20:28 +1100 2011
       attribution: Rach from Cogent said
-      quote: Can't wait to start getting this in front of customers.
+      quote: Can&rsquo;t wait to start getting this in front of customers.
     - at: Fri Oct 7 14:20:28 +1100 2011
       attribution: Warren from Cogent said
       quote: Progress good this week!
@@ -37,7 +37,7 @@
   quotes:
     - at: Wed Oct 5 14:20:28 +1100 2011
       attribution: Warren from Cogent said
-      quote: Can't wait to see this working in the wild.
+      quote: Can&rsquo;t wait to see this working in the wild.
     - at: Fri Oct 7 14:20:28 +1100 2011
       attribution: Andy from Cogent said
       quote: Dotland and Stockland are bending my brain.

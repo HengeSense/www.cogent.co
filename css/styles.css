@@ -97,8 +97,8 @@ section#project_footer .project:first-child { padding-left: 30px; width: 246px; 
 section#project_footer .project h2 { text-align: left; }
 
 div.people { margin: 60px -30px 30px 0; }
-div.people .tweet, div.people .person { min-height: 286px; float: left; width: 306px; background-color: #f2f2f2; border-bottom: 1px #cacaca solid; margin: 0 30px 30px 0; }
-div.people .tweet { min-height: 270px; padding-top: 30px; background-color: #323232; }
+div.people .tweet, div.people .person { /*    min-height: 286px;*/ height: 300px; float: left; width: 306px; background-color: #f2f2f2; border-bottom: 1px #cacaca solid; margin: 0 30px 30px 0; }
+div.people .tweet { /*    min-height:270px;*/ height: 270px; padding-top: 30px; background-color: #323232; }
 div.people .tweet h2 { text-align: left; color: #ffeb27; font-weight: normal; padding: 0 20px; }
 div.people .tweet h2 a { color: #ffeb27; }
 div.people .tweet span.attribution { padding: 0 20px; }
@@ -125,7 +125,7 @@ section[role='main'] h1 { font-family: minion-pro, "Palatino", "Georgia", "Times
 .post { position: relative; line-height: 0; border-bottom: 1px #848484 solid; }
 .post.quote { padding: 50px 84px 50px 54px; background-color: #333; line-height: normal; }
 .post img { width: 100%; }
-.post .caption, .post .transparent-box { position: absolute; bottom: 0; height: 30px; width: 100%; }
+.post .caption, .post .transparent-box { position: absolute; bottom: 0; left: 0; height: 30px; width: 100%; }
 .post .caption p, .post .transparent-box p { color: #cacaca; }
 .post .caption p a, .post .transparent-box p a { background: transparent url("../images/icon-flickr.png") no-repeat 15px center; color: #cacaca; padding: 7px 30px 7px 54px; display: inline-block; line-height: 16px; }
 .post .caption p a:hover, .post .transparent-box p a:hover { color: #4c9af5; background-image: url("../images/icon-flickr-over.png"); }

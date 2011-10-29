@@ -6,12 +6,6 @@
   blog_url: blog.martyandrews.net
   linkedin_url: au.linkedin.com/in/martyandrews
 ###########################################################
-- display_name: Trung Lê
-  photo_id: 6287375460
-  role: Developer
-  twitter_id: elgnurt
-  linkedin_url: au.linkedin.com/in/joneslee85
-###########################################################
 - display_name: Dan Tropp
   photo_id: 6236327084
   role: Developer
@@ -82,4 +76,10 @@
   role: Developer
   twitter_id: muzcat007
   linkedin_url: au.linkedin.com/pub/warren-oliver/2/4b5/b34
+###########################################################
+- display_name: Trung Lê
+  photo_id: 6287375460
+  role: Developer
+  twitter_id: elgnurt
+  linkedin_url: au.linkedin.com/in/joneslee85
 ###########################################################

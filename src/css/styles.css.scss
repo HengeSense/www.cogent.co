@@ -54,9 +54,18 @@ $color-divider: #666666;
        url('../fonts/signal/signal-no2-d-webfont.ttf') format('truetype'),
        url("../fonts/signal/signal-no2-d-webfont.svg#SignalNo2DRegular") format("svg");
 }
-.signal { font-family: Signal; }
 
+@mixin font-hack {
+  //HACKZ to fix font rendering on windowzzzzzzz
+  -webkit-transform: rotate(-0.0001deg);
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/images/IEfix.png,sizingMethod=crop);
+  zoom:1;
+}
 
+.signal {
+  font-family: "Signal";
+  @include font-hack;
+}
 
 body {
   margin: 0 0 0 0;
@@ -89,6 +98,7 @@ a, a:link, a:visited  {
 h1 {
   text-align: center;
   font-family: "Signal", Helvetica, Arial, "Serif";
+  @include font-hack;
   font-size: 32px;
   margin: 58px 0 10px 0;
 }

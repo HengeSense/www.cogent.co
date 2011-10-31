@@ -5,7 +5,7 @@
 
 @font-face { font-family: 'Signal'; src: url("../fonts/signal/signal-no2-d-webfont.eot"); src: local("☺"), url("../fonts/signal/signal-no2-d-webfont.woff") format("woff"), url("../fonts/signal/signal-no2-d-webfont.ttf") format("truetype"), url("../fonts/signal/signal-no2-d-webfont.svg#SignalNo2DRegular") format("svg"); }
 
-.signal { font-family: "Signal"; -webkit-transform: rotate(0.0deg); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/images/IEfix.png,sizingMethod=crop); zoom: 1; }
+.signal { font-family: Signal; }
 
 body { margin: 0 0 0 0; padding: 0; border: 0; color: #323232; background-color: #FFF; font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif"; }
 
@@ -17,7 +17,7 @@ a, a:link, a:visited { color: #4c9af5; }
 a:hover, a a:active, a:link:hover, a:link a:active, a:visited:hover, a:visited a:active { text-decoration: underline; }
 a.view_projects, a:link.view_projects, a:visited.view_projects { padding-left: 12px; background: transparent url("../images/arrow.png") no-repeat left center; }
 
-h1 { text-align: center; font-family: "Signal", Helvetica, Arial, "Serif"; -webkit-transform: rotate(0.0deg); filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/images/IEfix.png,sizingMethod=crop); zoom: 1; font-size: 32px; margin: 58px 0 10px 0; }
+h1 { text-align: center; font-family: "Signal", Helvetica, Arial, "Serif"; font-size: 32px; margin: 58px 0 10px 0; }
 
 h2 { font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif"; text-align: center; font-size: 24px; font-weight: normal; margin-top: 0px; margin-bottom: 13px; }
 

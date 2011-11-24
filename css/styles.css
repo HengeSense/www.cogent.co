@@ -86,7 +86,7 @@ article[role="main"] aside p { font-size: 16px; line-height: 1.5em; }
 
 div.projects { margin: 60px -30px 30px 0; }
 div.projects .project { float: left; width: 306px; min-height: 335px; background-color: #f2f2f2; border-bottom: 1px #cacaca solid; margin: 0 30px 30px 0; }
-div.projects .project img { width: 306px; height: 180px; }
+div.projects .project img { width: 306px; }
 div.projects .project:last-child { margin-right: 0px; }
 div.projects .project h2 { text-align: left; padding: 20px 30px 0 30px; margin-bottom: 5px; }
 div.projects .project p { padding: 0 30px; }

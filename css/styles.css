@@ -157,7 +157,7 @@ footer span.name { display: inline-block; text-align: left; width: 60px; }
   div.people { margin: 60px 0 30px 0; }
   div.people .tweet { min-height: 180px; }
   div.people .tweet h2, div.people .tweet span.attribution { padding: 0 30px; }
-  div.people .person, div.people .tweet { float: none; width: 492px; margin: 0 auto 30px; }
+  div.people .person, div.people .tweet { height: auto; float: none; width: 492px; margin: 0 auto 30px; }
   div.people .person img, div.people .tweet img { width: 100%; height: initial; }
   div.people .person:last-child, div.people .tweet:last-child { margin: 0 auto 30px; }
   article[role="main"] aside { float: none; width: 492px; margin-left: 98px; }
@@ -187,7 +187,7 @@ footer span.name { display: inline-block; text-align: left; width: 60px; }
   .principles { padding: 0 0; }
   .principles .principle, .principles .principle.alt { float: none; width: auto; margin: 30px 12px 0 12px; }
   div.people, div.people.first { margin: 60px 0 0 0; }
-  div.people .tweet, div.people .person, div.people.first .tweet, div.people.first .person { float: none; width: 300px; margin: 10px 0; }
+  div.people .tweet, div.people .person, div.people.first .tweet, div.people.first .person { float: none; height: auto; width: 300px; margin: 10px 0; }
   div.people .tweet, div.people.first .tweet { min-height: initial; padding: 30px 0; }
   div.people .person h2, div.people.first .person h2 { padding: 10px 20px 0; }
   div.projects .project { width: 300px; min-height: initial; margin-bottom: 0px; }

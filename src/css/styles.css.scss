@@ -629,6 +629,7 @@ footer {
       }
     }
     .person, .tweet {
+      height: auto;
       float: none;
       width: 492px;
       margin: 0 auto 30px;
@@ -772,6 +773,7 @@ footer {
     margin: 60px 0 0 0;
     .tweet, .person {
       float: none;
+      height: auto;
       width: 300px;
       margin: 10px 0;
     }

@@ -89,6 +89,13 @@
   twitter_id: bennyg
   linkedin_url: au.linkedin.com/in/bengreen
 ###########################################################
+- display_name: Iain McCoy
+  photo_id: 6844705837
+  role: Developer, Juggler
+  twitter_id: imccoy
+  blog_url: fineshambles.com
+  linkedin_url: linkedin.com/pub/iain-mccoy/19/71b/313
+###########################################################
 - display_name: James Fraser
   photo_id: 6717806715
   role: Developer

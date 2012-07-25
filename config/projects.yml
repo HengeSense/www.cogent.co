@@ -11,6 +11,7 @@
     - at: Mon Jun 18 11:20:28 +1100 2012
       attribution: Ben Green from Cogent said
       quote: Currently finessing the visuals for Thread iPad app.
+
 ############################################################################################
 - name: eventer      
   display_name: Eventer
@@ -26,8 +27,22 @@
       quote: We just bought the most awesome piece of Microsoft crap to test on.
 
 ############################################################################################
+- name: tesselaar
+  display_name: Tesselaar
+  page: tesselaar.html
+  strapline: An efficient back-office was in order for Paul Tesselaar.
+  photoset_id: 72157627733596203
+  quotes:
+    - at: Wed Oct 5 14:20:28 +1100 2011
+      attribution: Warren from Cogent said
+      quote: Can&rsquo;t wait to see this working in the wild.
+    - at: Fri Oct 7 14:20:28 +1100 2011
+      attribution: Andy from Cogent said
+      quote: Dotland and Stockland are bending my brain.
+
+############################################################################################
 - name: readtime
-  display_name: Read Time
+  display_name: Readtime
   page: readtime.html
   strapline: Getting Things Done&trade; for your reading list.
   photoset_id: 72157630704255124
@@ -53,20 +68,6 @@
     - at: Fri Oct 7 14:20:28 +1100 2011
       attribution: Rob from Cogent said
       quote: It'll be great if the other team doesn't screw up our stuff.
-
-############################################################################################
-- name: tesselaar
-  display_name: Tesselaar
-  page: tesselaar.html
-  strapline: An efficient back-office was in order for Paul Tesselaar.
-  photoset_id: 72157627733596203
-  quotes:
-    - at: Wed Oct 5 14:20:28 +1100 2011
-      attribution: Warren from Cogent said
-      quote: Can&rsquo;t wait to see this working in the wild.
-    - at: Fri Oct 7 14:20:28 +1100 2011
-      attribution: Andy from Cogent said
-      quote: Dotland and Stockland are bending my brain.
 
 ############################################################################################
 # - name: the_alfred_hospital

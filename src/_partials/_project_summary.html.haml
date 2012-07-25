@@ -1,7 +1,8 @@
 .project<>
   - if project_photo
     %a{ :href => href("/projects/" + project['page']) }<>
-      %img{ :src => project_photo[:url]  }<>
+      .hero-image
+        %img{ :src => project_photo[:url]  }<>
   %h2<>
     %a{ :href => href("/projects/" + project['page']) }<>= project['display_name'] 
   %p<>= project['strapline']

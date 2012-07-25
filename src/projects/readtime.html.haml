@@ -1,0 +1,28 @@
+---
+project: 'readtime'
+layout: "../_layout/_main.html.haml"
+...
+- @project_name = page.meta['project']
+%article.clearfix{ :role => "main" }
+
+
+  %h1= project_display_name
+  %h2.intro-end= project_strapline
+
+  %aside
+
+    %h1 Readtime
+    %p Getting things done for your reading list.
+    %p Reading lists are awesome for collecting all the articles you'd like to read - sometimes too awesome. However, having enthusiastically populated their reading lists with articles, many people wince when faced with voluminous lists, making their reading efforts seem inadequate.
+
+    %h1 How Does It Work?
+    %p Readtime lets you specify a duration of up to 30 minutes. Based on that time it performs rocket science involving the average person's reading speed (words per minute) and and articles's length to fetch the right articles from your list. Fast reader? Readtime never stops calculating the remaining time and will fetch more articles if needs be. Slow food / internet / reading aficionado? Take your time, Readtime won't taunt you with articles that you won't get to in a session.
+    %p The point of Readtime is to use your available time to get things read and out of your list. Swiping an article off to the left will archive it in your reading list. That's it. It's done.
+    %p Since you're getting so much reading done, you can also add any link from an article to your list as you go; just tap on it and select Add to Readability. You can also share it via Twitter or email, and view a link in Safari.
+    %p For launch, Readtime uses Readability. We hope to add more reading lists in the future. You can sign in to your Readability account from within the Readtime app.
+
+    %p
+      %a.view_projects{ :href => href("/projects/index.html") }View all projects
+
+  = include("../_partials/project_main.html.haml")
+  = include("../_layout/project_footer.html.haml")

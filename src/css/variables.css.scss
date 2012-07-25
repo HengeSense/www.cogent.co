@@ -1,0 +1,26 @@
+$base-line-height-in-pixels: 23.4;
+$base-font-size-in-pixels: 16;
+$base-line-height: $base-line-height-in-pixels/$base-font-size-in-pixels;
+
+$color-watermelon: #F63E5F;
+$color-yellow: #FFEB27;
+$color-blue: #4C9AF5;
+$color-black: #323232;
+$color-light-grey: #f2f2f2;
+$color-mid-grey: #cacaca;
+$color-dark-grey: #848484;
+$color-white: #FFF;
+$color-divider: #666666;
+
+@mixin set-lines($size, $top-margin) {
+  font-size: ($size / $base-font-size-in-pixels) + em;
+  @if $size <= $base-font-size-in-pixels
+    { line-height: ($base-line-height-in-pixels / $size) + em; }
+  @else
+    { line-height: ($base-line-height-in-pixels * 2 / $size) + em; }
+  margin-bottom: ($base-line-height-in-pixels / $size) + em;
+  @if $top-margin
+    { margin-top: (($base-line-height-in-pixels * 1.5) / $heading-two-in-pixels) + em; }
+  @else
+    { margin-top:  0 };
+}

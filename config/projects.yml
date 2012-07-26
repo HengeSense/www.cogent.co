@@ -62,12 +62,12 @@
   photoset_id: 72157630706064756
   archived: true
   quotes:
-    - at: Wed July 18 15:10:28 +1100 2011
+    - at: Wed May 27 15:10:28 +1100 2012
       attribution: Marty from Cogent said
-      quote: We're planning to launch soon and flick the switch on 18 months solid work.
-    - at: Fri Oct 7 14:20:28 +1100 2011
+      quote: The best way we can solve this problem is not to build any software at all.
+    - at: Thu Jul 5 14:20:28 +1100 2012
       attribution: Rob from Cogent said
-      quote: It'll be great if the other team doesn't screw up our stuff.
+      quote: Is that pushed to the cloud?
 
 ############################################################################################
 # - name: the_alfred_hospital

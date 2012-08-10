@@ -56,7 +56,7 @@
       
 ############################################################################################
 - name: rea
-  display_name: REA
+  display_name: REA Group
   page: rea.html
   strapline: Rebuilding the Customer Platform, ground up.
   photoset_id: 72157630706064756

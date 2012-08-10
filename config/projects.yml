@@ -27,20 +27,6 @@
       quote: Excited to be moving into marketing phase!
 
 ############################################################################################
-- name: tesselaar
-  display_name: Tesselaar
-  page: tesselaar.html
-  strapline: An efficient back-office was in order for Paul Tesselaar.
-  photoset_id: 72157627733596203
-  quotes:
-    - at: Wed Oct 5 14:20:28 +1100 2011
-      attribution: Warren from Cogent said
-      quote: Can&rsquo;t wait to see this working in the wild.
-    - at: Fri Oct 7 14:20:28 +1100 2011
-      attribution: Andy from Cogent said
-      quote: Dotland and Stockland are bending my brain.
-
-############################################################################################
 - name: readtime
   display_name: Readtime
   page: readtime.html
@@ -68,6 +54,21 @@
     - at: Thu Jul 5 14:20:28 +1100 2012
       attribution: Rob from Cogent said
       quote: Is that pushed to the cloud?
+
+############################################################################################
+- name: tesselaar
+  display_name: Tesselaar
+  page: tesselaar.html
+  strapline: An efficient back-office was in order for Paul Tesselaar.
+  photoset_id: 72157627733596203
+  quotes:
+    - at: Wed Oct 5 14:20:28 +1100 2011
+      attribution: Warren from Cogent said
+      quote: Can&rsquo;t wait to see this working in the wild.
+    - at: Fri Oct 7 14:20:28 +1100 2011
+      attribution: Andy from Cogent said
+      quote: Dotland and Stockland are bending my brain.
+
 
 ############################################################################################
 # - name: the_alfred_hospital

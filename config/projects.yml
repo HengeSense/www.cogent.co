@@ -44,7 +44,7 @@
 - name: readtime
   display_name: Readtime
   page: readtime.html
-  strapline: Getting Things Done&trade; for your reading list.
+  strapline: Getting Things Read.
   photoset_id: 72157630704255124
   quotes:
     - at: Fri July 27 15:10:28 +1100 2012

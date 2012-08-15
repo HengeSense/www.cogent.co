@@ -86,7 +86,7 @@ article[role="main"] aside p { font-size: 16px; line-height: 1.5em; }
 
 div.projects { margin: 60px -30px 30px 0; }
 div.projects .project { float: left; width: 306px; min-height: 355px; background-color: #f2f2f2; border-bottom: 1px #cacaca solid; margin: 0 30px 30px 0; }
-div.projects .project .hero-image { width: 306px; height: 206px; overflow: hidden; }
+div.projects .project .hero-image { height: 206px; overflow: hidden; }
 div.projects .project .hero-image img { width: 100%; }
 div.projects .project:last-child { margin-right: 0px; }
 div.projects .project h2 { text-align: left; padding: 20px 30px 0 30px; margin-bottom: 5px; }
@@ -149,6 +149,7 @@ footer span.name { display: inline-block; text-align: left; width: 60px; }
 
 @media (max-width: 978px) { header, article[role="main"], footer, .toeser { width: 748px; }
   h1 { font-size: 30px; }
+  h1 br { display: none; }
   h2 { font-size: 20px; }
   p.centered { width: 620px; margin-left: 65px; }
   .left, .right { width: 334px; }
@@ -156,7 +157,8 @@ footer span.name { display: inline-block; text-align: left; width: 60px; }
   .principles .principle { width: 300px; margin: 0 84px 0 0; }
   div.projects { margin: 60px 0 30px 0; }
   div.projects .project { float: none; width: 492px; margin: 0 auto 30px; }
-  div.projects .project img { width: 100%; height: initial; }
+  div.projects .project .hero-image { height: 300px; }
+  div.projects .project img { width: 100%; }
   div.projects .project:last-child { margin: 0 auto 30px; }
   div.people { margin: 60px 0 30px 0; }
   div.people .tweet { min-height: 180px; }
@@ -195,7 +197,8 @@ footer span.name { display: inline-block; text-align: left; width: 60px; }
   div.people .tweet, div.people.first .tweet { min-height: initial; padding: 30px 0; }
   div.people .person h2, div.people.first .person h2 { padding: 10px 20px 0; }
   div.projects .project { width: 300px; min-height: initial; margin-bottom: 0px; }
-  div.projects .project img { display: none; width: 100%; }
+  div.projects .project .hero-image { height: initial; }
+  div.projects .project img { width: 100%; }
   section#project_footer .project { margin-top: 0px; width: 276px; padding: 20px 12px 0 12px; border-top: 1px #cacaca solid; }
   section#project_footer .project:first-child { border-top: none; padding: 20px 12px 0 12px; width: 246px; }
   article[role="main"] aside { float: none; width: auto; padding: 0 12px 0 0; margin-left: 0px; }
@@ -224,5 +227,4 @@ footer span.name { display: inline-block; text-align: left; width: 60px; }
   article#home section#projects div.projects { margin-bottom: 0px; width: 300px; padding: 0 0 30px 0; }
   article#home section#projects div.projects .project { margin: 0px; min-height: 100px; width: 276px; padding: 0 12px 0 12px; border-bottom: 0px; border-top: 1px #cacaca solid; }
   article#home section#projects div.projects .project h2 { display: block; margin-bottom: 4px; }
-  article#home section#projects div.projects .project img { display: none; }
   article#home section#people { display: none; } }

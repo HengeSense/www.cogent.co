@@ -115,8 +115,10 @@
     width: 300px;
     min-height: initial;
     margin-bottom: 0px;
+    .hero-image {
+      height: initial;
+    }
     img {
-      display: none;
       width: 100%;
     }
   }
@@ -231,6 +233,7 @@
     div.principle {
       display: none;
     }
+
     section#projects {
       h2 {
         display:none;
@@ -253,9 +256,6 @@
           padding: 0 12px 0 12px;
           border-bottom: 0px;
           border-top: 1px $color-mid-grey solid;
-          img {
-            display: none;
-          }
         }
       }
     }

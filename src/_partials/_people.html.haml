@@ -1,6 +1,7 @@
 .person<>
   %a.image{ :href => photo[:set_url]}<>
-    %img{ :src => photo[:url], :alt => "Person"  }<>
+    .hero-image
+      %img{ :src => photo[:url], :alt => "Person"  }<>
   %h2= person['display_name']
   %p
     = person['role']

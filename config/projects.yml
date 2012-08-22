@@ -10,10 +10,10 @@
       quote: Now Thread iPad users can take notes with reckless abandon.
     - at: Fri Aug 17 11:20:28 +1100 2012
       attribution: Ben Green from Cogent said
-      quote: Journal for the Thread iPad app - one place to store all your learning. 
+      quote: Journal for the Thread iPad app - one place to store all your learning.
 
 ############################################################################################
-- name: eventer      
+- name: eventer
   display_name: Eventer
   page: eventer.html
   strapline: Changing what it&rsquo;s like to watch an event you couldn&rsquo;t make it to.
@@ -21,7 +21,7 @@
   quotes:
     - at: Fri Aug 17 11:20:28 +1100 2012
       attribution: Warren Oliver from Cogent said
-      quote: Keeping up with the latest and greatest in the Rails world. 
+      quote: Keeping up with the latest and greatest in the Rails world.
     - at: Fri Jul 27 11:20:28 +1100 2012
       attribution: Rachel Morley from Cogent said
       quote: Excited to be moving into marketing phase!
@@ -30,7 +30,7 @@
 - name: readtime
   display_name: Readtime
   page: readtime.html
-  strapline: Getting things read on your iPhone.
+  strapline: Getting things read on your iPhone.<br>&nbsp;
   photoset_id: 72157630704255124
   quotes:
     - at: Mon Aug 23 09:26:54 +1100 2012
@@ -39,7 +39,7 @@
     - at: Mon Aug 23 14:20:28 +1100 2012
       attribution: Ben Birnbaum from Cogent said
       quote: It's released, it's in the store!
-    
+
 ############################################################################################
 - name: rea
   display_name: REA Group

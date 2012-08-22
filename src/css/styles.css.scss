@@ -65,7 +65,7 @@ h1 {
   text-align: center;
   font-family: "Signal", Helvetica, Arial, "Serif";
   font-size: 32px;
-  margin: 58px 0 10px 0;
+  margin: 58px 10% 10px;
 }
 
 h2 {
@@ -73,8 +73,13 @@ h2 {
   text-align: center;
   font-size: 24px;
   font-weight: normal;
-  margin-top: 0px;
-  margin-bottom: 13px;
+  margin: 0 auto 13px;
+}
+
+article, footer {
+  > h2 {
+    margin: 0 10% 13px;
+}
 }
 
 h3 {
@@ -103,20 +108,18 @@ p.visit {
 
 p.centered {
   text-align: center;
-  width: 642px;
-  margin-left: 168px;
+  margin: 0 17.177% 30px;
   font-size: 16px;
-  margin-bottom: 30px;
 }
 
 .left, .right {
-  width: 444px;
-  padding-left: 30px;
-  padding-bottom: 20px;
+  width: 45.398%;
+  padding: 0 1.533% 20px;
 }
 
 .left {
   float: left;
+  padding-left: 3.0674%;
 }
 
 .right {
@@ -150,17 +153,24 @@ ol li {
   display: none;
 }
 
+.hero-image {
+  max-height: 230px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+  }
+}
+
 header, article[role="main"], footer, .toeser {
-  width: 978px;
+  width: 81.5%;
   margin: 0px auto;
 }
 
 header {
   background-color: $color-watermelon;
-  height: 170px;
   padding: 46px 0 0 0;
   &.home {
-    height: 357px;
     h1 {
       color: $color-white;
       display:block;
@@ -226,10 +236,10 @@ header {
   padding: 30px 0;
   .principle {
     float: left;
-    width: 420px;
-    margin: 0 84px 0 0;
+    width: 42.944%;
+    margin: 0 8.588% 0 0;
     &.alt {
-      margin: 0 54px 0 0;
+      margin: 0 5.521% 0 0;
     }
     h2 {
       text-align: left;
@@ -272,12 +282,12 @@ header {
   }
 }
 article[role="main"] {
-  margin: 0 auto 20px;
+  margin: 0 auto 2.0449%;
   color: $color-black;
   aside {
     float: right;
-    width: 306px;
-    padding: 0 84px 0 30px;
+    width: 31.288%;
+    padding: 0 8.588% 0 3.0674%;
 
     h1 {
       font-family: minion-pro, "Palatino", "Georgia", "Times New Roman", "Serif";
@@ -295,27 +305,23 @@ article[role="main"] {
 }
 
 div.projects {
-  margin: 60px -30px 30px 0;
+  margin: 60px 0 0 0;
   .project {
     float: left;
-    width: 306px;
-    min-height: 355px;
+    width: 31.288%;
+    min-height: 375px;
     background-color: $color-light-grey;
     border-bottom: 1px $color-mid-grey solid;
-    margin: 0 30px 30px 0;
-    .hero-image {
-      height: 206px;
-      overflow: hidden;
-      img {
-        width: 100%;
-      }
+    margin: 0 3.0674% 30px 0;
+    &:nth-child(3n) {
+      margin-right: 0px;
     }
     &:last-child {
       margin-right: 0px;
     }
     h2 {
       text-align: left;
-      padding: 20px 30px 0 30px;
+      padding: 0px 30px 0 30px;
       margin-bottom: 5px;
     }
     p {
@@ -348,12 +354,12 @@ section#project_footer {
   clear:both;
   .project {
     &:first-child {
-      padding-left: 30px;
-      width: 246px;
+      width: 25.153%;
+      padding-left: 3.0674%;
     }
     float:left;
-    width: 276px;
-    padding: 0 30px 10px 30px;
+    width: 28.220%;
+    padding: 0 3.0674% 10px;
     margin-top: 30px;
     h2 {
       text-align: left;
@@ -363,19 +369,23 @@ section#project_footer {
 
 
 div.people {
-  margin: 60px -30px 30px 0;
+
+  div:nth-child(3n) {
+    margin-right: 0;
+  }
+
   .tweet, .person {
-  /*    min-height: 286px;*/
-    height: 300px;
+    min-height: 360px;
+    //height: 300px;
     float: left;
-    width: 306px;
+    width: 31.288%;
     background-color: $color-light-grey;
     border-bottom: 1px $color-mid-grey solid;
-    margin: 0 30px 30px 0;
+    margin: 0 3.0674% 30px 0;
   }
   .tweet {
-  /*    min-height:270px;*/
-    height: 270px;
+    min-height:330px;
+    //height: 270px;
     padding-top: 30px;
     background-color: $color-black;
     h2 {
@@ -383,6 +393,7 @@ div.people {
       color: $color-yellow;
       font-weight: normal;
       padding: 0 20px;
+      margin: 0px auto 13px;
       a {
         color: $color-yellow;
       }
@@ -460,8 +471,8 @@ section[role='main'] {
   }
   font-size: 16px;
   line-height: normal;
-  width: 558px;
-  margin-right: 420px;
+  width: 57.055%;
+  margin-right: 42.944%;
   margin-bottom: 30px;
   border-right: 1px white solid;
   color: #FFF;
@@ -518,16 +529,16 @@ section[role='main'] {
 
 .hero {
   position: absolute;
-  right: -420px;
+  right: -75.268%;
   top: 40px;
-  width: 306px;
+  width: 54.838%;
   background-color: $color-black;
   img {
     width: 100%;
   }
   h2 {
     font-size: 20px;
-    padding: 30px;
+    padding: 9.803%;
     color: $color-yellow;
   }
 }

@@ -2,7 +2,7 @@
 @media (max-width: 978px) {
 
   header, article[role="main"], footer, .toeser {
-    width: 748px;
+    width: 76.482%;
   }
 
   h1 {
@@ -16,15 +16,6 @@
     font-size: 20px;
   }
 
-  p.centered {
-    width: 620px;
-    margin-left: 65px;
-  }
-
-  .left, .right {
-    width: 334px;
-  }
-
   header {
     &.home {
       h1 {
@@ -36,8 +27,8 @@
 
   .principles {
     .principle {
-      width: 300px;
-      margin: 0 84px 0 0;
+      width: 40.106%;
+      margin: 0 11.229% 0 0;
     }
   }
 
@@ -45,10 +36,10 @@
     margin: 60px 0 30px 0;
     .project {
       float: none;
-      width: 492px;
+      width: 65.775%;
       margin: 0 auto 30px;
-      .hero-image {
-        height: 300px;
+      &:nth-child(3n) {
+        margin-right: auto;
       }
 
       img {
@@ -61,44 +52,46 @@
   }
 
   div.people {
-    margin: 60px 0 30px 0;
+    //margin: 60px 0 30px 0;
+    div:nth-child(3n) {
+      margin-right: auto;
+    }
     .tweet {
-      min-height: 180px;
+      //min-height: 180px;
       h2, span.attribution {
-        padding: 0 30px;
+        //padding: 0 30px;
       }
     }
     .person, .tweet {
       height: auto;
       float: none;
-      width: 492px;
+      width: 65.775%;
       margin: 0 auto 30px;
       img {
         width: 100%;
         height: initial;
       }
       &:last-child {
-        margin: 0 auto 30px;
+        //margin: 0 auto 30px;
       }
     }
   }
 
   article[role="main"] {
     aside {
+      width: 65.755%;
       float: none;
-      width: 492px;
-      margin-left: 98px;
+      margin: 0 auto;
     }
     section[role="main"] {
-      width: 492px;
-      margin-right: 0;
-      margin-left: 128px;
+      width: 71.247%;
+      margin: 0 auto 60px;
     }
   }
 
   .hero {
     position: relative;
-    width: 492px;
+    width: auto;
     right: initial;
     top: initial;
     background-color: $color-black;

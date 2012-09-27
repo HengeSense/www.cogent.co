@@ -61,9 +61,9 @@
   photo_id: 6235802111
   role: Developer
   twitter_id: dvydra
-  linkedin_url: au.linkedin.com/pub/daniel-vydra/2/252/6a3
   blog_url: daniel.ivydra.com
-###########################################################
+  linkedin_url: au.linkedin.com/pub/daniel-vydra/2/252/6a3
+  ###########################################################
 - display_name: Rachel Morley
   photo_id: 6236328016
   role: Product Thinker, Director
@@ -93,5 +93,6 @@
   photo_id: 68536933
   role: Developer
   twitter_id: peterevjan
+  blog_url:  www.peterevjan.com
   linkedin_url: www.linkedin.com/in/peterevjan
 ###########################################################

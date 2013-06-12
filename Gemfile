@@ -1,4 +1,4 @@
-source :rubygems
+source "http://rubygems.org"
 
 gem "haml", "~> 3.0.4"
 gem "pith", "~> 0.2.1"

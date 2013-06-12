@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
 gem "haml", "~> 3.0.4"
-gem "pith", "~> 0.2.1"
+gem "pith", "~> 0.3.4"
 gem "rake"
 gem "RedCloth", "~> 4.2.3"
 gem "twitter", "~> 4.8.0"

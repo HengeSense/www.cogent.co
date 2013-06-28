@@ -12,18 +12,10 @@
   twitter_id: dan_tropp
   linkedin_url: au.linkedin.com/in/dantropp
 ###########################################################
-- display_name: Keryn Mitchell
-  photo_id: 6235802439
+- display_name: Anthony Burgo
+  photo_id: 9156780160
   role: Office Manager
-  twitter_id: eightydays
-  linkedin_url: au.linkedin.com/pub/keryn-mitchell/20/652/406
-###########################################################
-- display_name: Travis Winters
-  photo_id: 6235802647
-  role: Developer & Responsive Layout Guy
-  twitter_id: travis_winters
-  blog_url: www.prozacblues.com/travo/blog/
-  linkedin_url: au.linkedin.com/in/traviswinters
+  twitter_id: anfernyb
 ###########################################################
 - display_name: Benjamin Birnbaum
   photo_id: 6310542973
@@ -56,13 +48,6 @@
   twitter_id: rob_mitch
   linkedin_url: au.linkedin.com/in/robmitchelllinkedin
 ###########################################################
-- display_name: Daniel Vydra
-  photo_id: 6235802111
-  role: Developer
-  twitter_id: dvydra
-  blog_url: daniel.ivydra.com
-  linkedin_url: au.linkedin.com/pub/daniel-vydra/2/252/6a3
-  ###########################################################
 - display_name: Rachel Morley
   photo_id: 6236328016
   role: Product Thinker, Director

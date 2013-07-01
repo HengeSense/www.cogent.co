@@ -10,7 +10,7 @@ module TwitterFeed
         config.consumer_key = ENV.fetch("TWITTER_OAUTH_CONSUMER_KEY")
         config.consumer_secret = ENV.fetch("TWITTER_OAUTH_CONSUMER_SECRET")
       end
-      Twitter.list_timeline("cogent_chatter", "cogent_staff", :count => 10)
+      Twitter.list_timeline("cogent_chatter", "cogent-chattering", :count => 10)
     rescue => ex
       if ignore_feed_errors?
         raise ex

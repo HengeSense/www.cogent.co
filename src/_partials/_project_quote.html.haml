@@ -1,7 +1,0 @@
-.post.quote<>
-  %span.attribution<>
-    - created = Time.parse(quote['at']).utc.iso8601
-    %span.time{:title => created }<>= created
-    ,&nbsp; 
-    = quote['attribution']
-  %h1= quote['quote'] 

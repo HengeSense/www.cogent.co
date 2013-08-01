@@ -1,6 +1,0 @@
-.tweet
-  %h2= markup_links(tweet.text)
-  %span.attribution<
-    - created = tweet.created_at.utc.iso8601
-    %span.time{:title => created }= created
-    %a{ :href => "http://twitter.com/#{tweet['user']['screen_name']}/statuses/#{tweet['id']}"}="@" + tweet['user']['screen_name']

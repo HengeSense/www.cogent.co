@@ -1,0 +1,113 @@
+/*div { border: 1px solid gray; }*/
+
+body { font-size: 16px; }
+
+h1 { font-size: 72px; }
+
+h2 { font-size: 36px; }
+
+h3 { font-size: 24px; }
+
+small { font-size: 16px; }
+
+body, h2, h3 {
+  font-weight: 200;
+}
+
+h1 { 
+  line-height: 1.3;
+}
+
+h2, h3 { 
+  line-height: 1.4; 
+}
+
+.copyright { 
+  font-size: 12px;
+  color: lightgray;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 100px 10px 100px;
+  margin-bottom:0px;
+}
+
+ul.nav {
+  /*TODO find a better way to do this*/
+  margin-top:12px;
+}
+
+.section .content {
+  width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.red-white {
+  background-color:#f63e5f;
+  color: white;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.gray-background {
+  background-color:#f1f1f1
+}
+
+/* Home page */
+
+.macbook {
+  background-image: url("../images/macbook-home.png");
+  background-repeat: no-repeat;
+  background-position-y:20px;
+  height: 540px;
+}
+
+.apps-that-work {
+/*  background: url("../images/apps-that-work.jpg") no-repeat center center fixed;*/
+  background: url("../images/apps-that-work.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top:230px;
+/*  Might need this to for IE */
+/* http://css-tricks.com/perfect-full-page-background-image/ */
+/* filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/apps-that-work.jpg', sizingMethod='scale');*/
+/* -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/apps-that-work.jpg', sizingMethod='scale')";*/
+}
+
+.products h2 {
+  text-align:center;
+}
+
+.products-grid {
+  width: 942px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+.products-grid a div {
+  border: 1px solid lightgray;
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-top: 40px;
+  text-align:center;
+}
+
+.products-grid .maring-right-0 {
+  margin-right: 0;
+}
+
+.contact td {
+  width:200px;
+}

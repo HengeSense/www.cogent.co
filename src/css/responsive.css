@@ -1,0 +1,9 @@
+.bazzinga {
+  font-size: 120px;
+}
+
+@media (max-width: 600px) {
+  .bazzinga {
+    font-size: 60px;
+  }
+}

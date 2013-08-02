@@ -59,3 +59,35 @@ namespace "github" do
   end
 
 end
+
+namespace "local" do
+  desc "Publish the site to local server"
+
+  task "publish" => ["update", "copy"]
+
+  task "update" do
+    puts "publish"
+    # tmpdir = "/tmp/www.cogent.co"
+    # sh <<-BASH
+    # set -e -x
+    # rm -fr #{tmpdir}; pith -i src -o #{tmpdir} build
+    # git checkout gh-pages
+    # git fetch origin
+    # git reset --hard origin/gh-pages
+    # rm -r * && cp -r #{tmpdir}/* .
+    # rm -fr .sass-cache
+    # if git diff --exit-code > /dev/null; then
+    #   echo "No change"
+    # else
+    #   git add -A .
+    #   git commit -m "Regenerate"
+    #   fi
+    #   git checkout master
+    # BASH
+  end
+
+  task "copy" do
+    puts "publish"
+    # sh "cp -r src/_out /Users/builder/Sites/cogent.co"
+  end
+end

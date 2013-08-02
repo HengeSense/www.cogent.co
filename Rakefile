@@ -63,10 +63,7 @@ end
 namespace "local" do
   desc "Publish the site to local server"
 
-  task "publish" => ["update", "copy"]
-
-  task "update" do
-    puts "publish"
+  task "publish" do
     tmpdir = "/tmp/www.cogent.co-v2"
     sh <<-BASH
     set -e -x
@@ -83,10 +80,7 @@ namespace "local" do
       git commit -m "Regenerate"
     fi
     git checkout v2
+    cp -r #{tmpdir} /Users/builder/Sites/cogent.co
     BASH
-  end
-
-  task "copy" do
-    sh "cp -r #{tmpdir} /Users/builder/Sites/cogent.co"
   end
 end

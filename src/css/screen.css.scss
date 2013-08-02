@@ -87,6 +87,7 @@ ul.nav {
 }
 
 .section {
+  position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -103,9 +104,12 @@ header .red-white {
 /* Home page */
 
 .macbook {
-  background-image: url("../images/macbook-home.png");
-  background-repeat: no-repeat;
-  background-position: 770px 129px;
+  position: absolute;
+  top: 0;
+  left: 65%;
+  right: 0;
+  bottom: 0;
+  background: url("../images/macbook-home.png") no-repeat left center;
 }
 
 .apps-that-work {

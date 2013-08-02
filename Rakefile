@@ -87,6 +87,6 @@ namespace "local" do
   end
 
   task "copy" do
-    sh "cp -r tmpdir /Users/builder/Sites/cogent.co"
+    sh "cp -r #{tmpdir} /Users/builder/Sites/cogent.co"
   end
 end

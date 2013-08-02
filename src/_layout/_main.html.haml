@@ -1,7 +1,6 @@
 !!! 5
 %html
   %head
-
     %title
       Cogent
       = " - #{page.meta['page_title']} " if page.meta['page_title']
@@ -17,83 +16,37 @@
     %meta{ :name => "keywords", :content => "Cogent, Projects, Solutions, User Experience, Design, Development, Ruby, Ruby on Rails, Java, Interaction, Melbourne, Australia, " }
     %meta{ :name => "description", :content => "Cogent creates useful software that gets results. We start with your business goals and work in an open and iterative way to craft the product. We're based in Melbourne, Australia." }
     %meta{ :name => "author", :content => "Cogent" }
-    %meta{ :name => "viewport", :content => "width=device-width; initial-scale=1.0" }
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
 
-    %script{ :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" }
+    %script{ :src => "/js/jquery-1.10.2.min.js" }
     %script{ :src => href("/js/html5.js") }
-    %script{ :src => href("/js/underscore-min.js") }
-    %script{ :src => href("/js/jquery.timeago.js") }
-
     %script{ :type => "text/javascript", :src => "http://use.typekit.com/xkf5xsa.js" }
     %script{ :type => "text/javascript" }
       try{Typekit.load();}catch(e){}
 
-    %script{ :type => "text/javascript", :src => href("/js/application.js") }
-
     %link{ :rel => "stylesheet", :href => "/css/normalize.css" }/
+    %link{ :rel => "stylesheet", :href => "/css/bootstrap.css" }/
     %link{ :rel => "stylesheet", :href => "/css/styles.css" }/
+    %link{ :rel => "stylesheet", :href => "/css/screen-b.css" }/
     /[if lte IE 8]
       %script{ :type => "text/javascript", :src => href("/js/respond.js") }
       %link{ :rel => "stylesheet", :href => "/css/ie7.css" }/
 
   %body
-    %a{ :name => "top" }
-    %header{ :class => ("home" if page.meta["home_page"]) }
-      %a.logo(href="/")
-        %img{ :src => "/images/cogent_logo.png", :alt => "Cogent" }
-      %h1
-        We create useful software that gets results
-
-      %nav
-        = nav_link "/index.html", "Home", :shallow => true
-        = nav_link "/projects/index.html", "Projects"
-        = nav_link "/about.html", "About"
-        = nav_link "/join/index.html", "Join"
+    .navbar
+      .col-12.col-sm-1.col-lg-1.col-offset-1.logo
+        %a{:href=>"#"}
+          %img{:src=>"/images/logo-black.png"}
+      .col-12.col-sm-11.col-lg-9
+        %ul.nav.navbar-nav.pull-right
+          %li
+            %a{:href=>"#"}Work
+          %li
+            %a{:href=>"#"}About
+          %li
+            %a{:href=>"#"}Join
 
     = yield
-
-    %footer.lined.clearfix
-
-      - if page.meta["join_page"]
-        = include("/_layout/join_footer.html.haml")
-      - elsif page.meta["join_page_alt"]
-        = include("/_layout/join_footer_alt.html.haml")
-      - elsif page.meta["error"]
-      - else
-        = include("/_layout/main_footer.html.haml")
-
-      - unless page.meta["error"]
-
-        %p.visit
-          - if page.meta["join_page"] || page.meta["join_page_alt"]
-            %a{ :href => "mailto:jobs@cogent.co" }jobs@cogent.co
-          - else
-            %a{ :href => "mailto:info@cogent.co" }info@cogent.co
-
-        .left
-          %p.align-right<>
-            %span.name< Rachel
-            0419 373 075
-            %br<>
-            %span.name< Marty
-            0407 004 570
-
-        .right
-          %p
-            %a{ :href=> "http://g.co/maps/wh84p" }
-              Level 3
-              %br
-              10 Queen Street
-              %br
-              Melbourne, VIC 3000
-              %br
-              Australia
-
-    .toeser
-      .copy
-        &copy; 2011 Cogent
-        .top
-          %a{ :href => "#top" }Top
 
     :javascript
       var _gaq = _gaq || [];

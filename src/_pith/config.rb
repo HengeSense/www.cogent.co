@@ -1,5 +1,4 @@
 require 'time'
-require 'twitter'
 require 'flickraw'
 require 'tilt'
 

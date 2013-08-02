@@ -65,6 +65,7 @@ namespace "local" do
 
   task "publish" do
     tmpdir = "/tmp/www.cogent.co-v2"
+    target_dir = "/Users/builder/Sites/cogent.co"
     sh <<-BASH
     set -e -x
     rm -fr #{tmpdir}; pith -i src -o #{tmpdir} build
@@ -80,8 +81,8 @@ namespace "local" do
       git commit -m "Regenerate"
     fi
     git checkout v2
-    rm -r #{tmpdir}
-    cp -r #{tmpdir} /Users/builder/Sites/cogent.co
+    rm -r #{target_dir}
+    cp -r #{tmpdir} #{target_dir}
     BASH
   end
 end

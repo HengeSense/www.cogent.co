@@ -67,27 +67,26 @@ namespace "local" do
 
   task "update" do
     puts "publish"
-    # tmpdir = "/tmp/www.cogent.co"
-    # sh <<-BASH
-    # set -e -x
-    # rm -fr #{tmpdir}; pith -i src -o #{tmpdir} build
-    # git checkout gh-pages
-    # git fetch origin
-    # git reset --hard origin/gh-pages
-    # rm -r * && cp -r #{tmpdir}/* .
-    # rm -fr .sass-cache
-    # if git diff --exit-code > /dev/null; then
-    #   echo "No change"
-    # else
-    #   git add -A .
-    #   git commit -m "Regenerate"
-    #   fi
-    #   git checkout master
-    # BASH
+    tmpdir = "/tmp/www.cogent.co-v2"
+    sh <<-BASH
+    set -e -x
+    rm -fr #{tmpdir}; pith -i src -o #{tmpdir} build
+    git checkout v2
+    git fetch origin
+    git reset --hard origin/v2
+    rm -r * && cp -r #{tmpdir}/* .
+    rm -fr .sass-cache
+    if git diff --exit-code > /dev/null; then
+      echo "No change"
+    else
+      git add -A .
+      git commit -m "Regenerate"
+    fi
+    git checkout v2
+    BASH
   end
 
   task "copy" do
-    puts "publish"
-    # sh "cp -r src/_out /Users/builder/Sites/cogent.co"
+    sh "cp -r src/_out /Users/builder/Sites/cogent.co"
   end
 end

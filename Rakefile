@@ -80,6 +80,7 @@ namespace "local" do
       git commit -m "Regenerate"
     fi
     git checkout v2
+    rm -r #{tmpdir}
     cp -r #{tmpdir} /Users/builder/Sites/cogent.co
     BASH
   end

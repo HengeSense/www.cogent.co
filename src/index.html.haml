@@ -1,14 +1,22 @@
 ---
 layout: "_layout/_main.html.haml"
 ...
-.section.red-white
+%section.red-white
   .container
-    .col-1.col-lg-1
     .col-10.col-lg-8.col-offset-1
       %h1 We create useful software that gets results
-      %h3 We start with your business goal and work in a open and iterative way to craft the product.
+      %h2 We start with your business goal and work in a open and iterative way to craft the product.
 
-.section.gray-background
+%section.mobile
+  .container
+    .col-1
+    .col-10
+      %ul.contact 
+        %li info@cogent.co
+        %li Level 3, 10 Queen St Melbourne VIC
+        %li 0419 373 075
+
+%section.gray-background.desktop
   .container
     .col-lg-5.col-offset-2
       %h2 Your business objective is what we get passionate about.
@@ -20,7 +28,7 @@ layout: "_layout/_main.html.haml"
       %h3 We spend a lot of time with out customers. It helps us what you wanted.
   .macbook
 
-.section.apps-that-work
+%section.apps-that-work.desktop
   .container
     .col-lg-5.col-offset-1
       %h2 We incept, design and build applications that work.
@@ -32,14 +40,16 @@ layout: "_layout/_main.html.haml"
       %h3 Learn constantly
       %p Iterating is built into our DNA. We talk and share thinking in lightweight form, seek feedback often, and adapt. We'll be gluttons, as that gives us the best change of creating a good result.
 
-.section.products
-  .container
+%section.products
+  .container.desktop
     .col-lg-8.col-offset-2
       %h2 We like to work together with smart people to make remarkable things we're proud of.
       %br
       %br
+  .container.mobile
+    %h2 We incept, design and build applications that work
   .container
-    .col-lg-10.col-offset-1
+    .col-12.col-lg-10.col-offset-1
       .products-grid><
         %a{:href => "#"}
           %img{:src => "../images/readtime-icon.png"}
@@ -47,14 +57,20 @@ layout: "_layout/_main.html.haml"
           %img{:src => "../images/thread-icon.png"}
         %a{:href => "#"}
           %img{:src => "../images/eventer-icon.png"}
-        %a{:href => "#"}
+        %a.optional{:href => "#"}
           %img{:src => "../images/readtime-icon.png"}
-        %a{:href => "#"}
+        %a.optional{:href => "#"}
           %img{:src => "../images/rea-icon.png"}
-        %a{:href => "#"}
+        %a.optional{:href => "#"}
           %img{:src => "../images/tesselaar-icon.png"}
+        %a.mobile.show-more{:href => "javascript:void(0)"}
+          See more projects
         .clearfix
-.section.gray-background
+
+    .mobile.text-center
+      %p © Cogent 2013
+
+%section.gray-background.desktop
   .container
     .col-lg-6.col-offset-2
       %h2
@@ -76,4 +92,4 @@ layout: "_layout/_main.html.haml"
           %td Melbourne VIC 3000
         %tr
           %td Marty 0419373075
-      %p.copyright © Cogent 2013
+      %p.copyright © Cogent 2013  

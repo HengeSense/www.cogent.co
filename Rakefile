@@ -69,18 +69,7 @@ namespace "local" do
     sh <<-BASH
     set -e -x
     rm -fr #{tmpdir}; pith -i src -o #{tmpdir} build
-    git checkout v2
-    git fetch origin
-    git reset --hard origin/v2
-    rm -r * && cp -r #{tmpdir}/* .
-    rm -fr .sass-cache
-    if git diff --exit-code > /dev/null; then
-      echo "No change"
-    else
-      git add -A .
-      git commit -m "Regenerate"
-    fi
-    git checkout v2
+    rm -fr #{tmpdir}/.sass-cache
     rm -r #{target_dir}
     cp -r #{tmpdir} #{target_dir}
     BASH

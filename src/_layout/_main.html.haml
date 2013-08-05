@@ -18,26 +18,26 @@
     %meta{ :name => "author", :content => "Cogent" }
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
 
-    %script{ :src => "/js/jquery-1.10.2.min.js" }
-    %script{ :src => href("/js/html5.js") }
+    %script{ :src => "js/jquery-1.10.2.min.js" }
+    %script{ :src => href("js/html5.js") }
     %script{ :type => "text/javascript", :src => "http://use.typekit.com/xkf5xsa.js" }
     %script{ :type => "text/javascript" }
       try{Typekit.load();}catch(e){}
 
-    %script{ :type => "text/javascript", :src => "/js/application.js" }
+    %script{ :type => "text/javascript", :src => "js/application.js" }
 
-    %link{ :rel => "stylesheet", :href => "/css/bootstrap.css" }/
-    %link{ :rel => "stylesheet", :href => "/css/styles.css" }/
-    %link{ :rel => "stylesheet", :href => "/css/screen.css" }/
+    %link{ :rel => "stylesheet", :href => "css/bootstrap.css" }/
+    %link{ :rel => "stylesheet", :href => "css/styles.css" }/
+    %link{ :rel => "stylesheet", :href => "css/screen.css" }/
     /[if lte IE 8]
-      %script{ :type => "text/javascript", :src => href("/js/respond.js") }
-      %link{ :rel => "stylesheet", :href => "/css/ie7.css" }/
+      %script{ :type => "text/javascript", :src => href("js/respond.js") }
+      %link{ :rel => "stylesheet", :href => "css/ie7.css" }/
 
   %body
     .navbar
       .col-12.col-sm-1.col-lg-1.col-offset-1.logo
         %a{:href=>"#"}
-          %img{:src=>"/images/logo-black.png"}
+          %img{:src=>"images/logo-black.png"}
       .col-12.col-sm-11.col-lg-9
         %ul.nav.navbar-nav
           %li

@@ -70,8 +70,8 @@ namespace "local" do
     set -e -x
     rm -fr #{tmpdir}; pith -i src -o #{tmpdir} build
     rm -fr #{tmpdir}/.sass-cache
-    rm -r #{target_dir}
-    cp -r #{tmpdir} #{target_dir}
+    rm -r #{target_dir}/*
+    cp -r #{tmpdir}/* #{target_dir}
     BASH
   end
 end

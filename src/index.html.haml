@@ -1,95 +1,70 @@
 ---
 layout: "_layout/_main.html.haml"
 ...
-%section.red-white
-  .container
-    .col-10.col-lg-8.col-offset-1
-      %h1 We create useful software that gets results
-      %h2 We start with your business goal and work in a open and iterative way to craft the product.
+.red-white
+  %section.container
+    .row
+      .span10.offset1
+        %h1 We create useful software that gets results
+        %h2 We start with your business goal and work in a open and iterative way to craft the product.
 
-%section.mobile
-  .container
-    .col-1
-    .col-10
-      %ul.contact 
-        %li info@cogent.co
-        %li Level 3, 10 Queen St Melbourne VIC
-        %li 0419 373 075
+%section.container.mobile
+  .span10
+    %ul.contact 
+      %li info@cogent.co
+      %li Level 3, 10 Queen St Melbourne VIC
+      %li Rachel 0419 373 075
 
-%section.gray-background.desktop
-  .container
-    .col-lg-5.col-offset-2
-      %h2 Your business objective is what we get passionate about.
-      %br
-      %h3 Not awards, fancy design for no reason, or irrelevant shiny features.
-      %br
-      %h3 We believe great things happen when technology, design and business experts work openly and closely together.
-      %br
-      %h3 We spend a lot of time with out customers. It helps us what you wanted.
+.gray-background.desktop
+  %section.container
+    .row
+      .span7.offset1
+        %h2 Your business objective is what we get passionate about.
+        %h3 Not awards, fancy design for no reason, or irrelevant shiny features.
+        %h3 We believe great things happen when technology, design and business experts work openly and closely together.
+        %h3 
+          We spend a lot of time with out customers. 
+          %br
+          It helps us what you wanted.
   .macbook
 
-%section.apps-that-work.desktop
-  .container
-    .col-lg-5.col-offset-1
-      %h2 We incept, design and build applications that work.
-  .container
-    .col-lg-4.col-offset-1
-      %h3 Pick the right tool for the job
-      %p Our kit bag has lots of methods for shaping your project. We'll pick the ones that suit yout needs. We keep waste low and avoid rigid process or lenght spec documents. We put our enegry into iterating on real work, like sketches or software.
-    .col-lg-4
-      %h3 Learn constantly
-      %p Iterating is built into our DNA. We talk and share thinking in lightweight form, seek feedback often, and adapt. We'll be gluttons, as that gives us the best change of creating a good result.
+.apps-that-work.desktop
+  %section.container
+    .row
+      .span5.offset1
+        %h2 We incept, design and build applications that work.
+    .row
+      .span4.offset1
+        %h3 Pick the right tool for the job
+        %p Our kit bag has lots of methods for shaping your project. We'll pick the ones that suit yout needs. We keep waste low and avoid rigid process or lenght spec documents. We put our enegry into iterating on real work, like sketches or software.
+      .span4
+        %h3 Learn constantly
+        %p Iterating is built into our DNA. We talk and share thinking in lightweight form, seek feedback often, and adapt. We'll be gluttons, as that gives us the best change of creating a good result.
 
-%section.products
-  .container.desktop
-    .col-lg-8.col-offset-2
-      %h2 We like to work together with smart people to make remarkable things we're proud of.
-      %br
-      %br
-  .container.mobile
-    %h2 We incept, design and build applications that work
-  .container
-    .col-12.col-lg-10.col-offset-1
-      .products-grid><
-        %a{:href => "#"}
-          %img{:src => "images/readtime-icon.png"}
-        %a{:href => "#"}
-          %img{:src => "images/thread-icon.png"}
-        %a{:href => "#"}
-          %img{:src => "images/eventer-icon.png"}
-        %a.optional{:href => "#"}
-          %img{:src => "images/readtime-icon.png"}
-        %a.optional{:href => "#"}
-          %img{:src => "images/rea-icon.png"}
-        %a.optional{:href => "#"}
-          %img{:src => "images/tesselaar-icon.png"}
-        %a.mobile.show-more{:href => "javascript:void(0)"}
-          See more projects
-        .clearfix
+.products
+  %section.container
+    .row.desktop
+      .span8.offset2
+        %h2 We like to work together with smart people to make remarkable things we're proud of.
+    .row.mobile
+      %h2 We incept, design and build applications that work
+    .row
+      .span10.offset1
+        .products-grid
+          %a{:href => "#"}
+            %img{:src => "images/readtime-icon.png", :alt => "Readtime"}
+          %a{:href => "#"}
+            %img{:src => "images/thread-icon.png", :alt => "Thread"}
+          %a{:href => "#"}
+            %img{:src => "images/eventer-icon.png", :alt => "Eventer"}
+          %a.optional{:href => "#"}
+            %img{:src => "images/readtime-icon.png"}
+          %a.optional{:href => "#"}
+            %img{:src => "images/rea-icon.png"}
+          %a.optional{:href => "#"}
+            %img{:src => "images/tesselaar-icon.png"}
+          %a.mobile.show-more{:href => "javascript:void(0)"}
+            Show more projects
 
-    .mobile.text-center.copyright
-      %p © Cogent 2013
-
-%section.gray-background.desktop
-  .container
-    .col-lg-6.col-offset-2
-      %h2
-        If you need help with a project and this sounds good to you,
-        %a{:href => "#" }
-          let's chat
-
-      %h3 We'll listen to your goals, ask questions, offer ideas and be up-front on our fit to do the job.
-      %br
-      %table.contact
-        %tr
-          %td
-            %a{:href => "#"}
-              info@cogent.co
-          %td
-            Level 3, 10 Queen Street
-        %tr
-          %td Rachel 0419373075
-          %td Melbourne VIC 3000
-        %tr
-          %td Marty 0419373075
-      %p.copyright © Cogent 2013  
+      .mobile.text-center.copyright
+        %p © Cogent 2013

@@ -44,6 +44,13 @@ h2, h3 {
 
 small { font-size: 14px; }
 
+ul {
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
 
 /* Layout */
 
@@ -72,27 +79,28 @@ body {
 
   .logo {
     max-width: 200px;
-    
+
     img {
       max-width: inherit;
     }
   }
-}
 
-ul.nav {
-  margin: 36px auto 25px auto;
-  width: 100%;
-  
-  > li {
-    display: inline-block;
-    padding: 0 22px;
-    text-transform: uppercase;
+  ul.nav {
+    margin: 36px auto 25px auto;
+    width: 100%;
+    
+    > li {
+      display: inline-block;
+      padding: 0 22px;
+      text-transform: uppercase;
 
-    a, a:visited {
-      @include signal-font;
-      color: #000;
+      a, a:visited {
+        @include signal-font;
+        color: #000;
+      }
     }
   }
+
 }
 
 .red-white {
@@ -110,20 +118,42 @@ section {
 }
 
 .gray-background {
-  background-color:#f1f1f1;
+  background-color: $color-light-grey;
   position: relative;
+}
+
+.white-on-blue {
+  background-color: $color-blue-background;
+  color: $color-light-grey;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 30px;
+
+  &.blue {
+    background-color: $color-blue-background;  
+    color: #fff;
+  }
+
+  &.grey {
+    background-color: $color-light-grey;
+    color: $color-dark-grey;
+  }
 }
 
 .desktop {
   display: none;  
 }
 
+.contact td {
+  width:200px;
+}
+
 /* Home page */
 
 ul.contact {
-  padding: 0;
   li {
-    list-style: none;
     padding: 15px;
   }
 }
@@ -206,8 +236,28 @@ ul.contact {
   }
 }
 
-.contact td {
-  width:200px;
+/* Join Us page */
+ul.roles {
+  padding-top: 30px;
+  
+
+  li {
+    background-color: $color-light-grey;
+    margin-bottom: 4px;
+    padding-bottom: 10px;
+
+    .row div:first-child > * {
+      padding-left: 30px;
+    }
+
+    h3 {
+      padding: 4px 0 0;
+    }
+
+    a {
+      margin: 30px 0;
+    }
+  }
 }
 
 /* Tablets > 768px */
@@ -222,10 +272,12 @@ ul.contact {
   .mobile, a.mobile {
     display: none;
   }
-
-  ul.nav {
-    float: right;
-    width: auto;
+  .nav-bar {
+    > div { text-align: left }
+    ul.nav {
+      float: right;
+      width: auto;
+    }  
   }
 
   section {
@@ -250,6 +302,11 @@ ul.contact {
 }
 /* Desktops > 992px */
 @media (min-width: 992px) {
+
+  .nav-bar {
+    .logo { margin-left: 20px }
+  }
+
   .macbook {
     position: absolute;
     top: 0;

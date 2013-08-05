@@ -18,38 +18,37 @@
     %meta{ :name => "author", :content => "Cogent" }
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
 
-    %script{ :src => "js/jquery-1.10.2.min.js" }
-    %script{ :src => "js/jquery.color-2.1.2.min.js" }
-    %script{ :src => "js/html5.js" }
+    %script{ :src => href("/js/jquery-1.10.2.min.js") }
+    %script{ :src => href("/js/jquery.color-2.1.2.min.js") }
+    %script{ :type => "text/javascript", :src => href("/js/html5.js") }
     %script{ :src => "http://use.typekit.com/xkf5xsa.js" }
     %script{ :type => "text/javascript" }
       try{Typekit.load();}catch(e){}
 
-    %script{ :type => "text/javascript", :src => "js/application.js" }
-    %script{ :type => "text/javascript", :src => "js/bootstrap.min.js" }
+    %script{ :type => "text/javascript", :src => href("/js/application.js") }
+    %script{ :type => "text/javascript", :src => href("/js/bootstrap.min.js") }
 
-    %link{ :rel => "stylesheet", :href => "css/bootstrap.min.css" }
-    %link{ :rel => "stylesheet", :href => "css/bootstrap-responsive.min.css" }
-    %link{ :rel => "stylesheet", :href => "css/styles.css" }
-    %link{ :rel => "stylesheet", :href => "css/screen.css" }
+    %link{ :rel => "stylesheet", :href => href("/css/bootstrap.min.css") }
+    %link{ :rel => "stylesheet", :href => href("/css/bootstrap-responsive.min.css") }
+    %link{ :rel => "stylesheet", :href => href("/css/styles.css") }
+    %link{ :rel => "stylesheet", :href => href("/css/screen.css") }
     /[if lte IE 8]
-      %script{ :type => "text/javascript", :src => "js/respond.js" }
-      %link{ :rel => "stylesheet", :href => "css/ie7.css" }
-
+      %script{ :type => "text/javascript", :src => href("/js/respond.js") }
+      
   %body
     .container
       .row.nav-bar
-        .span1
+        .span2
           %a.logo{:href=>"#"}
-            %img{:src=>"images/logo-black.png"}
-        .span11
+            %img{:src=> href("/images/logo-black.png")}
+        .span10
           %ul.nav
             %li
               %a{:href=>"#"}Work
             %li
               %a{:href=>"#"}About
             %li
-              %a{:href=>"#"}Join
+              %a{:href=>"join"}Join
 
     = yield
 

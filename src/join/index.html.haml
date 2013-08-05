@@ -1,40 +1,57 @@
 ---
 page_title: Join
 layout: "/_layout/_main.html.haml"
-join_page: true
 ...
-%article.clearfix{ :role => "main" }
 
-  %h1
-    Yep, Cogent is hiring
-  %h2
-    One of the roles below could have your name written all over it.
+.red-white
+  %section.container
+    .row
+      .span9.offset1
+        %h1 Yep, Cogent is hiring
+        %h2 One of the roles below could have your name written all over it.
 
-  %p.centered
-    Cogent got started by hiring some of the best people we&rsquo;d worked with. That sets a high bar, and we&rsquo;d love to see you clear it. We&rsquo;re not interested in how many degrees you have, or even if you finished high school. We want people who are smart, and can get things done.
+.gray-background
+  %section.container
+    .row
+      .span8.offset1
+        %h2 Cogent got started by hiring some of the best people we&rsquo;d worked with.
+        %h3 
+          That sets a high bar, and we&rsquo;d love to see you clear it. We&rsquo;re not interested in how many degrees you have, or even if you finished high school. We want people who are smart, and can get things done.
 
-  .projects.clearfix
+%section.container
+  .row
+    .span10.offset1.text-center
+      %h2 Want to join us?
+  .row
+    %ul.span10.offset1.roles
+      %li
+        .row
+          .span8
+            %h3 Developer
+            %div Pair with some of the best developers in Melbourne. We care about code!
+          .span2
+            %a.button.blue{:href => href("developer.html")} View
+      %li
+        .row
+          .span8
+            %h3 Designer
+            %div Get to change stuff as you go, and see your work in the wild.
+          .span2
+            %a.button.blue{:href => href("developer.html")} View
 
-    .project
-      %a{ :href => href("designer.html") }
-        .hero-image
-          %img{ :src => href("/images/job-designer.jpg") }
-      %h2
-        %a{ :href => href("designer.html") } Designer
-      %p Get to change stuff as you go, and see your work in the wild.
+      %li
+        .row
+          .span8
+            %h3 Producer
+            %div Work with great customers, knowing a good team is behind you.
+          .span2
+            %a.button.blue{:href => href("developer.html")} View
 
-    .project
-      %a{ :href => href("developer.html") }
-        .hero-image
-          %img{ :src => href("/images/job-developer.jpg") }
-      %h2
-        %a{ :href => href("developer.html") } Developer
-      %p Pair with some of the best developers in Melbourne. We care about code!
-
-    .project
-      %a{ :href => href("producer.html") }
-        .hero-image
-          %img{ :src => href("/images/job-producer.jpg") }
-      %h2
-        %a{ :href => href("producer.html") } Producer
-      %p Work with great customers, knowing a good team is behind you.
+.white-on-blue
+  %section.container
+    .row
+      .span10.offset1
+        %h2 Don't see your role here?  We're always looking to meet new and smart people.
+    .row
+      .span10.offset1.text-center
+        %a.button.grey Drop us a line

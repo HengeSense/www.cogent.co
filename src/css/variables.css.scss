@@ -17,13 +17,20 @@
   font-weight: 100;
 }
 
+@mixin gray-background {
+  background-color:#f1f1f1;
+  position: relative;
+}
+
 $base-line-height-in-pixels: 23.4;
 $color-watermelon: #F63E5F;
-$color-yellow: #FFEB27;
-$color-blue: #4C9AF5;
-$color-black: #323232;
+$color-blue-background: #4b9bef;
 $color-light-grey: #f2f2f2;
 $color-mid-grey: #cacaca;
 $color-dark-grey: #848484;
+
+
+$color-yellow: #FFEB27; 
+$color-black: #323232;
 $color-white: #FFF;
 $color-divider: #666666;

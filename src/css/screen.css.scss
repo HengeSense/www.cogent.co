@@ -1,52 +1,30 @@
 @import "./variables.css.scss";
 
+/* Typography */
 h1 {
   @include signal-font;
   text-transform: uppercase;
 }
 
-//h2,
-//h3,
-//h4,
-//h5,
-//h6,
-//.h1,
-//.h2,
-//.h3,
-//.h4,
-//.h5,
-//.h6 {
-//  @include minion-pro-font; 
-//}
-
-.navbar {
-  text-transform: uppercase;
-  padding: 15px 0 23px 0;
-  > div {
-    text-align: center;
-  }
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  @include avenir-font; 
 }
 
-header {
-  padding: 25px;
-}
+h1 { font-size: 48px; }
 
-body { 
-  font-family: "Avenir";
-  font-size: 16px;
-}
+h2 { font-size: 26px; }
 
-h1 { font-size: 72px; }
-
-h2 { font-size: 36px; }
-
-h3 { font-size: 24px; }
-
-small { font-size: 16px; }
-
-body, h2, h3 {
-  font-weight: 200;
-}
+h3 { font-size: 18px; }
 
 h1 { 
   line-height: 1.3;
@@ -56,6 +34,20 @@ h2, h3 {
   line-height: 1.4; 
 }
 
+small { font-size: 14px; }
+
+
+/* Layout */
+
+header {
+  padding: 25px;
+}
+
+body {
+  @include avenir-font; 
+  font-size: 16px;
+}
+
 .copyright { 
   margin-top:4em;
   font-size: 12px;
@@ -63,49 +55,59 @@ h2, h3 {
 }
 
 .navbar {
-  background-color: #ffffff;
-  margin-bottom:0px;
+  background-color: #ffffff;  
+  text-transform: uppercase;
+  padding: 15px 0 23px 0;
+  > div {
+    text-align: center;
+  }
 }
 
 ul.nav {
   /*TODO find a better way to do this*/
   margin-top:12px;
-}
-.navbar li {
-  font-family: "signal";
-}
-
-.section .content {
-  width: 840px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 0;
+  
+  > li {
+    @include signal-font;
+    display: inline-block;
+  }
 }
 
 .red-white {
+  width: 100%;
+  margin: 0px auto;
   background-color:#f63e5f;
   color: white;
 }
 
-.section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+section {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-header .red-white {
-  width: 100%;
-  margin: 0px auto;
+  .content {
+    width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .gray-background {
   background-color:#f1f1f1
 }
 
+.desktop {
+  display: none;  
+}
+
 /* Home page */
 
-.macbook {
-  background-image: url("../images/macbook-home.png");
-  background-repeat: no-repeat;
-  background-position: 770px 129px;
+ul.contact {
+  padding: 0;
+  li {
+    list-style: none;
+  }
 }
 
 .apps-that-work {
@@ -122,27 +124,39 @@ header .red-white {
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/apps-that-work.jpg', sizingMethod='scale')";
 }
 
-.products h2 {
-  text-align:center;
-}
 
-.products .product {
-  text-align: center;
+.products {
+  background-color:#f1f1f1;
+  h2 {
+    text-align:center;
+  }
+
+  .product {
+    text-align: center;
+  }
 }
 
 .products-grid {
   text-align: center;
-}
 
-.products-grid a {
-  border: 1px solid lightgray;
-  display: inline-block;
-  width: 280px;
-  height: 200px;
-  margin: 10px;
-  padding-top: 40px;
-  vertical-align: middle;
-  text-align: center;
+  a {
+    border: 1px solid lightgray;
+    display: inline-block;
+    width: 280px;
+    height: 200px;
+    margin: 10px 0;
+    padding-top: 40px;
+    vertical-align: middle;
+    text-align: center;
+
+    &.show-more {
+      border: none;
+    }
+
+    &.optional {
+      display: none;
+    }
+  }
 }
 
 .contact td {
@@ -150,17 +164,56 @@ header .red-white {
 }
 
 /* Tablets > 768px */
-//@media (min-width: 768px) {
-//
-//}
+@media (min-width: 768px) {
+
+  h1 { font-size: 72px; }
+
+  h2 { font-size: 36px; }
+
+  h3 { font-size: 24px; }
+
+  .mobile, a.mobile {
+    display: none;
+  }
+
+  section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  ul.nav {
+    width: auto;
+    float: right;
+
+    li {
+      float: none;
+    }
+  }
+
+  .desktop {
+    display: inherit;
+  }
+
+  .products {
+    background-color:#fff;
+  }
+
+  .products-grid a {
+    margin: 10px;
+    
+    &.optional {
+      display: inline-block;
+    }
+  }
+}
 /* Desktops > 992px */
-//@media (min-width: 992px) {
-//  h1 {
-//    font-size: 3.8em;
-//  }
-//
-//  header {
-//    padding: 100px 0;
-//  }
-//}
-//div { border: 1px solid blue;}
+@media (min-width: 992px) {
+  .macbook {
+    position: absolute;
+    top: 0;
+    left: 65%;
+    right: 0;
+    bottom: 0;
+    background: url("../images/macbook-home.png") no-repeat left center;
+  }
+}

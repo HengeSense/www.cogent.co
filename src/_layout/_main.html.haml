@@ -44,11 +44,11 @@
         .span10
           %ul.nav
             %li
-              %a{:href=>"#"}Work
+              = nav_link("/work", "Work")
             %li
-              %a{:href=>"#"}About
+              = nav_link("/about", "About")
             %li
-              %a{:href=>"join"}Join
+              = nav_link("/join", "Join")
 
     = yield
 
@@ -62,19 +62,17 @@
                 let's chat
 
             %h3 We'll listen to your goals, ask questions, offer ideas and be up-front on our fit to do the job.
-            %br
-            %table.contact
-              %tr
-                %td
-                  %a{:href => "#"}
-                    info@cogent.co
-                %td
+            .row
+              .span2
+                %p 
+                  %a{:href => "#"} info@cogent.co
+                %p Rachel 0419373075
+                %p Marty 0419373075
+              .span3
+                %p
                   Level 3, 10 Queen Street
-              %tr
-                %td Rachel 0419373075
-                %td Melbourne VIC 3000
-              %tr
-                %td Marty 0419373075
+                  %br
+                  Melbourne VIC 3000
             %p.copyright © Cogent 2013  
 
 

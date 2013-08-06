@@ -51,7 +51,6 @@ ul {
   }
 }
 
-
 /* Layout */
 
 header {
@@ -97,6 +96,10 @@ body {
       a, a:visited {
         @include signal-font;
         color: #000;
+
+        &.selected {
+          color: $color-watermelon;
+        }
       }
     }
   }
@@ -117,6 +120,10 @@ section {
   padding: 60px 30px;
 }
 
+.content {
+  padding: 20px 0;
+}
+
 .gray-background {
   background-color: $color-light-grey;
   position: relative;
@@ -130,7 +137,8 @@ section {
 .button {
   display: inline-block;
   padding: 8px 30px;
-
+  margin-top: 20px;
+  
   &.blue {
     background-color: $color-blue-background;  
     color: #fff;
@@ -202,7 +210,6 @@ ul.contact {
     width: 280px;
     height: 200px;
     margin: 12px 0;
-    padding-top: 40px;
     vertical-align: middle;
     text-align: center;
 
@@ -218,9 +225,15 @@ ul.contact {
       display: none;
     }
 
+    img {
+      display: inline-block;
+      margin: 15% auto;
+    }
+
     .red-white {
       display: none;
       position: absolute;
+      padding: 20px 0;
       top: 0;
       bottom: 0;
       left: 0;
@@ -230,7 +243,7 @@ ul.contact {
 
       h3 {
         color: #fff;
-        margin: 30% auto;
+        margin: 15% auto;
       }
     }
   }

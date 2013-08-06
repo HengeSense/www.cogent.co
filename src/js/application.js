@@ -15,15 +15,13 @@ $(document).ready(function() {
 
   $(".products-grid a").mouseenter(function(e) {
     var img = $(e.currentTarget).find("img");
-    img.hide();
     $(e.currentTarget).append("<div class='red-white' style='display:none'><h3>"+img.attr("alt")+"</h3></div>");
-    $(e.currentTarget).find(".red-white").fadeIn(1000);
+    $(e.currentTarget).find(".red-white").fadeIn(130);
   });
 
   $(".products-grid a").mouseleave(function(e) {
-    $(e.currentTarget).find(".red-white").fadeOut(1000);
+    $(e.currentTarget).find(".red-white").fadeOut(130);
     $(e.currentTarget).find(".red-white").remove();
-    $(e.currentTarget).find("img").show();
   });
 
 });

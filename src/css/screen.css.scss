@@ -57,13 +57,6 @@ p {
   font-size: 18px;
 }
 
-ul {
-  padding: 0;
-  li {
-    list-style: none;
-  }
-}
-
 /* Layout */
 
 header {
@@ -114,6 +107,11 @@ body {
         &.selected {
           color: $color-watermelon;
         }
+
+        &:hover {
+          color: $color-watermelon;
+          background-color: #fff;
+        }
       }
     }
   }
@@ -150,16 +148,25 @@ section {
 .white-on-blue {
   background-color: $color-blue-background;
   color: $color-light-grey;
+
+  h2 {
+    color: $color-light-grey;
+  }
 }
 
 .button {
   display: inline-block;
   padding: 8px 30px;
   margin-top: 20px;
-  
+
   &.blue {
     background-color: $color-blue-background;  
     color: #fff;
+
+    &:hover {
+      background-color: #3d7fc9;
+      text-decoration: none;
+    }
   }
 
   &.grey {

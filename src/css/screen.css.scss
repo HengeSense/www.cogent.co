@@ -1,5 +1,11 @@
 @import "./variables.css.scss";
 
+@mixin blue-white {
+  background-color: $color-blue-background;
+  h1, h2, h3, h4, h5, p { color: white; }
+}
+
+
 /* Typography */
 h1 {
   @include signal-font;
@@ -31,6 +37,9 @@ h2 {
 h3, p {
   font-size: 18px;
   color: #666;
+}
+
+h3 {
   padding: 20px 0;
 }
 
@@ -88,21 +97,12 @@ body {
     img {
       max-width: inherit;
     }
-
-  ul.nav {
-  /*TODO find a better way to do this*/
-  margin-top:12px;
-  margin-bottom: 0;
-  
-  > li {
-    @include signal-font;
-    display: inline-block;
   }
 
   ul.nav {
     margin: 36px auto 25px auto;
     width: 100%;
-    
+
     > li {
       display: inline-block;
       padding: 0 22px;
@@ -139,6 +139,7 @@ section {
   position: relative;
 }
 
+//TODO maybe use the blue-white mixing? or replace the mixing with this
 .white-on-blue {
   background-color: $color-blue-background;
   color: $color-light-grey;
@@ -158,7 +159,8 @@ section {
     color: $color-dark-grey;
   }
 }
-.blue { color: $blue; }
+
+.blue { color: $color-blue-background; }
 
 .desktop {
   display: none;  
@@ -187,22 +189,22 @@ ul.contact {
 /* Home page */
 
 .apps-that-work {
-/*  background: url("../images/apps-that-work.jpg") no-repeat center center fixed;*/
+  /*  background: url("../images/apps-that-work.jpg") no-repeat center center fixed;*/
   background: url("../images/apps-that-work.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding-top:230px;
-// Hack for IE
-// http://css-tricks.com/perfect-full-page-background-image/
+  // Hack for IE
+  // http://css-tricks.com/perfect-full-page-background-image/
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/apps-that-work.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/apps-that-work.jpg', sizingMethod='scale')";
 }
 
 .products {
   background-color:#f1f1f1;
-  
+
   h2 {
     text-align:center;
   }
@@ -219,8 +221,9 @@ ul.contact {
 
 .products-grid {
   text-align: center;
-
   background-color: #fff;
+  margin-top:50px;
+  margin-bottom:50px;
 
   a {
     position: relative;
@@ -287,8 +290,7 @@ ul.roles {
 }
 
 
-// Readtime stuff
-
+// Readtime Page
 .readtime {
   .more {
     padding-bottom: 0;
@@ -303,7 +305,7 @@ ul.roles {
   }
 
   .separator {
-    color: $red;
+    color: $color-watermelon;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
   }
@@ -315,7 +317,8 @@ ul.roles {
     @include blue-white;
 
     hr {
-      border-top: 1px solid $lightblue;
+      border:0;
+      border-top:1px solid $color-light-blue;
     }
   }
 
@@ -359,7 +362,7 @@ ul.roles {
 
   .products-grid a {
     margin: 6px;
-    
+
     &.optional {
       display: inline-block;
     }
@@ -382,6 +385,18 @@ ul.roles {
     bottom: 0;
     background: url("../images/macbook-home.png") no-repeat left center;
   }
+
+  .readtime-iphone {
+    position: absolute;
+    top: 0;
+    left: 65%;
+    right: 0;
+    bottom: 0;
+    background: url("../images/readtime-iphone.png") no-repeat left center;
+    //TODO Resize the image file
+    background-size: 480px;
+    background-position: 90px 35px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -390,3 +405,5 @@ ul.roles {
     padding-left: 0;
   }
 }
+
+//div, section, p { border: 1px solid red; }

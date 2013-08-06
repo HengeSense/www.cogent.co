@@ -17,14 +17,22 @@ h6,
 .h4,
 .h5,
 .h6 {
-  @include avenir-font; 
+  @include avenir-font;
+  font-weight: 100;
 }
 
-h1 { font-size: 48px; }
+h1 { font-size: 44px; }
 
-h2 { font-size: 26px; }
+h2 { 
+  font-size: 28px;
+  color: #2c2c2c;
+}
 
-h3, p { font-size: 18px; }
+h3, p {
+  font-size: 18px;
+  color: #666;
+  padding: 20px 0;
+}
 
 h1 { 
   line-height: 1.3;
@@ -40,6 +48,14 @@ p {
 }
 
 small { font-size: 14px; }
+
+ul {
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
 
 /* Layout */
 
@@ -58,16 +74,22 @@ body {
   color: lightgray;
 }
 
-.navbar {
-  background-color: #ffffff;  
-  text-transform: uppercase;
-  padding: 15px 0 23px 0;
+.nav-bar {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
   > div {
     text-align: center;
   }
-}
 
-ul.nav {
+  .logo {
+    max-width: 200px;
+
+    img {
+      max-width: inherit;
+    }
+
+  ul.nav {
   /*TODO find a better way to do this*/
   margin-top:12px;
   margin-bottom: 0;
@@ -76,13 +98,32 @@ ul.nav {
     @include signal-font;
     display: inline-block;
   }
+
+  ul.nav {
+    margin: 36px auto 25px auto;
+    width: 100%;
+    
+    > li {
+      display: inline-block;
+      padding: 0 22px;
+      text-transform: uppercase;
+
+      a, a:visited {
+        @include signal-font;
+        color: #000;
+      }
+    }
+  }
 }
 
 .red-white {
   width: 100%;
-  margin: 0px auto;
-  background-color:$red;
-  color: white;
+  background-color: $color-watermelon;
+  color: #fff;
+
+  h2 {
+    color: #fff;
+  }
 }
 
 .gray-background {
@@ -90,17 +131,33 @@ ul.nav {
 }
 
 section {
-  position: relative;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  .content {
-    width: 840px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  padding: 60px 30px;
 }
 
+.gray-background {
+  background-color: $color-light-grey;
+  position: relative;
+}
+
+.white-on-blue {
+  background-color: $color-blue-background;
+  color: $color-light-grey;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 30px;
+
+  &.blue {
+    background-color: $color-blue-background;  
+    color: #fff;
+  }
+
+  &.grey {
+    background-color: $color-light-grey;
+    color: $color-dark-grey;
+  }
+}
 .blue { color: $blue; }
 
 .desktop {
@@ -110,11 +167,15 @@ section {
 .centered {
   text-align:center;
 }
+.contact td {
+  width:200px;
+}
+
+/* Home page */
 
 ul.contact {
-  padding: 0;
   li {
-    list-style: none;
+    padding: 15px;
   }
 }
 
@@ -139,9 +200,9 @@ ul.contact {
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/apps-that-work.jpg', sizingMethod='scale')";
 }
 
-
 .products {
   background-color:#f1f1f1;
+  
   h2 {
     text-align:center;
   }
@@ -149,33 +210,80 @@ ul.contact {
   .product {
     text-align: center;
   }
+
+  section { 
+    padding-left: 0; 
+    padding-right: 0;
+  }
 }
 
 .products-grid {
   text-align: center;
 
+  background-color: #fff;
+
   a {
+    position: relative;
     border: 1px solid lightgray;
     display: inline-block;
     width: 280px;
     height: 200px;
-    margin: 10px 0;
+    margin: 12px 0;
     padding-top: 40px;
     vertical-align: middle;
     text-align: center;
 
     &.show-more {
-      border: none;
+      border: 1px solid grey;
+      height: auto;
+      padding: 20px 0;
+      text-transform: uppercase;
+      color: #2c2c2c;
     }
 
     &.optional {
       display: none;
     }
+
+    .red-white {
+      display: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $color-watermelon;
+      color: #fff;
+
+      h3 {
+        color: #fff;
+        margin: 30% auto;
+      }
+    }
   }
 }
 
-.contact td {
-  width:200px;
+/* Join Us page */
+ul.roles {
+  padding-top: 30px;
+
+  li {
+    background-color: $color-light-grey;
+    margin-bottom: 4px;
+    padding-bottom: 10px;
+
+    .row div:first-child > * {
+      padding-left: 30px;
+    }
+
+    h3 {
+      padding: 4px 0 0;
+    }
+
+    a {
+      margin: 30px 0;
+    }
+  }
 }
 
 
@@ -229,19 +337,16 @@ ul.contact {
   .mobile, a.mobile {
     display: none;
   }
-
-  section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  .nav-bar {
+    > div { text-align: left }
+    ul.nav {
+      float: right;
+      width: auto;
+    }  
   }
 
-  ul.nav {
-    width: auto;
-    float: right;
-
-    li {
-      float: none;
-    }
+  section {
+    padding: 100px 0;
   }
 
   .desktop {
@@ -253,7 +358,7 @@ ul.contact {
   }
 
   .products-grid a {
-    margin: 10px;
+    margin: 6px;
     
     &.optional {
       display: inline-block;
@@ -264,6 +369,11 @@ ul.contact {
 /* Desktops > 992px */
 
 @media (min-width: 992px) {
+
+  .nav-bar {
+    .logo { margin-left: 20px }
+  }
+
   .macbook {
     position: absolute;
     top: 0;
@@ -272,16 +382,11 @@ ul.contact {
     bottom: 0;
     background: url("../images/macbook-home.png") no-repeat left center;
   }
+}
 
-  .readtime-iphone {
-    position: absolute;
-    top: 0;
-    left: 65%;
-    right: 0;
-    bottom: 0;
-    background: url("../images/readtime-iphone.png") no-repeat left center;
-    //TODO Resize the image file
-    background-size: 480px;
-    background-position: 90px 35px;
+@media (max-width: 767px) {
+  body {
+    padding-right: 0;
+    padding-left: 0;
   }
 }

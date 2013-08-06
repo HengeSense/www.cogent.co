@@ -18,36 +18,65 @@
     %meta{ :name => "author", :content => "Cogent" }
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
 
-    %script{ :src => "js/jquery-1.10.2.min.js" }
-    %script{ :src => href("js/html5.js") }
-    %script{ :type => "text/javascript", :src => "http://use.typekit.com/xkf5xsa.js" }
+    %script{ :src => href("/js/jquery-1.10.2.min.js") }
+    %script{ :src => href("/js/jquery.color-2.1.2.min.js") }
+    %script{ :type => "text/javascript", :src => href("/js/html5.js") }
+    %script{ :src => "http://use.typekit.com/xkf5xsa.js" }
     %script{ :type => "text/javascript" }
       try{Typekit.load();}catch(e){}
 
-    %script{ :type => "text/javascript", :src => "js/application.js" }
+    %script{ :type => "text/javascript", :src => href("/js/application.js") }
+    %script{ :type => "text/javascript", :src => href("/js/bootstrap.min.js") }
 
-    %link{ :rel => "stylesheet", :href => "css/bootstrap.css" }/
-    %link{ :rel => "stylesheet", :href => "css/styles.css" }/
-    %link{ :rel => "stylesheet", :href => "css/screen.css" }/
+    %link{ :rel => "stylesheet", :href => href("/css/bootstrap.min.css") }
+    %link{ :rel => "stylesheet", :href => href("/css/bootstrap-responsive.min.css") }
+    %link{ :rel => "stylesheet", :href => href("/css/styles.css") }
+    %link{ :rel => "stylesheet", :href => href("/css/screen.css") }
     /[if lte IE 8]
-      %script{ :type => "text/javascript", :src => href("js/respond.js") }
-      %link{ :rel => "stylesheet", :href => "css/ie7.css" }/
-
+      %script{ :type => "text/javascript", :src => href("/js/respond.js") }
+      
   %body
-    .navbar
-      .col-12.col-sm-1.col-lg-1.col-offset-1.logo
-        %a{:href=>"#"}
-          %img{:src=>"images/logo-black.png"}
-      .col-12.col-sm-11.col-lg-9
-        %ul.nav.navbar-nav
-          %li
-            %a{:href=>"#"}Work
-          %li
-            %a{:href=>"#"}About
-          %li
-            %a{:href=>"#"}Join
+    .container
+      .row.nav-bar
+        .span2
+          %a.logo{:href=>"#"}
+            %img{:src=> href("/images/logo-black.png")}
+        .span10
+          %ul.nav
+            %li
+              %a{:href=>"#"}Work
+            %li
+              %a{:href=>"#"}About
+            %li
+              %a{:href=>"join"}Join
 
     = yield
+
+    .gray-background.desktop
+      %section.container
+        .row
+          .span6.offset2
+            %h2
+              If you need help with a project and this sounds good to you,
+              %a{:href => "#" }
+                let's chat
+
+            %h3 We'll listen to your goals, ask questions, offer ideas and be up-front on our fit to do the job.
+            %br
+            %table.contact
+              %tr
+                %td
+                  %a{:href => "#"}
+                    info@cogent.co
+                %td
+                  Level 3, 10 Queen Street
+              %tr
+                %td Rachel 0419373075
+                %td Melbourne VIC 3000
+              %tr
+                %td Marty 0419373075
+            %p.copyright © Cogent 2013  
+
 
     :javascript
       var _gaq = _gaq || [];

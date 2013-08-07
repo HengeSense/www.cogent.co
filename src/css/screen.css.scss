@@ -1,5 +1,18 @@
 @import "./variables.css.scss";
 
+@mixin image-background($url) {
+  background: url($url) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top:230px;
+  // Hack for IE
+  // http://css-tricks.com/perfect-full-page-background-image/
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$url, sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=#{$url}, sizingMethod='scale')";
+}
+
 /* Typography */
 
 body,
@@ -202,7 +215,10 @@ section {
   width:200px;
 }
 
-/* Home page */
+section.double-vertial-padding {
+  padding-top:200px;
+  padding-bottom:200px;
+}
 
 ul.contact {
   li {
@@ -216,19 +232,9 @@ ul.contact {
 }
 
 /* Home page */
-
 .apps-that-work {
-  /*  background: url("../images/apps-that-work.jpg") no-repeat center center fixed;*/
-  background: url("../images/apps-that-work.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top:230px;
-  // Hack for IE
-  // http://css-tricks.com/perfect-full-page-background-image/
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/apps-that-work.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/apps-that-work.jpg', sizingMethod='scale')";
+  height: auto;
+  @include image-background("../images/apps-that-work.jpg")
 }
 
 .products {
@@ -379,6 +385,18 @@ ul.roles {
       margin-top: -30px;
       margin-left: -100px;
     }
+  }
+}
+
+// REA page
+.rea {
+  .intro.image-background {
+    height: 400px;
+    @include image-background("../images/rea-background.png");
+  }
+  .cards.image-background {
+    height: 400px;
+    @include image-background("../images/rea-cards.png");
   }
 }
 

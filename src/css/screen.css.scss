@@ -57,12 +57,16 @@ p {
   font-size: 18px;
 }
 
-ul {
-  padding: 0;
-  li {
-    list-style: none;
-  }
+a {
+  -o-transition:color .2s ease-out, background .1s ease-in;
+  -ms-transition:color .2s ease-out, background .1s ease-in;
+  -moz-transition:color .2s ease-out, background .1s ease-in;
+  -webkit-transition:color .2s ease-out, background .1s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:color .2s ease-out, background .2s ease-in;
+  font-size: 18px;
 }
+
 
 /* Layout */
 
@@ -114,6 +118,11 @@ body {
         &.selected {
           color: $color-watermelon;
         }
+
+        &:hover {
+          color: $color-watermelon;
+          background-color: #fff;
+        }
       }
     }
   }
@@ -150,16 +159,28 @@ section {
 .white-on-blue {
   background-color: $color-blue-background;
   color: $color-light-grey;
+
+  h2 {
+    color: $color-light-grey;
+  }
 }
 
 .button {
   display: inline-block;
   padding: 8px 30px;
   margin-top: 20px;
-  
+
+  &:hover {
+    text-decoration: none;
+  }
+
   &.blue {
     background-color: $color-blue-background;  
     color: #fff;
+
+    &:hover {
+      background-color: #3d7fc9;
+    }
   }
 
   &.grey {

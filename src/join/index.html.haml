@@ -3,15 +3,15 @@ page_title: Join
 layout: "/_layout/_main.html.haml"
 ...
 
-.red-white
-  %section.container
+%section.red-white
+  .container
     .row
       .span9.offset1
         %h1 Yep, Cogent is hiring
         %h2 One of the roles below could have your name written all over it.
 
-.gray-background
-  %section.container
+%section.gray-background
+  .container
     .row
       .span8.offset1
         %h2 Cogent got started by hiring some of the best people we&rsquo;d worked with.
@@ -23,36 +23,29 @@ layout: "/_layout/_main.html.haml"
     .span10.offset1.text-center
       %h2 Want to join us?
   .row
-    %ul.span10.offset1.roles
-      %li
-        .row
-          .span8
-            %h3 Developer
-            %div Pair with some of the best developers in Melbourne. We care about code!
-          .span2
-            %a.button.blue{:href => href("developer.html")} View
-      %li
-        .row
-          .span8
-            %h3 Designer
-            %div Get to change stuff as you go, and see your work in the wild.
-          .span2
-            %a.button.blue{:href => href("developer.html")} View
+    .span10.offset1
+      %ul.roles.unstyled
+        %li
+          .row
+            .span8
+              %h3 Developer
+              .small-font Pair with some of the best developers in Melbourne. We care about code!
+            .span2.text-center
+              %a.button.blue{:href => href("developer.html")} View
+        %li
+          .row
+            .span8
+              %h3 Designer
+              .small-font Get to change stuff as you go, and see your work in the wild.
+            .span2.text-center
+              %a.button.blue{:href => href("designer.html")} View
 
-      %li
-        .row
-          .span8
-            %h3 Producer
-            %div Work with great customers, knowing a good team is behind you.
-          .span2
-            %a.button.blue{:href => href("developer.html")} View
+        %li
+          .row
+            .span8
+              %h3 Producer
+              .small-font Work with great customers, knowing a good team is behind you.
+            .span2.text-center
+              %a.button.blue{:href => href("producer.html")} View
 
-.white-on-blue
-  %section.container
-    .row
-      .span10.offset1.text-center
-        %h2 Don't see your role here?  We're always looking to meet new and smart people.
-    .row
-      .span10.offset1.text-center
-        %p       
-          %a.button.grey{:href => "mailto:jobs@cogent.co"} Drop us a line
+= include "../_partials/_join_us.html.haml"

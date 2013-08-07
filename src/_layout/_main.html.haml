@@ -44,11 +44,11 @@
         .span10
           %ul.nav
             %li
-              = nav_link("/work", "Work")
+              = nav_link(href("/projects/readtime").to_s, "Work")
             %li
-              = nav_link("/about", "About")
+              = nav_link(href("/about").to_s, "About")
             %li
-              = nav_link("/join", "Join")
+              = nav_link(href("/join").to_s, "Join")
 
     = yield
 

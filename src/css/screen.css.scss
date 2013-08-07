@@ -360,6 +360,26 @@ ul.roles {
     padding-top: 40px;
     padding-bottom:60px;
   }
+
+  .video-background {
+    position: relative;
+    text-align:center;
+
+    video {
+      width:100%;
+    }
+
+    h1 {
+      margin:0;
+      padding:0;
+      position: absolute;
+      top:50%;
+      left:50%;
+      color: white;
+      margin-top: -30px;
+      margin-left: -100px;
+    }
+  }
 }
 
 /* Tablets > 768px */
@@ -403,6 +423,11 @@ ul.roles {
       display: inline-block;
     }
   }
+
+  .readtime .video-background h1 {
+      margin-top: -45px;
+      margin-left: -165px;
+  }
 }
 
 /* Desktops > 992px */
@@ -433,6 +458,9 @@ ul.roles {
     background-size: 480px;
     background-position: 90px 35px;
   }
+
+  margin-top: -34px;
+  margin-left: -160px;
 }
 
 @media (max-width: 767px) {

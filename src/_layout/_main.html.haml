@@ -30,50 +30,51 @@
 
     %link{ :rel => "stylesheet", :href => href("/css/bootstrap.min.css") }
     %link{ :rel => "stylesheet", :href => href("/css/bootstrap-responsive.min.css") }
-    %link{ :rel => "stylesheet", :href => href("/css/styles.css") }
     %link{ :rel => "stylesheet", :href => href("/css/screen.css") }
     /[if lte IE 8]
       %script{ :type => "text/javascript", :src => href("/js/respond.js") }
-      
-  %body
-    .container
-      .row.nav-bar
-        .span2
-          %a.logo{:href=> href("/") }
-            %img{:src=> href("/images/logo-black.png")}
-        .span10
-          %ul.nav
-            %li
-              = nav_link(href("/projects/readtime").to_s, "Work")
-            %li
-              = nav_link(href("/about").to_s, "About")
-            %li
-              = nav_link(href("/join").to_s, "Join")
 
-    = yield
-
-    %section.gray-background.desktop
+  %body{:class => "#{page.meta['class']}"}
+    .navbar-fixed-top
       .container
-        .row
-          .span7.offset2
-            %h2
-              If you need help with a project and this sounds good to you,
-              %a{:href => "#" }
-                let's chat.
+        .row.nav-bar
+          .span2
+            %a.logo{:href=> href("/") }
+          .span10
+            %ul.nav
+              %li
+                = nav_link(href("/projects/readtime"), "Work")
+              %li
+                = nav_link(href("/about"), "About")
+              %li
+                = nav_link(href("/join"), "Join")
+    .content
+      = yield
 
-            %h3 We'll listen to your goals, ask questions, offer ideas and be up-front on our fit to do the job.
-            .row.small-font
-              .span2
-                %a{:href => "#"} info@cogent.co
+      %footer.gray-background.desktop
+        .container
+          .row
+            .span8.offset2
+              %h2
+                If you need some help with a project
                 %br
-                Rachel 0419373075
-                %br
-                Marty 0419373075
-              .span3
-                Level 3, 10 Queen Street
-                %br
-                Melbourne VIC 3000
-            %p.copyright © Cogent 2013  
+                and this sounds good to you,
+                %a{:href => "#" }
+                  let's chat.
+
+              %p We'll listen to your goals, ask questions, offer ideas and be up-front on our fit to do the job.
+              .row.small-font
+                .span2
+                  %a{:href => "#"} info@cogent.co
+                  %br
+                  Rachel 0419373075
+                  %br
+                  Marty 0419373075
+                .span3
+                  Level 3, 10 Queen Street
+                  %br
+                  Melbourne VIC 3000
+              %p.copyright © Cogent 2013  
 
 
     :javascript

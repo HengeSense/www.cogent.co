@@ -1,5 +1,5 @@
 @mixin avenir-font {
-  font-family: "Avenir", "Palatino", "Georgia", "Times New Roman", "Serif";
+  font-family: "Avenir-Light", "Palatino", "Georgia", "Times New Roman", "Serif";
   font-weight: 100;
 }
 
@@ -18,7 +18,7 @@
 }
 
 @mixin gray-background {
-  background-color:#f1f1f1;
+  background-color: $color-light-grey;
   position: relative;
 }
 
@@ -28,12 +28,15 @@
 }
 
 $base-line-height-in-pixels: 23.4;
+$color-blue-background: #4c9af5;
+$color-grey-background: #f3f3f3;
+
 $color-watermelon: #F63E5F;
 $color-dark-blue: #3F7FCA;
-$color-blue-background: #4B9BEF;
 $color-light-blue: #6CA6F3;
 $color-light-grey: #F2F2F2;
 $color-gray: #666666;
 $color-mid-grey: #CACACA;
 $color-dark-grey: #848484;
 $color-black: #2C2C2C;
+$color-link-dark-blue: #3d7fc9;

@@ -2,20 +2,8 @@
 
 /* Typography */
 
-body,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+body, h2, h3, h4, h5, h6 {
   @include avenir-font;
-  color: $color-gray;
   font-weight: 100;
 }
 
@@ -23,34 +11,22 @@ body {
   font-size: 18px;
 }
 
-h2, h3, h3, h5 {
-  color: $color-black;
-}
-
 h1 {
   @include signal-font;
   text-transform: uppercase;
-  font-size: 44px;
-  line-height: 1.3;
   color: inherit;
 }
 
-h2 {
-  font-size: 28px;
-}
-
 h3 {
-  font-size: 18px;
-  padding: 20px 0;
-}
-
-body, h2, h3 {
-  line-height: 1.4;
+  color: $color-gray;
 }
 
 p {
   font-size: inherit;
-  margin-top:1.5em;
+  line-height: 36px;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  color: $color-gray;
 }
 
 .small-font {
@@ -58,19 +34,26 @@ p {
 }
 
 a {
-  -o-transition:color .2s ease-out, background .1s ease-in;
-  -ms-transition:color .2s ease-out, background .1s ease-in;
-  -moz-transition:color .2s ease-out, background .1s ease-in;
-  -webkit-transition:color .2s ease-out, background .1s ease-in;
+  -o-transition:color .1s ease-out, background .1s ease-in;
+  -ms-transition:color .1s ease-out, background .1s ease-in;
+  -moz-transition:color .1s ease-out, background .1s ease-in;
+  -webkit-transition:color .1s ease-out, background .1s ease-in;
   /* ...and now override with proper CSS property */
-  transition:color .2s ease-out, background .2s ease-in;
-}
+  transition:color .1s ease-out, background .1s ease-in;
+  
+  color: $color-blue-background;
 
+  &:hover {
+    text-decoration: none;
+    color: $color-link-dark-blue;
+  }
+}
 
 /* Layout */
 
-header {
-  padding: 25px;
+.navbar-fixed-top {
+  background-color: #fff;
+  border: 2px solid $color-grey-background;
 }
 
 body {
@@ -81,34 +64,38 @@ body {
 .copyright { 
   margin-top:4em;
   font-size: 14px;
-  color: lightgray;
+  color: #c0c0c0;
 }
 
 .nav-bar {
-  font-size: 18px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  font-size: 16px;
 
   > div {
     text-align: center;
+    line-height: 90px;
+    vertical-align: middle;
   }
 
   .logo {
-    max-width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 76px;
+    height: 41px;
+    background: url("../images/logo.png") no-repeat center center;
 
-    img {
-      max-width: inherit;
+    &:hover {
+      background: url("../images/logo_hover.png") no-repeat center center;
     }
   }
 
   ul.nav {
-    margin: 36px auto 25px auto;
+    margin: 0 auto;
     width: 100%;
 
     > li {
       display: inline-block;
-      padding: 0 22px;
       text-transform: uppercase;
+      padding: 0 25px;
 
       a, a:visited {
         @include signal-font;
@@ -127,48 +114,17 @@ body {
   }
 }
 
-.red-white {
-  width: 100%;
-  background-color: $color-watermelon;
-  color: #fff;
-
-  h2 {
-    color: #fff;
-  }
-}
-
-.gray-background {
-  background-color:#f1f1f1
-}
-
-section {
-  padding: 60px 30px;
-}
-
-.content {
-  padding: 20px 0;
-}
-
-.gray-background {
-  background-color: $color-light-grey;
-  position: relative;
-}
-
-//TODO maybe use the blue-white mixing? or replace the mixing with this
-.white-on-blue {
-  background-color: $color-blue-background;
-  color: $color-light-grey;
-
-  h2 {
-    color: $color-light-grey;
-  }
+footer {
+  color: $color-gray;
 }
 
 .button {
+  @include signal-font;
   display: inline-block;
-  padding: 8px 30px;
-  margin-top: 20px;
-  font-size: 18px;
+  padding: 4px 23px 0 23px;
+  font-size: 16px;
+  line-height: 30px;
+  vertical-align: middle;
 
   &:hover {
     text-decoration: none;
@@ -179,13 +135,53 @@ section {
     color: #fff;
 
     &:hover {
-      background-color: #3d7fc9;
+      background-color: $color-link-dark-blue;
     }
   }
 
   &.grey {
     background-color: $color-light-grey;
     color: $color-dark-grey;
+
+    &:hover {
+      background-color: $color-link-dark-blue;
+      color: #fff;
+    }
+  }
+}
+
+.red-white {
+  width: auto;
+  background-color: $color-watermelon;
+  color: #fff;
+
+  h2 {
+    color: #fff;
+  }
+}
+
+.gray-background {
+  background-color: $color-grey-background;
+  position: relative;
+}
+
+.grey-background-with-image {
+  @extend .gray-background;
+  min-height: 449px;
+  overflow:hidden;
+}
+
+//TODO maybe use the blue-white mixing? or replace the mixing with this
+.white-on-blue {
+  padding: 50px 0 60px 0;
+  background-color: $color-blue-background;
+  color: #fff;
+  h2 {
+    line-height: 48px;
+    color: #fff;
+  }
+  a {
+    margin-top: 35px;
   }
 }
 
@@ -206,7 +202,7 @@ section {
 
 ul.contact {
   li {
-    padding: 15px;
+    padding: 15px 0;
   }
 }
 
@@ -224,7 +220,7 @@ ul.contact {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top:230px;
+  padding-top:200px;
   // Hack for IE
   // http://css-tricks.com/perfect-full-page-background-image/
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/apps-that-work.jpg', sizingMethod='scale');
@@ -232,7 +228,7 @@ ul.contact {
 }
 
 .products {
-  background-color:#f1f1f1;
+  background-color: $color-grey-background;
 
   h2 {
     text-align:center;
@@ -241,18 +237,12 @@ ul.contact {
   .product {
     text-align: center;
   }
-
-  section { 
-    padding-left: 0; 
-    padding-right: 0;
-  }
 }
 
 .products-grid {
   text-align: center;
   background-color: #fff;
-  margin-top:50px;
-  margin-bottom:50px;
+  margin: 42px 0 18px 0;
 
   a {
     position: relative;
@@ -282,6 +272,7 @@ ul.contact {
     }
 
     .red-white {
+      text-transform: uppercase;
       display: none;
       position: absolute;
       padding: 20px 0;
@@ -293,6 +284,7 @@ ul.contact {
       color: #fff;
 
       h3 {
+        @include signal-font;
         color: #fff;
         margin: 15% auto;
       }
@@ -300,29 +292,26 @@ ul.contact {
   }
 }
 
-/* Join Us page */
 ul.roles {
-  padding-top: 30px;
-
+  margin-top: 26px;
   li {
+    position: relative;
+    margin-bottom: 2px;
     background-color: $color-light-grey;
-    margin-bottom: 4px;
-    padding-bottom: 10px;
-
-    .row div:first-child > * {
-      padding-left: 30px;
-    }
 
     h3 {
-      padding: 4px 0 0;
+      margin: 31px 0 5px 40px;
+    }
+
+    .small-font {
+      margin: 5px 0 31px 40px;
     }
 
     a {
-      margin: 30px 0;
+      margin-top: 46px;
     }
   }
 }
-
 
 // Readtime Page
 .readtime {
@@ -382,16 +371,70 @@ ul.roles {
   }
 }
 
+.eventer {
+  section h2 { color: $color-light-blue }
+  .eventer-storywall {
+    height: 480px;
+    width: 100%;
+    background: url('../images/eventer-storywall.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  ul.events-list {
+    margin-bottom: 60px;
+    li {
+      display: inline-block;
+      margin: 0 12px;
+    }
+  }
+  .like-being-there {
+
+  }
+}
+
 /* Tablets > 768px */
 @media (min-width: 768px) {
 
+  h1 { 
+    font-size: 72px;
+    line-height: 80px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  h3 { 
+    font-size: 24px; 
+    line-height: 36px;
+  }
+
+  body {
+    > .content {
+      padding-top: 94px;
+    }
+  }
+
+  header {
+    padding: 80px 0;
+
+    h1, h2 {
+      margin: 20px 0;
+    }
+  }
+
+  section {
+    h2 { 
+      line-height: 60px;
+    }    
+  }
+
+  footer {
+    line-height: 32px;
+    padding-top: 90px;
+  }
+
   body { font-size: 24px; }
-
-  h1 { font-size: 72px; }
-
-  h2 { font-size: 36px; }
-
-  h3 { font-size: 24px; }
 
   .mobile, a.mobile {
     display: none;
@@ -405,12 +448,14 @@ ul.roles {
   }
 
   section {
-    padding: 100px 0;
+    padding: 80px 0 100px 0;
   }
 
   .desktop {
     display: inherit;
   }
+
+  .macbook img {display: none};
 
   .products {
     background-color:#fff;
@@ -438,13 +483,40 @@ ul.roles {
     .logo { margin-left: 20px }
   }
 
+  .button {
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+
   .macbook {
     position: absolute;
     top: 0;
     left: 65%;
     right: 0;
     bottom: 0;
-    background: url("../images/macbook-home.png") no-repeat left center;
+    margin-top: 90px;
+    
+    img {
+      margin-top: 60px auto 0 auto;
+      display: block;
+      max-width: inherit;
+    }
+  }
+
+  .like-being-there {
+    position: relative;
+    margin-top: 459px;
+    height: 100px;
+    background-color: $color-light-grey;
+    
+    img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+      margin: 0 auto;
+    }
   }
 
   .readtime-iphone {
@@ -464,9 +536,53 @@ ul.roles {
 }
 
 @media (max-width: 767px) {
-  body {
-    padding-right: 0;
-    padding-left: 0;
+  .navbar-fixed-top {
+    .container { width: auto; }
+    margin-bottom: 0;
+    border: none;
+  }
+
+  h1 {
+    font-size: 44px;
+    line-height: 60px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  header, section, footer {
+    padding: 40px 45px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .products {
+    padding: 40px 0;
+  }
+
+  ul.roles {
+    margin-left: -30px;
+    margin-right: -30px;
+
+    li {
+      margin-bottom: 30px;
+      text-align: center;      
+      h3 { color: $color-dark-grey; }
+      h3, .small-font {
+        margin: 0;
+        padding: 20px 10px;
+        border-bottom: 1px solid #fff;
+      }
+      a {
+        margin: 10px 0 10px 0;
+        position: relative;
+      }
+    }
   }
 }
 

@@ -47,7 +47,7 @@
               %li
                 = nav_link(href("/about"), "About")
               %li
-                = nav_link(href("/join"), "Join")
+                = nav_link(href("/join"), "Join", :shallow => true)
     .content
       = yield
 
@@ -59,13 +59,13 @@
                 If you need some help with a project
                 %br
                 and this sounds good to you,
-                %a{:href => "#" }
+                %a{:href => "mailto:info@cogent.co" }
                   let's chat.
 
               %p We'll listen to your goals, ask questions, offer ideas and be up-front on our fit to do the job.
               .row.small-font
                 .span2
-                  %a{:href => "#"} info@cogent.co
+                  %a{:href => "mailto:info@cogent.co"} info@cogent.co
                   %br
                   Rachel 0419373075
                   %br

@@ -189,12 +189,18 @@ footer {
   padding: 50px 0 60px 0;
   background-color: $color-blue-background;
   color: #fff;
+  text-align: center;
   h2 {
     line-height: 48px;
     color: #fff;
   }
   a {
     margin-top: 35px;
+  }
+  hr {
+    margin: 50px 0;
+    border:0;
+    border-top:1px solid $color-light-blue;
   }
 }
 
@@ -335,20 +341,8 @@ ul.roles {
 
   .separator {
     color: $color-watermelon;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-  }
-
-  .achivements {
-    padding-top:0;
-    padding-bottom:0;
-    text-align:center;
-    @include blue-white;
-
-    hr {
-      border:0;
-      border-top:1px solid $color-light-blue;
-    }
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
   }
 
   .full-logo {

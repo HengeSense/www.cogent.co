@@ -129,6 +129,9 @@ body {
 
 footer {
   color: $color-gray;
+  h2 {
+    color: $color-black;
+  }
 }
 
 .button {
@@ -327,6 +330,15 @@ ul.roles {
 
 // Readtime Page
 .readtime {
+  .content {
+    padding:0 !important;
+    margin:0 !important;
+  }
+
+  .navbar-fixed-top {
+    margin-bottom: 0px !important;
+  }
+
   .more {
     padding-bottom: 0;
 
@@ -351,10 +363,14 @@ ul.roles {
   }
 
   .video-background {
-    position: relative;
     text-align:center;
+    position:relative;
+    height: 450px;
 
     video {
+      position:absolute;
+      left:0;
+      top:50px;
       width:100%;
     }
 
@@ -480,9 +496,20 @@ ul.roles {
     }
   }
 
-  .readtime .video-background h1 {
+  .readtime .video-background {
+    height: 650px;
+    position:relative;
+
+    video {
+      position:absolute;
+      left:0;
+      top:50px;
+    }
+
+    h1 {
       margin-top: -45px;
       margin-left: -165px;
+    }
   }
 }
 

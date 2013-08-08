@@ -26,6 +26,7 @@ project.helpers do
   def nav_link(target_ref, label, options = {})
     target_path = abbreviate_path(target_ref)
     current_path = abbreviate_path(page.output_path)
+    p current_path
     selected = (target_path == current_path)
     unless options[:shallow]
       selected ||= current_path.start_with?(target_path)

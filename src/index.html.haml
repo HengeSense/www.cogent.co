@@ -1,22 +1,29 @@
 ---
 layout: "_layout/_main.html.haml"
 ...
-%section.red-white
+%header.red-white
   .container
     .row
       .span10.offset1
         %h1 We create useful software that gets results
-        %h2 We start with your business goal and work in a open and iterative way to craft the product.
+        %h2 
+          We start with your business goal and work in a open
+          %br.desktop
+          and iterative way to craft the product.
 
-%section.container.mobile
-  .row
-    .span10
-      %ul.contact.unstyled
-        %li info@cogent.co
-        %li Level 3, 10 Queen St Melbourne VIC
-        %li Rachel 0419 373 075
+%section.mobile
+  .container
+    .row
+      .span12
+        %ul.contact.unstyled
+          %li info@cogent.co
+          %li 
+            Level 3, 10 Queen St 
+            %br
+            Melbourne VIC
+          %li Rachel 0419 373 075
 
-%section.gray-background.desktop
+%section.grey-background-with-image.desktop
   .container
     .row
       .span7.offset1
@@ -28,6 +35,7 @@ layout: "_layout/_main.html.haml"
           %br
           It helps us what you wanted.
   .macbook
+    %img{:src => href("/images/macbook-home.png")}
 
 %section.apps-that-work.desktop
   .container
@@ -52,18 +60,18 @@ layout: "_layout/_main.html.haml"
     .row
       .span10.offset1
         .products-grid><
-          %a{:href => "#"}><
+          %a{:href => href("/projects/readtime.html")}><
             %img{:src => "images/readtime-icon.png", :alt => "Readtime"}
-          %a{:href => "#"}><
+          %a{:href => href("/projects/thread.html")}><
             %img{:src => "images/thread-icon.png", :alt => "Thread"}
-          %a{:href => "#"}><
+          %a{:href => href("/projects/eventer.html")}><
             %img{:src => "images/eventer-icon.png", :alt => "Eventer"}
           %a.optional{:href => "#"}><
-            %img{:src => "images/readtime-icon.png"}
+            %img{:src => "images/readtime-icon.png", :alt => "Hooroo"}
           %a.optional{:href => "#"}><
-            %img{:src => "images/rea-icon.png"}
+            %img{:src => "images/rea-icon.png", :alt => "REA"}
           %a.optional{:href => "#"}><
-            %img{:src => "images/tesselaar-icon.png"}
+            %img{:src => "images/tesselaar-icon.png", :alt => "Tesselaar"}
           %a.mobile.show-more{:href => "javascript:void(0)"}
             Show more projects
 

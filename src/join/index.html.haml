@@ -32,23 +32,26 @@ layout: "/_layout/_main.html.haml"
           .row
             .span8
               %h3 Developer
-              .small-font Pair with some of the best developers in Melbourne. We care about code!
-            .span2
+              .small-font.desktop Pair with some of the best developers in Melbourne. We care about code!
+              %a.button.blue.mobile{:href => href("developer.html")} &nbsp;
+            .span2.desktop
               %a.button.blue{:href => href("developer.html")} View
         %li
           .row
             .span8
               %h3 Designer
-              .small-font Get to change stuff as you go, and see your work in the wild.
-            .span2
+              .small-font.desktop Get to change stuff as you go, and see your work in the wild.
+              %a.button.blue.mobile{:href => href("designer.html")} &nbsp;
+            .span2.desktop
               %a.button.blue{:href => href("designer.html")} View
 
         %li
           .row
             .span8
               %h3 Producer
-              .small-font Work with great customers, knowing a good team is behind you.
-            .span2
+              .small-font.desktop Work with great customers, knowing a good team is behind you.
+              %a.button.blue.mobile{:href => href("producer.html")} &nbsp;
+            .span2.desktop
               %a.button.blue{:href => href("producer.html")} View
 
 = include "../_partials/_join_us.html.haml"

@@ -187,9 +187,17 @@ footer {
   overflow:hidden;
 }
 
+.dark-background {
+  color: $color-mid-grey;
+  p {
+    color: $color-mid-grey;
+  }
+}
+
 //TODO maybe use the blue-white mixing? or replace the mixing with this
 .white-on-blue {
-  padding: 50px 0 60px 0;
+  padding-top: 50px;
+  padding-bottom: 60px;
   background-color: $color-blue-background;
   color: #fff;
   text-align: center;
@@ -301,7 +309,7 @@ ul.contact {
       h3 {
         @include signal-font;
         color: #fff;
-        margin: 15% auto;
+        margin: 21% auto;
       }
     }
   }
@@ -418,6 +426,22 @@ ul.roles {
   }
 }
 
+/* TODO use a mixin macro here */
+.about {
+  .about-us {
+    height: 800px;
+    background: url("../images/about_bg1.png") no-repeat top left;
+    background-size: 100%;
+  }
+
+  .learning {
+    @extend .dark-background;
+    height: 595px;
+    background: url("../images/about-learning.png") no-repeat top left;
+    background-size: 100%;
+  }
+}
+
 /* Tablets > 768px */
 @media (min-width: 768px) {
 
@@ -451,9 +475,16 @@ ul.roles {
   }
 
   section {
+    padding: 80px 0 100px 0;
+
     h2 { 
       line-height: 60px;
-    }    
+    }
+
+    > .with-image img {
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
   }
 
   footer {
@@ -472,10 +503,6 @@ ul.roles {
       float: right;
       width: auto;
     }  
-  }
-
-  section {
-    padding: 80px 0 100px 0;
   }
 
   .desktop {
@@ -590,7 +617,7 @@ ul.roles {
   }
 
   h1 {
-    font-size: 44px;
+    font-size: 48px;
     line-height: 60px;
   }
 
@@ -613,21 +640,26 @@ ul.roles {
   }
 
   ul.roles {
-    margin-left: -30px;
-    margin-right: -30px;
-
     li {
-      margin-bottom: 30px;
-      text-align: center;      
-      h3 { color: $color-dark-grey; }
-      h3, .small-font {
-        margin: 0;
-        padding: 20px 10px;
-        border-bottom: 1px solid #fff;
+      h3 {         
+        line-height: 60px;      
+        vertical-align: middle;      
+        margin: 0 0 0 30px;
+        color: $color-dark-grey; 
+        display: inline-block;
       }
       a {
-        margin: 10px 0 10px 0;
+        margin: 15px 10px 0 10px; 
+        padding: 0 20px;
         position: relative;
+        display: inline-block;
+        float: right;
+        background: url("../images/join_list_button.png") no-repeat center center;
+
+        &.blue, &.blue:hover {
+          background-color: inherit;
+        }
+
       }
     }
   }

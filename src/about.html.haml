@@ -1,23 +1,28 @@
 ---
-page_title: About
 layout: "_layout/_main.html.haml"
+class: "about"
 ...
 
-.red-white
-  %section.container
+%section.red-white
+  .container
     .row
       .span10.offset1
         %h1 Cogent has some pretty simple principles
 
 
-.about-us
-  %section.container
+%section.about-us
+  .container
     .row
       .span5
         %h2 Treat people well
         %p We treat each other and our customers well. We choose to be honest and open, to collaborate, and to be respectful and fair. These values are really important to who we are and how we act.
 
 %section.container
+  .row.with-image
+    .span5
+      %img{:src => href("/images/about_sketch.jpg")}
+    .span5.offset2
+      %img{:src => href("/images/outside-of-work-1.png")}
   .row
     .span5
       %h2 Be real
@@ -27,18 +32,17 @@ layout: "_layout/_main.html.haml"
       %p We love what we do, and life outside work hours counts too. The standard work week is - just that. We plan our projects to set ourselves up for success, not for a frenzied error-prone sprint to the finish line. 
 
 
-.learning
-  %section.container
+%section.learning
+  .container
     .row
       .span5
         %h2 Learning more is part of the plan
         %p We&rsquo;re good at what we do, but the world shifts fast. That&rsquo;s why we are avid learners who debate, reflect, read, participate and experiment. We commit to learning by spending a day each month together to explore new things.
 
 
-.white-on-blue.text-center
-  %section.container
+%section.white-on-blue.text-center
+  .container
     .row
       .span12
         %h2 One of our roles could have your name all over it.
-        %p
-          %a.button.grey{:href => "mailto:jobs@cogent.co"} Want to join us?
+        %a.button.grey{:href => "mailto:jobs@cogent.co"} Want to join us?

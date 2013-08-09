@@ -43,11 +43,11 @@
           .span10
             %ul.nav
               %li
-                = nav_link(href("/projects/readtime"), "Work")
+                = nav_link("projects/readtime.html", "Work")
               %li
-                = nav_link(href("/about"), "About")
+                = nav_link("about.html", "About")
               %li
-                = nav_link(href("/join"), "Join", :shallow => true)
+                = nav_link("join.html", "Join")
     .content
       = yield
 
@@ -69,12 +69,15 @@
                   %br
                   Rachel 0419373075
                   %br
-                  Marty 0419373075
+                  Marty 0407004570
                 .span3
                   Level 3, 10 Queen Street
                   %br
                   Melbourne VIC 3000
-              %p.copyright © Cogent 2013  
+              %p.copyright © Cogent 2013
+      
+      = include("../_partials/_mobile_footer.html.haml")
+                
 
 
     :javascript

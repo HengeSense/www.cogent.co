@@ -201,15 +201,17 @@ footer {
   background-color: $color-blue-background;
   color: #fff;
   text-align: center;
+
+  h2, p { color: #fff; }
+
   h2 {
     line-height: 48px;
-    color: #fff;
   }
   a {
     margin-top: 35px;
   }
   hr {
-    margin: 55px 0;
+    margin: 60px 0;
     border:0;
     border-top:1px solid $color-light-blue;
   }

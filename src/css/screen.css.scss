@@ -17,10 +17,6 @@ h1 {
   color: inherit;
 }
 
-h3 {
-  color: $color-gray;
-}
-
 p {
   font-size: inherit;
   line-height: 32px;
@@ -538,22 +534,6 @@ ul.roles {
       margin-top: 60px auto 0 auto;
       display: block;
       max-width: inherit;
-    }
-  }
-
-  .like-being-there {
-    position: relative;
-    margin-top: 459px;
-    height: 100px;
-    background-color: $color-light-grey;
-    
-    img {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 10;
-      margin: 0 auto;
     }
   }
 

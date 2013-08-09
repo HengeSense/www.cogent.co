@@ -1,9 +1,6 @@
 @import "./variables.css.scss";
 
 .eventer {
-
-  section h2 { color: $color-light-blue }
-
   .eventer-storywall {
     height: 480px;
     width: 100%;
@@ -19,9 +16,6 @@
     }
   }
 
-  .like-being-there {
-  }
-
   .intro {
     @include image-background("../images/eventer-background.jpg");
     padding-top: 0px;
@@ -30,16 +24,31 @@
     margin-bottom: 0px;
     height: 468px;
     text-align: center;
-    
+
     h1 {
       line-height: 450px;
       color: white;
     }
   }
+}
 
-  @media (max-width: 767px) {
-  }
+@media (max-width: 767px) {}
+
+@media (min-width: 992px) {
+  .like-being-there {
+    border: 1px red;
+    position: relative;
+    margin-top: 459px;
+    height: 170px;
+    background-color: $color-light-grey;
   
-  @media (min-width: 992px) {
+    img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+      margin: 0 auto;
+    }
   }
 }

@@ -1,0 +1,45 @@
+@import "./variables.css.scss";
+
+.eventer {
+
+  section h2 { color: $color-light-blue }
+
+  .eventer-storywall {
+    height: 480px;
+    width: 100%;
+    background: url('../images/eventer-storywall.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  ul.events-list {
+    margin-bottom: 60px;
+    li {
+      display: inline-block;
+      margin: 0 12px;
+    }
+  }
+
+  .like-being-there {
+  }
+
+  .intro {
+    @include image-background("../images/eventer-background.jpg");
+    padding-top: 0px;
+    padding-bottom:0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 468px;
+    text-align: center;
+    
+    h1 {
+      line-height: 450px;
+      color: white;
+    }
+  }
+
+  @media (max-width: 767px) {
+  }
+  
+  @media (min-width: 992px) {
+  }
+}

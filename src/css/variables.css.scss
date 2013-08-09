@@ -22,9 +22,22 @@
   position: relative;
 }
 
+// TODO delete this guy use white-on-blue instead
 @mixin blue-white {
   background-color: $color-blue-background;
   h1, h2, h3, h4, h5, p { color: white; }
+}
+
+@mixin image-background($url) {
+  background: url($url) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  // Hack for IE
+  // http://css-tricks.com/perfect-full-page-background-image/
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$url, sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=#{$url}, sizingMethod='scale')";
 }
 
 $base-line-height-in-pixels: 23.4;

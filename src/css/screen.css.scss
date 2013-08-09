@@ -1,18 +1,5 @@
 @import "./variables.css.scss";
 
-@mixin image-background($url) {
-  background: url($url) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top:200px;
-  // Hack for IE
-  // http://css-tricks.com/perfect-full-page-background-image/
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$url, sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=#{$url}, sizingMethod='scale')";
-}
-
 /* Typography */
 
 body, h2, h3, h4, h5, h6 {
@@ -65,6 +52,7 @@ a {
 /* Layout */
 
 .navbar-fixed-top {
+  margin-bottom: 0;
   background-color: #fff;
   border: 2px solid $color-grey-background;
 }
@@ -407,25 +395,6 @@ ul.roles {
   }
 }
 
-.eventer {
-  section h2 { color: $color-light-blue }
-  .eventer-storywall {
-    height: 480px;
-    width: 100%;
-    background: url('../images/eventer-storywall.jpg') no-repeat center center;
-    background-size: cover;
-  }
-  ul.events-list {
-    margin-bottom: 60px;
-    li {
-      display: inline-block;
-      margin: 0 12px;
-    }
-  }
-  .like-being-there {
-  }
-}
-
 // REA page
 .rea {
   .intro.image-background {
@@ -454,12 +423,6 @@ ul.roles {
   h3 { 
     font-size: 24px; 
     line-height: 36px;
-  }
-
-  body {
-    > .content {
-      padding-top: 94px;
-    }
   }
 
   header {
@@ -548,6 +511,11 @@ ul.roles {
 /* Desktops > 992px */
 
 @media (min-width: 992px) {
+  body {
+    > .content {
+      padding-top: 94px;
+    }
+  }
 
   .nav-bar {
     .logo { margin-left: 20px }
@@ -617,7 +585,6 @@ ul.roles {
 @media (max-width: 767px) {
   .navbar-fixed-top {
     .container { width: auto; }
-    margin-bottom: 0;
     border: none;
   }
 

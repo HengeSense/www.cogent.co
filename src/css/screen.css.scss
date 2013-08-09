@@ -187,6 +187,13 @@ footer {
   overflow:hidden;
 }
 
+.dark-background {
+  color: $color-mid-grey;
+  p {
+    color: $color-mid-grey;
+  }
+}
+
 //TODO maybe use the blue-white mixing? or replace the mixing with this
 .white-on-blue {
   padding-top: 50px;
@@ -419,6 +426,22 @@ ul.roles {
   }
 }
 
+/* TODO use a mixin macro here */
+.about {
+  .about-us {
+    height: 800px;
+    background: url("../images/about_bg1.png") no-repeat top left;
+    background-size: 100%;
+  }
+
+  .learning {
+    @extend .dark-background;
+    height: 595px;
+    background: url("../images/about-learning.png") no-repeat top left;
+    background-size: 100%;
+  }
+}
+
 /* Tablets > 768px */
 @media (min-width: 768px) {
 
@@ -452,9 +475,16 @@ ul.roles {
   }
 
   section {
+    padding: 80px 0 100px 0;
+
     h2 { 
       line-height: 60px;
-    }    
+    }
+
+    > .with-image img {
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
   }
 
   footer {
@@ -473,10 +503,6 @@ ul.roles {
       float: right;
       width: auto;
     }  
-  }
-
-  section {
-    padding: 80px 0 100px 0;
   }
 
   .desktop {

@@ -36,7 +36,7 @@ h3 {
 
 p {
   font-size: inherit;
-  line-height: 36px;
+  line-height: 32px;
   padding: 15px 0;
   margin-bottom: 20px;
   color: $color-gray;
@@ -72,6 +72,13 @@ a {
 body {
   @include avenir-font; 
   font-size: 16px;
+}
+
+section {
+  >  .with-image img {
+    margin-top: 30px;
+     margin-bottom: 60px;
+  }
 }
 
 .copyright { 
@@ -202,6 +209,7 @@ footer {
   color: #fff;
   text-align: center;
   h2 {
+    font-size: 30px;
     line-height: 48px;
     color: #fff;
   }
@@ -316,7 +324,7 @@ ul.contact {
 }
 
 ul.roles {
-  margin-top: 26px;
+  margin-top: 46px;
   li {
     position: relative;
     margin-bottom: 2px;
@@ -324,10 +332,12 @@ ul.roles {
 
     h3 {
       margin: 31px 0 5px 40px;
+      color: $color-black;
     }
 
     .small-font {
       margin: 5px 0 31px 40px;
+      color: $color-gray;
     }
 
     a {
@@ -426,33 +436,17 @@ ul.roles {
   }
 }
 
-/* TODO use a mixin macro here */
-.about {
-  .about-us {
-    height: 800px;
-    background: url("../images/about_bg1.png") no-repeat top left;
-    background-size: 100%;
-  }
-
-  .learning {
-    @extend .dark-background;
-    height: 595px;
-    background: url("../images/about-learning.png") no-repeat top left;
-    background-size: 100%;
-  }
-}
-
 /* Tablets > 768px */
 @media (min-width: 768px) {
 
   h1 { 
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 60px;
+    line-height: 70px;
   }
   
   h2 {
     font-size: 36px;
-    line-height: 48px;
+    line-height: 54px;
   }
 
   h3 { 
@@ -476,15 +470,6 @@ ul.roles {
 
   section {
     padding: 80px 0 100px 0;
-
-    h2 { 
-      line-height: 60px;
-    }
-
-    > .with-image img {
-      margin-top: 30px;
-      margin-bottom: 60px;
-    }
   }
 
   footer {
@@ -492,7 +477,7 @@ ul.roles {
     padding-top: 90px;
   }
 
-  body { font-size: 24px; }
+  body { font-size: 20px; }
 
   .mobile, a.mobile {
     display: none;
@@ -516,7 +501,7 @@ ul.roles {
   }
 
   .products-grid a {
-    margin: 6px;
+    margin: 4px;
 
     &.optional {
       display: inline-block;
@@ -538,6 +523,24 @@ ul.roles {
       margin-left: -165px;
     }
   }
+
+  /* TODO use a mixin macro here */
+  .about {
+    .about-us {
+      height: 800px;
+      background: url("../images/about_bg1.png") no-repeat top left;
+      background-size: 100%;
+    }
+
+    .learning {
+      @extend .dark-background;
+      height: 590px;
+      background: url("../images/about-learning.png") no-repeat top left;
+      background-size: 100%;
+    }
+  }
+
+
 }
 
 /* Desktops > 992px */
@@ -559,7 +562,7 @@ ul.roles {
     left: 65%;
     right: 0;
     bottom: 0;
-    margin-top: 90px;
+    margin-top: 60px;
     
     img {
       margin-top: 60px auto 0 auto;
@@ -645,7 +648,6 @@ ul.roles {
         line-height: 60px;      
         vertical-align: middle;      
         margin: 0 0 0 30px;
-        color: $color-dark-grey; 
         display: inline-block;
       }
       a {

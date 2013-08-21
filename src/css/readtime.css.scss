@@ -1,0 +1,112 @@
+@import "./variables.css.scss";
+
+.readtime {
+  .content {
+    padding:0 !important;
+    margin:0 !important;
+  }
+
+  .navbar-fixed-top {
+    margin-bottom: 0px !important;
+  }
+
+  .more {
+    padding-bottom: 0;
+
+    .bottom {
+      text-align:center;
+
+      img {
+        display:inline-block;
+      }
+    }
+  }
+
+  .separator {
+    color: $color-watermelon;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+  }
+
+  .full-logo {
+    padding-top: 40px;
+    padding-bottom:60px;
+  }
+
+  .video-background {
+    text-align:center;
+    position:relative;
+    height: 450px;
+
+    video {
+      width:90%;
+      display: block;
+      height: 450px;
+      position:absolute;
+      left:0;
+      top:50px;
+      width:100%;
+    }
+
+    h1 {
+      margin:0;
+      padding:0;
+      position: absolute;
+      top:50%;
+      left:50%;
+      color: white;
+      margin-top: -30px;
+      margin-left: -100px;
+    }
+  }
+
+  .white-on-blue {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    
+    a { margin-top: 35px; }
+
+    hr {
+      margin: 45px 0;
+      border:0;
+      border-top:1px solid $color-light-blue;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .readtime {
+    .video-background {
+      position:relative;
+
+      video {
+        width:100%;
+        position:absolute;
+        left:0;
+        top:50px;
+      }
+
+      h1 {
+        margin-top: -45px;
+        margin-left: -165px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .readtime {
+    .readtime-iphone {
+      position: absolute;
+      top: 0;
+      left: 65%;
+      right: 0;
+      bottom: 0;
+      background: url("../images/readtime-iphone.png") no-repeat left center;
+      //TODO Resize the image file
+      background-size: 480px;
+      background-position: 90px 35px;
+    }
+  }
+}

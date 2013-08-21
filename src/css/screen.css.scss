@@ -69,6 +69,7 @@ body {
 }
 
 section {
+  background-color:white;
   >  .with-image img {
     margin-top: 30px;
      margin-bottom: 60px;
@@ -183,6 +184,7 @@ footer {
 
 .gray-background {
   background-color: $color-grey-background;
+//  background-color: lightgray;
   position: relative;
 }
 

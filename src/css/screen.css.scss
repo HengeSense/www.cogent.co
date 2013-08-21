@@ -433,12 +433,8 @@ ul.roles {
 
 @media (min-width: 992px) {
   body {
-    margin: 0px;
-    padding: 0px;
-
-    > .content {
-      padding-top: 94px;
-    }
+    margin: 0;
+    padding: 94px 0 0 0;
   }
 
   .nav-bar {

@@ -184,7 +184,6 @@ footer {
 
 .gray-background {
   background-color: $color-grey-background;
-//  background-color: lightgray;
   position: relative;
 }
 
@@ -411,22 +410,6 @@ ul.roles {
 
     &.optional {
       display: inline-block;
-    }
-  }
-
-  /* TODO use a mixin macro here */
-  .about {
-    .about-us {
-      height: 800px;
-      background: url("../images/about_bg1.png") no-repeat top left;
-      background-size: 100%;
-    }
-
-    .learning {
-      @extend .dark-background;
-      height: 590px;
-      background: url("../images/about-learning.png") no-repeat top left;
-      background-size: 100%;
     }
   }
 }

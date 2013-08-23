@@ -1,0 +1,41 @@
+@import "./variables.css.scss";
+
+.span1 { background-color: lightblue;}
+//.span6 { background-color: lightyellow;}
+//.container { background-color:lightgray;}
+// .inner-container {background-color:lightgreen;}
+
+.about {
+  .life-outside-work {
+
+    img {
+      width:100%;
+      margin-left:-1px;
+      border: 1px solid lightgray;
+    }
+
+    .inner-container {
+      margin-right:auto;
+      margin-left:auto;
+    }
+  }
+  
+  /* TODO use a mixin macro here */
+  .about-us {
+    height: 800px;
+    @include image-background("../images/about_bg1.png");
+  }
+
+  .learning {
+    @extend .dark-background;
+    height: 590px;
+    background: url("../images/about-learning.png") no-repeat top left;
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 767px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}

@@ -241,6 +241,8 @@ ul.contact {
   @include image-background("../images/apps-that-work.jpg");
 }
 
+.products-anchor { padding-top: 90px; }
+
 .products {
   background-color: $color-grey-background;
   padding: 40px 0;
@@ -464,7 +466,7 @@ ul.roles {
     .container { width: auto; }
     border: none;
   }
-  
+
   ul.roles {
     li {
       h3 {

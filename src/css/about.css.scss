@@ -1,6 +1,6 @@
 @import "./variables.css.scss";
 
-.span1 { background-color: lightblue;}
+.span1 { background-color: $color-light-blue;}
 //.span6 { background-color: lightyellow;}
 //.container { background-color:lightgray;}
 // .inner-container {background-color:lightgreen;}
@@ -11,7 +11,7 @@
     img {
       width:100%;
       margin-left:-1px;
-      border: 1px solid lightgray;
+      border: 1px solid $color-light-grey;
     }
 
     .inner-container {
@@ -19,7 +19,7 @@
       margin-left:auto;
     }
   }
-  
+
   /* TODO use a mixin macro here */
   .about-us {
     height: 800px;
@@ -30,7 +30,7 @@
     @extend .dark-background;
     height: 590px;
     background: url("../images/about-learning.png") no-repeat top left;
-    background-size: 100%;
+    background-size: cover;
   }
 }
 

@@ -20,15 +20,15 @@ project.assume_directory_index = true
 
 project.helpers do
   def abbreviate_path(path)
-    path.to_s.sub(/index\.html$/, "").sub(/\.html$/, "")
+    path.to_s.sub(/\.html/, "")
   end
-  
+
   def nav_link(target_ref, label, options = {})
     target_path = abbreviate_path(target_ref)
     current_path = abbreviate_path(page.output_path)
     selected = (target_path == current_path)
     unless options[:shallow]
-      selected ||= current_path.start_with?(target_path)
+      selected ||= current_path.start_with?(target_path.split(/[#\?]/).first)
     end
     %{<a href="#{href('/' + target_path)}" class="#{'selected' if selected}">#{label}</a>}
   end

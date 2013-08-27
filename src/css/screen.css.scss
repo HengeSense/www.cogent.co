@@ -219,11 +219,6 @@ footer {
   width:200px;
 }
 
-section.double-vertial-padding {
-  padding-top:200px;
-  padding-bottom:200px;
-}
-
 ul.contact {
   li {
     padding: 15px 0;
@@ -368,15 +363,13 @@ ul.roles {
   }
 
   header {
-    padding: 80px 0;
-
     h1, h2 {
       margin: 20px 0;
     }
   }
 
-  section {
-    padding: 80px 0 100px 0;
+  section, header {
+    padding: 80px 0 80px 0;
   }
 
   footer {

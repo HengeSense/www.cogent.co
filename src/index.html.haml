@@ -4,21 +4,22 @@ page_title: Home
 ...
 %header.red-white
   .container
-    .row
-      .span9.offset1
+    .row-fluid
+      .span10.offset1
         %h1 We create useful software that gets results
-        %h2
-          We start with your business goal and work in a open
-          %br.desktop
-          and iterative way to craft the product.
+    .row-fluid
+      .span9.offset1
+        %h2 We start with your business goal and work in a open and iterative way to craft the product.
 
 = include "_partials/_mobile_footer.html.haml"
-
-%section.grey-background-with-image.desktop
+  
+%section.passion.desktop  
   .container
-    .row
-      .span7.offset1
+    %img.ipad-home{:src => href("/images/ipad-home.png")}
+    .row-fluid
+      .span8.offset1
         %h2 Your business objective is what we get passionate about.
+        %br
         %p
           Not awards, fancy design for no reason,
           %br
@@ -33,19 +34,18 @@ page_title: Home
           We spend a lot of time with out customers.
           %br
           It helps us what you wanted.
-  .macbook
-    %img{:src => href("/images/macbook-home.png")}
 
-%section.apps-that-work.desktop
+%section.gray-background.desktop
   .container
-    .row
-      .span5.offset1
+    .row-fluid
+      .span6.offset1
         %h2 We incept, design and build applications that work.
-    .row
-      .span4.offset1
+        %br
+    .row-fluid
+      .span5.offset1
         %h3 Pick the right tool for the job
         %p.small-font Our kit bag has lots of methods for shaping your project. We'll pick the ones that suit yout needs. We keep waste low and avoid rigid process or lenght spec documents. We put our enegry into iterating on real work, like sketches or software.
-      .span4
+      .span5.offset1
         %h3 Learn constantly
         %p.small-font Iterating is built into our DNA. We talk and share thinking in lightweight form, seek feedback often, and adapt. We'll be gluttons, as that gives us the best change of creating a good result.
 
@@ -53,13 +53,13 @@ page_title: Home
   &nbsp;
 %section.products
   .container
-    .row.desktop
-      .span8.offset2
-        %h2 We like to work together with smart people to make remarkable things we're proud of.
-    .row.mobile
-      %h2 We incept, design and build applications that work
-    .row
+    .row-fluid.desktop
       .span10.offset1
+        %h2 We like to work together with smart people to make remarkable things we're proud of.
+    .row-fluid.mobile
+      %h2 We incept, design and build applications that work
+    .row-fluid
+      .span12
         .products-grid><
           %a{:href => href("/projects/readtime.html")}><
             %img{:src => "images/readtime-icon.png", :alt => "Readtime"}

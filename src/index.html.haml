@@ -1,6 +1,7 @@
 ---
 layout: "_layout/_main.html.haml"
 page_title: Home
+class: "home"
 ...
 %header.red-white
   .container
@@ -51,30 +52,25 @@ page_title: Home
 
 %a.products-anchor{:name => "work"}
   &nbsp;
-%section.products
-  .container
-    .row-fluid.desktop
-      .span10.offset1
-        %h2 We like to work together with smart people to make remarkable things we're proud of.
-    .row-fluid.mobile
-      %h2 We incept, design and build applications that work
+%section.products-slider
+  .container{:style => "overflow: visible"}
+    .slider-controls
+      %button.slider-prev  prev
+      %button.slider-next  next
     .row-fluid
-      .span12
-        .products-grid><
-          %a{:href => href("/projects/readtime.html")}><
-            %img{:src => "images/readtime-icon.png", :alt => "Readtime"}
-          %a{:href => href("/projects/thread.html")}><
-            %img{:src => "images/thread-icon.png", :alt => "Thread"}
-          %a{:href => href("/projects/eventer.html")}><
-            %img{:src => "images/eventer-icon.png", :alt => "Eventer"}
-          %a.optional{:href => href("/projects/hooroo.html")}><
-            %img{:src => "images/readtime-icon.png", :alt => "Hooroo"}
-          %a.optional{:href => href("/projects/rea.html")}><
-            %img{:src => "images/rea-icon.png", :alt => "realestate.com.au"}
-          %a.optional{:href => href("/projects/tesselaar")}><
-            %img{:src => "images/tesselaar-icon.png", :alt => "Tesselaar"}
-          %a.mobile.show-more{:href => "javascript:void(0)"}
-            Show more projects
-
-      .mobile.text-center.copyright
-        %p © Cogent 2013
+      .span9.offset1
+        %h2 We like to work with smart people to make remarkable products.
+        %br
+        %br
+    .row-fluid
+      .span10.offset1{:style => "position: relative;height: 550px"}
+        .royalSlider
+          - (1..6).each do |n|
+            %div
+              %a{:href => "#product-#{n}"}
+                %img{:src =>"images/slider-#{n}.jpg"}
+              %h2
+                Product #{n}
+              %p Bacon ipsum dolor sit amet sausage t-bone pork chop corned beef ground round pork belly, ham beef ribs chuck pork salami andouille.
+    .row-fluid
+      .span2.offset1

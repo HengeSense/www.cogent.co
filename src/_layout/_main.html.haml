@@ -17,21 +17,30 @@
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
 
     %script{ :src => href("/js/jquery-1.10.2.min.js") }
-    %script{ :src => href("/js/jquery.color-2.1.2.min.js") }
     %script{ :type => "text/javascript", :src => href("/js/html5.js") }
     %script{ :src => "http://use.typekit.com/xkf5xsa.js" }
     %script{ :type => "text/javascript" }
       try{Typekit.load();}catch(e){}
-
-    %script{ :type => "text/javascript", :src => href("/js/application.js") }
+    %script{ :type => "text/javascript", :src => href("/js/jquery.royalslider.min.js") }
     %script{ :type => "text/javascript", :src => href("/js/bootstrap.min.js") }
+    %script{ :type => "text/javascript", :src => href("/js/application.js") }
+
+    / TODO include only in home page
+    %script{ :type => "text/javascript", :src => href("/js/home.js") }
 
     %link{ :rel => "stylesheet", :href => href("/css/bootstrap.min.css") }
     %link{ :rel => "stylesheet", :href => href("/css/bootstrap-responsive.min.css") }
     %link{ :rel => "stylesheet", :href => href("/css/screen.css") }
+
+    / TODO include only in home page
+    %link{ :rel => "stylesheet", :href => href("/css/home.css") }
+    / TODO include only in home page
+    %link{ :rel => "stylesheet", :href => href("/css/royalslider.css") }
+
     %link{ :rel => "stylesheet", :href => href("/css/about.css") }
     %link{ :rel => "stylesheet", :href => href("/css/eventer.css") }
     %link{ :rel => "stylesheet", :href => href("/css/readtime.css") }
+
 
     /[if lte IE 8]
       %script{ :type => "text/javascript", :src => href("/js/respond.js") }

@@ -255,10 +255,6 @@ ul.contact {
   background-color: $color-grey-background;
   padding: 40px 0;
 
-  h2 {
-    text-align:center;
-  }
-
   .product {
     text-align: center;
   }
@@ -420,27 +416,6 @@ ul.roles {
       display: inline-block;
     }
   }
-  
-//TODO move to home file
-.image-holder {
-//  position: relative;
-  border: 1px solid red;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-  .ipad-home {
-    position: absolute;
-    top: -70px;
-    right: -400px;    
-    z-index: 10;
-    width: 540px;
-    height: auto;
-  }
 }
 
 /* Desktops > 992px */
@@ -520,16 +495,6 @@ ul.roles {
   }
 }
 
-//.container { width: 320px; }
-//
-//@media (min-width: 767px) {
-//  .container { width: 727px; }
-//}
-//
-//@media (min-width: 992px) {
-//  .container { width:952px; }
-//}
-
 @media (min-width: 1200px) {
   .container { width: 900px; }
 }
@@ -537,33 +502,3 @@ ul.roles {
 // Testing stuff please don't delete 
 
 //div, section, p { border: 1px solid red; }
-
-.x {
-  margin-left:auto;
-  margin-right:auto;
-}
-
-.x { width:320px; 
-  color:red;
-}
-
-@media (min-width: 767px) {
-  .x { 
-    width: 727px;
-    color:green;
-  }
-}
-
-@media (min-width: 992px) {
-  .x { 
-    width:952px;
-    color:blue;
-  }
-}
-
-@media (min-width: 1200px) {
-  .x { 
-    width:1160px;
-    color:yellow;
-  }
-}

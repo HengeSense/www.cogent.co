@@ -22,10 +22,12 @@ h1 {
 
 h2 {
   font-size: 28px;
+  margin-bottom: 1.3em;
 }
 
 h3 {
   font-size: 18px;
+  margin-bottom: 1.3em;
 }
 
 p {
@@ -62,7 +64,7 @@ body {
 }
 
 body > .content {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 section {

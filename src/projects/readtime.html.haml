@@ -13,8 +13,8 @@ class: "readtime"
 
 %section.gray-background.product-description
   .container
-    .row
-      .span7.offset1
+    .row-fluid
+      .span8.offset1
         %h2 Getting things read on your iPhone
         %br
         %h3 Readtime is an app that helps you get through the items in your Readability list. It starts with the amount of time you have - up to 30 minutes - and fetches the right amount of articles for you based on average read speeds.
@@ -22,9 +22,10 @@ class: "readtime"
 
 %section.more
   .container
-    .row
-      .span8.offset2
+    .row-fluid
+      .span8.offset1
         %h2.dark-blue Retrieve and store articles you've saved to Pocket or Readability for offline reading.
+        %br
         %p Reading lists are awesome for collecting all the articles you'd like to read - sometimes too awesome. However, having enthusiastically saved all those great reads for later, we found ourselves wincing when faced with the article pile-up. 
         %p We're continuing to developing Readtime, enjoying the positive feedback we've had from our users thus far. Next up we're hoping to have an Instapaper release top complete the suite of top reading services.
     .bottom
@@ -32,7 +33,7 @@ class: "readtime"
 
 %section.gray-background.centered
   .container
-    .row
+    .row-fluid
       .span8.offset2
         %p A dead-simple app for quickly accessing your Readability reading list for those idle moments throughout your day.
         %p
@@ -50,7 +51,7 @@ class: "readtime"
         
 %section.white-on-blue
   .container
-    .row
+    .row-fluid
       .span10.offset1
         %h2 Number 1 News app in 6 countries
         %hr
@@ -60,14 +61,12 @@ class: "readtime"
 
 %section.gray-background.centered
   .container
-    .row
-      .span12
-        %img.full-logo{:src => href("/images/readtime-logo.png")}
-        %h2
-          Available on the
-          %a{:href => "http://itunes.apple.com/us/app/readtime/id549039409?mt=8"} App Store
-          now.
-        %p
-          %a{:href => "http://www.readtimeapp.com"} www.readtimeapp.com
+    %img.full-logo{:src => href("/images/readtime-logo.png")}
+    %h2
+      Available on the
+      %a{:href => "http://itunes.apple.com/us/app/readtime/id549039409?mt=8"} App Store
+      now.
+    %p
+      %a{:href => "http://www.readtimeapp.com"} www.readtimeapp.com
 
 = include "../_partials/_project_footer.html.haml", :products => [:readtime, :eventer, :rea]

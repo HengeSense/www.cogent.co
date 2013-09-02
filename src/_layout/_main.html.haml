@@ -46,19 +46,17 @@
       %script{ :type => "text/javascript", :src => href("/js/respond.js") }
 
   %body{:class => "#{page.meta['class']}"}
-    .navbar-fixed-top
-      .container
-        .row.nav-bar
-          .span2
-            %a.logo{:href=> href("/") }
-          .span10
-            %ul.nav
-              %li
-                = nav_link("index.html#work", "Work")
-              %li
-                = nav_link("about.html", "About")
-              %li
-                = nav_link("join.html", "Join")
+    .container
+      .nav-bar2.clearfix
+        %a.logo{:href=> href("/") }
+        %ul
+          %li
+            = nav_link("index.html#work", "Work")
+          %li
+            = nav_link("about.html", "About")
+          %li
+            = nav_link("join.html", "Join")
+
     .content
       = yield
 

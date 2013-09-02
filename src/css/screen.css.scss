@@ -65,12 +65,6 @@ body > .content {
   overflow-x: hidden;
 }
 
-.navbar-fixed-top {
-  margin-bottom: 0;
-  background-color: #fff;
-  border: 2px solid $color-grey-background;
-}
-
 section {
   background-color:white;
   >  .with-image img {
@@ -89,50 +83,37 @@ header, section, footer {
   color: #c0c0c0;
 }
 
-.nav-bar {
-  font-size: 16px;
-
-  > div {
-    text-align: center;
-    line-height: 90px;
-    vertical-align: middle;
-  }
+.nav-bar2 {
+  text-align: center;
+  padding: 25px 0 25px 0;
 
   .logo {
+    margin:0 0 25px 0;
     display: inline-block;
-    vertical-align: middle;
     width: 76px;
     height: 41px;
     background: url("../images/logo.png") no-repeat center center;
-
     &:hover {
       background: url("../images/logo_hover.png") no-repeat center center;
     }
   }
 
-  ul.nav {
-    margin: 0 auto;
-    width: 100%;
+  ul {
+    margin:0px;
 
-    > li {
-      display: inline-block;
-      text-transform: uppercase;
-      padding: 0 25px;
+    li {
+      display:inline;
+      padding-right: 25px;
 
       a, a:visited {
         @include signal-font;
         color: $color-black;
-
-        &.selected {
-          color: $color-watermelon;
-        }
-
-        &:hover {
-          color: $color-watermelon;
-          background-color: #fff;
-        }
+        &.selected { color: $color-watermelon; }
+        &:hover { color: $color-watermelon; }
       }
     }
+
+    li:last-child { padding-right: 0; }
   }
 }
 
@@ -391,11 +372,28 @@ ul.roles {
   .mobile, a.mobile {
     display: none;
   }
-  .nav-bar {
-    > div { text-align: left }
-    ul.nav {
+
+//  .nav-bar {
+//    overflow: auto;
+//    > div { text-align: left }
+//    ul.nav {
+//      float: right;
+//      width: auto;
+//    }
+//  }
+
+  .nav-bar2 {
+    border:1px solid red;
+    text-align: left;
+
+    .logo {
+      float:left;
+      margin:0;
+    }
+
+    ul {
       float: right;
-      width: auto;
+      padding-top:12px;
     }
   }
 
@@ -423,11 +421,6 @@ ul.roles {
 @media (min-width: 992px) {
   body {
     margin: 0;
-    padding: 94px 0 0 0;
-  }
-
-  .nav-bar {
-    .logo { margin-left: 20px }
   }
 
   .button {
@@ -465,10 +458,6 @@ ul.roles {
 }
 
 @media (max-width: 767px) {
-  .navbar-fixed-top {
-    .container { width: auto; }
-    border: none;
-  }
 
   ul.roles {
     li {
@@ -499,6 +488,7 @@ ul.roles {
   .container { width: 900px; }
 }
 
-// Testing stuff please don't delete 
+
+// Testing stuff please don't delete
 
 //div, section, p { border: 1px solid red; }

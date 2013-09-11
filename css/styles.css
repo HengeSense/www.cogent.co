@@ -45,7 +45,7 @@ a { text-decoration: none; }
 
 ul, ol { margin-left: 0; padding-left: 30px; }
 
-ul li { list-style: disc; margin-left: 0em; }
+ul li { list-style: disc; margin-left: 0em; margin-bottom: 0em; }
 
 ol li { list-style: normal; margin-left: 1.5em; }
 

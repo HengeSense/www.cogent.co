@@ -85,7 +85,7 @@ header, section, footer {
   color: #c0c0c0;
 }
 
-.nav-bar2 {
+.nav-bar {
   text-align: center;
   padding: 25px 0 25px 0;
 
@@ -375,17 +375,7 @@ ul.roles {
     display: none;
   }
 
-//  .nav-bar {
-//    overflow: auto;
-//    > div { text-align: left }
-//    ul.nav {
-//      float: right;
-//      width: auto;
-//    }
-//  }
-
-  .nav-bar2 {
-    border:1px solid red;
+  .nav-bar {
     text-align: left;
 
     .logo {

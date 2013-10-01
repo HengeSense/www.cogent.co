@@ -6,40 +6,31 @@ page_title: "About"
 
 %section.red-white
   .container
-    .row
-      .span9.offset1
+    .row-fluid
+      .span10.offset1
         %h1 Cogent has some pretty simple principles
 
-
-%section.about-us
+%section.about-us.grey-background
   .container
-    .row
-      .span5
-        %h2 Treat people well
-        %p We treat each other and our customers well. We choose to be honest and open, to collaborate, and to be respectful and fair. These values are really important to who we are and how we act.
+    .row-fluid
+      .span10.offset1
+        %img{:src=>href('/images/about-ben.jpg')}
+    .row-fluid
+      .span7.offset2
+        %h2.with-margin-top We treat each other well.
+        %p We choose to be honest and open, to collaborate, and to be respectful and fair. These values are really important to who we are and how we act.
+        %h2.with-margin-top Be real
+        %p We avoid buzzwords, cut out noise, distill to the real need and get on with it. We design, build and iterate to get results. We deliver remarkable products. If you like fancy slide decks full of theories that never get to market, you will be disappointed.
 
-%section.life-outside-work
+%section.life-outside-work.grey-background
   .container
-    .row
+    .row-fluid
       .span6
-        .inner-container
-          %p.centered
-            %img.desktop{:src => href("/images/marty.jpg")}
-          %h2 Life outside work matters
-          %p We love what we do, and life outside work hours counts too. The standard work week is - just that. We plan our projects to set ourselves up for success, not for a frenzied error-prone sprint to the finish line. 
+        %img{:src => href("/images/about-learning.jpg")}
+        %h2.with-margin-top Learning more.
+        %p We’re good at what we do, but the world shifts fast. That’s why we are avid learners who debate, reflect, read, participate and experiment. We commit to learning by spending a day each month together to explore new things.
       .span6
-        .inner-container
-          %p.centered
-            %img.desktop{:src => href("/images/sketch.jpg")}
-          %h2 Be real
-          %p We avoid buzzwords, cut out noise, distill to the real need and get on with it. We design, build and iterate to get results. We deliver remarkable products. If you like fancy slide decks full of theories that never get to market, you will be disappointed.
-
-%section.learning
-  .container
-    .row
-      .span5
-        %h2 Learning more is part of the plan
-        %p We&rsquo;re good at what we do, but the world shifts fast. That&rsquo;s why we are avid learners who debate, reflect, read, participate and experiment. We commit to learning by spending a day each month together to explore new things.
-
-
+        %img{:src => href("/images/about-life.jpg")}
+        %h2.with-margin-top Life outside work matters.
+        %p We love what we do, and life outside work hours counts too. The standard work week is - just that. We plan our projects to set ourselves up for success, not for a frenzied error-prone sprint to the finish line.
 = include "_partials/_join_us.html.haml"

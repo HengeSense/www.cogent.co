@@ -34,7 +34,7 @@ p {
   font-size: inherit;
   line-height: 32px;
   margin-bottom: 20px;
-  color: $color-gray;
+  color: $color-grey;
 }
 
 .small-font {
@@ -120,7 +120,7 @@ header, section, footer {
 }
 
 footer {
-  color: $color-gray;
+  color: $color-grey;
   h2 {
     color: $color-black;
   }
@@ -168,13 +168,13 @@ footer {
   }
 }
 
-.gray-background {
+.grey-background {
   background-color: $color-grey-background;
   position: relative;
 }
 
 .grey-background-with-image {
-  @extend .gray-background;
+  @extend .grey-background;
   min-height: 449px;
   overflow:hidden;
   position: relative;
@@ -250,7 +250,7 @@ ul.contact {
 
   a {
     position: relative;
-    border: 1px solid lightgray;
+    border: 1px solid lightgrey;
     display: inline-block;
     width: 280px;
     height: 200px;
@@ -310,7 +310,7 @@ ul.roles {
 
     .small-font {
       margin: 5px 0 31px 40px;
-      color: $color-gray;
+      color: $color-grey;
     }
 
     a {

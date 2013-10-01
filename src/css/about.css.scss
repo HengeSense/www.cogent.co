@@ -2,7 +2,7 @@
 
 .span1 { background-color: $color-light-blue;}
 //.span6 { background-color: lightyellow;}
-//.container { background-color:lightgray;}
+//.container { background-color:lightgrey;}
 // .inner-container {background-color:lightgreen;}
 
 .about {
@@ -13,28 +13,25 @@
       margin-left:-1px;
       border: 1px solid $color-light-grey;
     }
-
-    .inner-container {
-      margin-right:auto;
-      margin-left:auto;
-    }
   }
-
-  /* TODO use a mixin macro here */
   .about-us {
-    height: 800px;
-    @include image-background("../images/about_bg1.png");
+    padding-top:0;
+    padding-bottom:0;
   }
 
-  .learning {
-    @extend .dark-background;
-    height: 590px;
-    background: url("../images/about-learning.png") no-repeat top left;
-    background-size: cover;
+  .with-margin-top {
+    margin-top:60px;
   }
 }
 
-@media (min-width: 767px) {}
+@media (min-width: 767px) {
+  .about-us {
+    .container {
+      background-color: white;
+      padding-bottom:60px;
+    }
+  }
+}
 
 @media (min-width: 992px) {}
 

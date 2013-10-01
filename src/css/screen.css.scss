@@ -173,10 +173,11 @@ footer {
   position: relative;
 }
 
+//TODO Move to eventer if only used there?
 .grey-background-with-image {
   @extend .grey-background;
-  min-height: 449px;
-  overflow:hidden;
+  min-height: 480px;
+  overflow: hidden;
   position: relative;
 }
 
@@ -221,13 +222,12 @@ ul.contact {
   }
 }
 
-.product-description {
-  padding-top: 220px;
-  padding-bottom: 220px;
-}
-
 .drop-us-a-line .button {
   margin-top: 12px
+}
+
+.with-margin-top {
+  margin-top:60px;
 }
 
 /* Home page */
@@ -329,6 +329,10 @@ ul.roles {
     height: 400px;
     @include image-background("../images/rea-cards.png");
   }
+  .product-description {
+    padding-top: 220px;
+    padding-bottom: 220px;
+  }
 }
 
 .royalSlider {
@@ -400,10 +404,8 @@ ul.roles {
   }
 
   .desktop {
-    display: inherit;
+    display: block;
   }
-
-  .macbook img {display: none};
 
   .products {
     background-color:#fff;
@@ -428,22 +430,6 @@ ul.roles {
   .button {
     padding-left: 43px;
     padding-right: 43px;
-  }
-
-  .macbook {
-    position: absolute;
-    top: 0;
-    left: 65%;
-    right: 0;
-    bottom: 0;
-    margin-top: 60px;
-    z-index:10000;
-
-    img {
-      margin-top: 60px auto 0 auto;
-      display: block;
-      max-width: inherit;
-    }
   }
 
   .rea-side-background {

@@ -2,18 +2,11 @@
 
 .eventer {
   .eventer-storywall {
-    height: 480px;
+    padding:0;
+    height: 426px;
     width: 100%;
     background: url('../images/eventer-storywall.jpg') no-repeat center center;
     background-size: cover;
-  }
-
-  ul.events-list {
-    margin-bottom: 60px;
-    li {
-      display: inline-block;
-      margin: 0 12px;
-    }
   }
 
   .intro {
@@ -32,16 +25,19 @@
   }
 }
 
-@media (max-width: 767px) {}
+.like-being-there {
+  display: none;
+}
 
-@media (min-width: 992px) {
+@media (min-width: 767px) {
   .like-being-there {
+    display:block;
     border: 1px red;
     position: relative;
-    margin-top: 459px;
+    margin-top: 375px;
     height: 170px;
     background-color: $color-light-grey;
-  
+
     img {
       position: absolute;
       left: 0;
@@ -51,4 +47,22 @@
       margin: 0 auto;
     }
   }
+
+  .macbook {
+    position: absolute;
+    top: 0;
+    left: 65%;
+    right: 0;
+    bottom: 0;
+    margin-top: 60px;
+    z-index:10000;
+
+    img {
+      margin-top: 60px auto 0 auto;
+      display: block;
+      max-width: inherit;
+    }
+  }
 }
+
+@media (min-width: 992px) {}

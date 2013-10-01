@@ -8,35 +8,33 @@ page_title: "Eventer"
   .container
     %h1 Eventer
 
-%section.grey-background-with-image.desktop
+%section.grey-background-with-image
   .container
-    .row
+    .row-fluid
       .span7.offset1
         %h2 Changing what it's like to watch an event you couldn't make it to.
         %p Eventer is a platform that lets users watch a speaker deliver a presentation. We like to think the special part is that it puts the viewer in control to flick between focus on the speaker, the presentation, or both.
-  .macbook
+  .macbook.desktop
     %img{:src => href("/images/eventer-macbook.png")}
 
-%section.container
-  .row
-    .span12
-      %ul.events-list.unstyled.centered
-        %li
-          %img{:src => href("/images/projects/eventer-event1.png")}
-        %li
-          %img{:src => href("/images/projects/eventer-event2.png")}
-        %li
-          %img{:src => href("/images/projects/eventer-event3.png")}
-  .row
+%section.container.desktop
+  .row-fluid
+    .span4
+      %img{:src => href("/images/eventer-event1.png")}
+    .span4
+      %img{:src => href("/images/eventer-event2.png")}
+    .span4
+      %img{:src => href("/images/eventer-event3.png")}
+  .row-fluid
     .span10.offset1
-      %h2.dark-blue Why bother?
+      %h2.with-margin-top.dark-blue Why bother?
       %p Lots of organisations - universities, corporates, and conferences - pay good money to get talks recorded. After the event, these often languish on a DVD in a drawer, or are published on a platform that offers a poor experience (eg, seeing the slides complemented only by the speaker audio). We think that it’s worth a little extra cash to convert this existing investment of recording the presentation, to make it enjoyable to view afterward by those who weren’t able to be there.
 
 %section.eventer-storywall
 
 %section
   .container
-    .row
+    .row-fluid
       .span10.offset1
         %h2 How might this be used?
         %br
@@ -53,13 +51,14 @@ page_title: "Eventer"
           Push the didactic lecture content out to users prior to attending a class - and make better use of the face time for conversation, debate, and exploring challenging areas.
           %a{:href => "http://www.khanacademy.org/"} Khan
           thought of this first, but what a fine idea.
+        %img.centered.mobile{:src => href("/images/eventer-macbook-bottom.png"), :style => 'margin-top:50px'}
 
-.like-being-there.centered
-  %img{:src => href("/images/eventer-macbook-bottom.png")}
+.like-being-there
+  %img.centered{:src => href("/images/eventer-macbook-bottom.png")}
 
-%section.grey-background
+%section.grey-background{:style => 'padding-top:24px'}
   .container
-    .row
+    .row-fluid
       .span10.offset1
         %h2 What we’re up to.
         %p
@@ -69,4 +68,4 @@ page_title: "Eventer"
           %a{:href => "http://swipeconference.eventer.com"} Swipe Conference.
           With plenty of positive feedback, the real work lies ahead to make a robust version to launch.
 
-= include "../_partials/_project_footer.html.haml", :products => [:readtime, :eventer, :rea]
+= include "../_partials/_projects_slider.html.haml"

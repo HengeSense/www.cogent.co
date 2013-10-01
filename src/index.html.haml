@@ -43,42 +43,4 @@ class: "home"
 
 %a.products-anchor{:name => "work"}
   &nbsp;
-%section.products-slider
-  .container{:style => "overflow: visible"}
-    .slider-controls
-      %button.slider-prev  prev
-      %button.slider-next  next
-    .row-fluid
-      .span8.offset1
-        %h2 We like to work together with smart people to make remarkable things we're proud of.
-        %br
-        %br
-    .row-fluid
-      .span10.offset1{:style => "position: relative;height: 550px"}
-        .royalSlider
-          %div
-            %a{:href => "/projects/readtime"}
-              %img{:src =>"images/slider-readtime.jpg"}
-            %h2
-              Readtime
-            %p Getting things read on your iPhone.
-          %div
-            %a{:href => "/projects/eventer"}
-              %img{:src =>"images/slider-eventer.jpg"}
-            %h2
-              Eventer
-            %p Changing what it’s like to watch an event you couldn’t make it to.
-          %div
-            %a{:href => "/projects/thread"}
-              %img{:src =>"images/slider-thread.jpg"}
-            %h2
-              Thread
-            %p Helping Melbourne Business School to be leaders in digital learning.
-          %div
-            %a{:href => "/projects/hooroo"}
-              %img{:src =>"images/slider-hooroo.jpg"}
-            %h2
-              Hooroo
-            %p Bacon ipsum dolor sit amet short loin ball tip doner corned beef fatback jowl spare ribs swine.
-    .row-fluid
-      .span2.offset1
+= include "_partials/_projects_slider.html.haml"

@@ -231,7 +231,7 @@ ul.contact {
 }
 
 /* Home page */
-
+//TODO Move to home file
 .products-anchor { padding-top: 90px; }
 
 .products {
@@ -329,6 +329,16 @@ ul.roles {
     height: 400px;
     @include image-background("../images/rea-cards.png");
   }
+}
+
+.royalSlider {
+//  border:1px solid red;
+  width: 2000px !important;
+  height: 600px !important;
+  position: absolute !important;
+  p { width:650px !important; }
+  h2 { margin-top:80px !important; }
+  div { overflow: visible!important; }
 }
 
 /* Tablets > 768px */

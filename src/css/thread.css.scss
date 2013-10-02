@@ -1,7 +1,7 @@
 @import "./variables.css.scss";
 .thread {
   .intro {
-    @include image-background("../images/thread-bg.png");
+    @include image-background("../images/thread-bg.jpg");
     height: 468px;
     width: 100%;
     padding: 0;

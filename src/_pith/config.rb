@@ -27,7 +27,9 @@ project.helpers do
     target_path = abbreviate_path(target_ref)
     current_path = abbreviate_path(page.output_path)
     selected = (target_path == current_path)
-    unless options[:shallow]
+    if current_path =~ /projects/ && target_path =~ /#work$/
+      selected = true
+    elsif !options[:shallow]
       selected ||= current_path.start_with?(target_path.split(/[#\?]/).first)
     end
     %{<a href="#{href('/' + target_path)}" class="#{'selected' if selected}">#{label}</a>}

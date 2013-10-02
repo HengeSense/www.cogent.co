@@ -200,7 +200,7 @@ footer {
 .white-on-blue {
   background-color: $color-blue-background;
   color: #fff;
-  text-align: center;
+  h2:last-child { margin-bottom:0.4em;}
 }
 
 .dark-blue { color: $color-dark-blue; }

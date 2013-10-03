@@ -1,25 +1,9 @@
 @import "./variables.css.scss";
 .hooroo {
-  .intro {
+  .product-intro {
     @include image-background("../images/hooroo-bg.jpg");
-    height: 468px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    position: relative;
-
-    h1 {
-      position: absolute;
-      width: 300px;
-      height: 50px;
-      top: 50%;
-      left: 50%;
-      margin-left: -150px;
-      margin-top: -25px;
-      text-align: center;
-      color: #fff;
-    }
   }
+
   .image-space {
     padding:0;
     height: 440px;

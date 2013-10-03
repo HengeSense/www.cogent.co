@@ -230,6 +230,26 @@ ul.contact {
   margin-top:60px;
 }
 
+.product-intro {
+  height: 468px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position:relative;
+
+  h1 {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -25px;
+    text-align: center;
+    color: #fff;
+  }
+}
+
 /* Home page */
 //TODO Move to home file
 .products-anchor { padding-top: 90px; }

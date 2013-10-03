@@ -32,13 +32,9 @@
     %link{ :rel => "stylesheet", :href => href("/css/royalslider.css") }
     %link{ :rel => "stylesheet", :href => href("/css/screen.css") }
 
-    / TODO include css files only where necessary
-    %link{ :rel => "stylesheet", :href => href("/css/home.css") }
-    %link{ :rel => "stylesheet", :href => href("/css/about.css") }
-    %link{ :rel => "stylesheet", :href => href("/css/eventer.css") }
-    %link{ :rel => "stylesheet", :href => href("/css/readtime.css") }
-    %link{ :rel => "stylesheet", :href => href("/css/thread.css") }
-    %link{ :rel => "stylesheet", :href => href("/css/hooroo.css") }
+    / Infer css file from css class
+    - if (css_class = page.meta['class']) && File.exists?("src/css/#{css_class}.css.scss")
+      %link{ :rel => "stylesheet", :href => href("/css/#{css_class}.css") }
 
     /[if lte IE 8]
       %script{ :type => "text/javascript", :src => href("/js/respond.js") }

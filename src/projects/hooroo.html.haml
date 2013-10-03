@@ -1,0 +1,37 @@
+---
+layout: "../_layout/_main.html.haml"
+class: "hooroo"
+page_title: "Hooroo"
+...
+
+%header.intro
+  %h1 Hooroo
+
+%section.grey-background-with-image
+  .container
+    .row
+      .span7.offset1{style:"position:relative"}
+        %h2 Looking for some travel inspiration?
+        %p Hooroo inspires travel, helping travellers to decide where to go, what to do and where to stay while they're there.
+        %p It helps Jetstar and Qantas to access a broader market beyond their existing air travel customer base.
+        .airplane.desktop
+          %img{:src => href("/images/hooroo-airplane.png")}
+        .airplane-small.centered.mobile
+          %img{:src => href("/images/hooroo-airplane-small.png")}
+%section.image-space
+%section
+  .container
+    .row
+      .span8.offset1
+        %h2.dark-blue Hey yo a cool title
+        %p Under the hood, the product is a white-label hotel booking platform, running three distinct branded websites for Qantas, Jetstar and Hooroo. Each brand attracts different types of travellers, so each site is tailored in some way to appeal to that market.
+        %h2.dark-blue.with-margin-top What happened?
+        %p Cogent were involved from start to launch. Initially, we helped guide the development of the back-end systems for hotels to manage their inventory. On the public-facing side, Cogent were heavily involved in implementation of the user interface, front-end architecture, and many of the core backend components such as the booking and payments gateways.
+%section.white-on-blue
+  .container
+    .row
+      .span8.offset1
+        %h2
+          Hooroo practices zero downtime continuous delivery with daily releases to production and a roll forward policy.
+
+= include "../_partials/_projects_slider.html.haml"

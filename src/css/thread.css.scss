@@ -8,11 +8,22 @@
     padding-top: 160px;
   }
 
-//  .the-bens {
-//    padding:0;
-//    height: 440px;
-//    @include image-background("../images/thread-image-space.jpg");
-//  }
+  .thread-icon{
+    position:absolute;
+    z-index: 100;
+    width: 114px;
+    left:50%;
+    bottom:-57px;
+    margin-left:-57px;
+    
+  }
+  section.before-icon {
+    position: relative;
+    padding-bottom:110px
+  }
+  section.after-icon {
+    padding-top:130px;
+  }
 }
 
 @media (min-width: 992px) {

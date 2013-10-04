@@ -1,13 +1,14 @@
 @import "./variables.css.scss";
 
 .eventer {
-  .eventer-storywall {
-    padding:0;
-    height: 426px;
-    width: 100%;
-    background: url('../images/eventer-storywall.jpg') no-repeat center center;
-    background-size: cover;
-  }
+//  .eventer-storywall {
+//    //TODO use @include image-background
+//    padding:0;
+//    height: 426px;
+//    width: 100%;
+//    background: url('../images/eventer-storywall.jpg') no-repeat center center;
+//    background-size: cover;
+//  }
 
   .intro {
     @include image-background("../images/eventer-background.jpg");

@@ -1,6 +1,6 @@
 @import "./variables.css.scss";
 .thread {
-  .product-intro {
+  .project-intro {
     @include image-background("../images/thread-bg.jpg");
   }
 
@@ -8,11 +8,11 @@
     padding-top: 160px;
   }
 
-  .the-bens {
-    height: 480px;
-    width: 100%;
-    @include image-background("../images/the-bens.png");
-  }
+//  .the-bens {
+//    padding:0;
+//    height: 440px;
+//    @include image-background("../images/thread-image-space.jpg");
+//  }
 }
 
 @media (min-width: 992px) {

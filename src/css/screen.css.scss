@@ -30,7 +30,7 @@ h3 {
   margin-bottom: 1.3em;
 }
 
-p {
+p, li {
   font-size: inherit;
   line-height: 32px;
   margin-bottom: 20px;
@@ -232,7 +232,7 @@ ul.contact {
   margin-top:60px;
 }
 
-.product-intro {
+.project-intro {
   height: 468px;
   width: 100%;
   padding: 0;
@@ -251,6 +251,13 @@ ul.contact {
     color: #fff;
   }
 }
+
+.project-image-space {
+  padding:0;
+  img{width:100%;}
+  
+}
+
 
 /* Home page */
 //TODO Move to home file
@@ -326,13 +333,14 @@ ul.roles {
     background-color: $color-light-grey;
 
     h3 {
-      margin: 31px 0 5px 40px;
+      margin: 31px 0 10px 40px;
       color: $color-black;
     }
 
     .small-font {
       margin: 5px 0 31px 40px;
       color: $color-grey;
+      line-height:26px;
     }
 
     a {

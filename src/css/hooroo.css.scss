@@ -1,17 +1,9 @@
 @import "./variables.css.scss";
 .hooroo {
-  .product-intro {
+  .project-intro {
     @include image-background("../images/hooroo-bg.jpg");
   }
-
-  .image-space {
-    padding:0;
-    height: 440px;
-    width: 100%;
-    background: url('../images/hooroo-image-space.jpg') no-repeat center center;
-    background-size: cover;
-  }
-
+  
   .grey-background-with-image { padding-bottom:0; }
   .airplane-small {
     img {

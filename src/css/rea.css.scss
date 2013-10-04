@@ -1,0 +1,36 @@
+@import "./variables.css.scss";
+
+.rea {
+  .project-intro {
+    background-color:#C8102E;
+    .logo {
+      position:absolute;
+      width:242px;
+      top:50%;
+      left:50%;
+      margin-left:-121px;
+      margin-top:-121px;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .product-description {
+    padding-top: 200px;
+    padding-bottom: 140px;
+  }
+  .rea {
+    .product-image {
+      position: absolute;
+      top: 0;
+      left: 60%;
+      right: 0;
+      bottom: 0;
+      background: url("../images/rea-screen-1.png") no-repeat left center;
+      background-size: 885px;
+      background-position: 90px 90px;
+    }
+  }
+}
+
+@media (min-width: 992px) {}

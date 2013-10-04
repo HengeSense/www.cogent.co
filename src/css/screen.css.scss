@@ -42,12 +42,12 @@ p {
 }
 
 a {
-  -o-transition:color .1s ease-out, background .1s ease-in;
-  -ms-transition:color .1s ease-out, background .1s ease-in;
-  -moz-transition:color .1s ease-out, background .1s ease-in;
-  -webkit-transition:color .1s ease-out, background .1s ease-in;
+  -o-transition:color .15s ease-out, background .15s ease-in;
+  -ms-transition:color .15s ease-out, background .15s ease-in;
+  -moz-transition:color .15s ease-out, background .15s ease-in;
+  -webkit-transition:color .15s ease-out, background .15s ease-in;
   /* ...and now override with proper CSS property */
-  transition:color .1s ease-out, background .1s ease-in;
+  transition:color .15s ease-out, background .15s ease-in;
   color: $color-blue-background;
 
   &:hover {
@@ -94,9 +94,11 @@ header, section, footer {
     display: inline-block;
     width: 76px;
     height: 41px;
-    background: url("../images/logo.png") no-repeat center center;
+    background-color:black;
+//    background: url("../images/cogent-logo-transparent.png") no-repeat center center;
+//     no-repeat center center;
     &:hover {
-      background: url("../images/logo_hover.png") no-repeat center center;
+      background-color: $color-watermelon;
     }
   }
 

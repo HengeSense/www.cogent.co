@@ -261,7 +261,6 @@ ul.contact {
 
 /* Home page */
 //TODO Move to home file
-.products-anchor { padding-top: 90px; }
 
 .products {
   background-color: $color-grey-background;
@@ -485,12 +484,26 @@ ul.roles {
 
   .slider-container {
     .royalSlider {
-      h2 { margin-top:60px; }
+      h2 { margin-bottom:10px; }
+      .visibleNearby {
+        display:none;
+      }
     }
-
     height: 600px;
     width: 1200px;
   }
+}
+
+/* Scaling transforms */
+.visibleNearby .rsSlide {
+  opacity: 0.3;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.visibleNearby .rsActiveSlide {
+  opacity: 1;
 }
 
 /* Desktops > 992px */
@@ -501,8 +514,8 @@ ul.roles {
   }
 
   .button {
-    padding-left: 43px;
-    padding-right: 43px;
+//    padding-left: 43px;
+//    padding-right: 43px;
   }
 
   .rea-side-background {

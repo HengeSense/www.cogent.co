@@ -4,8 +4,9 @@ $(function() {
     autoScaleSlider: false,
     keyboardNavEnabled: true,
     imageAlignCenter: false,
+    addActiveClass: true,
     slideSpacing: 10,
-    visibleNearby: {
+      visibleNearby: {
       enabled: true,
       centerArea: 0.6,
       center: false,

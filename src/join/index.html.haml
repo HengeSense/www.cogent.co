@@ -32,30 +32,21 @@ page_title: "Join"
   .row
     .span10.offset1
       %ul.roles.unstyled
-        %li
-          .row
-            .span7
-              %h3 Developer
-              .small-font.desktop Pair with some of the best developers in Melbourne. We care about code!
-              %a.button.blue.mobile{:href => href("developer.html")} &nbsp;
-            .span2.offset1.desktop
-              %a.button.blue{:href => href("developer.html")} View
-        %li
-          .row
-            .span7
-              %h3 Designer
-              .small-font.desktop Get to change stuff as you go, and see your work in the wild.
-              %a.button.blue.mobile{:href => href("designer.html")} &nbsp;
-            .span2.offset1.desktop
-              %a.button.blue{:href => href("designer.html")} View
-
-        %li
-          .row
-            .span7
-              %h3 Producer
-              .small-font.desktop Work with great customers, knowing a good team is behind you.
-              %a.button.blue.mobile{:href => href("producer.html")} &nbsp;
-            .span2.offset1.desktop
-              %a.button.blue{:href => href("producer.html")} View
+        - roles = [['Developer', "Pair with some of the best developers in Melbourne. We care about code!"]]
+        - roles << ['Designer', "Get to change stuff as you go, and see your work in the wild."]
+        - roles << ['Producer',  "Work with great customers, knowing a good team is behind you."]
+        - roles.each do |role|
+        - name, desc, url = role.first, role.last, href("#{role.first.downcase}.html")
+          %li
+            .row.desktop
+              .span7
+                %h3= name
+                .small-font= desc
+              %a.button.blue{:href => url} View
+            %a.mobile{:href => url}
+              .row
+                .span7
+                  %h3= name
+                  %img.arrow{:src => href('/images/join_list_button.png')}
 
 = include "../_partials/_join_us.html.haml"

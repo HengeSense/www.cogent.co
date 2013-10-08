@@ -126,6 +126,9 @@ footer {
   h2 {
     color: $color-black;
   }
+
+  line-height: 32px;
+  padding-top: 90px;
 }
 
 .button {
@@ -378,6 +381,17 @@ ul.roles {
     position: absolute;
     div { overflow: visible; }
   }
+
+  .visibleNearby .rsSlide {
+    opacity: 0.3;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+
+  .visibleNearby .rsActiveSlide {
+    opacity: 1;
+  }
 }
 .slider-controls {
   float:right;
@@ -440,11 +454,6 @@ ul.roles {
     padding: 80px 0 80px 0;
   }
 
-  footer {
-    line-height: 32px;
-    padding-top: 90px;
-  }
-
   body { font-size: 18px; }
 
   .mobile, a.mobile {
@@ -486,27 +495,13 @@ ul.roles {
   }
 
   .slider-container {
-    .royalSlider {
-      h2 { margin-bottom:10px; }
-      .visibleNearby {
-        display:none;
-      }
-    }
-    height: 600px;
+    height: 530px;
     width: 1200px;
+    .royalSlider {
+      h3 { font-size: 28px; }
+      
+    }
   }
-}
-
-/* Scaling transforms */
-.visibleNearby .rsSlide {
-  opacity: 0.3;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.visibleNearby .rsActiveSlide {
-  opacity: 1;
 }
 
 /* Desktops > 992px */

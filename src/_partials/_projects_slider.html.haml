@@ -15,7 +15,7 @@
       %a{:name => "work"}
       .span8.offset1
         %h2 We like to work together with smart people to make remarkable things we're proud of.
-      .span3{:style => "padding-top:50px;"}
+      .span3.desktop{:style => "padding-top:50px;"}
         .slider-controls.desktop
           %button.slider-prev
           %button.slider-next
@@ -24,8 +24,8 @@
         .royalSlider.visibleNearby
           - arranged_projects.each do |key, name, desc|
             %div
-              %h2
+              %h3
                 = name
-              %p= desc
+              %p.desktop= desc
               %a{:href => "/projects/#{name.downcase}"}
                 %img.rsImg{:src => href("/images/slider-#{name.downcase}.jpg")}

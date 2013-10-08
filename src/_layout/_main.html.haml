@@ -55,9 +55,9 @@
     .content
       = yield
 
-      %footer.grey-background.desktop
+      %footer.grey-background
         .container
-          .row-fluid
+          .row-fluid.desktop
             .span7.offset1
               %h2
                 If you need some help with a project and this sounds good to you,
@@ -80,11 +80,6 @@
                   %br
                   Melbourne VIC 3000
               %p.copyright © Cogent 2013
-
-      - if page.meta['page_title'] != 'Home'
-        = include("../_partials/_mobile_footer.html.haml")
-
-
 
     :javascript
       var _gaq = _gaq || [];

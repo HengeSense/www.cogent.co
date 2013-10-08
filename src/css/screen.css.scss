@@ -178,14 +178,6 @@ footer {
   position: relative;
 }
 
-//TODO Move to eventer if only used there?
-.grey-background-with-image {
-  @extend .grey-background;
-  min-height: 480px;
-  overflow: hidden;
-  position: relative;
-}
-
 .passion {
   overflow: visible;
 
@@ -501,6 +493,14 @@ ul.roles {
 
   .slider-next, .slider-next:hover, .slider-prev, .slider-prev:hover {
     background-size: 24px 33px;
+  }
+
+  //TODO Move to eventer if only used there?
+  .grey-background-with-image {
+    @extend .grey-background;
+    min-height: 480px;
+    overflow: hidden;
+    position: relative;
   }
 }
 

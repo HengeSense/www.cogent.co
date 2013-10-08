@@ -49,7 +49,11 @@
 }
 
 @media (min-width: 767px) {
-  .readtime {}
+  .readtime {
+    .extra-margin-for-desktop {
+      margin-top:90px;
+    }
+  }
 }
 
 @media (min-width: 992px) {

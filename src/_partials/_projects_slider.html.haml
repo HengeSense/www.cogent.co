@@ -1,3 +1,14 @@
+- projects = [[:readtime, "Readtime", "Getting things read on your iPhone."]]
+- projects << [:eventer, "Eventer", "Changing what it’s like to watch an event you couldn’t make it to."]
+- projects << [:thread, "Thread", "Helping Melbourne Business School to be leaders in digital learning."]
+- projects << [:rea, "REA", "Rebuilding the Customer Platform, ground up."]
+- projects << [:hooroo, "Hooroo", "Bacon ipsum dolor sit amet short loin ball tip doner corned beef."]
+- projects << [:redbubble, "Redbubble", "A marketplace for digital artists."]
+- if defined?(for_project)
+  - x, *arranged_projects = projects.rotate(projects.index {|k,*x| k == for_project}) rescue [nil, projects]
+- else
+  - arranged_projects = projects
+
 %section.products-slider
   .container{:style => "overflow: visible"}
     .row
@@ -11,28 +22,10 @@
     .row
       .span11.offset1.slider-container
         .royalSlider.visibleNearby
-          %div
-            %h2
-              Readtime
-            %p Getting things read on your iPhone.
-            %a{:href => "/projects/readtime"}
-              %img.rsImg{:src => href("/images/slider-readtime.jpg")}
-
-          %div
-            %h2
-              Eventer
-            %p Changing what it’s like to watch an event you couldn’t make it to.
-            %a{:href => "/projects/eventer"}
-              %img.rsImg{:src => href("/images/slider-eventer.jpg")}
-          %div
-            %h2
-              Thread
-            %p Helping Melbourne Business School to be leaders in digital learning.
-            %a{:href => "/projects/thread"}
-              %img.rsImg{:src =>href("/images/slider-thread.jpg")}
-          %div
-            %h2
-              Hooroo
-            %p Bacon ipsum dolor sit amet short loin ball tip doner corned beef.
-            %a{:href => "/projects/hooroo"}
-              %img.rsImg{:src =>href("/images/slider-hooroo.jpg")}
+          - arranged_projects.each do |key, name, desc|
+            %div
+              %h2
+                = name
+              %p= desc
+              %a{:href => "/projects/#{name.downcase}"}
+                %img.rsImg{:src => href("/images/slider-#{name.downcase}.jpg")}

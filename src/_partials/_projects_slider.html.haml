@@ -15,13 +15,11 @@
       %a{:name => "work"}
       .span8.offset1
         %h2 We like to work together with smart people to make remarkable things we're proud of.
-      .span3.desktop{:style => "padding-top:50px;"}
-        .slider-controls.desktop
-          %button.slider-prev
-          %button.slider-next
-    .row
+    .row{:style => "position:relative"}
+      .slider-prev
+      .slider-next
       .span11.offset1.slider-container
-        .royalSlider.visibleNearby
+        .royalSlider.rsDefault.visibleNearby
           - arranged_projects.each do |key, name, desc|
             %div
               %h3

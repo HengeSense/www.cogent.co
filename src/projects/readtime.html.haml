@@ -4,12 +4,11 @@ class: "readtime"
 ...
 
 .centered.video-background
-  %video{:autoplay => "", :preload => "auto", :loop => ""}
+  %video{:autoplay => true, :preload => "auto", :loop => true}
     %source{:type => "video/mp4", :src => href("/images/readtime.mp4")}
     %source{:type => "video/webm", :src => href("/images/readtime.webm")}
     / Fallback image
     %img{:src => href("/images/readtime-video-poster.png")}
-  / %h1 readtime
 
 %section.grey-background-with-image
   .container

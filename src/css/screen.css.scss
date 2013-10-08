@@ -375,7 +375,7 @@ ul.roles {
   }
 
   .visibleNearby .rsSlide {
-    opacity: 0.3;
+    opacity: 0.2;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
@@ -478,17 +478,17 @@ ul.roles {
   .slider-next {
     background: url("/images/arrow-right.png") no-repeat center center;
     right:82px;
-    &:hover {
-      background: url("/images/arrow-right-hover.png") no-repeat center center;
-    }
+//    &:hover {
+//      background: url("/images/arrow-right-hover.png") no-repeat center center;
+//    }
   }
 
   .slider-prev {
     left: 20px;
     background: url("/images/arrow-left.png") no-repeat center center;
-    &:hover {
-      background: url("/images/arrow-left-hover.png") no-repeat center center;
-    }
+//    &:hover {
+//      background: url("/images/arrow-left-hover.png") no-repeat center center;
+//    }
   }
 
   .slider-next, .slider-next:hover, .slider-prev, .slider-prev:hover {

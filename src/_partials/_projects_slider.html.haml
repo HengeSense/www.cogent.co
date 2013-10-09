@@ -25,5 +25,5 @@
               %h3
                 = name
               %p.desktop= desc
-              %a{:href => "/projects/#{name.downcase}"}
+              %a{:href => href("/projects/#{name.downcase}")}
                 %img.rsImg{:src => href("/images/slider-#{name.downcase}.jpg")}

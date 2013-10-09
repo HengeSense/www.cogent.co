@@ -4,11 +4,13 @@ class: "readtime"
 ...
 
 .centered.video-background
-  %video{:autoplay => true, :preload => "auto", :loop => true}
-    %source{:type => "video/mp4", :src => href("/images/readtime.mp4")}
-    %source{:type => "video/webm", :src => href("/images/readtime.webm")}
-    / Fallback image
+  %video{:autoplay => "", :preload => "auto", :loop => true}
+    %source{:src => href("/images/readtime.mp4")}
+    %source{:src => href("/images/readtime.webm")}
     %img{:src => href("/images/readtime-video-poster.png")}
+
+.video-fallback-for-ios
+  %img{:src => href("/images/readtime-video-poster.png")}
 
 %section.grey-background-with-image
   .container

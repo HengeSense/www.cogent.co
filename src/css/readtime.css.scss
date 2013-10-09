@@ -26,12 +26,14 @@
   }
 
   .video-background {
+    display:none;
     video {
-//      position:fixed;
-//      z-index:-1;
-//      left:0;
       width:100%;
       margin-bottom:-5px;
+    }
+
+    .video-fallback-for-ios {
+      display:block;
     }
   }
 
@@ -71,8 +73,13 @@
     }
 
     .video-background {
+      display:block;
       margin-top:-40px;
       height: 560px;
+    }
+
+    .video-fallback-for-ios {
+      display:none;
     }
   }
 }

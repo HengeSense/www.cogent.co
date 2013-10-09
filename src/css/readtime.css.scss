@@ -71,7 +71,11 @@
       background-size: 480px;
       background-position: 90px 35px;
     }
+  }
+}
 
+@media (min-width: 1020px) {
+  .readtime {
     .video-background {
       display:block;
       margin-top:-40px;

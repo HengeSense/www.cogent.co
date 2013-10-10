@@ -25,5 +25,5 @@
               %h3
                 = name
               %p.desktop= desc
-              %a{:href => href("/projects/#{name.downcase}")}
-                %img.rsImg{:src => href("/images/slider-#{name.downcase}.jpg")}
+              / The on-click action on the image is added via JS
+              %img.rsImg.jsLink{:src => href("/images/slider-#{name.downcase}.jpg"), :'data-href' => href("/projects/#{name.downcase}")}

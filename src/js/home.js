@@ -1,14 +1,14 @@
 $(function() {
   var slider =  $(".royalSlider").royalSlider({
     loopRewind: true,
-    autoScaleSlider: false,
+    autoScaleSlider: true,
     keyboardNavEnabled: true,
     imageAlignCenter: false,
     addActiveClass: true,
     slideSpacing: 10,
     sliderDrag:false,
     navigateByCenterClick: false,
-    navigateByClick: true,
+    navigateByClick: false,
     visibleNearby: {
       enabled: true,
       centerArea: 0.6,
@@ -35,5 +35,14 @@ $(function() {
       $prev.show();
       $next.hide();
     }
+  });
+
+  // TODO try to find a better way to do this. maybe ad an anchor dynamically?
+  // Make slider image behave like a link if it is the active one
+  $(".royalSlider").on("click", ".jsLink", function(){
+      var isTheActiveSlide = $(this).parents('.rsActiveSlide').length >= 1;
+      if (isTheActiveSlide) {
+        window.location.href = $(this).attr('data-href');
+      }
   });
 });

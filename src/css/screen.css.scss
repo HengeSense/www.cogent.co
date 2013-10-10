@@ -71,7 +71,7 @@ section {
   background-color:white;
   >  .with-image img {
     margin-top: 30px;
-     margin-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -95,8 +95,8 @@ header, section, footer {
     width: 76px;
     height: 41px;
     background-color:black;
-//    background: url("../images/cogent-logo-transparent.png") no-repeat center center;
-//     no-repeat center center;
+    //    background: url("../images/cogent-logo-transparent.png") no-repeat center center;
+    //     no-repeat center center;
     &:hover {
       background-color: $color-watermelon;
     }
@@ -372,6 +372,10 @@ ul.roles {
     width: 100%;
     position: absolute;
     div { overflow: visible; }
+
+    .rsActiveSlide .jsLink {
+      cursor: pointer;
+    }
   }
 
   .visibleNearby .rsSlide {
@@ -461,7 +465,7 @@ ul.roles {
 
   .slider-container {
     height: 530px;
-    width: 1200px;
+    width: 1000px;
     .royalSlider {
       h3 { font-size: 28px; }
     }
@@ -472,16 +476,16 @@ ul.roles {
     height: 35px;
     width: 23px;
     position: absolute;
-    top: 305px;
+    top: 278px;
   }
 
   .slider-next {
     background: url("../images/arrow-right.png") no-repeat center center;
-    right:-118px;
+    left:706px;
   }
 
   .slider-prev {
-    left: 1px;
+    left:27px;
     background: url("../images/arrow-left.png") no-repeat center center;
   }
 
@@ -519,8 +523,9 @@ ul.roles {
     background: url("../images/macbook-home.png") no-repeat left center;
   }
 
-  margin-top: -34px;
-  margin-left: -160px;
+  .slider-next, .slider-prev {
+    top: 316px;
+  }
 
   .slider-container {
     height: 600px;
@@ -528,11 +533,11 @@ ul.roles {
   }
 
   .slider-next {
-    right:82px;
+    left: 844px;
   }
 
   .slider-prev {
-    left: 20px;
+    left: 45px;
   }
 }
 

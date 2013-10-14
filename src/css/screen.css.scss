@@ -129,6 +129,11 @@ footer {
 
   line-height: 32px;
   padding-top: 90px;
+
+  .address-name {
+    display: inline-block;
+    width: 60px;
+  }
 }
 
 .button {

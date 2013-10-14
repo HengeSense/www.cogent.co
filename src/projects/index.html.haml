@@ -1,2 +1,34 @@
-:javascript
-  window.location.replace("readtime");
+---
+layout: "../_layout/_main.html.haml"
+class: "projects"
+page_title: "Work"
+...
+
+- projects = [[:readtime, "Readtime", "Getting things read on your iPhone."]]
+- projects << [:eventer, "Eventer", "Changing what it’s like to watch an event you couldn’t make it to."]
+- projects << [:thread, "Thread", "Helping Melbourne Business School to be leaders in digital learning."]
+- projects << [:rea, "REA", "Rebuilding the Customer Platform, ground up."]
+- projects << [:hooroo, "Hooroo", "Bacon ipsum dolor sit amet short loin ball tip doner corned beef."]
+- projects << [:redbubble, "Redbubble", "A marketplace for digital artists."]
+
+%section.red-white
+  .container
+    .row
+      .span10.offset1
+        %h1 We make good shit
+    .row
+      .span10.offset1
+        %h2 We like to work together with smart people to make remarkable things we're proud of.
+
+%section.projects
+  .container
+    - projects.each_slice(2).to_a.each do |pair|
+      .row
+        - pair.each do |key, name, desc|
+          .span6.project
+            %h2.mobile= name
+            %a{:href => "/projects/#{name.downcase}"}
+              %img{:src => href("/images/work-#{name.downcase}.jpg")}
+              .hoover.desktop
+                %h1= name
+                %h3= desc

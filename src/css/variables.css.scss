@@ -34,6 +34,12 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=#{$url}, sizingMethod='scale')";
 }
 
+@mixin fade-transition {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in-out;
+}
+
 $base-line-height-in-pixels: 23.4;
 $color-blue-background: #4c9af5;
 $color-grey-background: #f3f3f3;

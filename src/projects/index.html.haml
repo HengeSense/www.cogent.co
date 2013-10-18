@@ -27,7 +27,7 @@ page_title: "Work"
         - pair.each do |key, name, desc|
           .span6.project
             %h2.mobile= name
-            %a{:href => "/projects/#{name.downcase}"}
+            %a{:href => href("/projects/#{name.downcase}")}
               %img{:src => href("/images/work-#{name.downcase}.jpg")}
               .hoover.desktop
                 %h1= name

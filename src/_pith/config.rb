@@ -34,9 +34,4 @@ project.helpers do
     end
     %{<a href="#{href('/' + target_path)}" class="#{'selected' if selected}">#{label}</a>}
   end
-
-  # Just for testing
-  def grid
-    include "_partials/_grid.html.haml"
-  end
 end

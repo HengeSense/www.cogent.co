@@ -20,7 +20,7 @@
     %link{ :rel => "stylesheet", :href => href("/css/royalslider.css") }
     %link{ :rel => "stylesheet", :href => href("/css/screen.css") }
 
-    / Infer css file from css class
+    -# Infer css file from css class
     - if (css_class = page.meta['class']) && File.exists?("src/css/#{css_class}.css.scss")
       %link{ :rel => "stylesheet", :href => href("/css/#{css_class}.css") }
 

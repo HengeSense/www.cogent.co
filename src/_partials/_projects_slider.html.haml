@@ -1,13 +1,4 @@
-- projects = [[:readtime, "Readtime", "Getting things read on your iPhone."]]
-- projects << [:eventer, "Eventer", "Changing what it’s like to watch an event you couldn’t make it to."]
-- projects << [:thread, "Thread", "Helping Melbourne Business School to be leaders in digital learning."]
-- projects << [:rea, "REA", "Rebuilding the Customer Platform, ground up."]
-- projects << [:hooroo, "Hooroo", "Bacon ipsum dolor sit amet short loin ball tip doner corned beef."]
-- projects << [:redbubble, "Redbubble", "A marketplace for digital artists."]
-- if defined?(for_project)
-  - x, *arranged_projects = projects.rotate(projects.index {|k,*x| k == for_project}) rescue [nil, projects]
-- else
-  - arranged_projects = projects
+- arranged_projects = arrange_projects(defined?(for_project) ? for_project : nil)
 
 %section.products-slider
   .container{:style => "overflow: visible"}
@@ -20,10 +11,10 @@
       .slider-next
       .span11.offset1.slider-container
         .royalSlider.rsDefault.visibleNearby
-          - arranged_projects.each do |key, name, desc|
+          - arranged_projects.each do |project|
             %div
               %h3
-                = name
-              %p.desktop= desc
+                = project['name']
+              %p.desktop= project['description']
               -# The on-click action on the image is added via JS
-              %img.rsImg.jsLink{:src => href("/images/slider-#{name.downcase}.jpg"), :'data-href' => href("/projects/#{name.downcase}")}
+              %img.rsImg.jsLink{:src => href("/images/slider-#{project['name'].downcase}.jpg"), :'data-href' => href("/projects/#{project['name'].downcase}")}

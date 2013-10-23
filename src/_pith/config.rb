@@ -34,4 +34,25 @@ project.helpers do
     end
     %{<a href="#{href('/' + target_path)}" class="#{'selected' if selected}">#{label}</a>}
   end
+
+  def load_yaml(filename)
+    YAML.load(File.read(File.expand_path(File.dirname(__FILE__) + '/../config/' + filename)))
+  end
+
+  def projects
+    @projects ||= load_yaml('projects.yml')
+  end
+
+  # if a target project is given
+  # remove target project and order the array starting from next project after target project
+  # otherwise return all the projects
+  def arrange_projects(target_project)
+    if target_project
+      index = projects.index {|p| p['name'].downcase.to_sym == target_project}
+      head, *tail = projects.rotate(index)
+      tail
+    else
+      projects
+    end
+  end
 end

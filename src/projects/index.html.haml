@@ -4,13 +4,6 @@ class: "projects"
 page_title: "Work"
 ...
 
-- projects = [[:readtime, "Readtime", "Getting things read on your iPhone."]]
-- projects << [:eventer, "Eventer", "Changing what it’s like to watch an event you couldn’t make it to."]
-- projects << [:thread, "Thread", "Helping Melbourne Business School to be leaders in digital learning."]
-- projects << [:rea, "REA", "Rebuilding the Customer Platform, ground up."]
-- projects << [:hooroo, "Hooroo", "Bacon ipsum dolor sit amet short loin ball tip doner corned beef."]
-- projects << [:redbubble, "Redbubble", "A marketplace for digital artists."]
-
 %section.red-white
   .container
     .row
@@ -24,11 +17,11 @@ page_title: "Work"
   .container
     - projects.each_slice(2).to_a.each do |pair|
       .row
-        - pair.each do |key, name, desc|
+        - pair.each do |project|
           .span6.project
-            %h2.mobile= name
-            %a{:href => href("/projects/#{name.downcase}")}
-              %img{:src => href("/images/work-#{name.downcase}.jpg")}
+            %h2.mobile= project['name']
+            %a{:href => href("/projects/#{project['name'].downcase}")}
+              %img{:src => href("/images/work-#{project['name'].downcase}.jpg")}
               .hoover.desktop
-                %h1= name
-                %h3= desc
+                %h1= project['name']
+                %h3= project['description']

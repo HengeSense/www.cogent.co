@@ -36,7 +36,7 @@ project.helpers do
   end
 
   def load_yaml(filename)
-    YAML.load(File.read(File.expand_path(File.dirname(__FILE__) + '/../config/' + filename)))
+    YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/../config/' + filename))
   end
 
   def projects

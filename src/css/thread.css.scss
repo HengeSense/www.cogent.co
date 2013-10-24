@@ -4,10 +4,6 @@
     @include image-background("../images/thread-bg.jpg");
   }
 
-  .product-description {
-    padding-top: 160px;
-  }
-
   .thread-icon{
     position:absolute;
     z-index: 100;
@@ -15,11 +11,11 @@
     left:50%;
     bottom:-57px;
     margin-left:-57px;
-    
+
   }
   section.before-icon {
     position: relative;
-    padding-bottom:110px
+    padding-bottom:110px;
   }
   section.after-icon {
     padding-top:130px;
@@ -27,14 +23,20 @@
 }
 
 @media (min-width: 992px) {
-  .thread .product-image {
-    position: absolute;
-    top: 0;
-    left: 60%;
-    right: 0;
-    bottom: 0;
-    background: url("../images/thread-ipad.png") no-repeat left center;
-    background-size: 775px;
-    background-position: 90px 35px;
+  .thread {
+    .product-image {
+      position: absolute;
+      top: 0;
+      left: 60%;
+      right: 0;
+      bottom: 0;
+      background: url("../images/thread-ipad.png") no-repeat left center;
+      background-size: 775px;
+      background-position: 90px 35px;
+    }
+
+    .product-description {
+      padding-top: 160px;
+    }
   }
 }

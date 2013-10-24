@@ -38,13 +38,13 @@
   }
 
   .white-on-blue {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     a { margin-top: 35px; }
 
     hr {
-      margin: 45px 0;
+      margin: 18px 0;
       border:0;
       border-top:1px solid $color-light-blue;
     }
@@ -55,6 +55,13 @@
   .readtime {
     .extra-margin-for-desktop {
       margin-top:90px;
+    }
+
+    .white-on-blue {
+      padding-top: 35px;
+      padding-bottom: 35px;
+
+        hr { margin: 45px 0;}
     }
   }
 }

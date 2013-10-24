@@ -16,23 +16,25 @@ h1 {
   @include signal-font;
   text-transform: uppercase;
   color: inherit;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 48px;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 22px;
+  line-height: 34px;
   margin-bottom: 1.3em;
 }
 
 h3 {
   font-size: 18px;
+  line-height: 34px;
   margin-bottom: 1.3em;
 }
 
 p, li {
   font-size: inherit;
-  line-height: 32px;
+  line-height: 28px;
   margin-bottom: 20px;
   color: $color-grey;
 }
@@ -233,7 +235,7 @@ ul.contact {
 }
 
 .project-intro {
-  height: 468px;
+  height: 300px;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -249,6 +251,15 @@ ul.contact {
     margin-top: -25px;
     text-align: center;
     color: #fff;
+  }
+
+  .logo {
+    position:absolute;
+    width:120px;
+    top:50%;
+    left:50%;
+    margin-left:-60px;
+    margin-top:-60px;
   }
 }
 
@@ -351,21 +362,6 @@ ul.roles {
   }
 }
 
-// REA page
-.rea {
-  .intro.image-background {
-    height: 400px;
-    @include image-background("../images/rea-background.png");
-  }
-  .cards.image-background {
-    height: 400px;
-    @include image-background("../images/rea-cards.png");
-  }
-  .product-description {
-    padding-top: 220px;
-    padding-bottom: 220px;
-  }
-}
 .slider-container {
   position: relative;
   height: 250px;
@@ -505,6 +501,15 @@ ul.roles {
     overflow: hidden;
     position: relative;
   }
+
+  .project-intro {
+    height: 468px;
+    .logo {
+      width:242px;
+      margin-left:-121px;
+      margin-top:-121px;
+    }
+  }
 }
 
 /* Desktops > 992px */
@@ -569,7 +574,3 @@ ul.roles {
     }
   }
 }
-
-// Testing stuff please don't delete
-
-//div, section, p { border: 1px solid red; }

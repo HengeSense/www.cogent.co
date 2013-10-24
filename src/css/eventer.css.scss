@@ -2,21 +2,10 @@
 
 .eventer {
 
-  .intro {
+  .project-intro {
     @include image-background("../images/eventer-background.jpg");
-    padding-top: 0px;
-    padding-bottom:0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    height: 468px;
-    text-align: center;
-
-    h1 {
-      line-height: 450px;
-      color: white;
-    }
   }
-  
+
   .with-special-margins {
     h3 { margin-bottom:0.4em;}
     p { margin-bottom:2.5em;}

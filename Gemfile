@@ -6,6 +6,7 @@ gem "rake"
 gem "RedCloth", "~> 4.2.3"
 gem "flickraw", "0.9"
 gem "json"
+gem 'jekyll'
 
 gem "rspec"
 gem "rspec-core"

@@ -39,6 +39,7 @@ namespace "github" do
     sh <<-BASH
       set -e -x
       rm -fr #{tmpdir}; pith -i src -o #{tmpdir} build
+      jekyll build --source blog/_posts --destination #{tmpdir}/blog
       git checkout gh-pages
       git fetch origin
       git reset --hard origin/gh-pages

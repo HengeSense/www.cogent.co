@@ -4,8 +4,6 @@
     <title>
       Cogent
       
-       - Projects - Readtime
-      
     </title>
     <meta charset='utf-8' />
     <!--[if IE]>
@@ -15,173 +13,233 @@
     <meta content='Cogent, Projects, Solutions, User Experience, Design, Development, Ruby, Ruby on Rails, Java, Interaction, Melbourne, Australia, ' name='keywords' />
     <meta content="Cogent creates useful software that gets results. We start with your business goals and work in an open and iterative way to craft the product. We're based in Melbourne, Australia." name='description' />
     <meta content='Cogent' name='author' />
-    <meta content='width=device-width; initial-scale=1.0' name='viewport' />
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
-    <script src='../js/html5.js'></script>
-    <script src='../js/underscore-min.js'></script>
-    <script src='../js/jquery.timeago.js'></script>
-    <script src='http://use.typekit.com/xkf5xsa.js' type='text/javascript'></script>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <script src='../js/jquery-1.10.2.min.js'></script>
+    <script src='../js/html5.js' type='text/javascript'></script>
+    <script src='http://use.typekit.com/xkf5xsa.js'></script>
     <script type='text/javascript'>
       try{Typekit.load();}catch(e){}
     </script>
+    <script src='../js/jquery.royalslider.min.js' type='text/javascript'></script>
+    <script src='../js/bootstrap.min.js' type='text/javascript'></script>
     <script src='../js/application.js' type='text/javascript'></script>
-    <link href='/css/normalize.css' rel='stylesheet' />
-    <link href='/css/styles.css' rel='stylesheet' />
+    <!-- TODO include only in home page -->
+    <script src='../js/home.js' type='text/javascript'></script>
+    <link href='../css/bootstrap.min.css' rel='stylesheet' />
+    <link href='../css/royalslider.css' rel='stylesheet' />
+    <link href='../css/screen.css' rel='stylesheet' />
+    <!-- Infer css file from css class -->
+    <link href='../css/readtime.css' rel='stylesheet' />
     <!--[if lte IE 8]>
       <script src='../js/respond.js' type='text/javascript'></script>
-      <link href='/css/ie7.css' rel='stylesheet' />
     <![endif]-->
   </head>
-  <body>
-    <a name='top'></a>
-    <header>
-      <a class='logo' href='/'>
-        <img alt='Cogent' src='/images/cogent_logo.png' />
-      </a>
-      <h1>
-        We create useful software that gets results
-      </h1>
-      <nav>
-        <a href="/" class="">Home</a>
-        <a href="/projects/" class="selected">Projects</a>
-        <a href="/about" class="">About</a>
-        <a href="/join/" class="">Join</a>
-      </nav>
-    </header>
-    <article class='clearfix' role='main'>
-      <h1>Readtime</h1>
-      <h2 class='intro-end'>Getting things read on your iPhone.<br>&nbsp;</h2>
-      <aside>
-        <h1>What is it?</h1>
-        <p>Readtime is an iPhone app that helps you get through the items in your Readability list. It starts with setting the amount of time you have - up to 30 minutes - and fetches the right amount of articles for you based on average reading speeds.</p>
-        <h1>Why Bother?</h1>
-        <p>Reading lists are awesome for collecting all the articles you'd like to read - sometimes too awesome. However, having enthusiastically saved all those great reads for later, we found ourselves wincing when faced with the article pile-up.   </p>
-        <h1>What did we do?</h1>
-        <p>Readtime started as a Cogent hackday project. Benjamin, Simon and Ben teamed up and aimed to get it mostly built in two days. After some brutal scoping sessions, we came out the other side with an equally brutal focus on just what the app would do: use available time to get things read. These sessions took place at the lunch table, which conveniently doubles as a sketch surface.</p>
-        <p>At the end of the two days we were looking at a functioning app - you could set a time, retrieve articles, and swipe them away when finished. We also had a few extra features we wanted to ship, a few areas we wanted to polish or redo, and an ongoing debate about the name.</p>
-        <p>Over the next little while we found the time to change the name a few times, add and subtract features, and debate whether having our own 'Read Later' feature was dangerously recursive (answer: yes). We also looped through a few visual designs following Simon and Benjamin's lukewarm response to the original "Ship's Captain" theme. Pffft. Developers.</p>
-        <p>We also settled on Readability as the sole service for launch, after probing the API requirements of the major reading lists. We're hoping to include other services in future releases, which would bring us closer to our original vision of getting through accumulated articles, regardless of whether they're in Readability, Instapaper, Pocket or any other service.</p>
-        <h1>Where Can I Get It?</h1>
-        <p>
-          Readtime is live in the App Store now! Check it out at
-          <a href='http://www.readtimeapp.com'>www.readtimeapp.com</a>
-        </p>
-        <p>
-          <a class='view_projects' href='./'>View all projects</a>
-        </p>
-      </aside>
-      <section role='main'>
-        <div class='post'>
-          <a href='http://www.flickr.com/photos/68536933@N08/8640905363/in/set-72157630704255124/'>
-            <img src='http://farm9.static.flickr.com/8398/8640905363_eb1c568d11.jpg' />
-          </a>
-          <div class='transparent-box'></div>
-          <div class='caption'>
-            <p>
-              <a href='http://www.flickr.com/photos/68536933@N08/8640905363/in/set-72157630704255124/'>Readtime 2.0.0</a>
-            </p>
+  <body class='readtime'>
+    <div class='container'>
+      <div class='nav-bar clearfix'>
+        <a class='logo' href='..'>
+          <img src='../images/cogent-logo-transparent.png' />
+        </a>
+        <ul>
+          <li>
+            <a href="." class="selected">Work</a>
+          </li>
+          <li>
+            <a href="../about" class="">About</a>
+          </li>
+          <li>
+            <a href="../join" class="">Join</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class='content'>
+      <div class='centered video-background'>
+        <video autoplay='' loop='loop' preload='auto'>
+          <source src='../images/readtime.mp4'></source>
+          <source src='../images/readtime.webm'></source>
+          <img src='../images/readtime-video-poster.png' />
+        </video>
+      </div>
+      <div class='video-fallback-for-ios'>
+        <img src='../images/readtime-video-poster.png' />
+      </div>
+      <section class='grey-background-with-image'>
+        <div class='container'>
+          <div class='row-fluid'>
+            <div class='span8 offset1 extra-margin-for-desktop'>
+              <h2>Getting things read on your iPhone</h2>
+              <h3>Readtime is an app that helps you get through the items in your Readability list. It starts with the amount of time you have - up to 30 minutes - and fetches the right amount of articles for you based on average read speeds.</h3>
+            </div>
           </div>
         </div>
-        <div class='post'>
-          <a href='http://www.flickr.com/photos/68536933@N08/8146286543/in/set-72157630704255124/'>
-            <img src='http://farm9.static.flickr.com/8330/8146286543_3f6c66881c.jpg' />
-          </a>
-          <div class='transparent-box'></div>
-          <div class='caption'>
-            <p>
-              <a href='http://www.flickr.com/photos/68536933@N08/8146286543/in/set-72157630704255124/'>Readtime planning.</a>
-            </p>
+        <div class='readtime-iphone'></div>
+      </section>
+      <section class='more'>
+        <div class='container'>
+          <div class='row-fluid'>
+            <div class='span8 offset1'>
+              <h2 class='dark-blue'>Retrieve and store articles you've saved to Pocket or Readability for offline reading.</h2>
+              <br />
+              <p>Reading lists are awesome for collecting all the articles you'd like to read - sometimes too awesome. However, having enthusiastically saved all those great reads for later, we found ourselves wincing when faced with the article pile-up.</p>
+              <p>We're continuing to developing Readtime, enjoying the positive feedback we've had from our users thus far. Next up we're hoping to have an Instapaper release top complete the suite of top reading services.</p>
+            </div>
           </div>
-        </div>
-        <div class='post quote'><span class='attribution'><span class='time' title='2013-04-11T22:26:54Z'>2013-04-11T22:26:54Z</span>,&nbsp;Rachel Morley from Cogent said</span><h1>Love the new cuter, flatterer, etceterer. Is beauty and usefulness, personified.</h1></div>
-        <div class='post'>
-          <a href='http://www.flickr.com/photos/68536933@N08/8556570078/in/set-72157630704255124/'>
-            <img src='http://farm9.static.flickr.com/8391/8556570078_795972c4cf.jpg' />
-          </a>
-          <div class='transparent-box'></div>
-          <div class='caption'>
-            <p>
-              <a href='http://www.flickr.com/photos/68536933@N08/8556570078/in/set-72157630704255124/'>Readtime 2.0 has been submitted to the App Store!!</a>
-            </p>
-          </div>
-        </div>
-        <div class='post quote'><span class='attribution'><span class='time' title='2013-05-05T22:20:28Z'>2013-05-05T22:20:28Z</span>,&nbsp;Simon Harris from Cogent said</span><h1>Readtime featured in iTunes new and noteworthy this week!</h1></div>
-        <div class='post'>
-          <a href='http://www.flickr.com/photos/68536933@N08/8270513331/in/set-72157630704255124/'>
-            <img src='http://farm9.static.flickr.com/8500/8270513331_037c87b7e3.jpg' />
-          </a>
-          <div class='transparent-box'></div>
-          <div class='caption'>
-            <p>
-              <a href='http://www.flickr.com/photos/68536933@N08/8270513331/in/set-72157630704255124/'>The Readtime team really enjoys wearing white shirts.</a>
-            </p>
+          <div class='bottom'>
+            <img src='../images/readtime-two-iphones.png' />
           </div>
         </div>
       </section>
-      <section class='lined grey clearfix' id='project_footer'>
-        <div class='project'><h2><a href='thread'>Thread</a></h2><p>Helping Melbourne Business School to be leaders in digital learning.</p></div><div class='project'><h2><a href='eventer'>Eventer</a></h2><p>Changing what it&rsquo;s like to watch an event you couldn&rsquo;t make it to.</p></div><div class='project'><h2><a href='rea'>REA Group</a></h2><p>Rebuilding the Customer Platform, ground up.</p></div>
-      </section>
-      <section class='lined grey clearfix'>
-        <h1>We are bright and good at what we do</h1>
-        <h2>That means we&rsquo;ll ask lots of questions.</h2>
-        <div class='left'>
-          <p>We don&rsquo;t think about our skills as buzzwords like strategy, user experience, agile methods or Ruby on Rails development — we think about working as a team with your objective in mind.</p>
-          <p>We relish the challenge of creating something new, and to solve tough problems that haven&rsquo;t been solved before. We know that designing something that is efficient to run matters too, that&rsquo;s why we&rsquo;re also happy to be your ongoing support team.</p>
+      <section class='grey-background centered'>
+        <div class='container'>
+          <div class='row-fluid'>
+            <div class='span8 offset2'>
+              <p>A dead-simple app for quickly accessing your Readability reading list for those idle moments throughout your day.</p>
+              <p>
+                <strong>Matt Elliot, CNET</strong>
+              </p>
+              <h2 class='separator'>•</h2>
+              <p>It's handy when you're waiting in line, on a linch break, or just have a few minutes to kill.</p>
+              <p>
+                <strong>Thorin Klosowski, Lifehacker</strong>
+              </p>
+              <h2 class='separator'>•</h2>
+              <p>読まずにスルーしがちなウェブ記事を読むように働きかけてくれるアプリというのは、珍しいアプリだと思います</p>
+              <p>
+                <strong>Lifehacker Japan</strong>
+              </p>
+            </div>
+          </div>
         </div>
-        <div class='right'>
+      </section>
+      <section class='white-on-blue centered'>
+        <div class='container'>
+          <div class='row-fluid'>
+            <div class='span10 offset1'>
+              <h2>Number 1 News app in 6 countries</h2>
+              <hr />
+              <h2>Featured in New & Noteworthy in over 50 countries</h2>
+              <hr />
+              <h2>Featured in What's Hot in 3 countries</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='grey-background centered'>
+        <div class='container'>
+          <img class='full-logo' src='../images/readtime-logo.png' />
+          <h2>
+            Available on the
+            <a href='http://itunes.apple.com/us/app/readtime/id549039409?mt=8' target='_blank'>App Store</a>
+            now.
+          </h2>
           <p>
-            We&rsquo;ve been fortunate to work with some great customers, like:
-          </p>
-          <p>
-            Melbourne Business School
-            <br />
-            The Alfred Hospital
-            <br />
-            Real Estate Group
-            <br />
-            Tesselaar
-            <br />
-            Rezeko
-            <br />
-            Sensis Yellow Pages
-            <br />
-            Swann Insurance
-            <br />
-            Lonely Planet
-            <br />
-            Jetstar
+            <a href='http://www.readtimeapp.com' target='_blank'>www.readtimeapp.com</a>
           </p>
         </div>
       </section>
-    </article>
-    <footer class='lined clearfix'>
-      <h1>
-        If you need some help with a project and this sounds good to you, then let&rsquo;s chat
-      </h1>
-      <h2>We&rsquo;ll listen to your goals, ask questions, offer ideas, and be up-front on our fit to do the job.</h2>
-      <p class='visit'>
-        <a href='mailto:info@cogent.co'>info@cogent.co</a>
-      </p>
-      <div class='left'><p class='align-right'><span class='name'>Rob</span>
-        0413 915 576<br /><span class='name'>Rachel</span>
-        0419 373 075</p></div>
-      <div class='right'>
-        <p>
-          Level 3, 351 Elizabeth Street
-          <br />
-          Melbourne, VIC 3000
-          <br />
-          Australia
-        </p>
-      </div>
-    </footer>
-    <div class='toeser'>
-      <div class='copy'>
-        &copy; 2011 Cogent
-        <div class='top'>
-          <a href='#top'>Top</a>
+      <section class='products-slider'>
+        <div class='container' style='overflow: visible'>
+          <div class='row'>
+            <a name='work'></a>
+            <div class='span8 offset1'>
+              <h2>We like to work together with smart people to make remarkable things we're proud of.</h2>
+            </div>
+          </div>
+          <div class='row' style='position:relative'>
+            <div class='slider-prev'></div>
+            <div class='slider-next'></div>
+            <div class='span11 offset1 slider-container'>
+              <div class='royalSlider rsDefault visibleNearby'>
+                <div>
+                  <h3>
+                    Eventer
+                  </h3>
+                  <p class='desktop'>Changing what it’s like to watch an event you couldn’t make it to.</p>
+                  <!-- The on-click action on the image is added via JS -->
+                  <img class='rsImg jsLink' data-href='eventer' src='../images/slider-eventer.jpg' />
+                </div>
+                <div>
+                  <h3>
+                    Thread
+                  </h3>
+                  <p class='desktop'>Helping Melbourne Business School to be leaders in digital learning.</p>
+                  <!-- The on-click action on the image is added via JS -->
+                  <img class='rsImg jsLink' data-href='thread' src='../images/slider-thread.jpg' />
+                </div>
+                <div>
+                  <h3>
+                    REA
+                  </h3>
+                  <p class='desktop'>Rebuilding the Customer Platform, ground up.</p>
+                  <!-- The on-click action on the image is added via JS -->
+                  <img class='rsImg jsLink' data-href='rea' src='../images/slider-rea.jpg' />
+                </div>
+                <div>
+                  <h3>
+                    Hooroo
+                  </h3>
+                  <p class='desktop'>Bacon ipsum dolor sit amet short loin ball tip doner corned beef.</p>
+                  <!-- The on-click action on the image is added via JS -->
+                  <img class='rsImg jsLink' data-href='hooroo' src='../images/slider-hooroo.jpg' />
+                </div>
+                <div>
+                  <h3>
+                    Redbubble
+                  </h3>
+                  <p class='desktop'>A marketplace for digital artists.</p>
+                  <!-- The on-click action on the image is added via JS -->
+                  <img class='rsImg jsLink' data-href='redbubble' src='../images/slider-redbubble.jpg' />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <footer class='grey-background'>
+        <div class='container'>
+          <div class='row-fluid'>
+            <div class='span7 offset1'>
+              <h2>
+                If you need some help with a project and this sounds good to you,
+                <a href='mailto:info@cogent.co'>
+                  let's chat.
+                </a>
+              </h2>
+            </div>
+          </div>
+          <div class='row-fluid desktop'>
+            <div class='span6 offset1'>
+              <p>We'll listen to your goals, ask questions, offer ideas and be up-front on our fit to do the job.</p>
+            </div>
+          </div>
+          <div class='row-fluid'>
+            <div class='span6 offset1'>
+              <div class='row-fluid'>
+                <div class='span6'>
+                  <a href='mailto:info@cogent.co'>info@cogent.co</a>
+                  <br />
+                  <span class='address-name'>
+                    Rachel
+                  </span>
+                  0419&nbsp;373&nbsp;075
+                  <br />
+                  <span class='address-name'>
+                    Marty
+                  </span>
+                  0407&nbsp;004&nbsp;570
+                </div>
+                <div class='span6'>
+                  Level 3, 10 Queen Street
+                  <br />
+                  Melbourne VIC 3000
+                </div>
+              </div>
+              <p class='copyright'>© Cogent 2013</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script type='text/javascript'>
       //<![CDATA[

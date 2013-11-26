@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@font-face { font-family: 'Signal'; src: url("../fonts/signal/signal-no2-d-webfont.eot"); src: local("☺"), url("../fonts/signal/signal-no2-d-webfont.woff") format("woff"), url("../fonts/signal/signal-no2-d-webfont.ttf") format("truetype"), url("../fonts/signal/signal-no2-d-webfont.svg#SignalNo2DRegular") format("svg"); }
+
+.readtime .more { padding-bottom: 0; }
+.readtime .more .bottom { text-align: center; }
+.readtime .more .bottom img { display: inline-block; }
+.readtime .separator { color: #f63e5f; margin-top: 0.7em; margin-bottom: 0.7em; }
+.readtime .full-logo { width: 308px; padding-top: 40px; padding-bottom: 60px; }
+.readtime .video-background { display: none; }
+.readtime .video-background video { width: 100%; margin-bottom: -5px; }
+.readtime .video-background .video-fallback-for-ios { display: block; }
+.readtime .white-on-blue { padding-top: 35px; padding-bottom: 35px; }
+.readtime .white-on-blue a { margin-top: 35px; }
+.readtime .white-on-blue hr { margin: 45px 0; border: 0; border-top: 1px solid #6ca6f3; }
+
+@media (min-width: 767px) { .readtime .extra-margin-for-desktop { margin-top: 90px; } }
+
+@media (min-width: 992px) { .readtime .readtime-iphone { position: absolute; top: 0; left: 65%; right: 0; bottom: 0; background: url("../images/readtime-iphone.png") no-repeat left center; background-size: 480px; background-position: 90px 35px; } }
+
+@media (min-width: 1020px) { .readtime .video-background { display: block; margin-top: -40px; height: 560px; }
+  .readtime .video-fallback-for-ios { display: none; } }
+
+@media (min-width: 1600px) { .readtime .video-background { height: 800px; } }

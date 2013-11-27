@@ -4,7 +4,7 @@
     <title>
       Cogent
       
-       - Projects - Eventer
+       - Projects - Tesselaar
       
     </title>
     <meta charset='utf-8' />
@@ -48,94 +48,81 @@
         <a href="/join/" class="">Join</a>
       </nav>
     </header>
-    <article role='main'>
-      <h1>Eventer</h1>
-      <h2>Changing what it&rsquo;s like to watch an event you couldn&rsquo;t make it to.</h2>
-      <p class='visit'>
-        <a href='http://www.eventer.com/'>Visit Eventer</a>
-      </p>
+    <article class='clearfix' role='main'>
+      <h1>Tesselaar</h1>
+      <h2 class='intro-end'>An efficient back-office was in order for Paul Tesselaar.</h2>
       <aside>
-        <p>Eventer is a platform that lets users watch a speaker deliver a presentation. We like to think the special part is that it puts the viewer in control to flick between focus on the speaker, the presentation, or both.</p>
-        <h1>Why bother?</h1>
-        <p>Lots of organisations - universities, corporates, and conferences - pay good money to get talks recorded. After the event, these often languish on a DVD in a drawer, or are published on a platform that offers a poor experience (eg, seeing the slides complemented only by the speaker audio). We think that it’s worth a little extra cash to convert this existing investment of recording the presentation, to make it enjoyable to view afterward by those who weren’t able to be there.</p>
-        <h1>How might this be used?</h1>
-        <p>A few ideas spring to mind.</p>
-        <h3>Conferences.</h3>
+        <h1>Who is the customer?</h1>
         <p>
-          Share the talks with attendees afterward. People who went to one track can now view talks from another. Or those who couldn’t travel to the event can pay for a digital ticket to view from the comfort of home.
+          <a href='http://www.tesselaar.net.au/'>Tesselaar Nursery</a>
+          is a long-standing mail order business who sells plants, bulbs, and perennials, and is also home to the popular annual
+          <a href='http://www.tulipfestival.com.au/'>Tulip Festival.</a>
+          Their Managing Director is Paul Tesselaar - a guy who knows his plants and his business inside out.
         </p>
-        <h3>Organisations.</h3>
-        <p>
-          Spread the word of your leaders. Often senior people travel to main offices to deliver key messages, such as the quarterly result or strategy. Out of the way centres and customer-facing staff often can’t be reached by these. Create a private channel on Eventer, and share these messages with your staff at a time that suits their schedules.
-        </p>
-        <h3>Educators.</h3>
-        <p>
-          Push the didactic lecture content out to users prior to attending a class - and make better use of the face time for conversation, debate, and exploring challenging areas.
-          <a href='http://www.khanacademy.org/'>Khan</a>
-          thought of this first, but what a fine idea.
-        </p>
-        <h1>What we’re up to.</h1>
-        <p>
-          So far, Cogent has sketched and built a basic proof of concept. We’ve trialled two events - you can see these at
-          <a href='http://ignitemelbourne.eventer.com'>Ignite Melbourne</a>
-          and
-          <a href='http://swipeconference.eventer.com'>Swipe Conference.</a>
-          With plenty of positive feedback, the real work lies ahead to make a robust version to launch.
-        </p>
+        <h1>OnePoint: a back-office application.</h1>
+        <p>The job at hand was to create operational efficiency for the business. The company ran on a range of systems developed over ten or more years, coupled with some very complicated spreadsheets that were unwieldy to use and maintain. Paul wanted to make things simpler and more cost effective.</p>
+        <p>We produced an operations application that allowed management of customers, orders, stock levels, and dispatch. Sounds simple, but there is a lot under the hood.</p>
+        <h1>How did we go about it?</h1>
+        <p>First up, we paid a visit to the Tulip Festival and the Nursery, to see how Tesselaar worked. Once we were done tip-toeing, Paul walked us through his business functions end-to-end. We learned all about their needs for stock ordering, forecasting and inventory management; picking, plant treatment, packing and shipping; customer service, invoicing and payments.  We mapped out how things currently worked, and asked lots of questions to find out what mattered most.</p>
+        <p>Over the coming months, we completed the design and development of a Ruby on Rails application that Tesselaar call "OnePoint". We focused on designs that suited the nature of Paul&rsquo;s workforce - for instance that some are older and less technology savvy, or that some have specialised roles and then busy periods are dealt with by casual workers.  We mixed technologies that suited how each main function worked - e.g. combining iPad interfaces, online interfaces, and barcode scanners to make each step as efficient as possible.</p>
+        <h1>A hairy challenge.</h1>
+        <p>One of the most unique problems faced by Tesselaar was that the product (i.e., plants) ... die. They can perish at any point in their journey - potentially once ordered but while still in the ground before they even reach Tesselaar, in storage or on the shelves waiting to be shipped.  That meant the stock management solution had to take this into account, and leave doors open to easily correct inventory levels along the way. It also meant that the application had to be smart about how to determine when stock should be say removed from cool storage and packaged on the shelf as product ready to ship. The relationship between customer orders and forecasts of typical season behaviour to what the baggers were instructed to pack were vital in this.</p>
+        <h1>Did it work?</h1>
+        <p>We&rsquo;re waiting to see. Paul is picking his moment between seasons to switch to his new application. We&rsquo;re bound to need to refine some of the rules that determine what stock to pack, or tweak how the packing production line operates to make it efficient for workers. Overall though, the early feedback of the trials by Paul&rsquo;s team are promising. We&rsquo;ll be sure to report back.</p>
         <p>
           <a class='view_projects' href='./'>View all projects</a>
         </p>
       </aside>
       <section role='main'>
         <div class='post'>
-          <a href='http://www.flickr.com/photos/68536933@N08/8101708343/in/set-72157627873365994/'>
-            <img src='http://farm9.static.flickr.com/8471/8101708343_04aef08c6b.jpg' />
+          <a href='http://www.flickr.com/photos/68536933@N08/6474998485/in/set-72157627733596203/'>
+            <img src='http://farm8.static.flickr.com/7144/6474998485_0ed3528985.jpg' />
           </a>
           <div class='transparent-box'></div>
           <div class='caption'>
             <p>
-              <a href='http://www.flickr.com/photos/68536933@N08/8101708343/in/set-72157627873365994/'>Eventer UX wall.</a>
+              <a href='http://www.flickr.com/photos/68536933@N08/6474998485/in/set-72157627733596203/'>Tulip Love.</a>
             </p>
           </div>
         </div>
         <div class='post'>
-          <a href='http://www.flickr.com/photos/68536933@N08/8270322099/in/set-72157627873365994/'>
-            <img src='http://farm9.static.flickr.com/8364/8270322099_268c2ac428.jpg' />
+          <a href='http://www.flickr.com/photos/68536933@N08/6232597327/in/set-72157627733596203/'>
+            <img src='http://farm7.static.flickr.com/6111/6232597327_12984fb478.jpg' />
           </a>
           <div class='transparent-box'></div>
           <div class='caption'>
             <p>
-              <a href='http://www.flickr.com/photos/68536933@N08/8270322099/in/set-72157627873365994/'>Eventer at YOW! 2012</a>
+              <a href='http://www.flickr.com/photos/68536933@N08/6232597327/in/set-72157627733596203/'>We got down in the detail of products.</a>
             </p>
           </div>
         </div>
-        <div class='post quote'><span class='attribution'><span class='time' title='2012-12-14T00:20:28Z'>2012-12-14T00:20:28Z</span>,&nbsp;Marty Andrews from Cogent said</span><h1>Enjoyed shouting drinks to all at YOW! 2012</h1></div>
+        <div class='post quote'><span class='attribution'><span class='time' title='2011-10-05T03:20:28Z'>2011-10-05T03:20:28Z</span>,&nbsp;Warren from Cogent said</span><h1>Can&rsquo;t wait to see this working in the wild.</h1></div>
         <div class='post'>
-          <a href='http://www.flickr.com/photos/68536933@N08/8146637700/in/set-72157627873365994/'>
-            <img src='http://farm9.static.flickr.com/8464/8146637700_b6d93dabbb.jpg' />
+          <a href='http://www.flickr.com/photos/68536933@N08/6232600251/in/set-72157627733596203/'>
+            <img src='http://farm7.static.flickr.com/6094/6232600251_7a6d0675c5.jpg' />
           </a>
           <div class='transparent-box'></div>
           <div class='caption'>
             <p>
-              <a href='http://www.flickr.com/photos/68536933@N08/8146637700/in/set-72157627873365994/'>Eventer planning discussion.</a>
+              <a href='http://www.flickr.com/photos/68536933@N08/6232600251/in/set-72157627733596203/'>Waz & Ben figure out how to predict what needs to be packed.</a>
             </p>
           </div>
         </div>
-        <div class='post quote'><span class='attribution'><span class='time' title='2012-12-14T00:20:28Z'>2012-12-14T00:20:28Z</span>,&nbsp;Amelia Crook from Cogent said</span><h1>We've been mapping out the customer landscape for Eventer.</h1></div>
+        <div class='post quote'><span class='attribution'><span class='time' title='2011-10-07T03:20:28Z'>2011-10-07T03:20:28Z</span>,&nbsp;Andy from Cogent said</span><h1>Dotland and Stockland are bending my brain.</h1></div>
         <div class='post'>
-          <a href='http://www.flickr.com/photos/68536933@N08/8124034365/in/set-72157627873365994/'>
-            <img src='http://farm9.static.flickr.com/8466/8124034365_4b19c5f705.jpg' />
+          <a href='http://www.flickr.com/photos/68536933@N08/6236197537/in/set-72157627733596203/'>
+            <img src='http://farm7.static.flickr.com/6112/6236197537_0d101d496d.jpg' />
           </a>
           <div class='transparent-box'></div>
           <div class='caption'>
             <p>
-              <a href='http://www.flickr.com/photos/68536933@N08/8124034365/in/set-72157627873365994/'>Recent events on the home page.</a>
+              <a href='http://www.flickr.com/photos/68536933@N08/6236197537/in/set-72157627733596203/'>Swipey swipey.</a>
             </p>
           </div>
         </div>
       </section>
       <section class='lined grey clearfix' id='project_footer'>
-        <div class='project'><h2><a href='thread'>Thread</a></h2><p>Helping Melbourne Business School to be leaders in digital learning.</p></div><div class='project'><h2><a href='readtime'>Readtime</a></h2><p>Getting things read on your iPhone.<br>&nbsp;</p></div><div class='project'><h2><a href='rea'>REA Group</a></h2><p>Rebuilding the Customer Platform, ground up.</p></div>
+        <div class='project'><h2><a href='thread'>Thread</a></h2><p>Helping Melbourne Business School to be leaders in digital learning.</p></div><div class='project'><h2><a href='eventer'>Eventer</a></h2><p>Changing what it&rsquo;s like to watch an event you couldn&rsquo;t make it to.</p></div><div class='project'><h2><a href='readtime'>Readtime</a></h2><p>Getting things read on your iPhone.<br>&nbsp;</p></div>
       </section>
       <section class='lined grey clearfix'>
         <h1>We are bright and good at what we do</h1>

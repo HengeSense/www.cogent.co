@@ -1,7 +1,0 @@
-@charset "UTF-8";
-@font-face { font-family: 'Signal'; src: url("../fonts/signal/signal-no2-d-webfont.eot"); src: local("☺"), url("../fonts/signal/signal-no2-d-webfont.woff") format("woff"), url("../fonts/signal/signal-no2-d-webfont.ttf") format("truetype"), url("../fonts/signal/signal-no2-d-webfont.svg#SignalNo2DRegular") format("svg"); }
-
-.producer ul { list-style: circle; }
-
-@media (min-width: 767px) {}
-@media (min-width: 992px) {}

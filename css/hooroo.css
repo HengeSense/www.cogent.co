@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@font-face { font-family: 'Signal'; src: url("../fonts/signal/signal-no2-d-webfont.eot"); src: local("☺"), url("../fonts/signal/signal-no2-d-webfont.woff") format("woff"), url("../fonts/signal/signal-no2-d-webfont.ttf") format("truetype"), url("../fonts/signal/signal-no2-d-webfont.svg#SignalNo2DRegular") format("svg"); }
+
+.hooroo .project-intro { background: url("../images/hooroo-bg.jpg") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$url, sizingMethod='scale'); -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/hooroo-bg.jpg, sizingMethod='scale')"; }
+.hooroo .grey-background-with-image { padding-bottom: 0; }
+.hooroo .airplane-small img { width: 310px; }
+
+@media (min-width: 767px) { .hooroo .grey-background-with-image { padding-bottom: 80px; min-height: 450px; }
+  .hooroo .airplane { position: absolute; top: 200px; right: -280px; }
+  .hooroo .airplane img { width: 767px; margin-top: 60px auto 0 auto; display: block; max-width: inherit; } }
+
+@media (min-width: 992px) { .hooroo .airplane { top: 100px; right: -375px; }
+  .hooroo .airplane img { width: 1092px; } }

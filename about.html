@@ -4,8 +4,6 @@
     <title>
       Cogent
        - About
-      
-      
     </title>
     <meta charset='utf-8' />
     <!--[if IE]>
@@ -15,168 +13,150 @@
     <meta content='Cogent, Projects, Solutions, User Experience, Design, Development, Ruby, Ruby on Rails, Java, Interaction, Melbourne, Australia, ' name='keywords' />
     <meta content="Cogent creates useful software that gets results. We start with your business goals and work in an open and iterative way to craft the product. We're based in Melbourne, Australia." name='description' />
     <meta content='Cogent' name='author' />
-    <meta content='width=device-width; initial-scale=1.0' name='viewport' />
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
-    <script src='js/html5.js'></script>
-    <script src='js/underscore-min.js'></script>
-    <script src='js/jquery.timeago.js'></script>
-    <script src='http://use.typekit.com/xkf5xsa.js' type='text/javascript'></script>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <script src='js/jquery-1.10.2.min.js'></script>
+    <script src='js/html5.js' type='text/javascript'></script>
+    <script src='http://use.typekit.com/xkf5xsa.js'></script>
     <script type='text/javascript'>
       try{Typekit.load();}catch(e){}
     </script>
+    <script src='js/jquery.royalslider.min.js' type='text/javascript'></script>
+    <script src='js/bootstrap.min.js' type='text/javascript'></script>
     <script src='js/application.js' type='text/javascript'></script>
-    <link href='/css/normalize.css' rel='stylesheet' />
-    <link href='/css/styles.css' rel='stylesheet' />
+    <!-- TODO include only in home page -->
+    <script src='js/home.js' type='text/javascript'></script>
+    <link href='css/bootstrap.min.css' rel='stylesheet' />
+    <link href='css/royalslider.css' rel='stylesheet' />
+    <link href='css/screen.css' rel='stylesheet' />
+    <!-- Infer css file from css class -->
+    <link href='css/about.css' rel='stylesheet' />
     <!--[if lte IE 8]>
       <script src='js/respond.js' type='text/javascript'></script>
-      <link href='/css/ie7.css' rel='stylesheet' />
     <![endif]-->
   </head>
-  <body>
-    <a name='top'></a>
-    <header>
-      <a class='logo' href='/'>
-        <img alt='Cogent' src='/images/cogent_logo.png' />
-      </a>
-      <h1>
-        We create useful software that gets results
-      </h1>
-      <nav>
-        <a href="/" class="">Home</a>
-        <a href="/projects/" class="">Projects</a>
-        <a href="/about" class="selected">About</a>
-        <a href="/join/" class="">Join</a>
-      </nav>
-    </header>
-    <article class='clearfix' role='main'>
-      <h1>
-        Cogent has some pretty simple principles
-      </h1>
-      <div class='principles clearfix'>
-        <div class='principle'>
-          <h2 class='people'>Treat people well</h2>
-          <p>We treat each other and our customers well. We choose to be honest and open, to collaborate, and to be respectful and fair. These values are really important to who we are and how we act.</p>
-        </div>
-        <div class='principle alt'>
-          <h2 class='life'>Life outside work matters</h2>
-          <p>We love what we do, and life outside work hours counts too. The standard work week is - just that. We plan our projects to set ourselves up for success, not for a frenzied error-prone sprint to the finish line. </p>
-        </div>
-        <div class='principle'>
-          <h2 class='real'>Be real</h2>
-          <p>We avoid buzzwords, cut out noise, distill to the real need and get on with it. We design, build and iterate to get results. We deliver remarkable products. If you like fancy slide decks full of theories that never get to market, you will be disappointed.</p>
-        </div>
-        <div class='principle alt'>
-          <h2 class='collaborate'>Learning more is part of the plan</h2>
-          <p>We&rsquo;re good at what we do, but the world shifts fast. That&rsquo;s why we are avid learners who debate, reflect, read, participate and experiment. We commit to learning by spending a day each month together to explore new things.</p>
-        </div>
+  <body class='about'>
+    <div class='container'>
+      <div class='nav-bar clearfix'>
+        <a class='logo' href='.'>
+          <img src='images/cogent-logo-transparent.png' />
+        </a>
+        <ul>
+          <li>
+            <a href="projects" class="">Work</a>
+          </li>
+          <li>
+            <a href="about" class="selected">About</a>
+          </li>
+          <li>
+            <a href="join" class="">Join</a>
+          </li>
+        </ul>
       </div>
-      <section class='lined'>
-        <h1>
-          These are the people whose skills and passion make Cogent what it is today
-        </h1>
-        <h2>Being photogenic comes second to making good stuff. Thankfully.</h2>
-        <p class='visit'>
-          <a href='join'>Want to join us?</a>
-        </p>
-        <div class='people first clearfix'>
-          <div class='person'><a class='image' href='http://www.flickr.com/photos/68536933@N08/6242467739/in/set-72157627749037619/'><div class='hero-image'><img alt='Person' src='http://farm7.static.flickr.com/6053/6242467739_2560494ac2.jpg' /></div></a><h2>Marty Andrews</h2>
-          <p>
-            Developer, Director, Pool Shark
-            <br /><a class='button in' href='http://au.linkedin.com/in/martyandrews'>View LinkedIn profile</a><a class='button twitter' href='http://twitter.com/#!/martinjandrews'>View Twitter stream</a><a class='button blog' href='http://blog.martyandrews.net'>Blog</a></p></div>
-          <div class='person'><a class='image' href='http://www.flickr.com/photos/68536933@N08/6236327084/in/set-72157627749037619/'><div class='hero-image'><img alt='Person' src='http://farm7.static.flickr.com/6094/6236327084_abf58110cd.jpg' /></div></a><h2>Dan Tropp</h2>
-          <p>
-            Developer
-            <br /><a class='button in' href='http://au.linkedin.com/in/dantropp'>View LinkedIn profile</a><a class='button twitter' href='http://twitter.com/#!/dan_tropp'>View Twitter stream</a></p></div>
-          <div class='tweet'>
-            <h2>RT @<a href="http://twitter.com/jameshutson">jameshutson</a>: Geena Davis Solves Hollywood Sexism in Two Easy Steps. <a href="http://t.co/zuqIzYv3yr">http://t.co/zuqIzYv3yr</a></h2>
-            <span class='attribution'>  <span class='time' title='2013-12-14T11:40:40Z'>2013-12-14T11:40:40Z</span>
-            <a href='http://twitter.com/AnfernyB/statuses/411823046354161666'>@AnfernyB</a></span>
+    </div>
+    <div class='content'>
+      <section class='red-white'>
+        <div class='container'>
+          <div class='row-fluid'>
+            <div class='span10 offset1'>
+              <h1>Cogent has some pretty simple principles</h1>
+            </div>
           </div>
-          <div class='tweet'>
-            <h2>Massive Dynamic is the big scary company in Fringe. Fringe is set mostly in Boston. Boston Dynamic is a real big scary company. Coincidence?</h2>
-            <span class='attribution'>  <span class='time' title='2013-12-14T11:16:53Z'>2013-12-14T11:16:53Z</span>
-            <a href='http://twitter.com/haruki_zaemon/statuses/411817060302221312'>@haruki_zaemon</a></span>
-          </div>
-          <div class='person'><a class='image' href='http://www.flickr.com/photos/68536933@N08/9156780160/in/set-72157627749037619/'><div class='hero-image'><img alt='Person' src='http://farm6.static.flickr.com/5517/9156780160_c05843454f.jpg' /></div></a><h2>Anthony Burgo</h2>
-          <p>
-            Office Manager
-            <br /><a class='button twitter' href='http://twitter.com/#!/anfernyb'>View Twitter stream</a></p></div>
-          <div class='person'><a class='image' href='http://www.flickr.com/photos/68536933@N08/6310542973/in/set-72157627749037619/'><div class='hero-image'><img alt='Person' src='http://farm7.static.flickr.com/6224/6310542973_c9b275b43d.jpg' /></div></a><h2>Benjamin Birnbaum</h2>
-          <p>
-            Developer
-            <br /><a class='button in' href='http://au.linkedin.com/pub/benjamin-birnbaum/4/b40/a37'>View LinkedIn profile</a><a class='button twitter' href='http://twitter.com/#!/benjaminb'>View Twitter stream</a></p></div>
-          <div class='person'><a class='image' href='http://www.flickr.com/photos/68536933@N08/6235802557/in/set-72157627749037619/'><div class='hero-image'><img alt='Person' src='http://farm7.static.flickr.com/6237/6235802557_a53af863f8.jpg' /></div></a><h2>Mike Williams</h2>
-          <p>
-            Developer
-            <br /><a class='button in' href='http://au.linkedin.com/in/mdubya'>View LinkedIn profile</a><a class='button twitter' href='http://twitter.com/#!/woollyams'>View Twitter stream</a><a class='button blog' href='http://dogbiscuit.org/mdub/weblog'>Blog</a></p></div>
-          <div class='tweet'>
-            <h2>Convenience, killing quality since the beginning of time.</h2>
-            <span class='attribution'>  <span class='time' title='2013-12-14T10:28:00Z'>2013-12-14T10:28:00Z</span>
-            <a href='http://twitter.com/avanrotciv/statuses/411804760350531585'>@avanrotciv</a></span>
-          </div>
-          <div class='person'><a class='image' href='http://www.flickr.com/photos/68536933@N08/6236326988/in/set-72157627749037619/'><div class='hero-image'><img alt='Person' src='http://farm7.static.flickr.com/6097/6236326988_b1de53d0cd.jpg' /></div></a><h2>Simon Harris</h2>
-          <p>
-            Developer, Father, Aikido Teacher
-            <br /><a class='button twitter' href='http://twitter.com/#!/haruki_zaemon'>View Twitter stream</a><a class='button blog' href='http://www.harukizaemon.com/'>Blog</a></p></div>
-          <div class='person'><a class='image' href='http://www.flickr.com/photos/68536933@N08/6235802949/in/set-72157627749037619/'><div class='hero-image'><img alt='Person' src='http://farm7.static.flickr.com/6094/6235802949_ca8e5a5058.jpg' /></div></a><h2>Rob Mitchell</h2>
-          <p>
-            Developer, Cyclist
-            <br /><a class='button in' href='http://au.linkedin.com/in/robmitchelllinkedin'>View LinkedIn profile</a><a class='button twitter' href='http://twitter.com/#!/rob_mitch'>View Twitter stream</a></p></div><div class='person'><a class='image' href='http://www.flickr.com/photos/68536933@N08/6236328016/in/set-72157627749037619/'><div class='hero-image'><img alt='Person' src='http://farm7.static.flickr.com/6049/6236328016_418374719a.jpg' /></div></a><h2>Rachel Morley</h2>
-          <p>
-            Product Thinker, Director
-            <br /><a class='button in' href='http://au.linkedin.com/in/rachelmorley'>View LinkedIn profile</a><a class='button twitter' href='http://twitter.com/#!/rnmile'>View Twitter stream</a><a class='button blog' href='http://rnmile.tumblr.com'>Blog</a></p></div><div class='person'><a class='image' href='http://www.flickr.com/photos/68536933@N08/6235803047/in/set-72157627749037619/'><div class='hero-image'><img alt='Person' src='http://farm7.static.flickr.com/6222/6235803047_65db6d3cff.jpg' /></div></a><h2>Warren Oliver</h2>
-          <p>
-            Developer
-            <br /><a class='button in' href='http://au.linkedin.com/pub/warren-oliver/2/4b5/b34'>View LinkedIn profile</a><a class='button twitter' href='http://twitter.com/#!/muzcat007'>View Twitter stream</a></p></div><div class='person'><a class='image' href='http://www.flickr.com/photos/68536933@N08/6712352585/in/set-72157627749037619/'><div class='hero-image'><img alt='Person' src='http://farm8.static.flickr.com/7027/6712352585_7b57c22bcb.jpg' /></div></a><h2>Ben Green</h2>
-          <p>
-            UX Designer
-            <br /><a class='button in' href='http://au.linkedin.com/in/bengreen'>View LinkedIn profile</a><a class='button twitter' href='http://twitter.com/#!/bennyg'>View Twitter stream</a></p></div><div class='person'><a class='image' href='http://www.flickr.com/photos/68536933@N08/8049430709/in/set-72157627749037619/'><div class='hero-image'><img alt='Person' src='http://farm9.static.flickr.com/8455/8049430709_6bf99945ca.jpg' /></div></a><h2>Peter Evjan</h2>
-          <p>
-            Developer
-            <br /><a class='button in' href='http://www.linkedin.com/in/peterevjan'>View LinkedIn profile</a><a class='button twitter' href='http://twitter.com/#!/peterevjan'>View Twitter stream</a><a class='button blog' href='http://www.peterevjan.com'>Blog</a></p></div><div class='person'><a class='image' href='http://www.flickr.com/photos/68536933@N08/8525445563/in/set-72157627749037619/'><div class='hero-image'><img alt='Person' src='http://farm9.static.flickr.com/8225/8525445563_a3e6a26bd0.jpg' /></div></a><h2>Greg Dziemidowicz</h2>
-          <p>
-            Developer
-            <br /><a class='button in' href='http://au.linkedin.com/in/grzegorzdziemidowicz'>View LinkedIn profile</a><a class='button twitter' href='http://twitter.com/#!/dziemid'>View Twitter stream</a></p></div><div class='person'><a class='image' href='http://www.flickr.com/photos/68536933@N08/8641176417/in/set-72157627749037619/'><div class='hero-image'><img alt='Person' src='http://farm9.static.flickr.com/8115/8641176417_b07a53d0d5.jpg' /></div></a><h2>Scott Rogers</h2>
-          <p>
-            Product Guy
-            <br /><a class='button in' href='http://au.linkedin.com/in/scottrogerscv'>View LinkedIn profile</a><a class='button twitter' href='http://twitter.com/#!/rogersnotrogers'>View Twitter stream</a></p></div><div class='person'><a class='image' href='http://www.flickr.com/photos/68536933@N08/8953953459/in/set-72157627749037619/'><div class='hero-image'><img alt='Person' src='http://farm3.static.flickr.com/2865/8953953459_9ab920827a.jpg' /></div></a><h2>Brice Le Corre</h2>
-          <p>
-            Designer
-            <br /><a class='button blog' href='http://www.bricelecorre.com'>Blog</a></p></div><div class='person'><a class='image' href='http://www.flickr.com/photos/68536933@N08/9178055565/in/set-72157627749037619/'><div class='hero-image'><img alt='Person' src='http://farm8.static.flickr.com/7409/9178055565_a5ac252555.jpg' /></div></a><h2>Victor Nava</h2>
-          <p>
-            Developer
-            <br /><a class='button twitter' href='http://twitter.com/#!/avanrotciv'>View Twitter stream</a></p></div>
         </div>
       </section>
-    </article>
-    <footer class='lined clearfix'>
-      <h1>
-        If you need some help with a project and this sounds good to you, then let&rsquo;s chat
-      </h1>
-      <h2>We&rsquo;ll listen to your goals, ask questions, offer ideas, and be up-front on our fit to do the job.</h2>
-      <p class='visit'>
-        <a href='mailto:info@cogent.co'>info@cogent.co</a>
-      </p>
-      <div class='left'><p class='align-right'><span class='name'>Rob</span>
-        0413 915 576<br /><span class='name'>Rachel</span>
-        0419 373 075</p></div>
-      <div class='right'>
-        <p>
-          Level 3, 351 Elizabeth Street
-          <br />
-          Melbourne, VIC 3000
-          <br />
-          Australia
-        </p>
-      </div>
-    </footer>
-    <div class='toeser'>
-      <div class='copy'>
-        &copy; 2011 Cogent
-        <div class='top'>
-          <a href='#top'>Top</a>
+      <section class='about-us grey-background'>
+        <div class='container'>
+          <div class='row-fluid'>
+            <div class='span10 offset1'>
+              <img src='images/about-ben.jpg' />
+            </div>
+          </div>
+          <div class='row-fluid'>
+            <div class='span7 offset2'>
+              <h2 class='with-margin-top'>We treat each other well.</h2>
+              <p>We choose to be honest and open, to collaborate, and to be respectful and fair. These values are really important to who we are and how we act.</p>
+              <h2 class='with-margin-top'>Be real</h2>
+              <p>We avoid buzzwords, cut out noise, distill to the real need and get on with it. We design, build and iterate to get results. We deliver remarkable products. If you like fancy slide decks full of theories that never get to market, you will be disappointed.</p>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <section class='life-outside-work grey-background'>
+        <div class='container'>
+          <div class='row-fluid'>
+            <div class='span6'>
+              <img src='images/about-learning.jpg' />
+              <h2 class='with-margin-top'>Learning more.</h2>
+              <p>We’re good at what we do, but the world shifts fast. That’s why we are avid learners who debate, reflect, read, participate and experiment. We commit to learning by spending a day each month together to explore new things.</p>
+            </div>
+            <div class='span6'>
+              <img src='images/about-life.jpg' />
+              <h2 class='with-margin-top'>Life outside work matters.</h2>
+              <p>We love what we do, and life outside work hours counts too. The standard work week is - just that. We plan our projects to set ourselves up for success, not for a frenzied error-prone sprint to the finish line.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='white-on-blue text-center drop-us-a-line'>
+        <div class='container'>
+          <div class='row-fluid'>
+            <div class='span10 offset1'>
+              <h2>
+                Don't see your role here? We're always looking to meet new and smart people.
+              </h2>
+            </div>
+          </div>
+          <div class='row-fluid'>
+            <br />
+            <div class='span10 offset1'>
+              <a class='button grey' href='mailto:jobs@cogent.co'>Drop us a line</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class='grey-background'>
+        <div class='container'>
+          <div class='row-fluid'>
+            <div class='span7 offset1'>
+              <h2>
+                If you need some help with a project and this sounds good to you,
+                <a href='mailto:info@cogent.co'>
+                  let's chat.
+                </a>
+              </h2>
+            </div>
+          </div>
+          <div class='row-fluid desktop'>
+            <div class='span6 offset1'>
+              <p>We'll listen to your goals, ask questions, offer ideas and be up-front on our fit to do the job.</p>
+            </div>
+          </div>
+          <div class='row-fluid'>
+            <div class='span6 offset1'>
+              <div class='row-fluid'>
+                <div class='span6'>
+                  <a href='mailto:info@cogent.co'>info@cogent.co</a>
+                  <br />
+                  <span class='address-name'>
+                    Rachel
+                  </span>
+                  0419&nbsp;373&nbsp;075
+                  <br />
+                  <span class='address-name'>
+                    Marty
+                  </span>
+                  0407&nbsp;004&nbsp;570
+                </div>
+                <div class='span6'>
+                  Level 3, 10 Queen Street
+                  <br />
+                  Melbourne VIC 3000
+                </div>
+              </div>
+              <p class='copyright'>© Cogent 2013</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script type='text/javascript'>
       //<![CDATA[

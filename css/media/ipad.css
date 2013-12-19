@@ -1,0 +1,19 @@
+@media (max-width: 978px) { header, article[role="main"], footer, .toeser { width: 76.482%; }
+  h1 { font-size: 30px; }
+  h1 br { display: none; }
+  h2 { font-size: 20px; }
+  header.home h1 { font-size: 48px; margin-bottom: 44px; }
+  .principles .principle { width: 40.106%; margin: 0 11.229% 0 0; }
+  div.projects { margin: 60px 0 30px 0; }
+  div.projects .project { float: none; width: 65.775%; margin: 0 auto 30px; }
+  div.projects .project:nth-child(3n) { margin-right: auto; }
+  div.projects .project img { width: 100%; }
+  div.projects .project:last-child { margin: 0 auto 30px; }
+  div.people div:nth-child(3n) { margin-right: auto; }
+  div.people .person, div.people .tweet { height: auto; float: none; width: 65.775%; margin: 0 auto 30px; }
+  div.people .person img, div.people .tweet img { width: 100%; height: initial; }
+  article[role="main"] aside { width: 65.755%; float: none; margin: 0 auto; }
+  article[role="main"] section[role="main"] { width: 71.247%; margin: 0 auto 60px; }
+  .hero { position: relative; width: auto; right: initial; top: initial; background-color: #323232; }
+  .hero img { width: 100%; }
+  .hero h2 { font-size: 20px; padding: 30px; color: #ffeb27; } }

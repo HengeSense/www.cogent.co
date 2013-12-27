@@ -1,0 +1,4 @@
+@media (min-width: 767px) { .image-holder { border: 1px solid red; overflow: hidden; position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+  .ipad-home { position: absolute; top: -70px; right: -350px; z-index: 10; width: 540px; height: auto; } }
+
+@media (min-width: 992px) { .ipad-home { right: -400px; } }
